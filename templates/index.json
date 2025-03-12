@@ -12,6 +12,24 @@
     "slideshow_QmnCrw": {
       "type": "slideshow",
       "blocks": {
+        "slide_GpidL7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-3"
+          }
+        },
         "slide_tgVDdq": {
           "type": "slide",
           "settings": {
@@ -29,29 +47,11 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-3"
           }
-        },
-        "slide_GpidL7": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/prairie-woman-at-sunset.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
-          }
         }
       },
       "block_order": [
-        "slide_tgVDdq",
-        "slide_GpidL7"
+        "slide_GpidL7",
+        "slide_tgVDdq"
       ],
       "settings": {
         "layout": "full_bleed",
