@@ -35,15 +35,15 @@
           "settings": {
             "image": "shopify://shop_images/autumn-trees-hillside.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Unlock the Natural Healing Potential",
+            "heading": "Forest Medicine for Well-Being",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
+            "subheading": "Embrace the Therapeutic Benefits of Forest Therapy, Stress Relief, and Nature Immersion",
             "button_label": "Button label",
             "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
             "box_align": "middle-right",
-            "text_alignment": "right",
+            "text_alignment": "left",
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-3"
           }
