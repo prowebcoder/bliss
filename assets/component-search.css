@@ -54,13 +54,13 @@
 }
 
 .search__button .icon {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 .reset__button .icon.icon-close {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.2rem;
+  width: 1.2rem;
   stroke-width: 0.1rem;
 }
 
@@ -71,4 +71,15 @@ input::-webkit-search-decoration {
 
 .template-search__results {
   position: relative;
+}
+
+.search_categories {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.search_categories_grid {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }

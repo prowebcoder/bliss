@@ -19,7 +19,7 @@
         <span class="svg-wrapper">
           {{- 'icon-search.svg' | inline_asset_content -}}
         </span>
-        <span class="svg-wrapper header__icon-close">
+        <span class="svg-wrapper header__icon-close hidden">
           {{- 'icon-close.svg' | inline_asset_content -}}
         </span>
       </span>
@@ -103,6 +103,15 @@
           </span>
         </button>
       </div>
+      {% if settings.search_show_categories %}
+        <div class="search_categories">
+          {% if settings.search_categories_title != blank %}
+            <div class="categories_title">
+              {{ settings.search_categories_title }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
     </div>
   </details>
 </details-modal>

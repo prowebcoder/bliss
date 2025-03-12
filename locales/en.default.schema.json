@@ -297,6 +297,18 @@
         "predictive_search_show_price": {
           "label": "Product price",
           "info": "Shown when search suggestions enabled"
+        },
+        "search_show_categories": {
+          "label": "Enable categories",
+          "info": "Shown when search suggestions enabled"
+        },
+        "search_categories_title": {
+          "label": "Categories title",
+          "info": "Show Categories Title"
+        },
+        "search_categories": {
+          "label": "Select Categories",
+          "info": "Select Categories"
         }
       }
     },
@@ -1078,6 +1090,9 @@
           },
           "options__3": {
             "label": "Top center"
+          },
+          "options__5": {
+            "label": "Left center"
           },
           "options__4": {
             "label": "Middle center"
