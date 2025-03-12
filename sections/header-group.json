@@ -20,15 +20,22 @@
             "text": "Welcome to our store",
             "link": ""
           }
+        },
+        "announcement_MFqaNA": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_MFqaNA"
       ],
-      "disabled": true,
       "settings": {
         "auto_rotate": false,
-        "change_slides_speed": 5,
+        "change_slides_speed": 4,
         "color_scheme": "",
         "show_line_separator": true,
         "show_social": false,
