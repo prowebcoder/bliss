@@ -17,10 +17,10 @@
           "settings": {
             "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "Forest Medicine",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "Discover the Healing Power of Nature",
+            "button_label": "Book Treatment",
             "link": "",
             "button_style_secondary": false,
             "show_text_box": false,
