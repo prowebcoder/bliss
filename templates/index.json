@@ -257,6 +257,7 @@
         "column_aGjwMW": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -266,6 +267,7 @@
         "column_tmMWDn": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/hiker-climbing-mountains.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
