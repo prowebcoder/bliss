@@ -85,6 +85,7 @@
 .multicolumn-list h3,
 .multicolumn-list p {
   margin: 0;
+  padding: 0 10px;
 }
 
 .multicolumn-card-spacing {
