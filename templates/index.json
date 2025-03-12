@@ -64,6 +64,36 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Health Benefits</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A section dedicated to explaining the potential health benefits of phytochemicals, such as their role in boosting immunity, fighting inflammation, improving digestion, and supporting skin health.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "collection_list_BXjWFR": {
       "type": "collection-list",
       "blocks": {
@@ -109,36 +139,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Health Benefits</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A section dedicated to explaining the potential health benefits of phytochemicals, such as their role in boosting immunity, fighting inflammation, improving digestion, and supporting skin health.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
     "featured_collection": {
@@ -222,55 +222,49 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "image_with_text_DfCirf": {
+      "type": "image-with-text",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "heading_GtXFG7": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Image with text",
+            "heading_size": "h1"
           }
         },
-        "column2": {
-          "type": "column",
+        "text_WhLmfj": {
+          "type": "text",
           "settings": {
-            "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "text_style": "body"
           }
         },
-        "column3": {
-          "type": "column",
+        "button_w7htcp": {
+          "type": "button",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "heading_GtXFG7",
+        "text_WhLmfj",
+        "button_w7htcp"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "image": "shopify://shop_images/1e4918_3e6f7a892f984c5085a5b901c6161736_mv2.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -278,11 +272,11 @@
   },
   "order": [
     "slideshow_QmnCrw",
-    "collection_list_BXjWFR",
     "rich_text",
+    "collection_list_BXjWFR",
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "image_with_text_DfCirf"
   ]
 }
