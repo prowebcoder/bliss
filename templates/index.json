@@ -56,7 +56,7 @@
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
-        "slider_visual": "dots",
+        "slider_visual": "counter",
         "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "ambient",
@@ -82,7 +82,7 @@
         "featured_collection_MB48hT": {
           "type": "featured_collection",
           "settings": {
-            "collection": "wholesale-store"
+            "collection": "blissthera-flute-biomedia"
           }
         },
         "featured_collection_6rpdQz": {
