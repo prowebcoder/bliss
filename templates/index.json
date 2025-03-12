@@ -70,14 +70,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "<strong>Health Benefits</strong>",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>A section dedicated to explaining the potential health benefits of phytochemicals, such as their role in boosting immunity, fighting inflammation, improving digestion, and supporting skin health.</p>"
           }
         }
       },
