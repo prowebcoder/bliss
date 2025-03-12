@@ -239,7 +239,7 @@
           "settings": {
             "image": "shopify://shop_images/nature-mountains-flower-landscape-adventure.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -249,7 +249,7 @@
           "settings": {
             "image": "shopify://shop_images/prairie-woman-at-sunset.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -259,7 +259,7 @@
           "settings": {
             "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -269,7 +269,7 @@
           "settings": {
             "image": "shopify://shop_images/hiker-climbing-mountains.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
