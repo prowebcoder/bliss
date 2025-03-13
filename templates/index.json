@@ -313,18 +313,18 @@
         "collapsible_row_PdbxLx": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Where can I receive BlissThera Treatments?",
+            "icon": "plant",
+            "row_content": "<p>BlissThera Forest Medicine and Virtual Nature Therapy Treatments can be received at several locations. Visit the <a href=\"https://www.blissthera.com/book-forest-medicine-treatment\" target=\"_blank\"><span style=\"text-decoration:underline\">Book Treatment</span></a> page for the latest list of locations.</p>",
             "page": ""
           }
         },
         "collapsible_row_n6XHfB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Will BlissThera Treatments impair my driving ability?",
+            "icon": "plant",
+            "row_content": "<p>BlissThera Treatments will not impair mental focus or physical dexterity.  In fact, patients generally report feeling more focus after a treatment. </p><p>However, some patients specifically request treatments  designed to be sedating. If you request a treatment involving this outcome, you will need to arrange for post treatment transportation.</p>",
             "page": ""
           }
         }
