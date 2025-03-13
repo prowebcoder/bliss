@@ -301,6 +301,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "img_with_text_coll_earfiY": {
+      "type": "img-with-text-coll",
+      "blocks": {
+        "text_block_RLPQAc": {
+          "type": "text_block",
+          "settings": {
+            "heading": "Your Heading Here",
+            "content": "Your content goes here."
+          }
+        },
+        "image_block_1_i3M8yw": {
+          "type": "image_block_1",
+          "settings": {
+            "image_1": "shopify://shop_images/IMG_2134.jpg",
+            "image_1_url": ""
+          }
+        },
+        "image_block_2_bpVM8n": {
+          "type": "image_block_2",
+          "settings": {
+            "image_2": "shopify://shop_images/BioMedia-cartridge_53db0adc-c956-41d3-b074-115492ff109f.jpg",
+            "image_2_url": ""
+          }
+        },
+        "image_block_3_FxCfLE": {
+          "type": "image_block_3",
+          "settings": {
+            "image_3": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
+            "image_3_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_RLPQAc",
+        "image_block_1_i3M8yw",
+        "image_block_2_bpVM8n",
+        "image_block_3_FxCfLE"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -310,6 +350,7 @@
     "image_with_text_DfCirf",
     "featured_collection",
     "video",
-    "multicolumn_An46Jq"
+    "multicolumn_An46Jq",
+    "img_with_text_coll_earfiY"
   ]
 }
