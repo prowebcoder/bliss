@@ -78,7 +78,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Will a BlissThera Treatment cause a positive drug screen result?",
-            "icon": "check_mark",
+            "icon": "question_mark",
             "row_content": "<p>No. </p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
             "page": ""
           }
