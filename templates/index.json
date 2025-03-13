@@ -330,8 +330,8 @@
         "button_gGKAyi": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Learn More About us",
+            "button_link": "#",
             "button_style_secondary": false
           }
         }
