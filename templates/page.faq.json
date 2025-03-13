@@ -73,6 +73,15 @@
             "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms. </p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_nQPLJF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will a BlissThera Treatment cause a positive drug screen result?",
+            "icon": "check_mark",
+            "row_content": "<p>No. </p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -81,7 +90,8 @@
         "collapsible_row_dqhhWp",
         "collapsible_row_bmLQtD",
         "collapsible_row_c9hFkT",
-        "collapsible_row_iKAgNe"
+        "collapsible_row_iKAgNe",
+        "collapsible_row_nQPLJF"
       ],
       "settings": {
         "caption": "",
