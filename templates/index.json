@@ -141,6 +141,64 @@
         "padding_bottom": 36
       }
     },
+    "img_with_text_coll_zWkeHc": {
+      "type": "img-with-text-coll",
+      "blocks": {
+        "caption_R6W7RG": {
+          "type": "caption",
+          "settings": {
+            "caption": "Phytochemical Synergy",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_majwiM": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Essence of BlissThera®",
+            "heading_size": "h1"
+          }
+        },
+        "text_6RUm7k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of BlissThera<strong>® </strong>is the concept of <strong>phytochemical synergy</strong>, where plant-derived compounds—terpenes, flavonoids, and other bioactive plant molecules—are delivered in carefully controlled combinations to enhance and support the body’s ability to regulate its homeostatic mechanisms. This therapeutic synergy occurs when multiple phytochemicals interact with various receptor systems in the body, amplifying their collective therapeutic effects.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_gGKAyi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More About us",
+            "button_link": "#",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_R6W7RG",
+        "heading_majwiM",
+        "text_6RUm7k",
+        "button_gGKAyi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
+        "image_2": "shopify://shop_images/1e4918_3e6f7a892f984c5085a5b901c6161736_mv2.jpg",
+        "image_3": "shopify://shop_images/hand-on-tree-bark.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
+        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
     "image_with_text_DfCirf": {
       "type": "image-with-text",
       "blocks": {
@@ -231,64 +289,6 @@
         "padding_bottom": 36
       }
     },
-    "img_with_text_coll_zWkeHc": {
-      "type": "img-with-text-coll",
-      "blocks": {
-        "caption_R6W7RG": {
-          "type": "caption",
-          "settings": {
-            "caption": "Phytochemical Synergy",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_majwiM": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Essence of BlissThera®",
-            "heading_size": "h1"
-          }
-        },
-        "text_6RUm7k": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At the heart of BlissThera<strong>® </strong>is the concept of <strong>phytochemical synergy</strong>, where plant-derived compounds—terpenes, flavonoids, and other bioactive plant molecules—are delivered in carefully controlled combinations to enhance and support the body’s ability to regulate its homeostatic mechanisms. This therapeutic synergy occurs when multiple phytochemicals interact with various receptor systems in the body, amplifying their collective therapeutic effects.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_gGKAyi": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn More About us",
-            "button_link": "#",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_R6W7RG",
-        "heading_majwiM",
-        "text_6RUm7k",
-        "button_gGKAyi"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
-        "image_2": "shopify://shop_images/1e4918_3e6f7a892f984c5085a5b901c6161736_mv2.jpg",
-        "image_3": "shopify://shop_images/hand-on-tree-bark.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "padding_top": 36,
-        "padding_bottom": 20
-      }
-    },
     "collapsible_content_Ea3qKc": {
       "type": "collapsible-content",
       "blocks": {
@@ -366,10 +366,10 @@
     "slideshow_QmnCrw",
     "rich_text",
     "collection_list_BXjWFR",
+    "img_with_text_coll_zWkeHc",
     "image_with_text_DfCirf",
     "featured_collection",
     "video",
-    "img_with_text_coll_zWkeHc",
     "collapsible_content_Ea3qKc"
   ]
 }
