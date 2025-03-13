@@ -1,4 +1,38 @@
+{% style %}
+.map-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
 
+.map-section__text {
+  width: 45%;
+  text-align: left;
+}
+
+.map-section__text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.map-section__text p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.map-section__map {
+  width: 45%;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.map-section__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+  {% endstyle %}
 
 <div class="map-section">
   <div class="map-section__text">
