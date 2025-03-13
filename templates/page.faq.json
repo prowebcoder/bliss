@@ -82,6 +82,24 @@
             "row_content": "<p>No. </p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_Q8CYbe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my insurance , or medicare pay for a BlissThera treatment?",
+            "icon": "question_mark",
+            "row_content": "<p>Some Health Savings Accounts (HSA) may allow payment of BlissThera Therapies. But otherwise, at this point in time insurance and federal programs do not cover BlissThera Forest Medicine Therapies.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_G4wXcF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -91,7 +109,9 @@
         "collapsible_row_bmLQtD",
         "collapsible_row_c9hFkT",
         "collapsible_row_iKAgNe",
-        "collapsible_row_nQPLJF"
+        "collapsible_row_nQPLJF",
+        "collapsible_row_Q8CYbe",
+        "collapsible_row_G4wXcF"
       ],
       "settings": {
         "caption": "",
