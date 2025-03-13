@@ -35,9 +35,10 @@
   .image-block img {
     width: 100%;  /* Ensures the image fills the width */
     height: 100%;  /* Ensures the image fits the height */
-    object-fit: cover; /* This will crop the image to fit and maintain the aspect ratio */
+    object-fit: contain; /* Ensures the image is not cropped and fits entirely */
   }
 {% endstyle %}
+
 
 
 <div class="text-image-collage-section">
