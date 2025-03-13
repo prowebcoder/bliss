@@ -1,52 +1,48 @@
 .image-with-text__media-item {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.image-collage-container {
+.image-with-text__media-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.main-image-container {
+  position: relative;
+  width: 60%; /* Adjust the width of the main image */
+}
+
+.collage-images {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: -30%; /* Move the collage images to the left */
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.image-collage__item {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  width: 40%;
-}
-
-.image-collage__item.left {
-  left: -10%;
+.collage-image-container {
+  margin-bottom: 10px; /* Space between the two left images */
 }
 
 .collage-image {
-  width: 100%;
+  width: 120%; /* Make these images slightly larger */
   height: auto;
   object-fit: cover;
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
 }
 
-/* Adjusting the main image's position */
-.image-with-text__media {
-  position: relative;
-  z-index: 2;
-}
-
-/* Optional: Add styles for the image behavior if needed */
-.animate--ambient,
-.animate--zoom-in {
-  transition: transform 0.3s ease-in-out;
-}
-
-.animate--ambient:hover,
-.animate--zoom-in:hover {
-  transform: scale(1.1);
+/* Optional: Add hover animation for the images */
+.collage-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .image-with-text .grid {
