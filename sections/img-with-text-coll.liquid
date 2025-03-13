@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: auto;
+    flex: 1;
   }
 
   .image-block {
@@ -60,7 +60,6 @@
               </a>
             </div>
           {% endif %}
-          
           {% if block.type == 'image_block_2' %}
             <div class="image-block">
               <a href="{{ block.settings.image_2_url }}">
