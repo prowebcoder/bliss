@@ -95,9 +95,9 @@
         "collapsible_row_G4wXcF": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Does a physician have to prescribe a BlissThera treatment?",
+            "icon": "question_mark",
+            "row_content": "<p>No.</p><p>Although physicians use the BlissThera system, a prescription is not required. </p>",
             "page": ""
           }
         }
