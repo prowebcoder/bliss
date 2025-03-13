@@ -28,13 +28,17 @@
 
   .image-block {
     width: 100%;
+    height: 300px; /* Set the desired height */
+    overflow: hidden; /* Ensures images fit within the block */
   }
 
   .image-block img {
-    width: 100%;
-    height: auto;
+    width: 100%;  /* Ensures the image fills the width */
+    height: 100%;  /* Ensures the image fits the height */
+    object-fit: cover; /* This will crop the image to fit and maintain the aspect ratio */
   }
 {% endstyle %}
+
 
 <div class="text-image-collage-section">
   <div class="left-column">
