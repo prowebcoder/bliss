@@ -349,7 +349,7 @@
         "caption": "",
         "heading": "Frequently asked questions",
         "heading_size": "h1",
-        "heading_alignment": "center",
+        "heading_alignment": "left",
         "layout": "row",
         "container_color_scheme": "",
         "color_scheme": "scheme-2",
