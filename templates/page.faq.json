@@ -64,6 +64,15 @@
             "row_content": "<p>Experiencing a BlissThera  Forest Medicine Therapy is analogous to taking a walk in nature (without getting tired from the walk). Though many people often find nature walks an important part of their routine,  by no means is this considered \"addicting\".</p>",
             "page": ""
           }
+        },
+        "collapsible_row_iKAgNe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I have withdrawal systems if I stop using BlissThera?",
+            "icon": "question_mark",
+            "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms. </p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -71,7 +80,8 @@
         "collapsible_row_NdYGmY",
         "collapsible_row_dqhhWp",
         "collapsible_row_bmLQtD",
-        "collapsible_row_c9hFkT"
+        "collapsible_row_c9hFkT",
+        "collapsible_row_iKAgNe"
       ],
       "settings": {
         "caption": "",
