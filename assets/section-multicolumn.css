@@ -226,11 +226,7 @@
   margin-left: 0.8rem;
   white-space: nowrap;
 }
-.multicolumn-card__info {
-    position: absolute;
-    bottom: 0;
-}
-
+ 
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
