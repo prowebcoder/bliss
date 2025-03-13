@@ -231,77 +231,6 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_An46Jq": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_pUU6t4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/nature-mountains-flower-landscape-adventure.jpg",
-            "title": "Column",
-            "heading_title_color": "#ffffff",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_ax4UCJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/prairie-woman-at-sunset.jpg",
-            "title": "Column",
-            "heading_title_color": "#ffffff",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_aGjwMW": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
-            "title": "Column",
-            "heading_title_color": "#ffffff",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_tmMWDn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/hiker-climbing-mountains.jpg",
-            "title": "Column",
-            "heading_title_color": "#ffffff",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_pUU6t4",
-        "column_ax4UCJ",
-        "column_aGjwMW",
-        "column_tmMWDn"
-      ],
-      "settings": {
-        "title": "Explore Popular Origins",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "img_with_text_coll_zWkeHc": {
       "type": "img-with-text-coll",
       "blocks": {
@@ -368,7 +297,6 @@
     "image_with_text_DfCirf",
     "featured_collection",
     "video",
-    "multicolumn_An46Jq",
     "img_with_text_coll_zWkeHc"
   ]
 }
