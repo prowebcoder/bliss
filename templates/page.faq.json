@@ -131,7 +131,7 @@
         "layout": "row",
         "container_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "color_scheme": "",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
