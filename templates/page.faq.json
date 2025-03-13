@@ -106,7 +106,7 @@
           "settings": {
             "heading": "Can we offer BlissThera Therapies to our Clinic or MedSpa?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes.<a href=\"https://www.blissthera.com/contact\" target=\"_blank\"><span style=\"text-decoration:underline\">Contact us</span></a> to start a conversation.</p>",
             "page": ""
           }
         }
