@@ -1,7 +1,8 @@
+{%- assign id = '#shopify-section-' | append: section.id -%}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
-{%- assign id = '#shopify-section-' | append: section.id -%}
+
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
    {{id}} .slideshow__controls.slideshow__controls--top.slider-buttons.slideshow__controls--border-radius-mobile {
