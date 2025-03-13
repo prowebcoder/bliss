@@ -335,6 +335,8 @@
       ],
       "settings": {
         "image": "shopify://shop_images/ethics1_400x400_70487b58-d889-4438-9190-569758c23166.png",
+        "image_2": "shopify://shop_images/about_400x400_b8fdae5e-1e1a-46a8-ba09-61ea8fe692e7.png",
+        "image_3": "shopify://shop_images/coffea_diversa_800x800_fcafc502-ec05-44cd-ae93-4fbaec702323.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
