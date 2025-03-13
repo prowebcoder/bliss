@@ -308,7 +308,7 @@
         "caption_R6W7RG": {
           "type": "caption",
           "settings": {
-            "caption": "Add a tagline",
+            "caption": "",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -316,7 +316,7 @@
         "heading_majwiM": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "The Essence of BlissThera®",
             "heading_size": "h1"
           }
         },
