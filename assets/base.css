@@ -1133,7 +1133,7 @@ summary::-webkit-details-marker {
 }
 
 .media--square {
-  padding-bottom: 100%;
+  /* padding-bottom: 100%; */
 }
 
 .media--portrait {
