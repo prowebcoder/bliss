@@ -327,13 +327,23 @@
             "row_content": "<p>BlissThera Treatments will not impair mental focus or physical dexterity.  In fact, patients generally report feeling more focus after a treatment. </p><p>However, some patients specifically request treatments  designed to be sedating. If you request a treatment involving this outcome, you will need to arrange for post treatment transportation.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_zBwUXL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I become addicted to BlissThera Treatments?",
+            "icon": "plant",
+            "row_content": "<p>Experiencing a BlissThera  Forest Medicine Therapy is analogous to taking a walk in nature (without getting tired from the walk). Though many people often find nature walks an important part of their routine,  by no means is this considered \"addicting\".</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_BRbaBp",
         "collapsible_row_KFgEXp",
         "collapsible_row_PdbxLx",
-        "collapsible_row_n6XHfB"
+        "collapsible_row_n6XHfB",
+        "collapsible_row_zBwUXL"
       ],
       "settings": {
         "caption": "",
