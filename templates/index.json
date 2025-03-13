@@ -305,6 +305,14 @@
     "img_with_text_coll_zWkeHc": {
       "type": "img-with-text-coll",
       "blocks": {
+        "caption_R6W7RG": {
+          "type": "caption",
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_majwiM": {
           "type": "heading",
           "settings": {
@@ -329,6 +337,7 @@
         }
       },
       "block_order": [
+        "caption_R6W7RG",
         "heading_majwiM",
         "text_6RUm7k",
         "button_gGKAyi"
