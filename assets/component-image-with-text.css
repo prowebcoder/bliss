@@ -2,7 +2,9 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .image-with-text__media-container {
@@ -13,37 +15,38 @@
 }
 
 .main-image-container {
-  position: relative;
-  width: 60%; /* Adjust the width of the main image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 2; /* Make the main image take up 2/3 of the width */
+  margin-right: 20px; /* Space between main image and collage images */
 }
 
 .collage-images {
-  display: grid;
-  grid-template-columns: 1fr; /* Stack the images vertically */
-  grid-gap: 20px; /* Equal gap between the images */
-  position: relative;
-  width: 30%; /* Adjust width for the left images */
+  flex: 1; /* Make the collage container take up 1/3 of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Full height of the container */
 }
 
 .collage-image-container {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 10px; /* Space between images in the collage */
 }
 
 .collage-image {
   width: 100%;
-  height: 100%; /* Equal height for all images */
-  object-fit: cover; /* Ensures images cover the container while maintaining their aspect ratio */
+  height: 200px; /* Equal height for the collage images */
+  object-fit: cover;
   border-radius: 10px; /* Optional: Add border-radius for rounded corners */
 }
 
-/* Optional: Add hover animation for the images */
-.collage-image:hover {
+.main-image-container img {
+  width: 100%;
+  height: 400px; /* The main image is taller */
+  object-fit: cover;
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.collage-image:hover, .main-image-container img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
