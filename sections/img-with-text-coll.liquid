@@ -2,6 +2,7 @@
   .text-image-collage-section {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .left-column {
@@ -10,26 +11,22 @@
   }
 
   .right-column {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex: 1;
   }
 
   .image-collage {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
   }
 
   .left-images {
     display: flex;
-    flex: 1;
+    flex-direction: column;
     gap: 20px;
+    flex: 1;
   }
 
   .image-block {
-    flex: 1;
     width: 100%;
   }
 
@@ -50,9 +47,10 @@
       {% endif %}
     {% endfor %}
   </div>
-  
+
   <div class="right-column">
     <div class="image-collage">
+      <!-- Left Column for the First Two Images (Stacked Vertically) -->
       <div class="left-images">
         {% for block in section.blocks %}
           {% if block.type == 'image_block_1' %}
@@ -70,6 +68,8 @@
           {% endif %}
         {% endfor %}
       </div>
+
+      <!-- Right Column for the Third Image -->
       <div class="image-block">
         {% for block in section.blocks %}
           {% if block.type == 'image_block_3' %}
