@@ -5,10 +5,7 @@
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
-.slideshow__controls.slideshow__controls--top.slider-buttons.slideshow__controls--border-radius-mobile {
-    position: absolute;
-    bottom: 0;
-}
+ 
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before,
