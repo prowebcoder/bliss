@@ -1,6 +1,148 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{% style %}
+  .text-image-collage-section {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .left-column {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .right-column {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .image-block {
+    flex: 1;
+    width: 100%;
+  }
+
+  .image-block img {
+    width: 100%;
+    height: auto;
+  }
+{% endstyle %}
+
+<div class="text-image-collage-section">
+  <div class="left-column">
+    {% for block in section.blocks %}
+      {% if block.type == 'text_block' %}
+        <div class="text-block">
+          <h2>{{ block.settings.heading }}</h2>
+          <div class="text-content">{{ block.settings.content }}</div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  
+  <div class="right-column">
+    <div class="image-collage">
+      {% for block in section.blocks %}
+        {% if block.type == 'image_block_1' %}
+          <div class="image-block">
+            <a href="{{ block.settings.image_1_url }}">
+              <img src="{{ block.settings.image_1 | img_url: 'medium' }}" alt="Image 1">
+            </a>
+          </div>
+        {% elsif block.type == 'image_block_2' %}
+          <div class="image-block">
+            <a href="{{ block.settings.image_2_url }}">
+              <img src="{{ block.settings.image_2 | img_url: 'medium' }}" alt="Image 2">
+            </a>
+          </div>
+        {% elsif block.type == 'image_block_3' %}
+          <div class="image-block">
+            <a href="{{ block.settings.image_3_url }}">
+              <img src="{{ block.settings.image_3 | img_url: 'medium' }}" alt="Image 3">
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Collage",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Your Heading Here"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "Your content goes here."
+        }
+      ]
+    },
+    {
+      "type": "image_block_1",
+      "name": "Image Block 1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1"
+        },
+        {
+          "type": "url",
+          "id": "image_1_url",
+          "label": "Link for Image 1"
+        }
+      ]
+    },
+    {
+      "type": "image_block_2",
+      "name": "Image Block 2",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2"
+        },
+        {
+          "type": "url",
+          "id": "image_2_url",
+          "label": "Link for Image 2"
+        }
+      ]
+    },
+    {
+      "type": "image_block_3",
+      "name": "Image Block 3",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image 3"
+        },
+        {
+          "type": "url",
+          "id": "image_3_url",
+          "label": "Link for Image 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Collage",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
