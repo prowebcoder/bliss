@@ -11,7 +11,7 @@
   }
 
   .right-column {
-    flex: 2;
+    flex: 1;
   }
 
   .image-collage {
@@ -52,6 +52,7 @@
     <div class="image-collage">
       <!-- Left Column for the First Two Images (Stacked Vertically) -->
       <div class="left-images">
+        {% assign image_counter = 0 %}
         {% for block in section.blocks %}
           {% if block.type == 'image_block_1' %}
             <div class="image-block">
@@ -59,12 +60,17 @@
                 <img src="{{ block.settings.image_1 | img_url: 'medium' }}" alt="Image 1">
               </a>
             </div>
+            {% assign image_counter = image_counter | plus: 1 %}
           {% elsif block.type == 'image_block_2' %}
             <div class="image-block">
               <a href="{{ block.settings.image_2_url }}">
                 <img src="{{ block.settings.image_2 | img_url: 'medium' }}" alt="Image 2">
               </a>
             </div>
+            {% assign image_counter = image_counter | plus: 1 %}
+          {% endif %}
+          {% if image_counter == 2 %}
+            {% break %}
           {% endif %}
         {% endfor %}
       </div>
