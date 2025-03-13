@@ -58,7 +58,18 @@
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
           </div>
-          tht
+          <!-- Collage images -->
+    {% if section.settings.image_2 != blank %}
+      <div class="image-collage__item">
+        <img src="{{ section.settings.image_2 | image_url: width: 1500 }}" alt="Collage Image 2" class="collage-image" />
+      </div>
+    {% endif %}
+
+    {% if section.settings.image_3 != blank %}
+      <div class="image-collage__item">
+        <img src="{{ section.settings.image_3 | image_url: width: 1500 }}" alt="Collage Image 3" class="collage-image" />
+      </div>
+    {% endif %}
         </div>
         <div class="image-with-text__text-item grid__item">
           <div
