@@ -19,6 +19,7 @@
     },
     "contact_form_i8MMAE": {
       "type": "contact-form",
+      "disabled": true,
       "settings": {
         "heading": "Contact form",
         "heading_size": "h1",
