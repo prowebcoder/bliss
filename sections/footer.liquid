@@ -53,7 +53,7 @@
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
-      <div class="footer__content-top newletter-side{%- if section.settings.newsletter_left -%} -reverse {% endif %}">
+      <div class="page-width footer__content-top newletter-side{%- if section.settings.newsletter_left -%} -reverse {% endif %}">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -70,7 +70,6 @@
               data-cascade
             {% endif %}
           >
-            <div class="page-width">
             {%- for block in section.blocks -%}
               <div
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -230,18 +229,17 @@
       </div>
     </div>
   </div>
-            </div>   
           </div>
         {%- endif -%}
 
         <div
-          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} gradient block-{{ block.id }}-padding"
+          class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} color-{{ section.settings.newsletter_color_scheme }} gradient block-{{ block.id }}-padding"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
         >
           {%- if section.settings.newsletter_enable -%}
-            <div class="footer-block__newsletter color-{{ section.settings.newsletter_color_scheme }}">
+            <div class="footer-block__newsletter">
               {%- if section.settings.newsletter_heading != blank -%}
                 <h2 class="inline-richtext h1">{{ section.settings.newsletter_heading }}</h2>
               {%- endif -%}
