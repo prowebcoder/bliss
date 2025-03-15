@@ -14,12 +14,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "brand_information_XxYtqx": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
-          }
-        },
         "footer-1": {
           "type": "link_list",
           "settings": {
@@ -43,7 +37,6 @@
         }
       },
       "block_order": [
-        "brand_information_XxYtqx",
         "footer-1",
         "footer-0",
         "footer-2"
