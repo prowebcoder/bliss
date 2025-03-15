@@ -37,7 +37,9 @@
     padding-right: calc(4rem / var(--font-body-scale));
   }
 }
-
+.newletter-side-reverse {
+    flex-direction: row-reverse;
+}
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
     row-gap: 6rem;
