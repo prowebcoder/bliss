@@ -46,6 +46,13 @@
   .footer__blocks-wrapper {
   padding: 0 9rem;
 }
+    .footer-block--newsletter {
+    width: 43%;
+    position: relative;
+}
+  .footer__blocks-wrapper {
+    width: 57%;
+}
 }
 
 .footer__content-bottom {
