@@ -270,7 +270,8 @@
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
                     </label>
-                    <button
+                  </div>
+                  <button
                       type="submit"
                       class="button"
                       name="commit"
@@ -282,7 +283,6 @@
                         {{- 'icon-arrow.svg' | inline_asset_content -}}
                       </span>-->
                     </button>
-                  </div>
                   {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="ContactFooter-error">
                       <span class="svg-wrapper">
