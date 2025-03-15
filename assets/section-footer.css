@@ -10,10 +10,7 @@
 .footer__content-top {
     display: flex;
     justify-content: space-between;
-}
-.footer-block--newsletter {
-    width: 100%;
-}
+}}
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
@@ -54,6 +51,13 @@
     height: 100%;
     right: unset;
     left: 0;
+}
+  .footer-block--newsletter {
+    width: 40%;
+    position: relative;
+}
+  .footer__blocks-wrapper {
+    width: 60%;
 }
 }
 
