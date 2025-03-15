@@ -53,7 +53,7 @@
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
-      <div class="footer__content-top newletter-side{%- if section.settings.newsletter_left -%} -reverse {% endif %}">
+      <div class="page-width footer__content-top newletter-side{%- if section.settings.newsletter_left -%} -reverse {% endif %}">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
