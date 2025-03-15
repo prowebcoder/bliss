@@ -6,9 +6,7 @@
   border-top: none;
 }
 
-.footer__blocks-wrapper {
-  padding: 0 3rem;
-}
+
 .footer__content-top {
     display: flex;
     justify-content: space-between;
@@ -47,6 +45,9 @@
   }
   .footer-block--newsletter {
     padding-left: 4rem;
+}
+  .footer__blocks-wrapper {
+  padding: 0 9rem;
 }
 }
 
