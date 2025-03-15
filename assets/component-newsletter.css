@@ -17,6 +17,8 @@
 
 .newsletter-form__field-wrapper {
   width: 100%;
+  display: flex;
+    gap: 1rem;
 }
 
 .newsletter-form__field-wrapper .field__input {
