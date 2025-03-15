@@ -13,6 +13,9 @@
     display: flex;
     justify-content: space-between;
 }
+.footer-block--newsletter {
+    width: 100%;
+}
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
