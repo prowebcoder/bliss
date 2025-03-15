@@ -128,10 +128,9 @@
 }
 
 .footer-block--newsletter {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 3rem;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
 }
 
 .footer-block--newsletter:only-child {
