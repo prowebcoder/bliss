@@ -14,6 +14,10 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+           .block-{{ block.id }}-padding {
+    padding-top: {{ section.settings.block_padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.block_padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
   @media screen and (min-width: 750px) {
     .footer {
@@ -67,12 +71,6 @@
             {% endif %}
           >
             {%- for block in section.blocks -%}
-              {% style %}
-                 .block-{{ block.id }}-padding {
-    padding-top: {{ block.settings.block_padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ block.settings.block_padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-                {% endstyle %}
               <div
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
