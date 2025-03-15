@@ -61,12 +61,18 @@
             endif
           -%}
           <div
-            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper block-{{ block.id }}-padding grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
           >
             {%- for block in section.blocks -%}
+              {% style %}
+                 .block-{{ block.id }}-padding {
+    padding-top: {{ block.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ block.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+                {% endstyle %}
               <div
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
