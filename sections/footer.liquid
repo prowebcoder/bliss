@@ -80,14 +80,14 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="accordion footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="accordions footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
 
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
-                    <div class="footer-block__details-content rte">
+                    <div class="panel footer-block__details-content rte">
                       {{ block.settings.subtext }}
                     </div>
                   {%- when 'link_list' -%}
@@ -329,7 +329,7 @@
 <script>
 function initializeAccordion() {
   if (window.innerWidth < 768) { // Only run script for mobile screens
-    var acc = document.getElementsByClassName("accordion");
+    var acc = document.getElementsByClassName("accordions");
     for (var i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function() {
         this.classList.toggle("active");
