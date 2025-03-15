@@ -94,7 +94,7 @@
     opacity: 1;
     transform: inherit;
   }
-  .accordion {
+  .accordions {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -105,7 +105,7 @@
 
 
 
-.accordion:after {
+.accordions:after {
   content: '\002B';
   float: right;
   margin-left: 5px;
