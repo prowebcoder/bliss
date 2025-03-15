@@ -382,7 +382,9 @@
     display: inline-block;
     font-size: 1.2rem;
   }
-
+    .footer-block__details-content {
+        font-size: 1.2rem;
+    }
   .footer-block__details-content > :first-child .list-menu__item--link {
     padding-top: 0;
   }
