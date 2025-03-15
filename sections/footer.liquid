@@ -326,7 +326,29 @@
       </div>
     {%- endunless -%}
   {%- endif -%}
+<script>
+function initializeAccordion() {
+  if (window.innerWidth < 768) { // Only run script for mobile screens
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  }
+}
 
+window.onload = initializeAccordion;
+window.onresize = function() {
+  location.reload(); // Reload page when resizing to apply or remove accordion functionality
+};
+</script>
   
 </footer>
 
