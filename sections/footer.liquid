@@ -53,7 +53,7 @@
     or section.settings.enable_follow_on_shop
   -%}
     {%- unless only_empty_brand -%}
-      <div class="page-width footer__content-top newletter-side{%- if section.settings.newsletter_left -%} -reverse {% endif %}">
+      <div class="footer__content-top newletter-side{%- if section.settings.newsletter_left -%} -reverse {% endif %}">
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -65,7 +65,7 @@
             endif
           -%}
           <div
-            class="footer__blocks-wrapper block-{{ block.id }}-padding grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="page-width footer__blocks-wrapper block-{{ block.id }}-padding grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
