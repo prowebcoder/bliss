@@ -43,6 +43,9 @@
     row-gap: 6rem;
     margin-bottom: 0;
   }
+  .footer-block--newsletter {
+    padding: 4rem;
+}
 }
 
 .footer__content-bottom {
@@ -67,7 +70,9 @@
     padding-right: 0;
     row-gap: 1.5rem;
   }
-
+ .footer-block--newsletter {
+    padding: 2rem;
+}
   .footer__content-bottom-wrapper {
     flex-wrap: wrap;
     row-gap: 1.5rem;
