@@ -37,6 +37,7 @@
         },
         "newsletter_AhUCN7": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "newsletter_heading": "Subscribe to our emails"
           }
@@ -50,7 +51,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-4",
-        "newsletter_enable": false,
+        "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
