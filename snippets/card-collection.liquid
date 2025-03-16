@@ -92,11 +92,16 @@
                 {% endif %}
                 class="full-unstyled-link"
               >
+                {% if block.settings.title != blank %}
+                    {{ block.settings.title }}
+                {% else %}
+              
                 {%- if card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
+                  {% endif %}
                 {%- if card_collection.description == blank -%}
                  
                 {%- endif %}
