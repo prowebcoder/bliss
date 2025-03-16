@@ -32,28 +32,40 @@
           "type": "featured_collection",
           "settings": {
             "collection": "biomedia®-cartridges",
-            "content_align": "center"
+            "content_align": "center",
+            "title": "Collection title",
+            "inline_text": "Inline Text",
+            "text_color": "#ffffff"
           }
         },
         "featured_collection_4Rtcz6": {
           "type": "featured_collection",
           "settings": {
             "collection": "blissthera®-hardware",
-            "content_align": "center"
+            "content_align": "center",
+            "title": "Collection title",
+            "inline_text": "Inline Text",
+            "text_color": "#ffffff"
           }
         },
         "featured_collection_MB48hT": {
           "type": "featured_collection",
           "settings": {
             "collection": "blissthera-flute-biomedia",
-            "content_align": "center"
+            "content_align": "center",
+            "title": "Collection title",
+            "inline_text": "Inline Text",
+            "text_color": "#ffffff"
           }
         },
         "featured_collection_6rpdQz": {
           "type": "featured_collection",
           "settings": {
             "collection": "biomedia®-solutions",
-            "content_align": "center"
+            "content_align": "center",
+            "title": "Collection title",
+            "inline_text": "Inline Text",
+            "text_color": "#ffffff"
           }
         }
       },
