@@ -81,7 +81,7 @@
           {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {%- else -%}
-        <div class="card__content">
+        <div class="card__content content__align-{{ card_align }}">
           <div class="card__information">
             <h3 class="card__heading">
               <a
@@ -113,7 +113,7 @@
       {%- endif -%}
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
-      <div class="card__content">
+      <div class="card__content content__align-{{ card_align }}">
         <div class="card__information">
           <h3 class="card__heading">
             <a
