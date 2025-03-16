@@ -70,7 +70,7 @@
         "col_style": "1",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "background": "linear-gradient(180deg, rgba(37, 35, 35, 1), rgba(0, 0, 0, 0.05) 100%)",
+        "background": "linear-gradient(180deg, rgba(18, 18, 18, 0.28) 100%, rgba(0, 0, 0, 0.05) 100%)",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
