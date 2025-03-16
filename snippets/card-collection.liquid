@@ -90,7 +90,7 @@
                 {% else %}
                   href="{{ card_collection.url }}"
                 {% endif %}
-                class="full-unstyled-link" style="{{ block.settings.text_color }}"
+                class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
               >
                 {% if block.settings.title != blank %}
                     {{ block.settings.title }}
@@ -109,7 +109,7 @@
             </h3>
            {% if block.settings.inline_text != blank %}
                  
-               <p class="card__caption" style="{{ block.settings.text_color }}">
+               <p class="card__caption" style="color:{{ block.settings.text_color }}">
                
                {{ block.settings.inline_text }}
             
@@ -117,7 +117,7 @@
                 {% else %}
             {%- if card_collection.description != blank -%}
               
-              <p class="card__caption" style="{{ block.settings.text_color }}">
+              <p class="card__caption" style="color:{{ block.settings.text_color }}">
                
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
             
@@ -139,7 +139,7 @@
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
-              class="full-unstyled-link" style="{{ block.settings.text_color }}"
+              class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
             >
                 {% if block.settings.title != blank %}
                     {{ block.settings.title }}
@@ -158,14 +158,14 @@
           </h3>
                {% if block.settings.inline_text != blank %}
                    
-               <p class="card__caption" style="{{ block.settings.text_color }}">
+               <p class="card__caption" style="color:{{ block.settings.text_color }}">
                
                {{ block.settings.inline_text }}
             
               </p>
                 {% else %}
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
-            <p class="card__caption" style="{{ block.settings.text_color }}">
+            <p class="card__caption" style="color:{{ block.settings.text_color }}">
                {% if block.settings.inline_text != blank %}
                     {{ block.settings.inline_text }}
                 {% else %}
@@ -182,7 +182,7 @@
       <div class="card__content content__align-{{ card_align }}">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder">
-            <a role="link" aria-disabled="true" class="full-unstyled-link" style="{{ block.settings.text_color }}">
+            <a role="link" aria-disabled="true" class="full-unstyled-link" style="color:{{ block.settings.text_color }}">
               {{ 'onboarding.collection_title' | t }}
              
             </a>
