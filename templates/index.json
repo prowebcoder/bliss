@@ -56,53 +56,6 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_BXjWFR": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_PtwTVE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "biomedia®-cartridges"
-          }
-        },
-        "featured_collection_4Rtcz6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "blissthera®-hardware"
-          }
-        },
-        "featured_collection_MB48hT": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "blissthera-flute-biomedia"
-          }
-        },
-        "featured_collection_6rpdQz": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "biomedia®-solutions"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_PtwTVE",
-        "featured_collection_4Rtcz6",
-        "featured_collection_MB48hT",
-        "featured_collection_6rpdQz"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "img_with_text_coll_zWkeHc": {
       "type": "img-with-text-coll",
       "blocks": {
@@ -159,6 +112,53 @@
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "padding_top": 36,
         "padding_bottom": 20
+      }
+    },
+    "collection_list_BXjWFR": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_PtwTVE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "biomedia®-cartridges"
+          }
+        },
+        "featured_collection_4Rtcz6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "blissthera®-hardware"
+          }
+        },
+        "featured_collection_MB48hT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "blissthera-flute-biomedia"
+          }
+        },
+        "featured_collection_6rpdQz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "biomedia®-solutions"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_PtwTVE",
+        "featured_collection_4Rtcz6",
+        "featured_collection_MB48hT",
+        "featured_collection_6rpdQz"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "image_with_text_DfCirf": {
@@ -336,8 +336,8 @@
   "order": [
     "image_banner_XJPmhF",
     "rich_text",
-    "collection_list_BXjWFR",
     "img_with_text_coll_zWkeHc",
+    "collection_list_BXjWFR",
     "image_with_text_DfCirf",
     "featured_collection",
     "video",
