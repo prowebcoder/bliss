@@ -388,7 +388,8 @@
 
   .card:hover .media.media--hover-effect > img:first-child:only-child,
   .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
-   opacity:.8
+   opacity:.8;
+      filter: blur(1px);
   }
 
   .card-wrapper:hover .media.media--hover-effect > img:first-child:not(:only-child) {
@@ -398,7 +399,7 @@
   .card-wrapper:hover .media.media--hover-effect > img + img {
     opacity: 1;
     transition: transform var(--duration-long) ease;
-          filter: blur(1px);
+        
   }
 
   .underline-links-hover:hover a {
