@@ -407,7 +407,7 @@
     text-underline-offset: 0.3rem;
   }
 }
-.card--card.card--media>.card__content.style_1{
+.style_1 .card--card.card--media>.card__content{
   position: absolute;
 }
 .card--standard.card--media .card__inner .card__information,
