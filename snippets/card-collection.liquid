@@ -90,7 +90,7 @@
                 {% else %}
                   href="{{ card_collection.url }}"
                 {% endif %}
-                class="full-unstyled-link"
+                class="full-unstyled-link" style="{{ block.settings.text_color }}"
               >
                 {% if block.settings.title != blank %}
                     {{ block.settings.title }}
@@ -108,13 +108,17 @@
               </a>
             </h3>
             {%- if card_collection.description != blank -%}
-              <p class="card__caption">
+              
+              <p class="card__caption" style="{{ block.settings.text_color }}">
+                  {% if block.settings.inline_text != blank %}
+                    {{ block.settings.inline_text }}
+                {% else %}
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
-               
+               {% endif %}
               </p>
             {%- endif -%}
           </div>
-          {{ block.settings.title }}>>>  {{ block.settings.inline_text }}
+     
         </div>
       {%- endif -%}
     </div>
@@ -128,7 +132,7 @@
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
-              class="full-unstyled-link"
+              class="full-unstyled-link" style="{{ block.settings.text_color }}"
             >
                 {% if block.settings.title != blank %}
                     {{ block.settings.title }}
@@ -146,8 +150,12 @@
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
-            <p class="card__caption">
-              {{- card_collection.description | strip_html | truncatewords: 12 -}}
+            <p class="card__caption" style="{{ block.settings.text_color }}">
+               {% if block.settings.inline_text != blank %}
+                    {{ block.settings.inline_text }}
+                {% else %}
+                {{- card_collection.description | strip_html | truncatewords: 12 -}}
+               {% endif %}
              
             </p>
           {%- endif -%}
@@ -158,7 +166,7 @@
       <div class="card__content content__align-{{ card_align }}">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder">
-            <a role="link" aria-disabled="true" class="full-unstyled-link">
+            <a role="link" aria-disabled="true" class="full-unstyled-link" style="{{ block.settings.text_color }}">
               {{ 'onboarding.collection_title' | t }}
              
             </a>
