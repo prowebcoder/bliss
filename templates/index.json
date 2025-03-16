@@ -9,6 +9,22 @@
  */
 {
   "sections": {
+    "image_banner_XJPmhF": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/BlissThera-homeostasis-therapy-phytochemcial-synergy-forest-terpenes.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -309,6 +325,7 @@
     }
   },
   "order": [
+    "image_banner_XJPmhF",
     "rich_text",
     "collection_list_BXjWFR",
     "img_with_text_coll_zWkeHc",
