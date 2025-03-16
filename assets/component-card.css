@@ -118,10 +118,10 @@
 }
 
 .card--media .card__inner .card__content {
-  position: relative;
-  padding: calc(var(--image-padding) + 1rem);
+    position: relative;
+    padding: calc(var(--image-padding) + 1rem);
+    border-radius: var(--border-radius);
 }
-
 .card__content {
   display: grid;
   grid-template-rows: minmax(0, 1fr) max-content minmax(0, 1fr);
