@@ -164,11 +164,19 @@
     "image_with_text_DfCirf": {
       "type": "image-with-text",
       "blocks": {
+        "caption_NJ66b8": {
+          "type": "caption",
+          "settings": {
+            "caption": "Bliss THera",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_GtXFG7": {
           "type": "heading",
           "settings": {
             "heading": "The <strong>SCIENCE</strong> of Homeostatic Phytochemical Synergy",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_WhLmfj": {
@@ -188,6 +196,7 @@
         }
       },
       "block_order": [
+        "caption_NJ66b8",
         "heading_GtXFG7",
         "text_WhLmfj",
         "button_w7htcp"
