@@ -25,33 +25,49 @@
         "show_text_below": true
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "collection_list_BXjWFR": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "featured_collection_PtwTVE": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Health Benefits",
-            "heading_size": "h1"
+            "collection": "biomedia®-cartridges"
           }
         },
-        "text": {
-          "type": "text",
+        "featured_collection_4Rtcz6": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>A section dedicated to explaining the potential health benefits of phytochemicals, such as their role in boosting immunity, fighting inflammation, improving digestion, and supporting skin health.</p>"
+            "collection": "blissthera®-hardware"
+          }
+        },
+        "featured_collection_MB48hT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "blissthera-flute-biomedia"
+          }
+        },
+        "featured_collection_6rpdQz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "biomedia®-solutions"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "featured_collection_PtwTVE",
+        "featured_collection_4Rtcz6",
+        "featured_collection_MB48hT",
+        "featured_collection_6rpdQz"
       ],
       "settings": {
-        "image_1": "shopify://shop_images/download.jpg",
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -112,53 +128,6 @@
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "padding_top": 36,
         "padding_bottom": 20
-      }
-    },
-    "collection_list_BXjWFR": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_PtwTVE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "biomedia®-cartridges"
-          }
-        },
-        "featured_collection_4Rtcz6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "blissthera®-hardware"
-          }
-        },
-        "featured_collection_MB48hT": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "blissthera-flute-biomedia"
-          }
-        },
-        "featured_collection_6rpdQz": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "biomedia®-solutions"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_PtwTVE",
-        "featured_collection_4Rtcz6",
-        "featured_collection_MB48hT",
-        "featured_collection_6rpdQz"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "image_with_text_DfCirf": {
@@ -335,12 +304,11 @@
   },
   "order": [
     "image_banner_XJPmhF",
-    "rich_text",
-    "img_with_text_coll_zWkeHc",
     "collection_list_BXjWFR",
     "image_with_text_DfCirf",
     "featured_collection",
     "video",
-    "collapsible_content_Ea3qKc"
+    "collapsible_content_Ea3qKc",
+    "img_with_text_coll_zWkeHc"
   ]
 }
