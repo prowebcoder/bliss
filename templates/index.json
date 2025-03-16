@@ -12,9 +12,9 @@
     "image_banner_XJPmhF": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/BlissThera-homeostasis-therapy-phytochemcial-synergy-forest-terpenes.jpg",
+        "image": "shopify://shop_images/prairie-woman-at-sunset.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
