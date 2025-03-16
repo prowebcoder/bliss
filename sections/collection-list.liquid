@@ -77,6 +77,7 @@
             {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
             {% render 'card-collection',
               card_collection: block.settings.collection,
+              block:block,
               card_align:block.settings.content_align,
               media_aspect_ratio: section.settings.image_ratio,
               columns: columns,
