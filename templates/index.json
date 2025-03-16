@@ -65,7 +65,7 @@
         "image_ratio": "square",
         "col_style": "1",
         "columns_desktop": 4,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
