@@ -156,25 +156,16 @@
               {%- endif %}
             </a>
           </h3>
-               {% if block.settings.inline_text != blank %}
-                    {{ block.settings.inline_text }}
-               <p class="card__caption" style="{{ block.settings.text_color }}">
-               
-               {{ block.settings.inline_text }}
             
-              </p>
-                {% else %}
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
             <p class="card__caption" style="{{ block.settings.text_color }}">
-               {% if block.settings.inline_text != blank %}
-                    {{ block.settings.inline_text }}
-                {% else %}
+              
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
-               {% endif %}
+            
              
             </p>
           {%- endif -%}
-          {%- endif -%}
+        
         </div>
       </div>
     {%- endif -%}
