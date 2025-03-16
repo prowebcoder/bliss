@@ -407,11 +407,14 @@
     text-underline-offset: 0.3rem;
   }
 }
-.style_1 .card--card.card--media>.card__content{
-
-    margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+.style_1 .card--card.card--media>.card__content {
+    margin: 0 auto;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
 }
 .card--standard.card--media .card__inner .card__information,
 .card--standard.card--text:not(.card--horizontal) > .card__content .card__heading:not(.card__heading--placeholder),
