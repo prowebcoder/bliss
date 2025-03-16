@@ -407,7 +407,9 @@
     text-underline-offset: 0.3rem;
   }
 }
-
+.card--card.card--media>.card__content.style_1{
+  position: absolute;
+}
 .card--standard.card--media .card__inner .card__information,
 .card--standard.card--text:not(.card--horizontal) > .card__content .card__heading:not(.card__heading--placeholder),
 .card--standard:not(.card--horizontal) > .card__content .card__badge,
