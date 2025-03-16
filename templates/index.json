@@ -9,61 +9,6 @@
  */
 {
   "sections": {
-    "slideshow_QmnCrw": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_GpidL7": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
-            "image_overlay_opacity": 0,
-            "heading": "Forest Medicine",
-            "heading_size": "h1",
-            "subheading": "Discover the Healing Power of Nature",
-            "button_label": "Book Treatment",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
-          }
-        },
-        "slide_tgVDdq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/autumn-trees-hillside.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "Forest Medicine for Well-Being",
-            "heading_size": "h1",
-            "subheading": "Embrace the Therapeutic Benefits of Forest Therapy, Stress Relief, and Nature Immersion",
-            "button_label": "Shop Now",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-right",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-3"
-          }
-        }
-      },
-      "block_order": [
-        "slide_GpidL7",
-        "slide_tgVDdq"
-      ],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "ambient",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -364,7 +309,6 @@
     }
   },
   "order": [
-    "slideshow_QmnCrw",
     "rich_text",
     "collection_list_BXjWFR",
     "img_with_text_coll_zWkeHc",
