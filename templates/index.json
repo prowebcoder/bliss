@@ -325,6 +325,7 @@
         "review_block_qXm7nU": {
           "type": "review_block",
           "settings": {
+            "image": "shopify://shop_images/hand-on-tree-bark.jpg",
             "quote_text": "Great product, would buy again!",
             "author_name": "John Doe",
             "trustpilot_rating": 5
