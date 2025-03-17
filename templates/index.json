@@ -328,6 +328,8 @@
             "image": "shopify://shop_images/11090.jpg",
             "quote_text": "Great product, would buy again!",
             "author_name": "John Doe",
+            "qoute_img_open": "shopify://shop_images/quote.png",
+            "qoute_img_close": "shopify://shop_images/double-quotes.png",
             "trustpilot_rating": 3
           }
         },
