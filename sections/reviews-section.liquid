@@ -125,7 +125,13 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                
+                {% if block.settings.trustpilot_rating %}
+          <div class="trustpilot-rating">
+            {% for i in (1..5) %}
+              <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}">★</span>
+            {% endfor %}
+          </div>
+        {% endif %}
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link animate-arrow"
