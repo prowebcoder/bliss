@@ -1,5 +1,114 @@
-{{ 'cust-reviews.css' | asset_url | stylesheet_tag }}
+<style>
+/* General Review Section */
+.review-section {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
 
+.review-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Reviews (4 Columns in One Row) */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-container {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+/* Review Block */
+.review {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+}
+
+/* Circle Image */
+.circle-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Review Text (Quote) */
+.review-text {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Author Name */
+.review-author {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Trustpilot Rating */
+.trustpilot-rating {
+  display: inline-block;
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+.trustpilot-rating .filled {
+  color: #ffcc00;
+}
+
+.trustpilot-rating .empty {
+  color: #ccc;
+}
+
+/* Custom Styling for Empty Reviews */
+.review.no-reviews {
+  background-color: #e0e0e0;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .review {
+    padding: 15px;
+  }
+}
+
+  
+</style>
 
 <div class="review-section">
   <h2 class="review-title">{{ section.settings.default_review_title }}</h2>
