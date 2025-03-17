@@ -307,7 +307,7 @@
         "image_3": "shopify://shop_images/hand-on-tree-bark.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
