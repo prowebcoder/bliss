@@ -94,6 +94,9 @@
                     {%- if block.settings.menu != blank -%}
                       <ul class="panel footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
+                          {%- comment %}<locksmith:de67>{% endcomment -%}
+                            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                          {%- comment %}</locksmith:de67>{% endcomment -%}
                           <li>
                             <a
                               href="{{ link.url }}"
