@@ -77,7 +77,7 @@
 }
 
 .trustpilot-rating .filled {
-  color: {{ section.settings.star_color }}; /* Dynamic star color from settings */
+  color: {{ block.settings.star_color }}; /* Dynamic star color from settings */
 }
 
 .trustpilot-rating .empty {
