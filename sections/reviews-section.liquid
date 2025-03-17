@@ -1,7 +1,6 @@
 {{ 'cust-reviews.css' | asset_url | stylesheet_tag }}
-<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
 
-<div class="review-section page-width section">
+<div class="review-section">
   <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.default_review_title }}</h2>
 
   <div class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
@@ -25,7 +24,7 @@
         {% endif %}
 
         <!-- Review Text/Quote -->
-        <p class="review-text">"{{ block.settings.quote_text }}"</p> 
+        <p class="review-text">"{{ block.settings.quote_text }}"</p>
 
         <!-- Author Name -->
         <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
@@ -44,7 +43,7 @@
     {% endfor %}
   </div>
 </div>
-</div>
+
 {% schema %}
 {
   "name": "Customer Reviews Section",
@@ -53,28 +52,6 @@
       "type": "header",
       "content": "Product Reviews Settings"
     },
-    {
-      "type": "select",
-      "id": "background_style",
-      "options": [
-        {
-          "value": "none",
-          "label": "t:sections.multicolumn.settings.background_style.options__1.label"
-        },
-        {
-          "value": "primary",
-          "label": "t:sections.multicolumn.settings.background_style.options__2.label"
-        }
-      ],
-      "default": "primary",
-      "label": "t:sections.multicolumn.settings.background_style.label"
-    },
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
-    }, 
     {
       "type": "textarea",
       "label": "Default Review Title",
