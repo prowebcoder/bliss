@@ -368,7 +368,7 @@
       "settings": {
         "default_review_title": "Customer Reviews",
         "text_alignment": "left",
-        "star_color": "#ffcc00",
+        "star_color": "#ffc900",
         "review_display_style": "list",
         "columns_per_row": "2"
       }
