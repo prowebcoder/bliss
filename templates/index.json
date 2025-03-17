@@ -334,6 +334,7 @@
         "review_block_bB4zUN": {
           "type": "review_block",
           "settings": {
+            "image": "shopify://shop_images/black-and-white-butterfly-sat-on-a-leaf.jpg",
             "quote_text": "Great product, would buy again!",
             "author_name": "John Doe",
             "trustpilot_rating": 5
