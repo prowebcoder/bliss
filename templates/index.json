@@ -357,13 +357,43 @@
             "author_name": "John Doe",
             "trustpilot_rating": 5
           }
+        },
+        "review_block_pkTD8A": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/BlissThera-homeostasis-therapy-phytochemcial-synergy-forest-terpenes.jpg",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 5
+          }
+        },
+        "review_block_i7EBKT": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/about_400x400_b8fdae5e-1e1a-46a8-ba09-61ea8fe692e7.png",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 5
+          }
+        },
+        "review_block_CQFqPr": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/2148643275.jpg",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 5
+          }
         }
       },
       "block_order": [
         "review_block_qXm7nU",
         "review_block_bB4zUN",
         "review_block_D4dtRm",
-        "review_block_g3aPg7"
+        "review_block_g3aPg7",
+        "review_block_pkTD8A",
+        "review_block_i7EBKT",
+        "review_block_CQFqPr"
       ],
       "settings": {
         "default_review_title": "Customer Reviews",
