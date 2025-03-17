@@ -343,6 +343,7 @@
         "review_block_D4dtRm": {
           "type": "review_block",
           "settings": {
+            "image": "shopify://shop_images/nature-mountains-flower-landscape-adventure.jpg",
             "quote_text": "Great product, would buy again!",
             "author_name": "John Doe",
             "trustpilot_rating": 5
@@ -351,6 +352,7 @@
         "review_block_g3aPg7": {
           "type": "review_block",
           "settings": {
+            "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
             "quote_text": "Great product, would buy again!",
             "author_name": "John Doe",
             "trustpilot_rating": 5
