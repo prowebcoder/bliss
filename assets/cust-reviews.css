@@ -92,8 +92,8 @@
 }
 
 .circle-image {
-    width: 50px;  /* Adjust the size of the images */
-    height: 50px; /* Adjust the size of the images */
+    width: 30px;  /* Adjust the size of the images */
+    height: 30px; /* Adjust the size of the images */
     border-radius: 50%; /* Makes the images circular */
 }
 
