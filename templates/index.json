@@ -370,7 +370,7 @@
         "color_scheme": "scheme-2",
         "default_review_title": "Customer Reviews",
         "text_alignment": "left",
-        "star_color": "#ffc900",
+        "star_color": "#10a900",
         "review_display_style": "list",
         "columns_per_row": "2"
       }
