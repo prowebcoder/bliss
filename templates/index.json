@@ -328,8 +328,6 @@
             "image": "shopify://shop_images/11090.jpg",
             "quote_text": "Great product, would buy again!",
             "author_name": "John Doe",
-            "qoute_img_open": "shopify://shop_images/quote.png",
-            "qoute_img_close": "shopify://shop_images/double-quotes.png",
             "trustpilot_rating": 3
           }
         },
@@ -368,11 +366,15 @@
         "review_block_fDjQLd"
       ],
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
         "background_style": "primary",
         "color_scheme": "scheme-2",
         "default_review_title": "See what people are saying about our coffee!",
         "text_alignment": "center",
         "star_color": "#033aff",
+        "qoute_img_open": "shopify://shop_images/quote.png",
+        "qoute_img_close": "shopify://shop_images/double-quotes.png",
         "review_display_style": "list",
         "columns_per_row": "2"
       }
