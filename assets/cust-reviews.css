@@ -1,4 +1,4 @@
-<style>
+
  /* General Review Section */
 .review-section {
   padding: 30px;
@@ -84,6 +84,24 @@
   color: #ccc;
 }
 
+.review-text::before,
+.review-text::after {
+  content: '';
+  display: inline-block;
+  width: 20px; /* Set the width of the image */
+  height: 20px; /* Set the height of the image */
+  background-size: cover; /* Ensure the image covers the area */
+}
+
+.review-text::before {
+  background-image: url('{{ block.settings.qoute_img_open }}');
+  margin-right: 5px; /* Add some space between the quote image and the text */
+}
+
+.review-text::after {
+  background-image: url('{{ block.settings.qoute_img_close }}');
+  margin-left: 5px; /* Add some space between the quote image and the text */
+}
 
 
 /* Custom Styling for Empty Reviews */
@@ -102,4 +120,3 @@
   }
 }
 
-</style>
