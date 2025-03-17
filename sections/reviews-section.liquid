@@ -31,10 +31,10 @@
         <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
 
         <!-- Trustpilot Rating (Example: 5 stars) -->
-        {% if block.settings.trustpilot_rating %}
+         {% if block.settings.trustpilot_rating %}
           <div class="trustpilot-rating">
             {% for i in (1..5) %}
-              <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}" style = "">★</span>
+              <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}" style="color: {{ block.settings.star_color }}">★</span>
             {% endfor %}
           </div>
         {% endif %}
