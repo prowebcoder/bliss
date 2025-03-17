@@ -1,5 +1,4 @@
-{% assign qoute_img_open = block.settings.qoute_img_open | img_url: 'original' %}
-{% assign qoute_img_close = block.settings.qoute_img_close | img_url: 'original' %}
+
  /* General Review Section */
 .review-section {
   padding: 30px;
