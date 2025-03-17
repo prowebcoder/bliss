@@ -321,96 +321,21 @@
     },
     "reviews_section_8rTQkn": {
       "type": "reviews-section",
-      "blocks": {
-        "review_block_qXm7nU": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/hand-on-tree-bark.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_bB4zUN": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/black-and-white-butterfly-sat-on-a-leaf.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_D4dtRm": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/nature-mountains-flower-landscape-adventure.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_g3aPg7": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_pkTD8A": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/BlissThera-homeostasis-therapy-phytochemcial-synergy-forest-terpenes.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_i7EBKT": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/about_400x400_b8fdae5e-1e1a-46a8-ba09-61ea8fe692e7.png",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_CQFqPr": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/2148643275.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_BmJY6b": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/BlissThera_Neck_Lanyard_1.png",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "review_block_qXm7nU",
-        "review_block_bB4zUN",
-        "review_block_D4dtRm",
-        "review_block_g3aPg7",
-        "review_block_pkTD8A",
-        "review_block_i7EBKT",
-        "review_block_CQFqPr",
-        "review_block_BmJY6b"
-      ],
       "settings": {
-        "default_review_title": "See what people are saying about our coffee!",
-        "text_alignment": "center",
-        "star_color": "#ffad00",
-        "review_display_style": "grid",
-        "columns_per_row": "2"
+        "title": "See what people are saying about Us",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
