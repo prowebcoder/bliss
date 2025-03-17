@@ -1,11 +1,13 @@
 {{ 'cust-reviews.css' | asset_url | stylesheet_tag }}
 
 <div class="review-section">
-  <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.default_review_title }}</h2>
+  <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">
+    {{ section.settings.default_review_title }}
+  </h2>
 
+  <!-- Reviews Container (Grid on Desktop) -->
   <div class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
     {% assign column_class = '' %}
-
     {% if settings.columns_per_row == '2' %}
       {% assign column_class = 'col-2' %}
     {% elsif settings.columns_per_row == '3' %}
@@ -42,7 +44,39 @@
       <p class="no-reviews">No reviews yet.</p>
     {% endfor %}
   </div>
+
+  <!-- Reviews Slider (For Mobile Only) -->
+  <div class="reviews-slider">
+    <div class="slider">
+      {% for block in section.blocks %}
+        <div class="review">
+          <!-- Circle Image -->
+          {% if block.settings.image %}
+            <div class="review-image">
+              <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+            </div>
+          {% endif %}
+
+          <!-- Review Text/Quote -->
+          <p class="review-text">"{{ block.settings.quote_text }}"</p>
+
+          <!-- Author Name -->
+          <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
+
+          <!-- Trustpilot Rating (Example: 5 stars) -->
+          {% if block.settings.trustpilot_rating %}
+            <div class="trustpilot-rating">
+              {% for i in (1..5) %}
+                <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}">★</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
+
 
 {% schema %}
 {
