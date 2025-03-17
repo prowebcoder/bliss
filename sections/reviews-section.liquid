@@ -37,14 +37,22 @@
         
 
         <!-- Review Text/Quote -->
-        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
-       {% if block.settings.image %}
+         {% if block.settings.image %}
           <div class="review-image">
-            <img src="{{ block.settings.qoute_img_open | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
-          </div>
+        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+            </div>
         {% endif %}
-        <p class="review-text">"{{ block.settings.quote_text }}"</p>
-       <img src="{{ block.settings.qoute_img_close | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+          <div class="review-image">
+    <!-- Open image before the text -->
+    <img src="{{ block.settings.qoute_img_open | img_url: 'medium' }}" alt="Open Icon" class="circle-image" />
+    
+    <!-- Review text in the middle -->
+    <p class="review-text">"{{ block.settings.quote_text }}"</p>
+    
+    <!-- Close image after the text -->
+    <img src="{{ block.settings.qoute_img_close | img_url: 'medium' }}" alt="Close Icon" class="circle-image" />
+</div>
+
         <!-- Author Name -->
         <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
 
