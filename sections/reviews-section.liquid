@@ -1,5 +1,6 @@
 {{ 'cust-reviews.css' | asset_url | stylesheet_tag }}
 
+
 <div class="review-section">
   <h2 class="review-title">{{ settings.default_review_title }}</h2>
 
@@ -39,7 +40,7 @@
         {% endif %}
       </div>
     {% else %}
-      <p>No reviews yet.</p>
+      <p class="no-reviews">No reviews yet.</p>
     {% endfor %}
   </div>
 </div>
