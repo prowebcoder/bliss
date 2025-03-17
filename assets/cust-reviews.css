@@ -83,6 +83,14 @@
 .trustpilot-rating .empty {
   color: #ccc;
 }
+.review-text::before {
+  content: '"';
+}
+
+.review-text::after {
+  content: '"';
+}
+
 
 /* Custom Styling for Empty Reviews */
 .review.no-reviews {
