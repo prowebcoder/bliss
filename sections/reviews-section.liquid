@@ -33,7 +33,7 @@
         {% if block.settings.trustpilot_rating %}
           <div class="trustpilot-rating">
             {% for i in (1..5) %}
-              <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}" style="color: {{ block.settings.star_color }};">★</span>
+              <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}" style="color: {{ section.settings.star_color }};">★</span>
             {% endfor %}
           </div>
         {% endif %}
