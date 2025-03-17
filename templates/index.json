@@ -347,6 +347,7 @@
         "column_nipBRc": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/11090.jpg",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "star_color": "#ecb503",
