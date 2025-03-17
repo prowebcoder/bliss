@@ -373,7 +373,7 @@
         "button_label": "Button label",
         "button_link": "",
         "columns_desktop": 4,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "",
         "columns_mobile": "1",
