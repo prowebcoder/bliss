@@ -37,14 +37,14 @@
         
 
         <!-- Review Text/Quote -->
-        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+        <img src="{{ section.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
        {% if block.settings.image %}
           <div class="review-image">
             <img src="{{ block.settings.qoute_img_open | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
           </div>
         {% endif %}
         <p class="review-text">"{{ block.settings.quote_text }}"</p>
-       <img src="{{ block.settings.qoute_img_close | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+       <img src="{{ section.settings.qoute_img_close | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
         <!-- Author Name -->
         <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
 
@@ -137,6 +137,16 @@
       "id": "star_color",
       "default": "#ffcc00",
       "info": "Set the color of the star ratings."
+    },
+    {
+      "type": "image_picker",
+      "id": "qoute_img_open",
+      "label": "Select icon Image"
+    },
+        {
+      "type": "image_picker",
+      "id": "qoute_img_close",
+      "label": "Select icon Image"
     },
     {
       "type": "select",
