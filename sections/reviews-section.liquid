@@ -108,7 +108,7 @@
 </style>
 
 <div class="review-section">
-  <h2 class="review-title">{{ section.settings.default_review_title }}</h2>
+  <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.default_review_title }}</h2>
 
   <div class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
     {% assign column_class = '' %}
