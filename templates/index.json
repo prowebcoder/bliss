@@ -366,6 +366,8 @@
         "review_block_fDjQLd"
       ],
       "settings": {
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
         "default_review_title": "Customer Reviews",
         "text_alignment": "left",
         "star_color": "#10a900",
