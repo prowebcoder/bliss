@@ -407,7 +407,7 @@
       ],
       "settings": {
         "default_review_title": "Customer Reviews",
-        "star_color": "#2d7408",
+        "star_color": "#000",
         "review_display_style": "grid",
         "columns_per_row": "3"
       }
