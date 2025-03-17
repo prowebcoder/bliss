@@ -37,14 +37,14 @@
         
 
         <!-- Review Text/Quote -->
-        <img src="{{ section.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
        {% if block.settings.image %}
           <div class="review-image">
             <img src="{{ block.settings.qoute_img_open | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
           </div>
         {% endif %}
         <p class="review-text">"{{ block.settings.quote_text }}"</p>
-       <img src="{{ section.settings.qoute_img_close | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+       <img src="{{ block.settings.qoute_img_close | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
         <!-- Author Name -->
         <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
 
