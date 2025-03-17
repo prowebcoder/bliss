@@ -1,4 +1,5 @@
 {{ 'cust-reviews.css' | asset_url | stylesheet_tag }}
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
 
 <div class="review-section page-width section">
   <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.default_review_title }}</h2>
@@ -43,7 +44,7 @@
     {% endfor %}
   </div>
 </div>
-
+</div>
 {% schema %}
 {
   "name": "Customer Reviews Section",
