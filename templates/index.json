@@ -407,7 +407,7 @@
       ],
       "settings": {
         "default_review_title": "See what people are saying about our coffee!",
-        "star_color": "#ff0000",
+        "star_color": "#ffad00",
         "review_display_style": "grid",
         "columns_per_row": "3"
       }
