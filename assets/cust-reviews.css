@@ -83,16 +83,23 @@
 .trustpilot-rating .empty {
   color: #ccc;
 }
+.review-text::before,
+.review-text::after {
+  content: '';
+  display: inline-block;
+  width: 20px; /* Set the width of the image */
+  height: 20px; /* Set the height of the image */
+  background-size: cover; /* Ensure the image covers the area */
+}
+
 .review-text::before {
-  content: '"';
-   color: #292323;
-    font-size: 50px;
+  background-image: url('path/to/your/quote-image-left.png');
+  margin-right: 5px; /* Add some space between the quote image and the text */
 }
 
 .review-text::after {
-  content: '"';
-      color: #292323;
-    font-size: 50px;
+  background-image: url('path/to/your/quote-image-right.png');
+  margin-left: 5px; /* Add some space between the quote image and the text */
 }
 
 
