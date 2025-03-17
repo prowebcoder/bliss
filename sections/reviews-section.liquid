@@ -76,7 +76,22 @@
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function(){
+  if ($(window).width() <= 768) {
+    $('.reviews-slider .slider').slick({
+      infinite: true,
+      slidesToShow: 1, // Show 1 review per slide on mobile
+      slidesToScroll: 1,
+      arrows: true, // Enable navigation arrows
+      dots: true, // Enable navigation dots
+      autoplay: true, // Enable auto-play
+      autoplaySpeed: 3000, // 3 seconds between slides
+    });
+  }
+});
 
+</script>
 
 {% schema %}
 {
