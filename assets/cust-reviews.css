@@ -98,7 +98,7 @@
 }
 
 .review-text::after {
-  background-image: url('path/to/your/quote-image-right.png');
+  background-image: url('//cdn.shopify.com/s/files/1/0816/5009/0293/files/double-quotes.png');
   margin-left: 5px; /* Add some space between the quote image and the text */
 }
 
