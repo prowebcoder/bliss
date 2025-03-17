@@ -384,6 +384,15 @@
             "author_name": "John Doe",
             "trustpilot_rating": 5
           }
+        },
+        "review_block_BmJY6b": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/BlissThera_Neck_Lanyard_1.png",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 5
+          }
         }
       },
       "block_order": [
@@ -393,7 +402,8 @@
         "review_block_g3aPg7",
         "review_block_pkTD8A",
         "review_block_i7EBKT",
-        "review_block_CQFqPr"
+        "review_block_CQFqPr",
+        "review_block_BmJY6b"
       ],
       "settings": {
         "default_review_title": "Customer Reviews",
