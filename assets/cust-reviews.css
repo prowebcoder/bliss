@@ -94,12 +94,12 @@
 }
 
 .review-text::before {
-  background-image: url('{{ block.settings.qoute_img_open }}');
+  background-image: url('{{ qoute_img_open }}');
   margin-right: 5px; /* Add some space between the quote image and the text */
 }
 
 .review-text::after {
-  background-image: url('{{ block.settings.qoute_img_close }}');
+  background-image: url('{{ qoute_img_close }}');
   margin-left: 5px; /* Add some space between the quote image and the text */
 }
 
