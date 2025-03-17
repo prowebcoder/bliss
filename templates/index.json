@@ -327,6 +327,8 @@
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "star_color": "#ffca00",
+            "trustpilot_rating": 5,
             "link_label": "",
             "link": ""
           }
@@ -336,6 +338,8 @@
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "star_color": "#ffcc00",
+            "trustpilot_rating": 5,
             "link_label": "",
             "link": ""
           }
@@ -345,6 +349,8 @@
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "star_color": "#ffcc00",
+            "trustpilot_rating": 5,
             "link_label": "",
             "link": ""
           }
@@ -354,6 +360,8 @@
           "settings": {
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "star_color": "#ffcc00",
+            "trustpilot_rating": 5,
             "link_label": "",
             "link": ""
           }
