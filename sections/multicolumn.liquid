@@ -2,6 +2,8 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  {% assign qoute_img_open = block.settings.qoute_img_open | img_url: 'original' %}
+{% assign qoute_img_close = block.settings.qoute_img_close | img_url: 'original' %}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -14,8 +16,7 @@
     }
   }
 {%- endstyle -%}
-{% assign qoute_img_open = block.settings.qoute_img_open | img_url: 'original' %}
-{% assign qoute_img_close = block.settings.qoute_img_close | img_url: 'original' %}
+
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
