@@ -84,15 +84,7 @@
   color: #ccc;
 }
 
-.review-text::before,
-.review-text::after {
-  content: '';
-  display: inline-block;
-  width: 20px; /* Set the width of the image */
-  height: 20px; /* Set the height of the image */
-  background-size: cover; /* Ensure the image covers the area */
-}
-
+ 
  
 
 /* Custom Styling for Empty Reviews */
