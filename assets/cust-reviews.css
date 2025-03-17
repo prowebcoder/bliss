@@ -85,10 +85,14 @@
 }
 .review-text::before {
   content: '"';
+   color: #292323;
+    font-size: 50px;
 }
 
 .review-text::after {
   content: '"';
+      color: #292323;
+    font-size: 50px;
 }
 
 
