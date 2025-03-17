@@ -16,9 +16,9 @@
     "heading_scale": 100,
     "type_body_font": "itc_avant_garde_gothic_n4",
     "body_scale": 100,
-    "page_width": 1400,
+    "page_width": 1600,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
+    "spacing_grid_horizontal": 4,
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "default",
@@ -135,6 +135,13 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "scheme-1"
+        }
+      },
+      "main-register": {
+        "type": "main-register",
+        "settings": {
+          "padding_top": 36,
+          "padding_bottom": 36
         }
       }
     },
