@@ -381,7 +381,7 @@
         "title": "See what people are saying about Us",
         "heading_size": "h1",
         "image_width": "third",
-        "image_ratio": "circle",
+        "image_ratio": "square",
         "button_label": "",
         "button_link": "",
         "columns_desktop": 4,
