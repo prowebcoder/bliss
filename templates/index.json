@@ -407,7 +407,7 @@
       ],
       "settings": {
         "default_review_title": "See what people are saying about our coffee!",
-        "text_alignment": "right",
+        "text_alignment": "center",
         "star_color": "#ffad00",
         "review_display_style": "grid",
         "columns_per_row": "1"
