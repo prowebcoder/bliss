@@ -330,10 +330,40 @@
             "author_name": "John Doe",
             "trustpilot_rating": 4
           }
+        },
+        "review_block_9Jahaj": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/black-and-white-butterfly-sat-on-a-leaf.jpg",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 5
+          }
+        },
+        "review_block_DM8dhV": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/coffea_diversa_800x800_fcafc502-ec05-44cd-ae93-4fbaec702323.png",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 4
+          }
+        },
+        "review_block_fDjQLd": {
+          "type": "review_block",
+          "settings": {
+            "image": "shopify://shop_images/about_400x400_b8fdae5e-1e1a-46a8-ba09-61ea8fe692e7.png",
+            "quote_text": "Great product, would buy again!",
+            "author_name": "John Doe",
+            "trustpilot_rating": 3
+          }
         }
       },
       "block_order": [
-        "review_block_FQFXmA"
+        "review_block_FQFXmA",
+        "review_block_9Jahaj",
+        "review_block_DM8dhV",
+        "review_block_fDjQLd"
       ],
       "settings": {
         "default_review_title": "Customer Reviews",
