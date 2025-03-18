@@ -459,6 +459,7 @@
                   {{ block.settings.title }}
                 </div>
               {%- endif -%}
+                 <p>{{ customer_review }}</p> 
               {%- if block.settings.link_label != blank -%}
                 <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} {% if block.settings.external_link %}target="_blank"{% endif %} class="wbs__link">
                   {{ block.settings.link_label }}
@@ -694,6 +695,11 @@
           "id": "title",
           "label": "Testimonial",
           "default": "<p>Best product ever! Highly recommend.</p>"
+        },
+         {
+          "type": "inline_richtext",
+          "id": "customer_review",
+          "label": "Review Text"
         },
         {
           "type": "text",
