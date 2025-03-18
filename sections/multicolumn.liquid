@@ -1,26 +1,12 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
-
 {%- style -%}
-  
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  #WP--{{ section.id }} .wbs__star svg path {
-  fill: {{ section.settings.star_color }};
-}
-  #WP--{{ section.id }} .wbs__star svg path {
-  fill: {{ section.settings.star_color }};
-}
-.wbs__block-{{ block.id }} .wbs__hosted-video {
-            {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
-              border-radius: {{ inner_border_radius }}px {{ inner_border_radius }}px 0 0;
-            {% else %}
-              border-radius: {{ inner_border_radius }}px;
-            {% endif %}
-          }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -56,7 +42,6 @@
         {%- endif -%}
       </div>
     {%- endunless -%}
-    {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
     <slider-component class="slider-mobile-gutter">
       <ul
         class="multicolumn-list contains-content-container grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop{% if show_mobile_slider %} slider slider--tablet grid--peek{% endif %}"
@@ -133,20 +118,6 @@
                   </div>
                 </div>
               {%- endif -%}
-
-              {%- if block.settings.star_rating != -1 -%}
-                <div class="wbs__stars">
-                  {%- for i in (1..5) -%}
-                    <div class="wbs__star">
-                      {%- if i <= block.settings.star_rating -%}
-                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#5C5F62"/></svg>
-                      {%- else -%}
-                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6.71 15.116l3.357-1.658.892.452 2.327 1.178-.56-3.912.708-.707 1.29-1.29-3.235-.576-.445-.915-1.059-2.176L8.4 8.683l-1.005.168-2.098.35 1.975 1.975-.141.99-.422 2.95zM5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#5C5F62"/></svg>
-                      {%- endif -%}
-                    </div>
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
@@ -202,7 +173,6 @@
         </div>
       {%- endif -%}
     </slider-component>
-                          {%- endif -%}
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
@@ -340,12 +310,6 @@
       "default": 3,
       "label": "t:sections.multicolumn.settings.columns_desktop.label"
     },
-     {
-      "type": "color",
-      "id": "star_color",
-      "label": "Testimonial star color",
-      "default": "#121212"
-    },
     {
       "type": "select",
       "id": "column_alignment",
@@ -462,15 +426,6 @@
           "id": "link_label",
           "label": "t:sections.multicolumn.blocks.column.settings.link_label.label",
           "info": "t:sections.multicolumn.blocks.column.settings.link_label.info"
-        },
-        {
-          "type": "range",
-          "id": "star_rating",
-          "min": -1,
-          "max": 5,
-          "label": "Star rating",
-          "default": 5,
-          "info": "Set to -1 to hide star rating"
         },
         {
           "type": "url",
