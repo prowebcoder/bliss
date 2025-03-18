@@ -373,13 +373,40 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_awyaze": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Robert_Griffin.jpg",
+            "num_stars": 5,
+            "filled_star_color": "#FFD700",
+            "empty_star_color": "#0a8118",
+            "title": "Robert Griffin",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iK3YMN": {
+          "type": "column",
+          "settings": {
+            "num_stars": 5,
+            "filled_star_color": "#FFD700",
+            "empty_star_color": "#ccc",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_ehaHCf",
         "column_jVF7Hf",
         "column_DE6kaT",
-        "column_Kz6MrB"
+        "column_Kz6MrB",
+        "column_awyaze",
+        "column_iK3YMN"
       ],
       "settings": {
         "title": "Some kind words.",
