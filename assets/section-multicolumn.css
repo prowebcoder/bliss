@@ -262,6 +262,10 @@
     width: 100px;
     height: 100px;
 }
+.testimonials__icon.testimonials__icon--bottom {
+    text-align: right;
+    margin-top: 0;
+}
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
