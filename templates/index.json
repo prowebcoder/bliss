@@ -319,74 +319,13 @@
         "padding_bottom": 20
       }
     },
-    "reviews_section_8rTQkn": {
-      "type": "reviews-section",
-      "blocks": {
-        "review_block_FQFXmA": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/11090.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 3
-          }
-        },
-        "review_block_9Jahaj": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/black-and-white-butterfly-sat-on-a-leaf.jpg",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 5
-          }
-        },
-        "review_block_DM8dhV": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/coffea_diversa_800x800_fcafc502-ec05-44cd-ae93-4fbaec702323.png",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 4
-          }
-        },
-        "review_block_fDjQLd": {
-          "type": "review_block",
-          "settings": {
-            "image": "shopify://shop_images/about_400x400_b8fdae5e-1e1a-46a8-ba09-61ea8fe692e7.png",
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "trustpilot_rating": 3
-          }
-        }
-      },
-      "block_order": [
-        "review_block_FQFXmA",
-        "review_block_9Jahaj",
-        "review_block_DM8dhV",
-        "review_block_fDjQLd"
-      ],
-      "disabled": true,
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "background_style": "primary",
-        "color_scheme": "scheme-2",
-        "default_review_title": "See what people are saying about our coffee!",
-        "text_alignment": "center",
-        "star_color": "#033aff",
-        "qoute_img_open": "shopify://shop_images/quote.png",
-        "qoute_img_close": "shopify://shop_images/double-quotes.png",
-        "review_display_style": "list",
-        "columns_per_row": "2"
-      }
-    },
     "custom_reviews_yyTri8": {
       "type": "Custom-reviews",
       "blocks": {
         "testimonial_9nMXXh": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/11090.jpg",
+            "image": "shopify://shop_images/Lawanda_Franks__edited.jpg",
             "youtube_video": "",
             "star_rating": 3,
             "title": "<p>Best product ever! Highly recommend.</p>",
@@ -460,7 +399,6 @@
     "video",
     "collapsible_content_Ea3qKc",
     "img_with_text_coll_zWkeHc",
-    "reviews_section_8rTQkn",
     "custom_reviews_yyTri8"
   ]
 }
