@@ -225,6 +225,36 @@
   margin-left: 0.8rem;
   white-space: nowrap;
 }
+.star-rating-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .product-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rating {
+    margin-top: 10px;
+  }
+
+  .star {
+    font-size: 20px;
+  }
  
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
