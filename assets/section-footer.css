@@ -56,7 +56,6 @@
 
   .footer-block.grid__item .footer-block__heading.active::after {
     content: "-";
-    transform: rotate(180deg);
   }
 }
 
