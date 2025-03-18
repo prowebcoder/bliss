@@ -438,6 +438,10 @@
         "testimonial_aWQbkP"
       ],
       "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "background_style": "none",
+        "color_scheme": "scheme-2",
         "title": "Some kind words.",
         "per_row": 4,
         "video_style": "control_bar",
@@ -449,7 +453,7 @@
         "star_color": "#207905",
         "play_button_color": "#ffffff",
         "border_color": "#121212",
-        "border_width": 1,
+        "border_width": 0,
         "border_radius": 0,
         "base_width": 90,
         "max_width": "",
