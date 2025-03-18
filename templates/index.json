@@ -382,7 +382,7 @@
         "title": "Some kind words.",
         "per_row": 4,
         "video_style": "control_bar",
-        "desktop_display": "grid",
+        "desktop_display": "scroll",
         "mobile_display": "scroll",
         "text_size": 100,
         "heading_color": "#121212",
