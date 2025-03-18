@@ -364,11 +364,12 @@
         "testimonial_BEEHdd": {
           "type": "testimonial",
           "settings": {
-            "customer_name": "Genius Maker",
+            "customer_name": "Stephen Minsky",
+            "image": "shopify://shop_images/Steve_Minsky_edited.jpg",
             "youtube_video": "",
             "star_rating": 5,
-            "title": "<p>Best product ever! Highly recommend.</p>",
-            "customer_review": "",
+            "title": "<p><strong>Dx: Arthritis, Anxiety</strong></p>",
+            "customer_review": "\"After ever therapy session I feel relaxed, I feel mentally at ease. My mobility returns to my body and I feel like I haven't spent a lifetime of hard manual labor.\"",
             "link_label": "",
             "link": ""
           }
