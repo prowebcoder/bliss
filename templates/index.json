@@ -373,13 +373,27 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "testimonial_7t6q8j": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Lisa Mazani",
+            "image": "shopify://shop_images/Lisa_Mazani.jpg",
+            "youtube_video": "",
+            "star_rating": 5,
+            "title": "<p>Dx: PTSD, Anxiety, Joint Pain</p>",
+            "customer_review": "\"I've had significant improvements in managing my PTSD symptoms and have experienced almost complete relief.\"",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "testimonial_9nMXXh",
         "testimonial_k9mkpa",
         "testimonial_fJ9UBY",
-        "testimonial_BEEHdd"
+        "testimonial_BEEHdd",
+        "testimonial_7t6q8j"
       ],
       "settings": {
         "title": "Some kind words.",
