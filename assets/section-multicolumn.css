@@ -255,6 +255,9 @@
   .star {
     font-size: 20px;
   }
+.media.media--transparent.media--circle {
+    padding-bottom: 0;
+}
  
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
