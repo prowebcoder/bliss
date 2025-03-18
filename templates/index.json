@@ -326,10 +326,10 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Lawanda_Franks__edited.jpg",
-            "num_stars": 5,
+            "num_stars": 4,
             "filled_star_color": "#FFD700",
             "empty_star_color": "#0a8118",
-            "title": "Column",
+            "title": "Lawanda Franks",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
@@ -338,10 +338,11 @@
         "column_jVF7Hf": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Kat_Ojala.jpg",
             "num_stars": 5,
             "filled_star_color": "#FFD700",
-            "empty_star_color": "#cccccc",
-            "title": "Column",
+            "empty_star_color": "#0a8118",
+            "title": "Kate Ojala",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
@@ -398,6 +399,15 @@
     "multicolumn_i6KmEJ": {
       "type": "multicolumn",
       "blocks": {
+        "column_a7YfKr": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_KnQMTn": {
           "type": "column",
           "settings": {
@@ -480,6 +490,7 @@
         }
       },
       "block_order": [
+        "column_a7YfKr",
         "column_KnQMTn",
         "column_ebdTwr",
         "column_A8nGMa",
