@@ -374,6 +374,19 @@
             "link": ""
           }
         },
+        "testimonial_UXVqHR": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Robert Griffin",
+            "image": "shopify://shop_images/Robert_Griffin.jpg",
+            "youtube_video": "",
+            "star_rating": 5,
+            "title": "<p>Dx: Arthritis and Post-Surgical Pain</p>",
+            "customer_review": "\"I am moving better, feeling better and I can only imagine how much more I will be living better.\"",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "testimonial_7t6q8j": {
           "type": "testimonial",
           "settings": {
@@ -393,6 +406,7 @@
         "testimonial_k9mkpa",
         "testimonial_fJ9UBY",
         "testimonial_BEEHdd",
+        "testimonial_UXVqHR",
         "testimonial_7t6q8j"
       ],
       "settings": {
