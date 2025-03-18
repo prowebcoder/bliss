@@ -399,6 +399,19 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_HFMPzi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sydney_Upine.jpg",
+            "num_stars": 5,
+            "filled_star_color": "#FFD700",
+            "empty_star_color": "#0a8118",
+            "title": "Sydney Upine",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -407,7 +420,8 @@
         "column_DE6kaT",
         "column_Kz6MrB",
         "column_awyaze",
-        "column_iK3YMN"
+        "column_iK3YMN",
+        "column_HFMPzi"
       ],
       "settings": {
         "title": "Some kind words.",
