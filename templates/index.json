@@ -331,7 +331,7 @@
             "star_rating": 3,
             "title": "<p><strong>Dx: Severe Arthritis, Anxiety, Depression</strong></p>",
             "customer_review": "There is no medication in the world that can compare to this;  you come in, in pain, and you leave pain free. Nothing can compare.",
-            "link_label": "ckick",
+            "link_label": "",
             "link": "shopify://collections"
           }
         },
@@ -344,7 +344,7 @@
             "star_rating": 5,
             "title": "<p><strong>Dx: Tetanus, Muscular Spasticity, Depression</strong></p>",
             "customer_review": "\"I am crying right now (tears of joy); I have not been free of this pain in years, I did not think it was possible. I can not believe it.\"",
-            "link_label": "click",
+            "link_label": "",
             "link": "shopify://blogs/news"
           }
         },
@@ -358,7 +358,7 @@
             "title": "<p><strong>Dx: Asthamtic, COVID-19 Related Difficulties</strong></p>",
             "customer_review": "\"I am taking deeper breaths, and breathing as well as when I was before COVID. It gets better after every therapy.\"",
             "link_label": "",
-            "link": ""
+            "link": "shopify://blogs/news"
           }
         },
         "testimonial_BEEHdd": {
