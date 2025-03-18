@@ -74,7 +74,7 @@
 }
 
 .multicolumn.background-primary .multicolumn-card {
-      background: rgb(246 242 237)
+  background: rgb(var(--color-background))
     linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
 }
 
@@ -248,7 +248,17 @@
     height: auto;
   }
 
-  
+  .rating {
+    margin-top: 10px;
+  }
+
+  .star {
+    font-size: 20px;
+  }
+.media.media--transparent.media--circle {
+    padding-bottom: 0;
+}
+ 
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
