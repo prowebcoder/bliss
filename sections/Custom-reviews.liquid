@@ -208,7 +208,7 @@
 
 {% schema %}
 {
-  "name": "Reviews",
+  "name": "t:sections.multicolumn.name",
   "class": "section",
   "tag": "section",
   "disabled_on": {
@@ -434,10 +434,16 @@
       "max": 5,
       "default": 5
     },
-     
     {
       "type": "color",
-      "label": "filled_star_color",
+      "label": "Filled Star Color",
+      "id": "filled_star_color",
+      "default": "#FFD700",
+      "info": "Choose a color for the filled stars."
+    },
+    {
+      "type": "color",
+      "label": "Empty Star Color",
       "id": "empty_star_color",
       "default": "#ccc",
       "info": "Choose a color for the empty stars."
@@ -471,7 +477,7 @@
   ],
   "presets": [
     {
-      "name": "Reviews",
+      "name": "t:sections.multicolumn.presets.name",
       "blocks": [
         {
           "type": "column"
