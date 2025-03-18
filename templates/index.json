@@ -325,6 +325,7 @@
         "testimonial_9nMXXh": {
           "type": "testimonial",
           "settings": {
+            "customer_name": "Lawanda Franks",
             "image": "shopify://shop_images/Lawanda_Franks__edited.jpg",
             "youtube_video": "",
             "star_rating": 3,
@@ -337,6 +338,7 @@
         "testimonial_k9mkpa": {
           "type": "testimonial",
           "settings": {
+            "customer_name": "Genius Maker",
             "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.</p>",
@@ -348,6 +350,7 @@
         "testimonial_fJ9UBY": {
           "type": "testimonial",
           "settings": {
+            "customer_name": "Genius Maker",
             "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.</p>",
@@ -359,6 +362,7 @@
         "testimonial_BEEHdd": {
           "type": "testimonial",
           "settings": {
+            "customer_name": "Genius Maker",
             "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.</p>",
