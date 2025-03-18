@@ -343,11 +343,11 @@ document.addEventListener('DOMContentLoaded', function () {
       
       if (detailsContent && detailsContent.classList.contains('footer-block__details-content')) {
         if (detailsContent.style.maxHeight) {
-          // If already open, close it
+         
           detailsContent.style.maxHeight = null;
           heading.classList.remove('active');
         } else {
-          // Close all other open sections first
+          
           document.querySelectorAll('.footer-block__details-content').forEach(function (detail) {
             detail.style.maxHeight = null;
           });
@@ -356,7 +356,6 @@ document.addEventListener('DOMContentLoaded', function () {
             h.classList.remove('active');
           });
 
-          // Open the clicked section
           detailsContent.style.maxHeight = detailsContent.scrollHeight + 'px';
           heading.classList.add('active');
         }
