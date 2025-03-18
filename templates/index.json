@@ -338,11 +338,12 @@
         "testimonial_k9mkpa": {
           "type": "testimonial",
           "settings": {
-            "customer_name": "Genius Maker",
+            "customer_name": "Kat Ojala",
+            "image": "shopify://shop_images/Kat_Ojala.jpg",
             "youtube_video": "",
             "star_rating": 5,
-            "title": "<p>Best product ever! Highly recommend.</p>",
-            "customer_review": "",
+            "title": "<p><strong>Dx: Tetanus, Muscular Spasticity, Depression</strong></p>",
+            "customer_review": "\"I am crying right now (tears of joy); I have not been free of this pain in years, I did not think it was possible. I can not believe it.\"",
             "link_label": "",
             "link": ""
           }
