@@ -762,6 +762,7 @@
             {% endif %}
           </div>
           {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
+           <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} {% if block.settings.external_link %}target="_blank"{% endif %} class="wbs__link">
             <div class="wbs__inner-content">
 {% if block.settings.image %}
           <div class="review-image">
@@ -789,11 +790,12 @@
               {%- endif -%}
                  <p>{{ block.settings.customer_review }}</p> 
               {%- if block.settings.link_label != blank -%}
-                <a {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %} {% if block.settings.external_link %}target="_blank"{% endif %} class="wbs__link">
+                
                   {{ block.settings.link_label }}
-                </a>
+                
               {%- endif -%}
             </div>
+            </a>
           {%- endif -%}
         </div>
       {%- endfor -%}
