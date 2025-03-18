@@ -339,31 +339,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
   headings.forEach(function (heading) {
     heading.addEventListener('click', function () {
-      const allDetails = document.querySelectorAll('.footer-block__details-content');
-      const allHeadings = document.querySelectorAll('.footer-block__heading');
-
-      allDetails.forEach(function (detail) {
-        detail.style.maxHeight = null; // Collapse all
-      });
-
-      allHeadings.forEach(function (h) {
-        h.classList.remove('active');
-      });
-
       const detailsContent = heading.nextElementSibling;
-
+      
       if (detailsContent && detailsContent.classList.contains('footer-block__details-content')) {
         if (detailsContent.style.maxHeight) {
-          detailsContent.style.maxHeight = null; // Close if already open
+          // If already open, close it
+          detailsContent.style.maxHeight = null;
           heading.classList.remove('active');
         } else {
-          detailsContent.style.maxHeight = detailsContent.scrollHeight + 'px'; // Open
+          // Close all other open sections first
+          document.querySelectorAll('.footer-block__details-content').forEach(function (detail) {
+            detail.style.maxHeight = null;
+          });
+
+          document.querySelectorAll('.footer-block__heading').forEach(function (h) {
+            h.classList.remove('active');
+          });
+
+          // Open the clicked section
+          detailsContent.style.maxHeight = detailsContent.scrollHeight + 'px';
           heading.classList.add('active');
         }
       }
     });
   });
 });
+
 
 </script>
 
