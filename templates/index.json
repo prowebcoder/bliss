@@ -444,7 +444,7 @@
         "color_scheme": "scheme-1",
         "title": "Some kind words.",
         "per_row": 4,
-        "testimonial_background_color": "#656565",
+        "testimonial_background_color": "#c4c0c0",
         "video_style": "control_bar",
         "desktop_display": "grid",
         "mobile_display": "scroll",
