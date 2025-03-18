@@ -731,10 +731,6 @@
     <div class="wbs__testimonials-wrapper wbs__flex">
       {%- for block in section.blocks -%}
         <style>
-          .wbs__block-{{ block.id }} {
-             background-color: {{ block.background_color }};
-          }
-         
           .wbs__block-{{ block.id }} .wbs__hosted-video {
             {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
               border-radius: {{ inner_border_radius }}px {{ inner_border_radius }}px 0 0;
@@ -860,13 +856,6 @@
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
     }, 
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Card Background color",
-      "default": "#ffffff",
-      "info": "Card Background color."
-    },
     {
       "type": "text",
       "id": "title",
