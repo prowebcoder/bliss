@@ -453,7 +453,7 @@
         "star_color": "#207905",
         "play_button_color": "#ffffff",
         "border_color": "#121212",
-        "border_width": 0,
+        "border_width": 1,
         "border_radius": 0,
         "base_width": 90,
         "max_width": "",
