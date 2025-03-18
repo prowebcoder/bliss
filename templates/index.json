@@ -547,10 +547,11 @@
         "column_KRJGQ8": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Steve_Minsky_edited.jpg",
             "num_stars": 5,
-            "empty_star_color": "#ccc",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "empty_star_color": "#207905",
+            "title": "Stephen Minsky",
+            "text": "<p>\"After ever therapy session I feel relaxed, I feel mentally at ease. My mobility returns to my body and I feel like I haven't spent a lifetime of hard manual labor.\"</p>",
             "link_label": "",
             "link": ""
           }
