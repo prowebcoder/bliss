@@ -118,20 +118,6 @@
                   </div>
                 </div>
               {%- endif -%}
-
-            <!-- Star Rating Display -->
-          <div class="rating">
-            {% assign num_stars = block.settings.num_stars %}
-            {% assign filled_star_color = block.settings.filled_star_color %}
-            {% assign empty_star_color = block.settings.empty_star_color %}
-            
-            {% for i in (1..num_stars) %}
-              <span class="star{% if i <= product.average_rating %} filled{% endif %}" 
-                    style="color: {% if i <= product.average_rating %}{{ filled_star_color }}{% else %}{{ empty_star_color }}{% endif %};">
-                ★
-              </span>
-            {% endfor %}
-          </div>
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
@@ -139,8 +125,6 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-
-                
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link animate-arrow"
@@ -221,7 +205,6 @@
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
     },
-      
     {
       "type": "select",
       "id": "heading_size",
@@ -427,28 +410,6 @@
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
         {
-      "type": "range",
-      "label": "Number of Stars",
-      "id": "num_stars",
-      "min": 1,
-      "max": 5,
-      "default": 5
-    },
-    {
-      "type": "color",
-      "label": "Filled Star Color",
-      "id": "filled_star_color",
-      "default": "#FFD700",
-      "info": "Choose a color for the filled stars."
-    },
-    {
-      "type": "color",
-      "label": "Empty Star Color",
-      "id": "empty_star_color",
-      "default": "#ccc",
-      "info": "Choose a color for the empty stars."
-    },
-        {
           "type": "inline_richtext",
           "id": "title",
           "default": "t:sections.multicolumn.blocks.column.settings.title.default",
@@ -466,7 +427,6 @@
           "label": "t:sections.multicolumn.blocks.column.settings.link_label.label",
           "info": "t:sections.multicolumn.blocks.column.settings.link_label.info"
         },
-        
         {
           "type": "url",
           "id": "link",
