@@ -721,6 +721,8 @@
 </style>
 
 {%- comment -%} HTML {%- endcomment -%}
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+
 <section id="WP--{{ section.id }}" class="WP--{{ section.id }} wbs__testimonials-video wbs__section" {%- if section.settings.animation != 'none' -%}data-animated-section{%- endif -%}>
   <div class="wbs__sizer">
     {%- if section.settings.title != blank -%}
@@ -802,6 +804,7 @@
     </div>
   </div>
 </section>
+  </div>
 {%- endcapture -%}
 {{ minify | strip_newlines }}
 
