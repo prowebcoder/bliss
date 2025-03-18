@@ -8,6 +8,9 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
+  #WP--{{ section.id }} .wbs__star svg path {
+  fill: {{ section.settings.star_color }};
+}
 .wbs__block-{{ block.id }} .wbs__hosted-video {
             {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
               border-radius: {{ inner_border_radius }}px {{ inner_border_radius }}px 0 0;
