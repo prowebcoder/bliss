@@ -440,7 +440,7 @@
         <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
             </div>
         {% endif %}
-            <h2>{{ block.settings.customer_name }}</h2>
+            <h4>{{ block.settings.customer_name }}</h4>
               {%- if block.settings.star_rating != -1 -%}
                 <div class="wbs__stars">
                   {%- for i in (1..5) -%}
