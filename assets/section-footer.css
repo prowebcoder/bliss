@@ -38,15 +38,10 @@
   .footer-block__details-content{
     display: none;
   }
-  .footer-block__heading {
-    border-bottom: solid 1px #ddd; 
-    padding-bottom: 6px;
-   }
    .footer-block.grid__item .footer-block__heading::after {
       content: "+";
       position: absolute;
-      right: 12%;
-      font-weight: bold;
+      right: 2%;
   }
   .footer-block.grid__item .footer-block__heading.active::after{
       content: "-" !important;
