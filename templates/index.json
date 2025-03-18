@@ -399,6 +399,19 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "testimonial_y6e8DL": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Cynthia Uhiren",
+            "image": "shopify://shop_images/Sydney_Upine.jpg",
+            "youtube_video": "",
+            "star_rating": 5,
+            "title": "<p>Dx: Parkinson's Disease</p>",
+            "customer_review": "“...amazing how fast you feel the effects! I’m very relaxed, no anxiety and my Parkinsons' feels gone!”",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -407,7 +420,8 @@
         "testimonial_fJ9UBY",
         "testimonial_BEEHdd",
         "testimonial_UXVqHR",
-        "testimonial_7t6q8j"
+        "testimonial_7t6q8j",
+        "testimonial_y6e8DL"
       ],
       "settings": {
         "title": "Some kind words.",
