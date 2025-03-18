@@ -442,33 +442,6 @@
         "inner_padding": 20,
         "outer_margin": 0
       }
-    },
-    "reviews_section_XWhxgD": {
-      "type": "reviews-section",
-      "blocks": {
-        "review_block_gb9V64": {
-          "type": "review_block",
-          "settings": {
-            "quote_text": "Great product, would buy again!",
-            "author_name": "John Doe",
-            "star_rating": 3
-          }
-        }
-      },
-      "block_order": [
-        "review_block_gb9V64"
-      ],
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "background_style": "primary",
-        "color_scheme": "",
-        "default_review_title": "Customer Reviews",
-        "text_alignment": "left",
-        "star_color": "#121212",
-        "review_display_style": "list",
-        "columns_per_row": "2"
-      }
     }
   },
   "order": [
@@ -479,7 +452,6 @@
     "video",
     "collapsible_content_Ea3qKc",
     "img_with_text_coll_zWkeHc",
-    "custom_reviews_yyTri8",
-    "reviews_section_XWhxgD"
+    "custom_reviews_yyTri8"
   ]
 }
