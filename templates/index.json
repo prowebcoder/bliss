@@ -392,9 +392,9 @@
         "border_color": "#121212",
         "border_width": 1,
         "border_radius": 0,
-        "base_width": 95,
+        "base_width": 90,
         "max_width": "",
-        "inner_padding": 40,
+        "inner_padding": 20,
         "outer_margin": 0
       }
     }
