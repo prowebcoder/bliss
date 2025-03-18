@@ -365,6 +365,7 @@
         "review_block_DM8dhV",
         "review_block_fDjQLd"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36,
@@ -378,6 +379,72 @@
         "review_display_style": "list",
         "columns_per_row": "2"
       }
+    },
+    "custom_reviews_yyTri8": {
+      "type": "Custom-reviews",
+      "blocks": {
+        "testimonial_9nMXXh": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 3,
+            "title": "<p>Best product ever! Highly recommend.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_fJ9UBY": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "title": "<p>Best product ever! Highly recommend.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_BEEHdd": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "title": "<p>Best product ever! Highly recommend.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_bw9bdP": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "title": "<p>Best product ever! Highly recommend.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_9nMXXh",
+        "testimonial_fJ9UBY",
+        "testimonial_BEEHdd",
+        "testimonial_bw9bdP"
+      ],
+      "settings": {
+        "title": "Some kind words.",
+        "per_row": 4,
+        "video_style": "control_bar",
+        "desktop_display": "grid",
+        "mobile_display": "scroll",
+        "text_size": 100,
+        "heading_color": "#121212",
+        "text_color": "#121212",
+        "star_color": "#121212",
+        "play_button_color": "#ffffff",
+        "border_color": "#121212",
+        "border_width": 1,
+        "border_radius": 0,
+        "base_width": 95,
+        "max_width": "",
+        "inner_padding": 40,
+        "outer_margin": 0
+      }
     }
   },
   "order": [
@@ -388,6 +455,7 @@
     "video",
     "collapsible_content_Ea3qKc",
     "img_with_text_coll_zWkeHc",
-    "reviews_section_8rTQkn"
+    "reviews_section_8rTQkn",
+    "custom_reviews_yyTri8"
   ]
 }
