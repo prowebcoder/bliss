@@ -19,8 +19,8 @@
 
 <div class="review-section page-width">
   <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.default_review_title }}</h2>
-
-  <div class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
+{%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
+  <div  class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
     {% assign column_class = '' %}
 
     {% if settings.columns_per_row == '2' %}
@@ -69,6 +69,7 @@
       <p class="no-reviews">No reviews yet.</p>
     {% endfor %}
   </div>
+  {% endif %}
 </div>
 </div>
 {% schema %}
@@ -220,14 +221,13 @@
         },
         {
           "type": "range",
-          "label": "Trustpilot Rating (1-5 Stars)",
-          "id": "trustpilot_rating",
-          "min": 1,
+          "id": "star_rating",
+          "min": -1,
           "max": 5,
-          "step": 1,
+          "label": "Star rating",
           "default": 5,
-          "info": "Set the Trustpilot star rating for this review."
-        }
+          "info": "Set to -1 to hide star rating"
+        },
       ]
     }
   ],
