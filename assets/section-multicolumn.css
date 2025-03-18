@@ -258,7 +258,10 @@
 .media.media--transparent.media--circle {
     padding-bottom: 0;
 }
- 
+ .media.media--transparent.media--circle {
+    width: 100px;
+    height: 100px;
+}
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
