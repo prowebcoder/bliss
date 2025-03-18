@@ -412,6 +412,19 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "testimonial_aWQbkP": {
+          "type": "testimonial",
+          "settings": {
+            "customer_name": "Lisa Lunceford",
+            "image": "shopify://shop_images/LisaLunceford.jpg",
+            "youtube_video": "",
+            "star_rating": 5,
+            "title": "<p><strong>Dx: Lung Scarring, Anxiety </strong>\"</p>",
+            "customer_review": "I am utterly shocked, I was riddled with anxiety, pain, and ADHD, and this is probably the calmest I have been in over a year. This is a God-send.\"",
+            "link_label": "",
+            "link": "shopify://blogs/news"
+          }
         }
       },
       "block_order": [
@@ -421,13 +434,14 @@
         "testimonial_BEEHdd",
         "testimonial_UXVqHR",
         "testimonial_7t6q8j",
-        "testimonial_y6e8DL"
+        "testimonial_y6e8DL",
+        "testimonial_aWQbkP"
       ],
       "settings": {
         "title": "Some kind words.",
         "per_row": 4,
         "video_style": "control_bar",
-        "desktop_display": "scroll",
+        "desktop_display": "grid",
         "mobile_display": "scroll",
         "text_size": 100,
         "heading_color": "#121212",
