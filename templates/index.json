@@ -364,10 +364,11 @@
         "column_Kz6MrB": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/LisaLunceford.jpg",
             "num_stars": 5,
             "filled_star_color": "#FFD700",
-            "empty_star_color": "#cccccc",
-            "title": "Column",
+            "empty_star_color": "#0a8118",
+            "title": "Lisa Luncefird",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
