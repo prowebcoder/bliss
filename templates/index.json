@@ -400,6 +400,19 @@
             "link": ""
           }
         },
+        "column_J6wYR9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Steve_Minsky_edited.jpg",
+            "num_stars": 5,
+            "filled_star_color": "#FFD700",
+            "empty_star_color": "#0a8118",
+            "title": "Stephen Minsky",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_HFMPzi": {
           "type": "column",
           "settings": {
@@ -421,6 +434,7 @@
         "column_Kz6MrB",
         "column_awyaze",
         "column_iK3YMN",
+        "column_J6wYR9",
         "column_HFMPzi"
       ],
       "settings": {
@@ -439,128 +453,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn_i6KmEJ": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_a7YfKr": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KnQMTn": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Lawanda_Franks__edited.jpg",
-            "title": "Lawanda Franks",
-            "text": "<p>There is no medication in the world that can compare to this;  you come in, in pain, and you leave pain free. Nothing can compare.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_ebdTwr": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Kat_Ojala.jpg",
-            "title": "Cat Ijala",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_A8nGMa": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Randy_Moore_Photo_edited.jpg",
-            "title": "Randy Moore",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_WWVXk3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/LisaLunceford.jpg",
-            "title": "Lisa Lunceford",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_y9jiQx": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Robert_Griffin.jpg",
-            "title": "Robert Griffin",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_bteWyi": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Lisa_Mazani.jpg",
-            "title": "Lisa Mazani",
-            "text": "<p>\"I've had significant improvements in managing my PTSD symptoms and have experienced almost complete relief.\"</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KRJGQ8": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Steve_Minsky_edited.jpg",
-            "title": "Stephen Minsky",
-            "text": "<p>\"After ever therapy session I feel relaxed, I feel mentally at ease. My mobility returns to my body and I feel like I haven't spent a lifetime of hard manual labor.\"</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_cKAeTc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Sydney_Upine.jpg",
-            "title": "Sydney Upine",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_a7YfKr",
-        "column_KnQMTn",
-        "column_ebdTwr",
-        "column_A8nGMa",
-        "column_WWVXk3",
-        "column_y9jiQx",
-        "column_bteWyi",
-        "column_KRJGQ8",
-        "column_cKAeTc"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "See what people are saying about our coffee!",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "circle",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -571,7 +463,6 @@
     "video",
     "collapsible_content_Ea3qKc",
     "img_with_text_coll_zWkeHc",
-    "custom_reviews_yyTri8",
-    "multicolumn_i6KmEJ"
+    "custom_reviews_yyTri8"
   ]
 }
