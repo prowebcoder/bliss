@@ -41,7 +41,7 @@
   }
 {%- endif -%}
 .page-width.wbs__flex-item.wbs__item.wbs__block-testimonial {
-  background-color: {{ block.testimonial_background_color }};
+  background-color: {{ settings.testimonial_background_color }};
 }
   #WP--{{ section.id }} {
   background: {{ section.settings.background_color }};
@@ -743,7 +743,7 @@
             {% endif %}
           }
         </style>
-        <div class="page-width wbs__flex-item wbs__item wbs__block-{{ block.id }}" {{ block.shopify_attributes }} style="--wbs-animate: {{ forloop.index }};">
+        <div class="page-width.wbs__flex-item.wbs__item.wbs__block-testimonial page-width wbs__flex-item wbs__item wbs__block-{{ block.id }}" {{ block.shopify_attributes }} style="--wbs-animate: {{ forloop.index }};">
           <div class="wbs__video-wrapper">
             {%- if block.settings.youtube_video != blank %}
               <iframe
