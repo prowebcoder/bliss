@@ -72,28 +72,27 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="accordion footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {% render 'icon-accordion', icon: block.settings.icon %}
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="accordion__title footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="accordions footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
- {{- 'icon-caret.svg' | inline_asset_content -}}
+
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
-                    <div class="accordion__content footer-block__details-content rte">
+                    <div class="panel footer-block__details-content rte">
                       {{ block.settings.subtext }}
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="accordion__content footer-block__details-content list-unstyled">
+                      <ul class="panel footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           {%- comment %}<locksmith:de67>{% endcomment -%}
                             {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
