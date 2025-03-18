@@ -55,7 +55,7 @@
         "newsletter_heading": "Subscribe to our mailing list for 15% off your next order!",
         "newsletter_text": "Get 15% off your next order when you subscribe to our email mailing list, and stay up to date on special offers, new coffee releases, and email-exclusive updates.",
         "newsletter_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "newsletter_left": true,
+        "newsletter_left": false,
         "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,
