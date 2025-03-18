@@ -118,6 +118,14 @@
                   </div>
                 </div>
               {%- endif -%}
+
+               <!-- Star Rating Display -->
+          <div class="rating">
+            {% assign num_stars = section.settings.num_stars %}
+            {% for i in (1..num_stars) %}
+              <span class="star{% if i <= product.average_rating %} filled{% endif %}">★</span>
+            {% endfor %}
+          </div>
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
@@ -125,6 +133,8 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+
+                
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link animate-arrow"
@@ -427,6 +437,7 @@
           "label": "t:sections.multicolumn.blocks.column.settings.link_label.label",
           "info": "t:sections.multicolumn.blocks.column.settings.link_label.info"
         },
+        
         {
           "type": "url",
           "id": "link",
