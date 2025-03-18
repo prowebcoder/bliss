@@ -322,152 +322,72 @@
     "custom_reviews_yyTri8": {
       "type": "Custom-reviews",
       "blocks": {
-        "testimonial_9nMXXh": {
-          "type": "testimonial",
+        "column_ehaHCf": {
+          "type": "column",
           "settings": {
-            "customer_name": "Lawanda Franks",
-            "image": "shopify://shop_images/Lawanda_Franks__edited.jpg",
-            "youtube_video": "",
-            "star_rating": 3,
-            "title": "<p><strong>Dx: Severe Arthritis, Anxiety, Depression</strong></p>",
-            "customer_review": "There is no medication in the world that can compare to this;  you come in, in pain, and you leave pain free. Nothing can compare.",
+            "num_stars": 5,
+            "empty_star_color": "#ccc",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "link": "shopify://collections",
-            "testimonial_background_color": "#f6f2ed"
+            "link": ""
           }
         },
-        "testimonial_k9mkpa": {
-          "type": "testimonial",
+        "column_jVF7Hf": {
+          "type": "column",
           "settings": {
-            "customer_name": "Kat Ojala",
-            "image": "shopify://shop_images/Kat_Ojala.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p><strong>Dx: Tetanus, Muscular Spasticity, Depression</strong></p>",
-            "customer_review": "\"I am crying right now (tears of joy); I have not been free of this pain in years, I did not think it was possible. I can not believe it.\"",
+            "num_stars": 5,
+            "empty_star_color": "#ccc",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "link": "shopify://blogs/news",
-            "testimonial_background_color": "#ffffff"
+            "link": ""
           }
         },
-        "testimonial_fJ9UBY": {
-          "type": "testimonial",
+        "column_DE6kaT": {
+          "type": "column",
           "settings": {
-            "customer_name": "Randy Moore",
-            "image": "shopify://shop_images/Randy_Moore_Photo_edited.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p><strong>Dx: Asthamtic, COVID-19 Related Difficulties</strong></p>",
-            "customer_review": "\"I am taking deeper breaths, and breathing as well as when I was before COVID. It gets better after every therapy.\"",
+            "num_stars": 5,
+            "empty_star_color": "#ccc",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "link": "shopify://blogs/news",
-            "testimonial_background_color": "#ffffff"
+            "link": ""
           }
         },
-        "testimonial_BEEHdd": {
-          "type": "testimonial",
+        "column_Kz6MrB": {
+          "type": "column",
           "settings": {
-            "customer_name": "Stephen Minsky",
-            "image": "shopify://shop_images/Steve_Minsky_edited.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p><strong>Dx: Arthritis, Anxiety</strong></p>",
-            "customer_review": "\"After ever therapy session I feel relaxed, I feel mentally at ease. My mobility returns to my body and I feel like I haven't spent a lifetime of hard manual labor.\"",
+            "num_stars": 5,
+            "empty_star_color": "#ccc",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "link": "shopify://blogs/news",
-            "testimonial_background_color": "#ffffff"
-          }
-        },
-        "testimonial_UXVqHR": {
-          "type": "testimonial",
-          "settings": {
-            "customer_name": "Robert Griffin",
-            "image": "shopify://shop_images/Robert_Griffin.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p>Dx: Arthritis and Post-Surgical Pain</p>",
-            "customer_review": "\"I am moving better, feeling better and I can only imagine how much more I will be living better.\"",
-            "link_label": "",
-            "link": "shopify://blogs/news",
-            "testimonial_background_color": "#ffffff"
-          }
-        },
-        "testimonial_7t6q8j": {
-          "type": "testimonial",
-          "settings": {
-            "customer_name": "Lisa Mazani",
-            "image": "shopify://shop_images/Lisa_Mazani.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p>Dx: PTSD, Anxiety, Joint Pain</p>",
-            "customer_review": "\"I've had significant improvements in managing my PTSD symptoms and have experienced almost complete relief.\"",
-            "link_label": "",
-            "link": "",
-            "testimonial_background_color": "#ffffff"
-          }
-        },
-        "testimonial_y6e8DL": {
-          "type": "testimonial",
-          "settings": {
-            "customer_name": "Cynthia Uhiren",
-            "image": "shopify://shop_images/Sydney_Upine.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p>Dx: Parkinson's Disease</p>",
-            "customer_review": "“...amazing how fast you feel the effects! I’m very relaxed, no anxiety and my Parkinsons' feels gone!”",
-            "link_label": "",
-            "link": "",
-            "testimonial_background_color": "#ffffff"
-          }
-        },
-        "testimonial_aWQbkP": {
-          "type": "testimonial",
-          "settings": {
-            "customer_name": "Lisa Lunceford",
-            "image": "shopify://shop_images/LisaLunceford.jpg",
-            "youtube_video": "",
-            "star_rating": 5,
-            "title": "<p><strong>Dx: Lung Scarring, Anxiety </strong>\"</p>",
-            "customer_review": "I am utterly shocked, I was riddled with anxiety, pain, and ADHD, and this is probably the calmest I have been in over a year. This is a God-send.\"",
-            "link_label": "",
-            "link": "shopify://blogs/news",
-            "testimonial_background_color": "#ffffff"
+            "link": ""
           }
         }
       },
       "block_order": [
-        "testimonial_9nMXXh",
-        "testimonial_k9mkpa",
-        "testimonial_fJ9UBY",
-        "testimonial_BEEHdd",
-        "testimonial_UXVqHR",
-        "testimonial_7t6q8j",
-        "testimonial_y6e8DL",
-        "testimonial_aWQbkP"
+        "column_ehaHCf",
+        "column_jVF7Hf",
+        "column_DE6kaT",
+        "column_Kz6MrB"
       ],
-      "disabled": true,
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "title": "Some kind words.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-1",
-        "title": "Some kind words.",
-        "per_row": 4,
-        "video_style": "control_bar",
-        "desktop_display": "grid",
-        "mobile_display": "scroll",
-        "text_size": 100,
-        "heading_color": "#121212",
-        "text_color": "#121212",
-        "star_color": "#207905",
-        "play_button_color": "#ffffff",
-        "border_color": "#121212",
-        "border_width": 1,
-        "border_radius": 0,
-        "base_width": 90,
-        "max_width": "",
-        "inner_padding": 20,
-        "outer_margin": 0
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn_i6KmEJ": {
@@ -477,8 +397,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Lawanda_Franks__edited.jpg",
-            "num_stars": 3,
-            "empty_star_color": "#207905",
             "title": "Lawanda Franks",
             "text": "<p>There is no medication in the world that can compare to this;  you come in, in pain, and you leave pain free. Nothing can compare.</p>",
             "link_label": "",
@@ -489,8 +407,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Kat_Ojala.jpg",
-            "num_stars": 4,
-            "empty_star_color": "#207905",
             "title": "Cat Ijala",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -501,8 +417,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Randy_Moore_Photo_edited.jpg",
-            "num_stars": 4,
-            "empty_star_color": "#207905",
             "title": "Randy Moore",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -513,8 +427,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/LisaLunceford.jpg",
-            "num_stars": 5,
-            "empty_star_color": "#207905",
             "title": "Lisa Lunceford",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -525,8 +437,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Robert_Griffin.jpg",
-            "num_stars": 5,
-            "empty_star_color": "#207905",
             "title": "Robert Griffin",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -537,8 +447,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Lisa_Mazani.jpg",
-            "num_stars": 4,
-            "empty_star_color": "#207905",
             "title": "Lisa Mazani",
             "text": "<p>\"I've had significant improvements in managing my PTSD symptoms and have experienced almost complete relief.\"</p>",
             "link_label": "",
@@ -549,8 +457,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Steve_Minsky_edited.jpg",
-            "num_stars": 5,
-            "empty_star_color": "#207905",
             "title": "Stephen Minsky",
             "text": "<p>\"After ever therapy session I feel relaxed, I feel mentally at ease. My mobility returns to my body and I feel like I haven't spent a lifetime of hard manual labor.\"</p>",
             "link_label": "",
@@ -561,8 +467,6 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Sydney_Upine.jpg",
-            "num_stars": 4,
-            "empty_star_color": "#207905",
             "title": "Sydney Upine",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
