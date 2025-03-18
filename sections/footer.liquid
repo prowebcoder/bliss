@@ -333,6 +333,68 @@
   
 </footer>
 
+<style>
+  @media screen and (max-width: 767px) {
+    .footer-block.grid__item{
+      margin: 0;
+    }
+  .footer-block__details-content{
+    display: none;
+  }
+  .footer-block__heading {
+    border-bottom: solid 1px #ddd; 
+    padding-bottom: 6px;
+   }
+   .footer-block.grid__item .footer-block__heading::after {
+      content: "+";
+      position: absolute;
+      right: 12%;
+      font-weight: bold;
+  }
+  .footer-block.grid__item .footer-block__heading.active::after{
+      content: "-" !important;
+    }
+  }
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all elements with the class footer-block__heading
+  const headings = document.querySelectorAll('.footer-block__heading');
+  
+  // Add click event listener to each heading
+  headings.forEach(function(heading) {
+    heading.addEventListener('click', function() {
+      // Hide all elements with the class footer-block__details-content
+      const allDetails = document.querySelectorAll('.footer-block__details-content');
+      const allHeadings = document.querySelectorAll('.footer-block__heading');
+      allDetails.forEach(function(detail) {
+        detail.style.display = 'none';
+      });
+      
+      // Remove active class from all headings
+      allHeadings.forEach(function(h) {
+        h.classList.remove('active');
+      });
+      
+      // Toggle visibility of the corresponding footer-block__details-content
+      const detailsContent = heading.nextElementSibling;
+      if (detailsContent && detailsContent.classList.contains('footer-block__details-content')) {
+        if (heading.classList.contains('active')) {
+          // If the heading is already active, hide the details content
+          detailsContent.style.display = 'none';
+          heading.classList.remove('active');
+        } else {
+          // If the heading is not active, show the details content and add active class
+          detailsContent.style.display = 'block';
+          heading.classList.add('active');
+        }
+      }
+    });
+  });
+});
+
+</script>
+
 {% schema %}
 {
   "name": "t:sections.footer.name",
