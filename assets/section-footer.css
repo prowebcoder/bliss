@@ -26,11 +26,10 @@
     margin-top: 0;
   }
 
-  .footer__content-top {
-    padding-bottom: 3rem;
-    padding-left: calc(4rem / var(--font-body-scale));
-    padding-right: calc(4rem / var(--font-body-scale));
-  }
+      .footer__blocks-wrapper {
+        padding-left: calc(2rem / var(--font-body-scale));
+        padding-right: calc(2rem / var(--font-body-scale));
+    }
 }
 .newletter-side-reverse {
     flex-direction: row-reverse;
