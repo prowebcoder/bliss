@@ -121,7 +121,7 @@
               {%- endif -%}
 
             <!-- Star Rating Display -->
-          <div class="rating" style: text-aligen:"{{ block.settings.rating_alignment }};"  >
+          <div class="rating">
             {% assign num_stars = block.settings.num_stars %}
             {% assign filled_star_color = block.settings.filled_star_color %}
             {% assign empty_star_color = block.settings.empty_star_color %}
@@ -475,27 +475,7 @@
           "label": "t:sections.multicolumn.blocks.column.settings.link_label.label",
           "info": "t:sections.multicolumn.blocks.column.settings.link_label.info"
         },
-        {
-      "type": "select",
-      "label": "Rating Alignment",
-      "id": "rating_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
-      ],
-      "default": "center",
-      "info": "Choose the alignment for the star ratings."
-    },
+        
         
         {
           "type": "url",
