@@ -516,6 +516,7 @@
         "button_label": "Button label",
         "button_link": "",
         "columns_desktop": 3,
+        "star_color": "#207905",
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "",
