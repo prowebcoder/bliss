@@ -333,7 +333,37 @@
   
 </footer>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const headings = document.querySelectorAll('.footer-block__heading');
+ 
+  headings.forEach(function(heading) {
+    heading.addEventListener('click', function() {
+      const allDetails = document.querySelectorAll('.footer-block__details-content');
+      const allHeadings = document.querySelectorAll('.footer-block__heading');
+      allDetails.forEach(function(detail) {
+        detail.style.display = 'none';
+      });
+      
+      allHeadings.forEach(function(h) {
+        h.classList.remove('active');
+      });
+     
+      const detailsContent = heading.nextElementSibling;
+      if (detailsContent && detailsContent.classList.contains('footer-block__details-content')) {
+        if (heading.classList.contains('active')) {
+          detailsContent.style.display = 'none';
+          heading.classList.remove('active');
+        } else {
+          detailsContent.style.display = 'block';
+          heading.classList.add('active');
+        }
+      }
+    });
+  });
+});
 
+</script>
 
 {% schema %}
 {
