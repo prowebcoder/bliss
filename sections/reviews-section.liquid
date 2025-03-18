@@ -6,7 +6,12 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+#WP--{{ section.id }} .wbs__star svg path {
+  fill: {{ section.settings.star_color }};
+}
+  #WP--{{ section.id }} .wbs__star svg path {
+  fill: {{ section.settings.star_color }};
+}
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -146,12 +151,11 @@
       ],
       "default": "left"
     },
-    {
+   {
       "type": "color",
-      "label": "Star Rating Color",
       "id": "star_color",
-      "default": "#ffcc00",
-      "info": "Set the color of the star ratings."
+      "label": "Testimonial star color",
+      "default": "#121212"
     },
     {
       "type": "image_picker",
