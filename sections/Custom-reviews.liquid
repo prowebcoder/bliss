@@ -440,7 +440,7 @@
         <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
             </div>
         {% endif %}
-            
+            <h2>{{ block.settings.customer_name }}</h2>
               {%- if block.settings.star_rating != -1 -%}
                 <div class="wbs__stars">
                   {%- for i in (1..5) -%}
@@ -664,6 +664,12 @@
       "name": "Testimonial",
       "settings": [
        
+      {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name",
+          "default": "Genius Maker"
+        },
         {
           "type": "image_picker",
           "label": "Customer Image",
