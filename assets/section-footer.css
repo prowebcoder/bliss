@@ -94,33 +94,7 @@
     opacity: 1;
     transform: inherit;
   }
-  .accordions {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  transition: 0.4s;
-}
-
-
-
-.accordions:after {
-  content: '\002B';
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
+  
 }
 
 .footer__localization:empty + .footer__column--info {
