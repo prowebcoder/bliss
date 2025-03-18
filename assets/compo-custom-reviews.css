@@ -25,3 +25,14 @@
 .multicolumn.background-primary .multicolumn-card {
     background: rgb(246 242 237) linear-gradient(rgba(var(--color-foreground), .04), rgba(var(--color-foreground), .04));
 }
+.star-rating-section .left {
+    text-align: left;
+  }
+
+  .star-rating-section .center {
+    text-align: center;
+  }
+
+  .star-rating-section .right {
+    text-align: right;
+  }
