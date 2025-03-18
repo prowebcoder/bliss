@@ -730,7 +730,7 @@
     {%- if section.settings.title != blank -%}
       <h2 class="wbs__heading" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.title }}</h2>
     {%- endif -%}
-    <div class="wbs__testimonials-wrapper wbs__flex">
+    <div class="wbs__testimonials-wrapper wbs__flex" style= background-color: {{ block.settings.testimonial_background_color }};>
       {%- for block in section.blocks -%}
         <style>
           .wbs__block-{{ block.id }} .wbs__hosted-video {
