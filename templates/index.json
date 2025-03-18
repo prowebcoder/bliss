@@ -478,7 +478,6 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "star_rating": 5,
             "link": ""
           }
         },
@@ -488,7 +487,6 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "star_rating": 5,
             "link": ""
           }
         },
@@ -498,7 +496,6 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "star_rating": 5,
             "link": ""
           }
         }
@@ -515,8 +512,7 @@
         "image_ratio": "adapt",
         "button_label": "Button label",
         "button_link": "",
-        "columns_desktop": 3,
-        "star_color": "#207905",
+        "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "",
