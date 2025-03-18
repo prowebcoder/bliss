@@ -19,7 +19,7 @@
 .testimonials__icon.testimonials__icon--top {
     text-align: left;
 }
-.testimonials__icon.testimonials__icon--top svg, .testimonials__icon.testimonials__icon--bottom {
+.testimonials__icon.testimonials__icon--top svg, .testimonials__icon.testimonials__icon--bottom svg {
     width: 20px;
 }
 .multicolumn.background-primary .multicolumn-card {
