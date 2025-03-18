@@ -386,6 +386,7 @@
         "testimonial_9nMXXh": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 3,
             "title": "<p>Best product ever! Highly recommend.</p>",
             "link_label": "",
@@ -395,6 +396,7 @@
         "testimonial_fJ9UBY": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.</p>",
             "link_label": "",
@@ -404,6 +406,7 @@
         "testimonial_BEEHdd": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.</p>",
             "link_label": "",
@@ -413,6 +416,7 @@
         "testimonial_bw9bdP": {
           "type": "testimonial",
           "settings": {
+            "youtube_video": "",
             "star_rating": 5,
             "title": "<p>Best product ever! Highly recommend.</p>",
             "link_label": "",
@@ -445,6 +449,59 @@
         "inner_padding": 40,
         "outer_margin": 0
       }
+    },
+    "slideshow_9b6wnn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_QYWedY": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_y3dC9q": {
+          "type": "slide",
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_QYWedY",
+        "slide_y3dC9q"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -456,6 +513,7 @@
     "collapsible_content_Ea3qKc",
     "img_with_text_coll_zWkeHc",
     "reviews_section_8rTQkn",
-    "custom_reviews_yyTri8"
+    "custom_reviews_yyTri8",
+    "slideshow_9b6wnn"
   ]
 }
