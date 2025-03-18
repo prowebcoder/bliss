@@ -726,7 +726,7 @@
 <section id="WP--{{ section.id }}" class="WP--{{ section.id }} wbs__testimonials-video wbs__section" {%- if section.settings.animation != 'none' -%}data-animated-section{%- endif -%}>
   <div class="wbs__sizer">
     {%- if section.settings.title != blank -%}
-      <h2 class="wbs__heading">{{ section.settings.title }}</h2>
+      <h2 class="wbs__heading" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.title }}</h2>
     {%- endif -%}
     <div class="wbs__testimonials-wrapper wbs__flex">
       {%- for block in section.blocks -%}
