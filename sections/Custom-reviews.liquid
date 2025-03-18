@@ -739,7 +739,7 @@
             {% endif %}
           }
         </style>
-        <div class="page-width wbs__flex-item wbs__item wbs__block-{{ block.id }}" {{ block.shopify_attributes }} style="--wbs-animate: {{ forloop.index }};">
+        <div class="page-width wbs__flex-item wbs__item wbs__block-{{ block.id }}" {{ block.shopify_attributes }} style="--wbs-animate: {{ forloop.index }};" style="background-color: {{ settings.background_color }};>
           <div class="wbs__video-wrapper">
             {%- if block.settings.youtube_video != blank %}
               <iframe
