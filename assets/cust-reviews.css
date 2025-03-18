@@ -93,11 +93,6 @@ img.qoute-image {
     gap: 10px; /* Adjusts space between the text and images */
 }
 
-.circle-image {
-    width: 30px;  /* Adjust the size of the images */
-    height: 30px; /* Adjust the size of the images */
-    border-radius: 50%; /* Makes the images circular */
-}
 
 .review-text {
     font-size: 16px;  /* Adjust text size */
