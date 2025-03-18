@@ -6,12 +6,7 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-#WP--{{ section.id }} .wbs__star svg path {
-  fill: {{ section.settings.star_color }};
-}
-  #WP--{{ section.id }} .wbs__star svg path {
-  fill: {{ section.settings.star_color }};
-}
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -24,8 +19,8 @@
 
 <div class="review-section page-width">
   <h2 class="review-title" style="text-align: {{ section.settings.text_alignment }}">{{ section.settings.default_review_title }}</h2>
-{%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
-  <div  class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
+
+  <div class="reviews-container {% if settings.review_display_style == 'grid' %}review-grid{% else %}review-list{% endif %}">
     {% assign column_class = '' %}
 
     {% if settings.columns_per_row == '2' %}
@@ -62,25 +57,18 @@
         <p class="review-author"><strong>{{ block.settings.author_name }}</strong></p>
 
         <!-- Trustpilot Rating (Example: 5 stars) -->
-         {%- if block.settings.star_rating != -1 -%}
-                <div class="wbs__stars">
-                  {%- for i in (1..5) -%}
-                    <div class="wbs__star">
-                      {%- if i <= block.settings.star_rating -%}
-                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#5C5F62"/></svg>
-                      {%- else -%}
-                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6.71 15.116l3.357-1.658.892.452 2.327 1.178-.56-3.912.708-.707 1.29-1.29-3.235-.576-.445-.915-1.059-2.176L8.4 8.683l-1.005.168-2.098.35 1.975 1.975-.141.99-.422 2.95zM5.2 18a.8.8 0 01-.792-.914l.743-5.203-2.917-2.917a.8.8 0 01.434-1.355l4.398-.733 2.218-4.435a.8.8 0 011.435.008l2.123 4.361 4.498.801a.8.8 0 01.425 1.353l-2.917 2.917.744 5.203a.8.8 0 01-1.154.828l-4.382-2.22-4.502 2.223A.792.792 0 015.2 18z" fill="#5C5F62"/></svg>
-                      {%- endif -%}
-                    </div>
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
+         {% if block.settings.trustpilot_rating %}
+          <div class="trustpilot-rating">
+            {% for i in (1..5) %}
+              <span class="{% if i <= block.settings.trustpilot_rating %}filled{% else %}empty{% endif %}" style="color: {{ block.settings.star_color }}">★</span>
+            {% endfor %}
+          </div>
+        {% endif %}
       </div>
     {% else %}
       <p class="no-reviews">No reviews yet.</p>
     {% endfor %}
   </div>
-  {% endif %}
 </div>
 </div>
 {% schema %}
@@ -151,11 +139,12 @@
       ],
       "default": "left"
     },
-   {
+    {
       "type": "color",
+      "label": "Star Rating Color",
       "id": "star_color",
-      "label": "Testimonial star color",
-      "default": "#121212"
+      "default": "#ffcc00",
+      "info": "Set the color of the star ratings."
     },
     {
       "type": "image_picker",
@@ -231,13 +220,14 @@
         },
         {
           "type": "range",
-          "id": "star_rating",
-          "min": -1,
+          "label": "Trustpilot Rating (1-5 Stars)",
+          "id": "trustpilot_rating",
+          "min": 1,
           "max": 5,
-          "label": "Star rating",
+          "step": 1,
           "default": 5,
-          "info": "Set to -1 to hide star rating"
-        },
+          "info": "Set the Trustpilot star rating for this review."
+        }
       ]
     }
   ],
