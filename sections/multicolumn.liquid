@@ -121,9 +121,9 @@
 
             <!-- Star Rating Display -->
           <div class="rating">
-            {% assign num_stars = section.settings.num_stars %}
-            {% assign filled_star_color = section.settings.filled_star_color %}
-            {% assign empty_star_color = section.settings.empty_star_color %}
+            {% assign num_stars = block.settings.num_stars %}
+            {% assign filled_star_color = block.settings.filled_star_color %}
+            {% assign empty_star_color = block.settings.empty_star_color %}
             
             {% for i in (1..num_stars) %}
               <span class="star{% if i <= product.average_rating %} filled{% endif %}" 
