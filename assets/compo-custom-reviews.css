@@ -1,0 +1,27 @@
+.wbs__image__wrapper:not(.wbs__image__wrapper--contain) svg{
+  width: inherit;
+    height: inherit;
+}
+
+.wbs__image__wrapper{
+  position: relative;
+  display: grid;
+  margin: 0;
+}
+.circle-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+  .wbs__image__wrapper img{
+    object-fit: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
