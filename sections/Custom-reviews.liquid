@@ -429,6 +429,12 @@
           </div>
           {%- if block.settings.star_rating != -1 or block.settings.title != blank or block.settings.image != blank or block.settings.link_label != blank %}
             <div class="wbs__inner-content">
+{% if block.settings.image %}
+          <div class="review-image">
+        <img src="{{ block.settings.image | img_url: 'medium' }}" alt="Review Image" class="circle-image" />
+            </div>
+        {% endif %}
+            
               {%- if block.settings.star_rating != -1 -%}
                 <div class="wbs__stars">
                   {%- for i in (1..5) -%}
@@ -467,10 +473,7 @@
   "name": "Custom Reviews",
   "class": "WP__testimonials-video",
   "settings": [
-     {
-        "type": "paragraph",
-        "content": "Support WebSensePro by [Subscribing our Channel](https:\/\/youtube.com\/@websensepro?sub_confirmation=1)"
-      },
+     
     {
       "type": "text",
       "id": "title",
@@ -653,6 +656,13 @@
       "type": "testimonial",
       "name": "Testimonial",
       "settings": [
+       
+        {
+          "type": "image_picker",
+          "label": "Customer Image",
+          "id": "image",
+          "info": "Upload a circle-shaped image of the reviewer."
+        },
         {
           "type": "video",
           "id": "html5_video",
