@@ -14,7 +14,7 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient" style="background-color: {{ section.settings.background_color }}; background-image: {% if section.settings.background_image != blank %}url('{{ section.settings.background_image | img_url: 'original' }}'){% endif %};">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -134,6 +134,7 @@
     {%- endform -%}
   </div>
 </div>
+
 
 {% schema %}
 {
