@@ -36,3 +36,9 @@
   .star-rating-section .right {
     text-align: right;
   }
+.multicolumn-card.content-container {
+    transition: background-color .4s ease;
+}
+.multicolumn-card.content-container:hover {
+    background-color: #f3f3f37d;
+}
