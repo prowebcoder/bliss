@@ -125,14 +125,15 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "FAQ",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "row",
+        "layout": "section",
         "container_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "color_scheme": "",
         "open_first_collapsible_row": true,
-        "image_ratio": "adapt",
+        "image": "shopify://shop_images/autumn-trees-hillside.jpg",
+        "image_ratio": "large",
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
