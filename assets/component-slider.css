@@ -312,11 +312,11 @@ slider-component.slider-component-full-width {
 }
 
 .slider-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
 }
 
 @media screen and (min-width: 990px) {
