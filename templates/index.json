@@ -87,7 +87,9 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "padding_top_mobile": 4,
+        "padding_bottom_mobile": 4
       }
     },
     "image_with_text_DfCirf": {
