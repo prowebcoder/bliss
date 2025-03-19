@@ -14,7 +14,7 @@
 .banner__box.gradient {
   transform: perspective(0);
 }
-.banner__media img {
+.banner--adapt .banner__media img {
     position: absolute !important;
 }
 @media only screen and (max-width: 749px) {
