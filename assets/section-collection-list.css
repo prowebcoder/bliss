@@ -19,11 +19,11 @@
   transition: filter opacity var(--duration-long) ease;
   }
 .collection-list .card-wrapper:hover .card__information{
-  transition: transform var(--duration-short) ease;
+  transition: transform var(--duration-long) ease;
   transform:translateY(-5px);
 }
 .collection-list .card-wrapper .card__information{
-   transition: transform var(--duration-short) ease;
+   transition: transform var(--duration-long) ease;
  transform:translateY(0px);
 }
 .full_card_link {
