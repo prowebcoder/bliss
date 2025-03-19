@@ -10,6 +10,7 @@
 .collection-list .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
    opacity:.8;
       filter: blur(1px);
+   transition: filter opacity var(--duration-short) ease;
   }
 .collection-list .card .media.media--hover-effect > img:first-child:only-child,
 .collection-list .card-wrapper .media.media--hover-effect > img:first-child:only-child {
