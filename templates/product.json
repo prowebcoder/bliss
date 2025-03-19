@@ -174,8 +174,8 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>Homeostasis and Wellbeing</strong>",
+            "text": "<p>The body’s homeostasis system is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences.</p>",
             "link_label": "",
             "link": ""
           }
