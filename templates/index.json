@@ -12,7 +12,7 @@
     "image_banner_XJPmhF": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/image.webp",
+        "image": "shopify://shop_images/banner.webp",
         "image_overlay_opacity": 20,
         "image_height": "adapt",
         "image_behavior": "none",
