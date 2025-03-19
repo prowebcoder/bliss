@@ -14,7 +14,9 @@
 .banner__box.gradient {
   transform: perspective(0);
 }
-
+.banner__media img {
+    position: absolute;
+}
 @media only screen and (max-width: 749px) {
   .banner--content-align-mobile-right .banner__box {
     text-align: right;
