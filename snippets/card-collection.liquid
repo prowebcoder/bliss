@@ -50,7 +50,7 @@
                 href="{{ card_collection.url }}"
               {% endif %}
               class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
-            ></a>
+            >&nbsp;</a>
     <div
       class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
