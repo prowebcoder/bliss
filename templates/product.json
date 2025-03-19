@@ -174,7 +174,7 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "image": "shopify://shop_images/1e4918_fae5eba015ee4a1981028e73d9157bad_mv2.png",
             "title": "Homeostasis and Wellbeing",
             "text": "<p>The body’s homeostasis system is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences.</p>",
             "link_label": "",
@@ -184,6 +184,7 @@
         "column-1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/1e4918_bc2e8e57fad049a1a066d325d4fa02e9_mv2.png",
             "title": "Virtual Nature Integration",
             "text": "<p>BlissThera's<strong>®</strong> physician-developed therapies are designed to help patients feel better both immediately and for the long-term, by promoting homeostasis through phytochemical synergy.</p>",
             "link_label": "",
