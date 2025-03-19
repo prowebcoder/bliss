@@ -119,8 +119,11 @@
                   </div>
                 </div>
               {%- endif -%}
-
-            <!-- Star Rating Display -->
+              <div class="multicolumn-card__info">
+                {%- if block.settings.title != blank -%}
+                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                {%- endif -%}
+<!-- Star Rating Display -->
           <div class="rating">
             {% assign num_stars = block.settings.num_stars %}
             {% assign filled_star_color = block.settings.filled_star_color %}
@@ -133,10 +136,6 @@
               </span>
             {% endfor %}
           </div>
-              <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
-                {%- endif -%}
                <div class="testimonials__icon testimonials__icon--top">
                 
 <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
