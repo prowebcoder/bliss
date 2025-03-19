@@ -36,6 +36,13 @@
   .star-rating-section .right {
     text-align: right;
   }
+.rating span.star {
+    color: #ffffff;
+    background: #0a8118;
+    padding: 0 0px;
+    margin: 0 1px;
+    padding-left: 6px;
+}
 .multicolumn-card.content-container {
     transition: background-color .4s ease;
 }
