@@ -92,23 +92,15 @@
             "text": "<p>Treatment Locations for BlissThera Forest Medicine & Virtual Nature Therapy</p>",
             "text_style": "body"
           }
-        },
-        "button_3HpNTN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_CH6xMp",
-        "text_pdcyj7",
-        "button_3HpNTN"
+        "text_pdcyj7"
       ],
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/a-wayfinding-sign-beside-a-path.jpg",
+        "height": "small",
         "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
