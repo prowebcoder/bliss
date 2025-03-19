@@ -84,11 +84,4 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
-.image-block {
-  display: none;
-}
-
-.image-block[data-image-url]:not([data-image-url=""]) {
-  display: block;
-}
 
