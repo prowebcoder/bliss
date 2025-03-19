@@ -86,4 +86,5 @@
 }
 .rating span.star {
     padding: 0 4px;
+    border-radius: 4px;
 }
