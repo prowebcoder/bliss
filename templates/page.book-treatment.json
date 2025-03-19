@@ -25,7 +25,8 @@
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "background_color": "#ffffff"
       }
     },
     "image_banner_kpwVhU": {
@@ -203,7 +204,7 @@
         "background_style": "primary",
         "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
