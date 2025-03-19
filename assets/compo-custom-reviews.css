@@ -50,3 +50,6 @@
  .slider-counter.caption {
     display: none;
 }
+.media.media--transparent.media--circle {
+    margin: 0 auto;
+}
