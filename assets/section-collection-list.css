@@ -21,7 +21,7 @@
   transition: transform var(--duration-long) ease;
   transform:translateY(-5px);
 }
-.collection-list .card-wrapper:hover .card__information{
+.collection-list .card-wrapper .card__information{
    transition: transform var(--duration-long) ease;
  transform:translateY(0px);
 }
