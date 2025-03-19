@@ -136,7 +136,7 @@
         "image-with-text-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Drug-Free Pain and Stress Management Therapies Based on the Health Modality of Forest Medicine",
             "heading_size": "h1"
           }
         },
@@ -153,6 +153,7 @@
         "image-with-text-1"
       ],
       "settings": {
+        "image": "shopify://shop_images/1e4918_6b4c53a2227e4782a9d938d1d9b1cbbf_mv2.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
