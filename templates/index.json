@@ -38,16 +38,6 @@
             "text_color": "#ffffff"
           }
         },
-        "featured_collection_4Rtcz6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "blissthera®-hardware",
-            "content_align": "center",
-            "title": "Collection title",
-            "inline_text": "Inline Text",
-            "text_color": "#ffffff"
-          }
-        },
         "featured_collection_MB48hT": {
           "type": "featured_collection",
           "settings": {
@@ -67,13 +57,23 @@
             "inline_text": "Inline Text",
             "text_color": "#ffffff"
           }
+        },
+        "featured_collection_LWFYxU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "biomedia®-solutions",
+            "content_align": "center",
+            "title": "Collection title",
+            "inline_text": "Inline Text",
+            "text_color": "#ffffff"
+          }
         }
       },
       "block_order": [
         "featured_collection_PtwTVE",
-        "featured_collection_4Rtcz6",
         "featured_collection_MB48hT",
-        "featured_collection_6rpdQz"
+        "featured_collection_6rpdQz",
+        "featured_collection_LWFYxU"
       ],
       "settings": {
         "title": "",
