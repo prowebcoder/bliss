@@ -601,3 +601,12 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+@media screen and (max-width:768px){
+  .card__heading {
+      font-size: 1.2rem;
+}
+  .card__caption{
+    font-size:1rem
+  }
+}
