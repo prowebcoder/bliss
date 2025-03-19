@@ -11,6 +11,12 @@
    opacity:.8;
       filter: blur(1px);
   }
+.collection-list .card .media.media--hover-effect > img:first-child:only-child,
+.collection-list .card-wrapper .media.media--hover-effect > img:first-child:only-child {
+   opacity:.8;
+      
+  transition: filter opacity var(--duration-long) ease;
+  }
 .collection-list .card-wrapper:hover .card__information{
   transform:translateY(5px);
 }
