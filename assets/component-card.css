@@ -404,7 +404,7 @@
         
   }
 .card-wrapper:hover .card__information{
-  transform:translateX(10px);
+  transform:translateY(5px);
 }
   .underline-links-hover:hover a {
     text-decoration: underline;
