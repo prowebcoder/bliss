@@ -6,7 +6,14 @@
 .collection-list-title {
   margin: 0;
 }
-
+.collection-list .card:hover .media.media--hover-effect > img:first-child:only-child,
+.collection-list .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
+   opacity:.8;
+      filter: blur(1px);
+  }
+.collection-list .card-wrapper:hover .card__information{
+  transform:translateY(5px);
+}
 @media screen and (max-width: 749px) {
   .collection-list:not(.slider) {
     padding-left: 0;
