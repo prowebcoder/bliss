@@ -13,6 +13,41 @@
 .contact .field {
   margin-bottom: 1.5rem;
 }
+{% style %}
+  .contact__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact__wrapper--left .contact__form {
+    order: 1;
+  }
+
+  .contact__wrapper--right .contact__form {
+    order: 2;
+  }
+
+  .contact__form {
+    flex: 1;
+    margin-right: 20px; /* Adjust the margin for spacing */
+  }
+
+  .contact__empty-side {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .empty-side__heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .empty-side__text {
+    font-size: 16px;
+  }
+{% endstyle %}
 
 @media screen and (min-width: 750px) {
   .contact .field {
