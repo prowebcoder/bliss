@@ -18,7 +18,7 @@
   transition: filter opacity var(--duration-long) ease;
   }
 .collection-list .card-wrapper:hover .card__information{
-  transform:translateY(5px);
+  transform:translateY(-5px);
 }
 .collection-list .card-wrapper:hover .card__information{
    transition: transform var(--duration-long) ease;
