@@ -43,14 +43,6 @@
     "
     style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
   >
-     <a
-              {% if card_collection == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ card_collection.url }}"
-              {% endif %}
-              class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
-            >
     <div
       class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
@@ -92,7 +84,14 @@
         <div class="card__content content__align-{{ card_align }}">
           <div class="card__information">
             <h3 class="card__heading">
-            
+              <a
+                {% if card_collection == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ card_collection.url }}"
+                {% endif %}
+                class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
+              >
                 {% if block.settings.title != blank %}
                     {{ block.settings.title }}
                 {% else %}
@@ -106,7 +105,7 @@
                 {%- if card_collection.description == blank -%}
                  
                 {%- endif %}
-            
+              </a>
             </h3>
            {% if block.settings.inline_text != blank %}
                  
@@ -134,7 +133,14 @@
       <div class="card__content content__align-{{ card_align }}">
         <div class="card__information">
           <h3 class="card__heading">
-           
+            <a
+              {% if card_collection == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ card_collection.url }}"
+              {% endif %}
+              class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
+            >
                 {% if block.settings.title != blank %}
                     {{ block.settings.title }}
                 {% else %}
@@ -148,7 +154,7 @@
               {%- if card_collection.featured_image or card_collection.description == blank -%}
              
               {%- endif %}
-          
+            </a>
           </h3>
                {% if block.settings.inline_text != blank %}
                    
@@ -184,6 +190,5 @@
         </div>
       </div>
     {%- endif -%}
-         </a>
   </div>
 </div>
