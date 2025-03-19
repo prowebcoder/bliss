@@ -261,6 +261,19 @@ slider-component.slider-component-full-width {
   .slider-counter__link {
     padding: 0.7rem;
   }
+  .slider-button {
+    color: rgb(0 0 0);
+    background: #fffffffa;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
 }
 
 .slider-counter__link--dots .dot {
@@ -360,7 +373,21 @@ slider-component.slider-component-full-width {
 .slider-button .icon {
   height: 0.6rem;
 }
+@media screen and (max-width: 749px) {
 
+  .slider-button {
+    color: rgb(0 0 0);
+    background: #fffffffa;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+}
 .slider-button[disabled] .icon {
   color: rgba(var(--color-foreground), 0.3);
   cursor: not-allowed;
