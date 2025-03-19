@@ -203,7 +203,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "image_width": "half",
+        "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
         "button_link": "",
@@ -212,7 +212,7 @@
         "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
