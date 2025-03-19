@@ -391,7 +391,7 @@
   .card:hover .media.media--hover-effect > img:first-child:only-child,
   .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
    opacity:.8;
-      filter: blur(1px);
+      
   }
 
   .card-wrapper:hover .media.media--hover-effect > img:first-child:not(:only-child) {
