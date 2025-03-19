@@ -130,10 +130,10 @@
         "column_NLmUtf": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "BlissThera Fayetteville, AR Clinic",
+            "text": "<p>2863 Old Missouri Rd, Ste 110-CFayetteville AR 72703</p><p><a href=\"tel:4792255299\"><span style=\"text-decoration:underline\">(479) 225-5299‬</span></a></p>",
+            "link_label": "Located in",
+            "link": "https://www.google.com/maps/dir/?api=1&destination=2863%20Old%20Missouri%20Rd%20Ste%20110-C,%20Fayetteville,%20AR%2072703,%20USA"
           }
         },
         "column_HdCDrr": {
