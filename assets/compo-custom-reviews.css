@@ -43,8 +43,4 @@
 .multicolumn-card.content-container:hover {
     background-color: #f3f3f37d;
 }
-.rating span.star {
-    background: green;
-    padding: 0 4px;
-    border-radius: 4px;
-}
+ 
