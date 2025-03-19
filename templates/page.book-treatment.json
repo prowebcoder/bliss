@@ -114,6 +114,44 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_Banean": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TJRbA3": {
+          "type": "heading",
+          "settings": {
+            "heading": "he Essence of BlissThera®: Phytochemical Synergy",
+            "heading_size": "h1"
+          }
+        },
+        "text_Hp9NH7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Treatment Locations for BlissThera Forest Medicine & Virtual Nature Therapy</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TJRbA3",
+        "text_Hp9NH7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/a-wayfinding-sign-beside-a-path.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "overlap",
+        "desktop_content_position": "bottom",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_CXEgdp": {
       "type": "multicolumn",
       "blocks": {
@@ -177,6 +215,7 @@
     "image_banner_kpwVhU",
     "rich_text_BEKeW8",
     "image_with_text_YDn6L8",
+    "image_with_text_Banean",
     "multicolumn_CXEgdp"
   ]
 }
