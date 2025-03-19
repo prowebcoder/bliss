@@ -233,7 +233,8 @@
   .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: var(--grid-desktop-horizontal-spacing);
+        row-gap: var(--grid-desktop-vertical-spacing);
     justify-content: center;
   }
 
