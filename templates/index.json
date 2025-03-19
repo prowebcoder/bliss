@@ -79,7 +79,7 @@
         "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
-        "col_style": "3",
+        "col_style": "1",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "background": "linear-gradient(180deg, rgba(18, 18, 18, 0.22) 100%, rgba(0, 0, 0, 0.05) 100%)",
