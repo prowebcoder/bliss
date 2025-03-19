@@ -10,13 +10,13 @@
 .collection-list .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
    opacity:.8;
       filter: blur(1px);
-   transition: filter opacity var(--duration-short) ease;
+   transition: filter opacity var(--duration-long) ease;
   }
 .collection-list .card .media.media--hover-effect > img:first-child:only-child,
 .collection-list .card-wrapper .media.media--hover-effect > img:first-child:only-child {
    opacity:.8;
      filter:blur(0) ;
-  transition: filter opacity var(--duration-short) ease;
+  transition: filter opacity var(--duration-long) ease;
   }
 .collection-list .card-wrapper:hover .card__information{
   transition: transform var(--duration-short) ease;
