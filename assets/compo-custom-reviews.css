@@ -47,4 +47,6 @@
     padding: 0 4px;
     border-radius: 4px;
 }
- 
+ .slider-counter.caption {
+    display: none;
+}
