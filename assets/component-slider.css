@@ -262,8 +262,8 @@ slider-component.slider-component-full-width {
     padding: 0.7rem;
   }
   .slider-button {
-    color: rgb(0 0 0);
-    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-foreground));
+    background:rgb(var(--color-background));
     border: none;
     cursor: pointer;
     width: 25px;
@@ -378,8 +378,8 @@ slider-component.slider-component-full-width {
 @media screen and (max-width: 749px) {
 
   .slider-button {
-    color: rgb(0 0 0);
-    background:rgb(var(--color-foreground));
+    color: rgb(var(--color-foreground));
+    background:rgb(var(--color-background));
     
     border: none;
     cursor: pointer;
