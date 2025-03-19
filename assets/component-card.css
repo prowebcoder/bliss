@@ -609,4 +609,13 @@
   .card__caption{
     font-size:1rem
   }
+  .style_1 .card--card.card--media>.card__content {
+    margin: 0 auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    bottom: auto;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
 }
