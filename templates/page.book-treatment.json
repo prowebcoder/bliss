@@ -140,6 +140,7 @@
         "column_HdCDrr": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/download_3.png",
             "title": "BlissThera Home Office  Little Rock, AR",
             "text": "<p>After Hour Clinic Only</p><p>3924 W. Markham St. Little Rock, AR 72205</p>",
             "link_label": "Located in",
