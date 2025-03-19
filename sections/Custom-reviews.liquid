@@ -120,7 +120,19 @@
                 </div>
               {%- endif -%}
 
+            <!-- Star Rating Display -->
+          <div class="rating">
+            {% assign num_stars = block.settings.num_stars %}
+            {% assign filled_star_color = block.settings.filled_star_color %}
+            {% assign empty_star_color = block.settings.empty_star_color %}
             
+            {% for i in (1..num_stars) %}
+              <span class="star{% if i <= product.average_rating %} filled{% endif %}" 
+                    style="color: {% if i <= product.average_rating %}{{ filled_star_color }}{% else %}{{ empty_star_color }}{% endif %};">
+                ★
+              </span>
+            {% endfor %}
+          </div>
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
@@ -159,21 +171,7 @@
                     >
                   </a>
                 {%- endif -%}
-                <!-- Star Rating Display -->
-          <div class="rating">
-            {% assign num_stars = block.settings.num_stars %}
-            {% assign filled_star_color = block.settings.filled_star_color %}
-            {% assign empty_star_color = block.settings.empty_star_color %}
-            
-            {% for i in (1..num_stars) %}
-              <span class="star{% if i <= product.average_rating %} filled{% endif %}" 
-                    style="color: {% if i <= product.average_rating %}{{ filled_star_color }}{% else %}{{ empty_star_color }}{% endif %};">
-                ★
-              </span>
-            {% endfor %}
-          </div>
               </div>
-              
             </div>
           </li>
         {%- endfor -%}
