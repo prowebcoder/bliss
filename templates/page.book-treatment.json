@@ -130,6 +130,7 @@
         "column_NLmUtf": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/download_1.png",
             "title": "BlissThera Fayetteville, AR Clinic",
             "text": "<p>2863 Old Missouri Rd, Ste 110-CFayetteville AR 72703</p><p><a href=\"tel:4792255299\"><span style=\"text-decoration:underline\">(479) 225-5299‬</span></a></p>",
             "link_label": "Located in",
