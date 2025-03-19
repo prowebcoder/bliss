@@ -49,7 +49,7 @@
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
-              class="full-unstyled-link" style="color:{{ block.settings.text_color }}"
+              class="full_card_link"
             >&nbsp;</a>
     <div
       class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}"
