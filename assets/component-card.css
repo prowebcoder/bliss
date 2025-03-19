@@ -403,7 +403,9 @@
     transition: transform var(--duration-long) ease;
         
   }
-
+.card-wrapper:hover .card__information{
+  transform:translateX(10px);
+}
   .underline-links-hover:hover a {
     text-decoration: underline;
     text-underline-offset: 0.3rem;
