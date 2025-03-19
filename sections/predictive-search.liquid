@@ -45,9 +45,15 @@
               </a>
             </li>
           {%- endfor -%}
+          {%- comment %}<locksmith:8681>{% endcomment -%}
+            {%- assign locksmith_7ed7_forloop__size = 0 %}{%- for collection in predictive_search.resources.collections -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: predictive_search.resources, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_7ed7_forloop__size = locksmith_7ed7_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_7ed7_forloop__index = nil -%}
+          {%- comment %}</locksmith:8681>{% endcomment -%}
           {%- for collection in predictive_search.resources.collections -%}
+            {%- comment %}<locksmith:f15a>{% endcomment -%}
+              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: predictive_search.resources, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_7ed7_forloop__index == nil %}{% assign locksmith_7ed7_forloop__index = 1 %}{% assign locksmith_7ed7_forloop__index0 = 0 %}{% else %}{% assign locksmith_7ed7_forloop__index = locksmith_7ed7_forloop__index | plus: 1 %}{% assign locksmith_7ed7_forloop__index0 = locksmith_7ed7_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_7ed7_forloop__index == 1 %}{% assign locksmith_7ed7_forloop__first = true %}{% else %}{% assign locksmith_7ed7_forloop__first = false %}{% endif %}{% if locksmith_7ed7_forloop__index == locksmith_7ed7_forloop__size %}{% assign locksmith_7ed7_forloop__last = true %}{% else %}{% assign locksmith_7ed7_forloop__last = false %}{% endif %}{% assign locksmith_7ed7_forloop__rindex = locksmith_7ed7_forloop__size | minus: locksmith_7ed7_forloop__index | minus: 1 %}{% assign locksmith_7ed7_forloop__rindex0 = locksmith_7ed7_forloop__size | minus: locksmith_7ed7_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+            {%- comment %}</locksmith:f15a>{% endcomment -%}
             <li
-              id="predictive-search-option-collection-{{ forloop.index }}"
+              id="predictive-search-option-collection-{{ locksmith_7ed7_forloop__index }}"
               class="predictive-search__list-item"
               role="option"
               aria-selected="false"
@@ -129,9 +135,15 @@
               role="group"
               aria-labelledby="predictive-search-products"
             >
+              {%- comment %}<locksmith:cfb2>{% endcomment -%}
+                {%- assign locksmith_a621_forloop__size = 0 %}{%- for product in predictive_search.resources.products -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: predictive_search.resources, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_a621_forloop__size = locksmith_a621_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_a621_forloop__index = nil -%}
+              {%- comment %}</locksmith:cfb2>{% endcomment -%}
               {%- for product in predictive_search.resources.products -%}
+                {%- comment %}<locksmith:404d>{% endcomment -%}
+                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: predictive_search.resources, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_a621_forloop__index == nil %}{% assign locksmith_a621_forloop__index = 1 %}{% assign locksmith_a621_forloop__index0 = 0 %}{% else %}{% assign locksmith_a621_forloop__index = locksmith_a621_forloop__index | plus: 1 %}{% assign locksmith_a621_forloop__index0 = locksmith_a621_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_a621_forloop__index == 1 %}{% assign locksmith_a621_forloop__first = true %}{% else %}{% assign locksmith_a621_forloop__first = false %}{% endif %}{% if locksmith_a621_forloop__index == locksmith_a621_forloop__size %}{% assign locksmith_a621_forloop__last = true %}{% else %}{% assign locksmith_a621_forloop__last = false %}{% endif %}{% assign locksmith_a621_forloop__rindex = locksmith_a621_forloop__size | minus: locksmith_a621_forloop__index | minus: 1 %}{% assign locksmith_a621_forloop__rindex0 = locksmith_a621_forloop__size | minus: locksmith_a621_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                {%- comment %}</locksmith:404d>{% endcomment -%}
                 <li
-                  id="predictive-search-option-product-{{ forloop.index }}"
+                  id="predictive-search-option-product-{{ locksmith_a621_forloop__index }}"
                   class="predictive-search__list-item"
                   role="option"
                   aria-selected="false"
