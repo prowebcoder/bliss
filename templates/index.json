@@ -79,7 +79,7 @@
         "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
-        "col_style": "1",
+        "col_style": "3",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "background": "linear-gradient(180deg, rgba(18, 18, 18, 0.22) 100%, rgba(0, 0, 0, 0.05) 100%)",
@@ -331,7 +331,6 @@
             "title": "Lawanda Franks",
             "text": "<p>There is no medication in the world that can compare to this;  you come in, in pain, and you leave pain free. Nothing can compare.</p>",
             "link_label": "",
-            "rating_alignment": "right",
             "link": ""
           }
         },
@@ -344,7 +343,6 @@
             "title": "Kate Ojala",
             "text": "<p>I am crying right now (tears of joy); I have not been free of this pain in years, I did not think it was possible. I can not believe it.</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         },
@@ -357,7 +355,6 @@
             "title": "Randy Moore",
             "text": "<p>I am taking deeper breaths, and breathing as well as when I was before COVID. It gets better after every therapy.</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         },
@@ -370,7 +367,6 @@
             "title": "Lisa Luncefird",
             "text": "<p>I am utterly shocked, I was riddled with anxiety, pain, and ADHD, and this is probably the calmest I have been in over a year. This is a God-send.</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         },
@@ -383,7 +379,6 @@
             "title": "Robert Griffin",
             "text": "<p>I am moving better, feeling better and I can only imagine how much more I will be living better.</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         },
@@ -396,7 +391,6 @@
             "title": "Lisa Mazani",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         },
@@ -409,7 +403,6 @@
             "title": "Stephen Minsky",
             "text": "<p>After ever therapy session I feel relaxed, I feel mentally at ease. My mobility returns to my body and I feel like I haven't spent a lifetime of hard manual labor.</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         },
@@ -422,7 +415,6 @@
             "title": "Sydney Upine",
             "text": "<p>...amazing how fast you feel the effects! I’m very relaxed, no anxiety and my Parkinsons' feels gone!</p>",
             "link_label": "",
-            "rating_alignment": "center",
             "link": ""
           }
         }
