@@ -113,6 +113,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_CXEgdp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_zhbwJM": {
+          "type": "column",
+          "settings": {
+            "title": "BlissThera - North Little Rock, AR Clinic",
+            "text": "<p>5106 McClanahan Dr, North Little Rock, AR 72116</p><p><a href=\"tel:5012556673\"><span style=\"text-decoration:underline\">(501) 255-6673‬</span></a></p>",
+            "link_label": "Located in",
+            "link": "https://www.google.com/maps/dir/?api=1&destination=5106%20McClanahan%20Dr,%20North%20Little%20Rock,%20AR%2072116,%20USA"
+          }
+        },
+        "column_NLmUtf": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HdCDrr": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zhbwJM",
+        "column_NLmUtf",
+        "column_HdCDrr"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -120,6 +173,7 @@
     "contact_form_i8MMAE",
     "image_banner_kpwVhU",
     "rich_text_BEKeW8",
-    "image_with_text_YDn6L8"
+    "image_with_text_YDn6L8",
+    "multicolumn_CXEgdp"
   ]
 }
