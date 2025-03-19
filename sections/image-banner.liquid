@@ -165,7 +165,16 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener('scroll', function() {
+  const banner = document.getElementById('Banner-{{ section.id }}');
+  if (banner) {
+    const scrollPosition = window.scrollY || window.pageYOffset;
+    banner.style.setProperty('--scroll-pos', scrollPosition);
+  }
+});
 
+</script>
 {% schema %}
 {
   "name": "t:sections.image-banner.name",
