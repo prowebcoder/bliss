@@ -159,10 +159,7 @@
                     >
                   </a>
                 {%- endif -%}
-              </div>
-              
-            </div>
-            <!-- Star Rating Display -->
+                <!-- Star Rating Display -->
           <div class="rating">
             {% assign num_stars = block.settings.num_stars %}
             {% assign filled_star_color = block.settings.filled_star_color %}
@@ -175,6 +172,9 @@
               </span>
             {% endfor %}
           </div>
+              </div>
+              
+            </div>
           </li>
         {%- endfor -%}
       </ul>
