@@ -14,16 +14,23 @@
 .collection-list .card .media.media--hover-effect > img:first-child:only-child,
 .collection-list .card-wrapper .media.media--hover-effect > img:first-child:only-child {
    opacity:.8;
-      
-  transition: filter opacity var(--duration-long) ease;
+     filter:blur(0) ;
+  transition: filter opacity var(--duration-short) ease;
   }
 .collection-list .card-wrapper:hover .card__information{
-  transition: transform var(--duration-long) ease;
+  transition: transform var(--duration-short) ease;
   transform:translateY(-5px);
 }
 .collection-list .card-wrapper .card__information{
-   transition: transform var(--duration-long) ease;
+   transition: transform var(--duration-short) ease;
  transform:translateY(0px);
+}
+.full_card_link {
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
 }
 @media screen and (max-width: 749px) {
   .collection-list:not(.slider) {
