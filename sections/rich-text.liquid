@@ -21,11 +21,13 @@
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         
         <div class="image-block">
-          {% if section.settings.image_1 == blank %}
+          
               <a href="{{ section.settings.image_1_url }}">
+                {% if section.settings.image_1 == blank %}
                 <img src="{{ section.settings.image_1 | img_url: 'medium' }}" alt="Image 1">
+                {% endif %}
               </a>
-            {% endif %}
+            
             </div>
           
         {%- for block in section.blocks -%}
