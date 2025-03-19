@@ -335,7 +335,9 @@ slider-component.slider-component-full-width {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.slider-buttons {
+   padding: 5px;
+  }
 @media screen and (min-width: 990px) {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
     display: none;
