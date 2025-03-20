@@ -1239,7 +1239,7 @@ button.shopify-payment-button__button--unbranded {
   left: 0;
   z-index: -1;
   border-radius: var(--buttons-radius-outset);
-  border:calc(var(--buttons-border-width) + 1px) solid  rgba(var(--color-shadow);
+    border:1px solid  rgba(var(--color-shadow);
 }
 
 .button:after,
@@ -1255,7 +1255,7 @@ button.shopify-payment-button__button--unbranded {
   z-index: 1;
   border-radius: var(--buttons-radius);
  
-  border:calc(var(--buttons-border-width) + 1px) solid  rgba(var(--color-shadow);
+  border:1px solid  rgba(var(--color-shadow);
   transition: box-shadow var(--duration-short) ease;
 }
 
