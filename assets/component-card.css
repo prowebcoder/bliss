@@ -9,7 +9,9 @@
   text-decoration: none;
   text-align: var(--text-alignment);
 }
-
+.card__heading.mini {
+    font-size: var(--base-font-header-size);
+}
 .card:not(.ratio) {
   display: flex;
   flex-direction: column;
