@@ -31,7 +31,7 @@
     align-items: center;
     gap: 20px;
 }
-.view_product {
+.view_product, .button--half-width {
     border: 1px solid #000;
     font-size: var(--base-font-header-size-mini);
     padding: .8rem;
