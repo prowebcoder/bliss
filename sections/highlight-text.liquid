@@ -1,9 +1,17 @@
+{{ 'component-marquee.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  @media screen and (max-width: 768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    }
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -11,30 +19,39 @@
     }
   }
 {%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
 
-    
+<div class="marquee multicolumn color-{{ section.settings.color_scheme }}" >
+  <div class="track">
+    <div class="marquee-content">
+      
+      {% for block in section.blocks %}
+        <span class="marquee-gap" style="color:{{ block.settings.color }}">
+          {% if block.settings.image %}
+            <img src="{{ block.settings.image | img_url: '100x' }}" alt="Marquee Image" style="vertical-align: middle; margin-right: 10px;" />
+          {% endif %}
+          
+          <!-- Corrected usage of font size and text content -->
+          <div class="custom-text" style="font-size: {{ block.settings.font_size }}px;">
+            {{ block.settings.text }}
+          </div>
+          
+        </span>
+      {% endfor %}
+      
+    </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "Highlight Text",
-  "tag": "section",
-  "class": "section",
+  "name": "Marquee Full Width",
   "settings": [
-
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
+    }, 
     {
       "type": "range",
       "id": "padding_top",
@@ -43,7 +60,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 40
+      "default": 36
     },
     {
       "type": "range",
@@ -53,12 +70,68 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 52
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top mobile",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom mobile",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ScrollingTextWithImage",
+      "name": "Scrolling Text with Image",
+      "limit": 50,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Title",
+          "label": "Scrolling Text"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "default": "#000000",
+          "label": "Text Color"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "label": "Font Size",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 16,
+          "unit": "px"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Highlight Text"
+      "name": "Marquee Full Width"
     }
   ]
 }
