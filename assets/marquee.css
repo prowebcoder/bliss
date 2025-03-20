@@ -1,0 +1,49 @@
+{%- assign id = '#shopify-section-' | append: section.id -%}
+
+{{id}} .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+  }
+ {{id}} .marquee-content {
+      display: flex;
+      gap: 8rem;
+  }
+  {{id}} .track {
+    position: absolute;
+    white-space: nowrap;
+    font-size:6rem;
+    will-change: transform;
+    animation: marquee 35s linear infinite;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+    {{id}} .marquee .track:hover {
+      animation-play-state: paused;
+    }
+.custom-text {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+/* Apply font sizes based on the class */
+.custom-text.small {
+  font-size: 12px;
+  padding-left: 50px;
+}
+
+.custom-text.medium {
+  font-size: 18px;
+  padding-left: 50px;
+}
+
+.custom-text.large {
+  font-size: 24px;
+  padding-left: 50px;
+}
