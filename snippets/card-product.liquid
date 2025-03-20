@@ -109,7 +109,7 @@
           {% else %}
             <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
             <div class="media media--transparent media--hover-effect">
-              <img src="{{ 'product-1' | placeholder_svg_tag }}"   class="motion-reduce"  
+              <img src="{{ 'placeholder_product.webp' | asset_url }}"   class="motion-reduce"  
                 width="{{ card_product.featured_media.width }}"
                 height="{{ card_product.featured_media.height }}"
                 />
