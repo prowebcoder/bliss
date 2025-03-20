@@ -110,8 +110,8 @@
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
-         --base-font-body-size: {{ settings.type_body_font.style }};
-         --base-font-header-size: {{ settings.type_body_font.style }};
+         --base-font-body-size: {{ settings.basebodysize }};
+         --base-font-header-size: {{ settings.baseheadersize }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
