@@ -31,6 +31,13 @@
     align-items: center;
     gap: 20px;
 }
+.view_product {
+    border: 1px solid #000;
+    font-size: var(--base-font-header-size-mini);
+    padding: .8rem;
+    line-height: 1;
+    border-radius: var(--border-radius);
+}
 .card--horizontal.ratio:before {
   padding-bottom: 0;
 }
