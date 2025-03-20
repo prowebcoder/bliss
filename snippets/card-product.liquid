@@ -105,6 +105,10 @@
               {%- endif -%}
             </div>
           </div>
+
+          {% else %}
+            <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
+            <div class="media media--transparent media--hover-effect"></div></div>
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
