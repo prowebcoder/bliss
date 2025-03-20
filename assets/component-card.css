@@ -37,6 +37,7 @@
     padding: .8rem;
     line-height: 1;
     border-radius: var(--border-radius);
+    width: 50%;
 }
 .quick-add__submit{
     font-size: var(--base-font-header-size-mini);
