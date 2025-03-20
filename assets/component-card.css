@@ -442,7 +442,7 @@
 }
 
 .card--card.card--media .card__inner .card__information,
-
+.card--card.card--text .card__inner,
 .card--card.card--media > .card__content .card__badge {
   display: none;
 }
