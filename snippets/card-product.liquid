@@ -54,7 +54,7 @@
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
       <div
-        class="card__inner {% if card_product.featured_media %} card_featured_image{% else %} card_placeholder{% endif %} {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if card_product.featured_media -%}
@@ -105,22 +105,10 @@
               {%- endif -%}
             </div>
           </div>
-
-          {% else %}
-            <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
-              <img src="{{ 'placeholder_product.webp' | asset_url }}"   class="motion-reduce"  
-                width="300px"
-                height="500px"
-                />
-          
-
-
-            </div></div>
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
-            <div
+            <h3
               class="card__heading"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
                 id="title-{{ section_id }}-{{ card_product.id }}"
@@ -134,7 +122,7 @@
               >
                 {{ card_product.title | escape }}
               </a>
-            </div>
+            </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
@@ -157,8 +145,8 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <div
-            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} mini{% endif %}"
+          <h3
+            class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
@@ -171,7 +159,7 @@
             >
               {{ card_product.title | escape }}
             </a>
-          </div>
+          </h3>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -617,11 +605,11 @@
       </div>
       <div class="card__content">
         <div class="card__information">
-          <div class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} mini{% endif %}">
+          <h3 class="card__heading card__heading--placeholder{% if settings.card_style == 'standard' %} h5{% endif %}">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.product_title' | t }}
             </a>
-          </div>
+          </h3>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
