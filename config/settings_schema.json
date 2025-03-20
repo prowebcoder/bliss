@@ -332,7 +332,13 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
         "default": 0
-      }
+      },
+         {
+  "type": "color",
+  "id": "border_color",
+  "label": "Border Color",
+  "default": "#000000"
+}
     ]
   },
   {
