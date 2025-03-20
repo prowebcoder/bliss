@@ -10,7 +10,7 @@
   text-align: var(--text-alignment);
 }
 .card__heading.mini {
-    font-size: var(--base-font-header-size);
+    font-size: var(--base-font-header-size-mini);
 }
 .card:not(.ratio) {
   display: flex;
