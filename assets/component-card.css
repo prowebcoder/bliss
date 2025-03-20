@@ -34,6 +34,9 @@
 modal-opener {
     width: 50%;
 }
+modal-opener .button:after {
+    border: none;
+}
 .view_product, .button--half-width {
     border: 1px solid #000;
     font-size: var(--base-font-header-size-mini);
