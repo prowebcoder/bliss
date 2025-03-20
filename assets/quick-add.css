@@ -354,7 +354,9 @@ quick-add-modal .product__title > a:hover {
 quick-add-modal .product-form__buttons {
   max-width: initial;
 }
-
+product-form {
+    width: 50%;
+}
 .quick-add__submit {
  
   min-width: 100%;
