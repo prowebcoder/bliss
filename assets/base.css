@@ -1255,7 +1255,7 @@ button.shopify-payment-button__button--unbranded {
   z-index: 1;
   border-radius: var(--buttons-radius);
  
-   border:1px solid var(--color-shadow);
+   border:1px solid var(--btns-border-color);
   transition: box-shadow var(--duration-short) ease;
 }
 
