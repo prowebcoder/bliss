@@ -40,6 +40,7 @@
 }
 .quick-add__submit{
     font-size: var(--base-font-header-size-mini);
+  line-height: 1;
 }
 .card--horizontal.ratio:before {
   padding-bottom: 0;
