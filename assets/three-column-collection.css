@@ -25,3 +25,10 @@ h5.title.inline.h1 {
 a.three-coll.button {
     width: 30%;
 }
+.multicolumn-card__image-wrapper .media {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.multicolumn-card__image-wrapper:hover .media {
+  transform: scale(1.1); /* Scales the image by 10% on hover */
+}
