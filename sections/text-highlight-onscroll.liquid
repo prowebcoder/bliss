@@ -5,7 +5,11 @@
 <div class="heading-title">
   {% for block in section.blocks %}
     <div class="line-block">
-      <span>{{ block.settings.text }}<img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" /></span>
+      <span>{{ block.settings.text }}
+        {%- if block.settings.text != blank -%}
+        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+          {% endif %}
+      </span>
     </div>
   {% endfor %}
 </div>
