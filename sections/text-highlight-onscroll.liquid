@@ -4,12 +4,12 @@
 <div class="heading-title">
   {% for block in section.blocks %}
     <div class="line-block">
-      <p class="line-text">
+      <span class="line-text">
         {{ block.settings.text }}
         {% if block.settings.show_image and block.settings.text != blank %}
           <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
         {% endif %}
-      </p>
+      </span>
     </div>
   {% endfor %}
 </div>
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .line-text {
@@ -34,7 +35,7 @@
     background-clip: text;
     background-size: 0%;
     transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    display: inline-flex;
+    display: flex;
     align-items: center;
   }
 
