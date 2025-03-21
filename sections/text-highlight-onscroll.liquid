@@ -1,91 +1,96 @@
+<script src="{{ 'gsap.min.js' | asset_url }}"></script>
+<script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
+
+<div class="heading-title">
+  <p class="line-text">
+    {% for block in section.blocks %}
+      {{ block.settings.text }}
+      {% if block.settings.show_image and block.settings.text != blank %}
+        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+      {% endif %}
+    {% endfor %}
+  </p>
+</div>
+
+<style>
+  .heading-title {
+    text-align: center;
+  }
+
+  .line-text {
+    font-size: 2rem;
+    color: rgba(182, 182, 182, 0.2);
+    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure everything stays within the same line/paragraph */
+  }
+
+  .line-image {
+    width: 30px; /* Set your preferred size for the image */
+    height: auto;
+    margin-left: 10px; /* Space between text and image */
+  }
+</style>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  const textLine = document.querySelector('.heading-title .line-text');
+
+  gsap.to(textLine, {
+    backgroundSize: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: textLine,
+      start: 'top 40%',  // Trigger when 40% of the line is in view
+      end: 'top 30%',    // End when 30% of the element is out of view
+      scrub: true,
+    },
+  });
+</script>
+
 {% schema %}
 {
-  "name": "Highlight Images",
-  "settings": [
+  "name": "Scroll Animation Text",
+  "settings": [],
+  "blocks": [
     {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "ABOUT EURUS PUFF"
-    },
-    {
-      "type": "richtext",
-      "id": "heading",
-      "label": "Heading Text"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "Read our story"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Text",
+          "id": "text",
+          "default": "Enter your text here"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image (optional)",
+          "id": "image",
+          "info": "Add a small image between text"
+        },
+        {
+          "type": "checkbox",
+          "label": "Show Image",
+          "id": "show_image",
+          "default": true,
+          "info": "Check this box to display the image"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Highlight Images",
+      "name": "Scroll Animation Text",
       "category": "Custom"
     }
   ]
 }
 {% endschema %}
-
-<div x-data="xHighlightAnimation()" class="x-container-content flex flex-col">
-  <p class="subheading--template--24167821082942__highlight_text_with_image_nUBnKX rte mb-4 md:mb-6 text-left text-[rgba(var(--colors-text))]">
-    {{ section.settings.subheading }}
-  </p>
-
-  <div class="x-container-heading md:flex rtl:flex-row-reverse justify-left">
-    <h2 x-init="load($el, false)" class="heading--template--24167821082942__highlight_text_with_image_nUBnKX w-full inline-block text-left max-w-4xl" x-intersect.once.margin.300px="startAnim($el, false)">
-      <div class="text-highlight relative inline-block text-transparent pb-0.5" style="background-position-x: -100%;">
-        {{ section.settings.heading }}
-      </div>
-    </h2>
-  </div>
-
-  <div class="mt-10 md:mt-12 w-full md:w-fit self-start">
-    <button class="w-full md:w-fit button button-outline pl-10 pr-10 pt-4 pb-4" @click="window.location.href='{{ section.settings.button_link }}'">
-      <span class="button-text is-focus-button:opacity-0">{{ section.settings.button_text }}</span>
-    </button>
-  </div>
-</div>
-
-<style>
-  .text-highlight {
-    background: linear-gradient(to right, yellow 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position-x: -100%;
-    transition: background-position-x 0.5s ease;
-  }
-
-  .text-highlight span {
-    display: inline-block;
-  }
-
-  .text-highlight img {
-    vertical-align: middle;
-    margin: 0 10px;
-  }
-</style>
-
-<script>
-  function xHighlightAnimation() {
-    return {
-      load(el, init) {
-        if (init) return;
-        const spans = el.querySelectorAll('.text-highlight span');
-        spans.forEach((span, index) => {
-          span.style.transitionDelay = `${index * 0.1}s`;
-        });
-      },
-      startAnim(el, init) {
-        if (init) return;
-        el.style.backgroundPositionX = '0%';
-      }
-    };
-  }
-</script>
