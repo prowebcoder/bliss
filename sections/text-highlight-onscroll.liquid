@@ -1,104 +1,88 @@
-<script src="{{ 'gsap.min.js' | asset_url }}"></script>
-<script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
+{%- comment -%}
+  Dynamic Content Section
+  This section allows dynamic content management via Shopify admin.
+{%- endcomment -%}
 
-<div class="heading-title">
-  {% for block in section.blocks %}
-    <div class="line-block">
-      <span>{{ block.settings.text }}
-        {%- if block.settings.text != blank -%}
-          {% if block.settings.show_image %}
-            <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-          {% endif %}
-        {% endif %}
+{{ 'trigger.js' | asset_url | script_tag }}
+
+<div tg-name="_" tg-ref="container" tg-from="1" tg-to="10" tg-step="1">
+  <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
+    {% for block in section.blocks %}
+      <span tg-name="opacity" tg-filter="{{ forloop.index | plus: 1 }}!" tg-follow="container" style="--opacity: 0.3;">
+        {{ block.settings.text }}
       </span>
-    </div>
-  {% endfor %}
+    {% endfor %}
+    <span tg-name="opacity" tg-filter="6,7" tg-map="6: 0.3; 7: 1" tg-follow="container" class="pro">Let’s Pro.</span>
+  </section>
 </div>
 
 <style>
-  .heading-title {
-    text-align: center;
-  }
+:root {
+  font-size: 20px;
+  font-family: "Helvetica Neue", Helvetica;
+}
 
-  .line-block {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+body {
+  background-image: conic-gradient(
+    #0f2257,
+    #1d41a5,
+    #1d3782,
+    #90f1fe,
+    #1145c1,
+    #06153e,
+    #06153e
+  );
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .line-block span {
-    font-size: 2rem;
-    color: rgba(182, 182, 182, 0.2);
-    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 0%;
-    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    margin-right: 10px; /* Space between text and image */
-  }
+div {
+  margin: 100vh 0;
+  font-size: 3.4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  color: #fff;
+  line-height: 1.22em;
+  width: 800px;
+}
 
-  .line-image {
-    width: 30px; /* Set your preferred size for the image */
-    height: auto;
-    margin-left: 10px; /* Space between image and next text */
-  }
+span {
+  opacity: var(--opacity);
+}
+
+.pro {
+  display: block;
+  margin-top: 2.2rem;
+}
 </style>
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  const textLines = gsap.utils.toArray('.heading-title .line-block span');
-
-  textLines.forEach((line) => {
-    gsap.to(line, {
-      backgroundSize: '100%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: line,
-        start: 'top 40%',  // Adjusted to trigger the animation when line is 80% in view
-        end: 'top 30%',    // End when the element is 30% away from the top
-        scrub: true,
-      },
-    });
-  });
-</script>
 
 {% schema %}
 {
-  "name": "Scroll Animation Text",
+  "name": "Dynamic Content Section",
   "settings": [],
   "blocks": [
     {
-      "type": "text_block",
+      "type": "text",
       "name": "Text Block",
       "settings": [
         {
           "type": "text",
-          "label": "Text",
           "id": "text",
+          "label": "Text",
           "default": "Enter your text here"
-        },
-        {
-          "type": "image_picker",
-          "label": "Image (optional)",
-          "id": "image",
-          "info": "Add a small image between text"
-        },
-        {
-          "type": "checkbox",
-          "label": "Show Image",
-          "id": "show_image",
-          "default": true,
-          "info": "Check this box to display the image"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Scroll Animation Text",
+      "name": "Dynamic Content Section",
       "category": "Custom"
     }
   ]
