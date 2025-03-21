@@ -1,96 +1,94 @@
-<script src="{{ 'gsap.min.js' | asset_url }}"></script>
-<script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
-
-<div class="heading-title">
-  <p class="line-text">
-    {% for block in section.blocks %}
-      {{ block.settings.text }}
-      {% if block.settings.show_image and block.settings.text != blank %}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-      {% endif %}
-    {% endfor %}
-  </p>
-</div>
-
-<style>
-  .heading-title {
-    text-align: center;
-  }
-
-  .line-text {
-    font-size: 2rem;
-    color: rgba(182, 182, 182, 0.2);
-    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 0%;
-    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensure everything stays within the same line/paragraph */
-  }
-
-  .line-image {
-    width: 30px; /* Set your preferred size for the image */
-    height: auto;
-    margin-left: 10px; /* Space between text and image */
-  }
-</style>
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  const textLine = document.querySelector('.heading-title .line-text');
-
-  gsap.to(textLine, {
-    backgroundSize: '100%',
-    ease: 'none',
-    scrollTrigger: {
-      trigger: textLine,
-      start: 'top 40%',  // Trigger when 40% of the line is in view
-      end: 'top 30%',    // End when 30% of the element is out of view
-      scrub: true,
-    },
-  });
-</script>
-
 {% schema %}
 {
-  "name": "Scroll Animation Text",
-  "settings": [],
-  "blocks": [
+  "name": "Highlight TextImages",
+  "settings": [
     {
-      "type": "text_block",
-      "name": "Text Block",
-      "settings": [
-        {
-          "type": "text",
-          "label": "Text",
-          "id": "text",
-          "default": "Enter your text here"
-        },
-        {
-          "type": "image_picker",
-          "label": "Image (optional)",
-          "id": "image",
-          "info": "Add a small image between text"
-        },
-        {
-          "type": "checkbox",
-          "label": "Show Image",
-          "id": "show_image",
-          "default": true,
-          "info": "Check this box to display the image"
-        }
-      ]
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Highlight Text with Images"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph Text",
+      "default": "<p>Add your text here with images.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     }
   ],
   "presets": [
     {
-      "name": "Scroll Animation Text",
+      "name": "Highlight TextImages",
       "category": "Custom"
     }
   ]
 }
 {% endschema %}
+
+<div class="highlight-text-section">
+  <h2>{{ section.settings.title }}</h2>
+  <div class="highlight-text-content">
+    {{ section.settings.paragraph }}
+    <img src="{{ section.settings.image | img_url: 'medium' }}" alt="{{ section.settings.image.alt }}">
+  </div>
+</div>
+
+<style>
+  .highlight-text-section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .highlight-text-content {
+    position: relative;
+    display: inline-block;
+  }
+
+  .highlight-text-content p {
+    display: inline;
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .highlight-text-content img {
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+
+  .highlight-text-content .highlight {
+    background-color: yellow;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.querySelector('.highlight-text-content p');
+    const text = textElement.innerText;
+    textElement.innerHTML = '';
+
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.innerText = text[i];
+      textElement.appendChild(span);
+    }
+
+    const spans = document.querySelectorAll('.highlight-text-content p span');
+
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY;
+      const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
+
+      spans.forEach((span, index) => {
+        if (scrollPosition > elementPosition + (index * 10)) {
+          span.classList.add('highlight');
+        } else {
+          span.classList.remove('highlight');
+        }
+      });
+    });
+  });
+</script>
