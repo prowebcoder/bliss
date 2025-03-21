@@ -25,6 +25,51 @@
         "show_text_below": true
       }
     },
+    "collection_list_AVqhep": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_YFQ98k": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "retail-store",
+            "content_align": "center",
+            "title": "Retail",
+            "inline_text": "View Products",
+            "text_color": "#000000"
+          }
+        },
+        "featured_collection_yUVpMn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-store",
+            "content_align": "center",
+            "title": "Wholesale",
+            "inline_text": "For Wholesale Customers",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_YFQ98k",
+        "featured_collection_yUVpMn"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "col_style": "3",
+        "columns_desktop": 2,
+        "color_scheme": "scheme-1",
+        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 11.11%, rgba(0, 0, 0, 0) 22.22%, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0) 44.44%, rgba(0, 0, 0, 0) 55.56%, rgba(0, 0, 0, 0) 66.67%, rgba(0, 0, 0, 0) 77.78%, rgba(0, 0, 0, 0) 88.89%, rgba(0, 0, 0, 0) 100%)",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
+      }
+    },
     "image_with_text_DfCirf": {
       "type": "image-with-text",
       "blocks": {
@@ -187,51 +232,6 @@
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "collection_list_AVqhep": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_YFQ98k": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "retail-store",
-            "content_align": "center",
-            "title": "Retail",
-            "inline_text": "View Products",
-            "text_color": "#000000"
-          }
-        },
-        "featured_collection_yUVpMn": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-store",
-            "content_align": "center",
-            "title": "Wholesale",
-            "inline_text": "For Wholesale Customers",
-            "text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_YFQ98k",
-        "featured_collection_yUVpMn"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "adapt",
-        "col_style": "3",
-        "columns_desktop": 2,
-        "color_scheme": "scheme-1",
-        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 11.11%, rgba(0, 0, 0, 0) 22.22%, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0) 44.44%, rgba(0, 0, 0, 0) 55.56%, rgba(0, 0, 0, 0) 66.67%, rgba(0, 0, 0, 0) 77.78%, rgba(0, 0, 0, 0) 88.89%, rgba(0, 0, 0, 0) 100%)",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mobile": 36,
-        "padding_bottom_mobile": 36
       }
     },
     "img_with_text_coll_zWkeHc": {
@@ -433,11 +433,11 @@
   },
   "order": [
     "image_banner_XJPmhF",
+    "collection_list_AVqhep",
     "image_with_text_DfCirf",
     "featured_collection",
     "video",
     "collapsible_content_Ea3qKc",
-    "collection_list_AVqhep",
     "img_with_text_coll_zWkeHc",
     "custom_reviews_yyTri8"
   ]
