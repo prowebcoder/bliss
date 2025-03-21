@@ -115,13 +115,22 @@
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
             "show_image": true
           }
+        },
+        "text_block_GD3U6N": {
+          "type": "text_block",
+          "settings": {
+            "text": "",
+            "show_image": true,
+            "custom_image": "shopify://shop_images/5mL_BlissThera_BioMedia_bottle2-w-logo_copy_1bfe2f77-32fc-4124-8396-5255258784b1.jpg"
+          }
         }
       },
       "block_order": [
         "text_block_tUtzgN",
         "text_block_EfBHEh",
         "text_block_WrNkXE",
-        "text_block_4GdcVT"
+        "text_block_4GdcVT",
+        "text_block_GD3U6N"
       ],
       "settings": {
         "align_left": "false"
