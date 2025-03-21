@@ -1,25 +1,39 @@
 <script src="{{ 'gsap.min.js' | asset_url }}"></script>
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-<div class="heading-title">
-  <p class="line-text">
-    {% for block in section.blocks %}
-      {{ block.settings.text }}
-      {% if block.settings.show_image and block.settings.text != blank %}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-      {% endif %}
-    {% endfor %}
-  </p>
+<div class="heading-title" style="background-image: url('{{ section.settings.background_image | img_url: 'large' }}');">
+  <div class="content-container">
+    <p class="line-text">
+      {% for block in section.blocks %}
+        {{ block.settings.text }}
+        {% if block.settings.show_image and block.settings.text != blank %}
+          <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+        {% endif %}
+      {% endfor %}
+    </p>
+  </div>
 </div>
 
 <style>
   .heading-title {
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    padding-left: 10%; /* Content will start from the left with some padding */
+    padding-right: 10%; /* You can adjust this to control the content width */
+  }
+
+  .content-container {
+    max-width: 50%; /* Ensure content is on the left half of the screen */
+    width: 100%;
   }
 
   .line-text {
     font-size: 2rem;
-    color: rgba(182, 182, 182, 0.2);
+    color: rgba(182, 182, 182, 0.8); /* Adjust text color for better visibility */
     background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
@@ -58,7 +72,14 @@
 {% schema %}
 {
   "name": "Scroll Animation Text",
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Background Image",
+      "id": "background_image",
+      "info": "Upload a background image for the left side section"
+    }
+  ],
   "blocks": [
     {
       "type": "text_block",
