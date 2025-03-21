@@ -1,6 +1,6 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-
+{{ 'three-column-collection.css' | asset_url | stylesheet_tag }}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -22,27 +22,7 @@
 
 
 {%- endstyle -%}
-<style>
-
-  .multicolumn-card__info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    color: white;
-    z-index: 10;
-}
-h5.title.inline.h1 {
-    font-size: 14px;
-}
-  .media--portrait {
-    border-radius: 10px;
-}
-</style>
+ 
 {%- liquid
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
