@@ -123,7 +123,9 @@
         "text_block_WrNkXE",
         "text_block_4GdcVT"
       ],
-      "settings": {}
+      "settings": {
+        "align_left": "false"
+      }
     }
   },
   "order": [
