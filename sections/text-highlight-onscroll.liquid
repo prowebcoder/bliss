@@ -1,7 +1,7 @@
 <script src="{{ 'gsap.min.js' | asset_url }}"></script>
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-<div class="section-container">
+<div class="section-container {% if section.settings.align_left == 'true' %}align-left{% else %}align-right{% endif %}">
   <div class="left-column">
     <div class="heading-title">
       <p class="line-text">
@@ -33,6 +33,14 @@
     gap: 20px;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  .section-container.align-left {
+    justify-content: flex-start;
+  }
+
+  .section-container.align-right {
+    justify-content: flex-end;
   }
 
   .left-column, .right-column {
@@ -101,8 +109,25 @@
 
 {% schema %}
 {
-  "name": "Scroll Animation Block",
-  "settings": [],
+  "name": "Scroll Animation",
+  "settings": [
+    {
+      "type": "radio",
+      "label": "Align Section",
+      "id": "align_left",
+      "options": [
+        {
+          "value": "true",
+          "label": "Left"
+        },
+        {
+          "value": "false",
+          "label": "Right"
+        }
+      ],
+      "default": "true"
+    }
+  ],
   "blocks": [
     {
       "type": "text_block",
@@ -138,7 +163,7 @@
   ],
   "presets": [
     {
-      "name": "Scroll Animation Block",
+      "name": "Scroll Animation",
       "category": "Custom"
     }
   ]
