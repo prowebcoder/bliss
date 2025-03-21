@@ -30,5 +30,5 @@ a.three-coll.button {
 }
 
 .multicolumn-card__image-wrapper:hover .media {
-  transform: scale(1.01); /* Scales the image by 10% on hover */
+  transform: scale(1.03); /* Scales the image by 10% on hover */
 }
