@@ -1,94 +1,74 @@
 <script src="{{ 'gsap.min.js' | asset_url }}"></script>
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-<div class="scroll-animation-section" style="background-image: url('{{ section.settings.background_image | img_url: 'large' }}');">
-  <div class="content-container">
-    <p class="line-text">
-      {% for block in section.blocks %}
+<div class="heading-title">
+  {% for block in section.blocks %}
+    <div class="line-block">
+      <span class="line-text">
         {{ block.settings.text }}
         {% if block.settings.show_image and block.settings.text != blank %}
           <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
         {% endif %}
-      {% endfor %}
-    </p>
-  </div>
+      </span>
+    </div>
+  {% endfor %}
 </div>
 
 <style>
-  /* Only affect the new section */
-  .scroll-animation-section {
+  .heading-title {
+    text-align: center;
+  }
+
+  .line-block {
+    margin: 10px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-size: cover;
-    background-position: center;
-    padding-left: 10%; /* Content will start from the left with some padding */
-    padding-right: 10%; /* You can adjust this to control the content width */
+    text-align: center;
   }
 
-  .scroll-animation-section .content-container {
-    max-width: 50%; /* Ensure content is on the left half of the screen */
-    width: 100%;
-  }
-
-  .scroll-animation-section .line-text {
+  .line-text {
     font-size: 2rem;
-    color: rgba(182, 182, 182, 0.8); /* Adjust text color for better visibility */
+    color: rgba(182, 182, 182, 0.2);
     background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0%;
     transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensure everything stays within the same line/paragraph */
   }
 
-  .scroll-animation-section .line-image {
+  .line-image {
     width: 30px; /* Set your preferred size for the image */
     height: auto;
     margin-left: 10px; /* Space between text and image */
-  }
-
-  /* New highlighted text color when scrolling */
-  .scroll-animation-section .line-text.highlighted {
-    background: linear-gradient(to right, #ff6347, #ff6347) no-repeat; /* New color for highlight */
-    background-size: 100%; /* Full background size for highlight */
   }
 </style>
 
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  const textLine = document.querySelector('.scroll-animation-section .line-text');
+  const textLines = gsap.utils.toArray('.heading-title .line-block .line-text');
 
-  gsap.to(textLine, {
-    backgroundSize: '100%',
-    ease: 'none',
-    scrollTrigger: {
-      trigger: textLine,
-      start: 'top 40%',  // Trigger when 40% of the line is in view
-      end: 'top 30%',    // End when 30% of the element is out of view
-      scrub: true,
-      onEnter: () => textLine.classList.add('highlighted'),  // Add highlighted class when in view
-      onLeaveBack: () => textLine.classList.remove('highlighted'),  // Remove when leaving
-    },
+  textLines.forEach((line) => {
+    gsap.to(line, {
+      backgroundSize: '100%',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: line,
+        start: 'top 40%',  // Trigger when 40% of the line is in view
+        end: 'top 30%',    // End when 30% of the element is out of view
+        scrub: true,
+      },
+    });
   });
 </script>
 
 {% schema %}
 {
   "name": "Scroll Animation Text",
-  "settings": [
-    {
-      "type": "image_picker",
-      "label": "Background Image",
-      "id": "background_image",
-      "info": "Upload a background image for the left side section"
-    }
-  ],
+  "settings": [],
   "blocks": [
     {
       "type": "text_block",
