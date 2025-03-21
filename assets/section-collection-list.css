@@ -12,6 +12,9 @@
       filter: blur(0px);
    transition: filter var(--duration-long) ease;
   }
+.collection-card-wrapper .card {
+    border: 1px solid #cccccc38;
+}
 .collection-list .card .media.media--hover-effect > img:first-child:only-child,
 .collection-list .card-wrapper .media.media--hover-effect > img:first-child:only-child {
    opacity:1;
