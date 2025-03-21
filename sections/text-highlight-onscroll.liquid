@@ -1,18 +1,45 @@
 <script src="{{ 'gsap.min.js' | asset_url }}"></script>
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-<div class="heading-title">
-  <p class="line-text">
+<div class="section-container">
+  <div class="left-column">
+    <div class="heading-title">
+      <p class="line-text">
+        {% for block in section.blocks %}
+          {{ block.settings.text }}
+          {% if block.settings.show_image and block.settings.text != blank %}
+            <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+          {% endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+
+  <div class="right-column">
     {% for block in section.blocks %}
-      {{ block.settings.text }}
-      {% if block.settings.show_image and block.settings.text != blank %}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+      {% if block.settings.custom_image %}
+        <div class="custom-image-container">
+          <img src="{{ block.settings.custom_image | img_url: 'medium' }}" alt="Custom Image" class="custom-image" />
+        </div>
       {% endif %}
     {% endfor %}
-  </p>
+  </div>
 </div>
 
 <style>
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .left-column, .right-column {
+    flex: 1;
+    min-width: 45%;
+  }
+
   .heading-title {
     text-align: center;
   }
@@ -28,13 +55,30 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Ensure everything stays within the same line/paragraph */
+    flex-wrap: wrap;
   }
 
   .line-image {
     width: 30px; /* Set your preferred size for the image */
     height: auto;
     margin-left: 10px; /* Space between text and image */
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .custom-image-container {
+    text-align: center;
+  }
+
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 </style>
 
@@ -57,7 +101,7 @@
 
 {% schema %}
 {
-  "name": "Scroll Animation Text",
+  "name": "Scroll Animation Block",
   "settings": [],
   "blocks": [
     {
@@ -82,13 +126,19 @@
           "id": "show_image",
           "default": true,
           "info": "Check this box to display the image"
+        },
+        {
+          "type": "image_picker",
+          "label": "Custom Image (optional)",
+          "id": "custom_image",
+          "info": "Add a custom image for the right column"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Scroll Animation Text",
+      "name": "Scroll Animation Block",
       "category": "Custom"
     }
   ]
