@@ -417,7 +417,7 @@
         "title": "",
         "heading_size": "h1",
         "image_ratio": "square",
-        "col_style": "1",
+        "col_style": "3",
         "columns_desktop": 2,
         "color_scheme": "scheme-1",
         "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
