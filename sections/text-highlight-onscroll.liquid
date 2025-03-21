@@ -1,18 +1,15 @@
+
+
 <div class="heading-title">
   <p class="line-text">
     {% for block in section.blocks %}
       {{ block.settings.text }}
       {% if block.settings.show_image and block.settings.text != blank %}
-        {% assign img_url = block.settings.image | img_url: 'small' %}
-        {% assign img_width = block.settings.image | img_width: 'small' %}
-        {% assign img_height = block.settings.image | img_height: 'small' %}
-
-        <img src="{{ img_url }}" alt="Image" class="line-image" width="{{ img_width }}" height="{{ img_height }}" />
+        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
       {% endif %}
     {% endfor %}
   </p>
 </div>
-
 
 <style>
   .heading-title {
