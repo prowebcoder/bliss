@@ -29,7 +29,6 @@
 
   .line-text {
     font-size: 2rem;
-    color: rgba(182, 182, 182, 0.2);
     display: inline-flex;
     align-items: center;
     flex-wrap: wrap;
@@ -37,8 +36,8 @@
   }
 
   .word {
-    opacity: 0.3;
-    transition: opacity 0.5s ease, color 0.5s ease;
+    color: rgba(182, 182, 182, 0.3); /* Lighter text color initially */
+    transition: color 0.5s ease;
   }
 
   .line-image {
@@ -59,8 +58,7 @@
     // Animate words
     words.forEach((word, index) => {
       gsap.to(word, {
-        opacity: 1,
-        color: '#000', // Change to your desired highlight color
+        color: '#000', // Darker text color on scroll
         scrollTrigger: {
           trigger: word,
           start: 'top 80%', // Adjust based on when you want the animation to start
@@ -88,7 +86,20 @@
 {% schema %}
 {
   "name": "Scroll Animation Text",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "lighter_color",
+      "label": "Lighter Text Color",
+      "default": "#B6B6B6"
+    }
+  ],
   "blocks": [
     {
       "type": "text_block",
