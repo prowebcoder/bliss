@@ -91,7 +91,7 @@
       {%- else -%}
         <div class="card__content content__align-{{ card_align }}">
           <div class="card__information">
-            <h3 class="card__heading">
+            <h2 class="card__heading">
               <a
                 {% if card_collection == blank %}
                   role="link" aria-disabled="true"
@@ -114,7 +114,7 @@
                  
                 {%- endif %}
               </a>
-            </h3>
+            </h2>
            {% if block.settings.inline_text != blank %}
                  
                <p class="card__caption" style="color:{{ block.settings.text_color }}">
@@ -140,7 +140,7 @@
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content content__align-{{ card_align }}">
         <div class="card__information">
-          <h3 class="card__heading">
+          <h2 class="card__heading">
             <a
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
@@ -163,7 +163,7 @@
              
               {%- endif %}
             </a>
-          </h3>
+          </h2>
                {% if block.settings.inline_text != blank %}
                    
                <p class="card__caption" style="color:{{ block.settings.text_color }}">
@@ -189,12 +189,12 @@
     {%- if card_collection == blank -%}
       <div class="card__content content__align-{{ card_align }}">
         <div class="card__information">
-          <h3 class="card__heading card__heading--placeholder">
+          <h2 class="card__heading card__heading--placeholder">
             <a role="link" aria-disabled="true" class="full-unstyled-link" style="color:{{ block.settings.text_color }}">
               {{ 'onboarding.collection_title' | t }}
              
             </a>
-          </h3>
+          </h2>
         </div>
       </div>
     {%- endif -%}
