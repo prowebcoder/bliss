@@ -100,11 +100,29 @@
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
             "show_image": true
           }
+        },
+        "text_block_tE6zG6": {
+          "type": "text_block",
+          "settings": {
+            "text": "Enter",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "show_image": true
+          }
+        },
+        "text_block_JdJtBh": {
+          "type": "text_block",
+          "settings": {
+            "text": "Enter your tex",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "show_image": true
+          }
         }
       },
       "block_order": [
         "text_block_adqLPg",
-        "text_block_xTa9nm"
+        "text_block_xTa9nm",
+        "text_block_tE6zG6",
+        "text_block_JdJtBh"
       ],
       "settings": {}
     }
