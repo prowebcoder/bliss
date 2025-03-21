@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/Forest-terpene_atmosphere_1.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "adapt",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
