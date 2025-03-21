@@ -120,8 +120,7 @@
           "type": "text_block",
           "settings": {
             "text": "",
-            "show_image": true,
-            "custom_image": "shopify://shop_images/5mL_BlissThera_BioMedia_bottle2-w-logo_copy_1bfe2f77-32fc-4124-8396-5255258784b1.jpg"
+            "show_image": true
           }
         }
       },
@@ -133,6 +132,7 @@
         "text_block_GD3U6N"
       ],
       "settings": {
+        "custom_image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.webp",
         "align_left": "false"
       }
     }
