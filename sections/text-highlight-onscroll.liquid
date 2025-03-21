@@ -1,22 +1,21 @@
 <script src="{{ 'gsap.min.js' | asset_url }}"></script>
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-
 <div class="heading-title">
   {% for block in section.blocks %}
     <div class="line-block">
       <span>{{ block.settings.text }}
         {%- if block.settings.text != blank -%}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+          {% if block.settings.show_image %}
+            <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
           {% endif %}
+        {% endif %}
       </span>
     </div>
   {% endfor %}
 </div>
 
 <style>
- 
-
   .heading-title {
     text-align: center;
   }
@@ -46,8 +45,6 @@
     margin-left: 10px; /* Space between image and next text */
   }
 </style>
-
-
 
 <script>
   gsap.registerPlugin(ScrollTrigger);
@@ -88,6 +85,13 @@
           "label": "Image (optional)",
           "id": "image",
           "info": "Add a small image between text"
+        },
+        {
+          "type": "checkbox",
+          "label": "Show Image",
+          "id": "show_image",
+          "default": true,
+          "info": "Check this box to display the image"
         }
       ]
     }
