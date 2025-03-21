@@ -1,6 +1,107 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+
+
+<div class="heading-title">
+  {% for block in section.blocks %}
+    <div class="line-block">
+      <span>{{ block.settings.text }}</span>
+      {% if block.settings.image %}
+        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 14%;
+    padding: 0;
+    min-height: 200vh;
+    background-color: black;
   }
+
+  .heading-title {
+    text-align: center;
+  }
+
+  .line-block {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .line-block span {
+    font-size: 2rem;
+    color: rgba(182, 182, 182, 0.2);
+    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+    margin-right: 10px; /* Space between text and image */
+  }
+
+  .line-image {
+    width: 30px; /* Set your preferred size for the image */
+    height: auto;
+    margin-left: 10px; /* Space between image and next text */
+  }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  const textLines = gsap.utils.toArray('.heading-title .line-block span');
+
+  textLines.forEach((line) => {
+    gsap.to(line, {
+      backgroundSize: '100%',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: line,
+        start: 'top 10%',
+        end: 'top 10%',
+        scrub: true,
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Scroll Animation Text",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Text",
+          "id": "text",
+          "default": "Enter your text here"
+        },
+        {
+          "type": "image_picker",
+          "label": "Image (optional)",
+          "id": "image",
+          "info": "Add a small image between text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroll Animation Text",
+      "category": "Custom"
+    }
+  ]
+}
 {% endschema %}
