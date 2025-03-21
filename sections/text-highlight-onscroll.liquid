@@ -2,28 +2,18 @@
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
 <div class="heading-title">
-  {% for block in section.blocks %}
-    <div class="line-block">
-      <span class="line-text">
-        {{ block.settings.text }}
-        {% if block.settings.show_image and block.settings.text != blank %}
-          <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-        {% endif %}
-      </span>
-    </div>
-  {% endfor %}
+  <p class="line-text">
+    {% for block in section.blocks %}
+      {{ block.settings.text }}
+      {% if block.settings.show_image and block.settings.text != blank %}
+        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+      {% endif %}
+    {% endfor %}
+  </p>
 </div>
 
 <style>
   .heading-title {
-    text-align: center;
-  }
-
-  .line-block {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
 
@@ -35,8 +25,10 @@
     background-clip: text;
     background-size: 0%;
     transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure everything stays within the same line/paragraph */
   }
 
   .line-image {
@@ -49,19 +41,17 @@
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  const textLines = gsap.utils.toArray('.heading-title .line-block .line-text');
+  const textLine = document.querySelector('.heading-title .line-text');
 
-  textLines.forEach((line) => {
-    gsap.to(line, {
-      backgroundSize: '100%',
-      ease: 'none',
-      scrollTrigger: {
-        trigger: line,
-        start: 'top 40%',  // Trigger when 40% of the line is in view
-        end: 'top 30%',    // End when 30% of the element is out of view
-        scrub: true,
-      },
-    });
+  gsap.to(textLine, {
+    backgroundSize: '100%',
+    ease: 'none',
+    scrollTrigger: {
+      trigger: textLine,
+      start: 'top 40%',  // Trigger when 40% of the line is in view
+      end: 'top 30%',    // End when 30% of the element is out of view
+      scrub: true,
+    },
   });
 </script>
 
