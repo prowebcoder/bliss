@@ -1,84 +1,66 @@
 <script src="{{ 'gsap.min.js' | asset_url }}"></script>
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-<div class="scroll-animation-section">
-  <div class="heading-title">
-    <p class="line-text">
-      {% for block in section.blocks %}
-        {% assign words = block.settings.text | split: ' ' %}
-        {% for word in words %}
-          <span class="word">{{ word }}</span>
-        {% endfor %}
-        {% if block.settings.show_image and block.settings.image %}
-          <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+<div class="heading-title">
+  {% for block in section.blocks %}
+    <div class="line-block">
+      <span>{{ block.settings.text }}
+        {%- if block.settings.text != blank -%}
+          {% if block.settings.show_image %}
+            <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+          {% endif %}
         {% endif %}
-      {% endfor %}
-    </p>
-  </div>
+      </span>
+    </div>
+  {% endfor %}
 </div>
 
 <style>
-  .scroll-animation-section {
-    padding: 50px 20px;
+  .heading-title {
     text-align: center;
   }
 
-  .heading-title {
-    display: inline-block;
-  }
-
-  .line-text {
-    font-size: 2rem;
-    display: inline-flex;
+  .line-block {
+    margin: 10px 0;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 8px; /* Space between words and images */
+    justify-content: center;
+    text-align: center;
   }
 
-  .word {
-    color: rgba(182, 182, 182, 0.3); /* Lighter text color initially */
-    transition: color 0.5s ease;
+  .line-block span {
+    font-size: 2rem;
+    color: rgba(182, 182, 182, 0.2);
+    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+    margin-right: 10px; /* Space between text and image */
   }
 
   .line-image {
-    width: 30px;
+    width: 30px; /* Set your preferred size for the image */
     height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    margin-left: 10px; /* Space between image and next text */
   }
 </style>
 
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const words = document.querySelectorAll('.word');
-    const images = document.querySelectorAll('.line-image');
+  const textLines = gsap.utils.toArray('.heading-title .line-block span');
 
-    // Animate words
-    words.forEach((word, index) => {
-      gsap.to(word, {
-        color: '#000', // Darker text color on scroll
-        scrollTrigger: {
-          trigger: word,
-          start: 'top 80%', // Adjust based on when you want the animation to start
-          end: 'top 50%',   // Adjust based on when you want the animation to end
-          scrub: true,
-        },
-      });
-    });
-
-    // Animate images
-    images.forEach((image, index) => {
-      gsap.to(image, {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: image,
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: true,
-        },
-      });
+  textLines.forEach((line) => {
+    gsap.to(line, {
+      backgroundSize: '100%',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: line,
+        start: 'top 40%',  // Adjusted to trigger the animation when line is 80% in view
+        end: 'top 30%',    // End when the element is 30% away from the top
+        scrub: true,
+      },
     });
   });
 </script>
@@ -86,20 +68,7 @@
 {% schema %}
 {
   "name": "Scroll Animation Text",
-  "settings": [
-    {
-      "type": "color",
-      "id": "highlight_color",
-      "label": "Highlight Color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "lighter_color",
-      "label": "Lighter Text Color",
-      "default": "#B6B6B6"
-    }
-  ],
+  "settings": [],
   "blocks": [
     {
       "type": "text_block",
