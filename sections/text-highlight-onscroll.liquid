@@ -51,6 +51,12 @@
     height: auto;
     margin-left: 10px; /* Space between text and image */
   }
+
+  /* New highlighted text color when scrolling */
+  .scroll-animation-section .line-text.highlighted {
+    background: linear-gradient(to right, #ff6347, #ff6347) no-repeat; /* New color for highlight */
+    background-size: 100%; /* Full background size for highlight */
+  }
 </style>
 
 <script>
@@ -66,6 +72,8 @@
       start: 'top 40%',  // Trigger when 40% of the line is in view
       end: 'top 30%',    // End when 30% of the element is out of view
       scrub: true,
+      onEnter: () => textLine.classList.add('highlighted'),  // Add highlighted class when in view
+      onLeaveBack: () => textLine.classList.remove('highlighted'),  // Remove when leaving
     },
   });
 </script>
