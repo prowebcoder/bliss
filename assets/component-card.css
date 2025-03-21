@@ -29,9 +29,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
-modal-opener {
+.product-card-wrapper modal-opener {
     width: 50%;
 }
 modal-opener .button:after {
