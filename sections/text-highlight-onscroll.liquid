@@ -3,10 +3,10 @@
 <div class="heading-title">
   {% for block in section.blocks %}
     <div class="line-block">
-      <span>{{ block.settings.text }}</span>
-      {% if block.settings.image %}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-      {% endif %}
+      <span>{{ block.settings.text }}<img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" /></span>
+
+        
+
     </div>
   {% endfor %}
 </div>
