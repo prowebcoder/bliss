@@ -1,12 +1,7 @@
-
-
 <div class="heading-title">
   {% for block in section.blocks %}
     <div class="line-block">
       <span>{{ block.settings.text }}<img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" /></span>
-
-        
-
     </div>
   {% endfor %}
 </div>
@@ -52,6 +47,8 @@
   }
 </style>
 
+<script src="assets/js/gsap.min.js"></script>
+<script src="assets/js/ScrollTrigger.min.js"></script>
 
 <script>
   gsap.registerPlugin(ScrollTrigger);
@@ -64,8 +61,8 @@
       ease: 'none',
       scrollTrigger: {
         trigger: line,
-        start: 'top 0%',
-        end: 'top 0%',
+        start: 'top 80%',  // Adjusted to trigger the animation when line is 80% in view
+        end: 'top 30%',    // End when the element is 30% away from the top
         scrub: true,
       },
     });
