@@ -394,7 +394,7 @@
             "collection": "retail-store",
             "content_align": "center",
             "title": "Retail",
-            "inline_text": "",
+            "inline_text": "View Products",
             "text_color": "#000000"
           }
         },
@@ -404,7 +404,7 @@
             "collection": "wholesale-store",
             "content_align": "center",
             "title": "Wholesale",
-            "inline_text": "",
+            "inline_text": "View Products",
             "text_color": "#000000"
           }
         }
