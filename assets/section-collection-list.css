@@ -8,7 +8,7 @@
 }
 .collection-list .card:hover .media.media--hover-effect > img:first-child:only-child,
 .collection-list .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
-   opacity:1;
+   opacity:.8;
       filter: blur(0px);
    transition: filter var(--duration-long) ease;
   }
