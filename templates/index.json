@@ -116,21 +116,12 @@
             "text": "<p>The body’s homeostasis system is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences.</p><p>Simply put, homeostasis is the body’s \"internal machinery\" that is constantly working to help keep us pain-free and ready to thrive. When homeostasis is not working its best, or if negative symptoms persist due to illness, injury, or disease, homeostasis support may help.</p>",
             "text_style": "body"
           }
-        },
-        "button_w7htcp": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://collections",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "caption_NJ66b8",
         "heading_GtXFG7",
-        "text_WhLmfj",
-        "button_w7htcp"
+        "text_WhLmfj"
       ],
       "settings": {
         "image": "shopify://shop_images/1e4918_3e6f7a892f984c5085a5b901c6161736_mv2.jpg",
