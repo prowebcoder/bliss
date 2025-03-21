@@ -1,94 +1,91 @@
 {% schema %}
 {
-  "name": "Highlight TextImages",
+  "name": "Highlight Images",
   "settings": [
     {
       "type": "text",
-      "id": "title",
-      "label": "Section Title",
-      "default": "Highlight Text with Images"
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "ABOUT EURUS PUFF"
     },
     {
       "type": "richtext",
-      "id": "paragraph",
-      "label": "Paragraph Text",
-      "default": "<p>Add your text here with images.</p>"
+      "id": "heading",
+      "label": "Heading Text"
     },
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Read our story"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
     }
   ],
   "presets": [
     {
-      "name": "Highlight TextImages",
+      "name": "Highlight Images",
       "category": "Custom"
     }
   ]
 }
 {% endschema %}
 
-<div class="highlight-text-section">
-  <h2>{{ section.settings.title }}</h2>
-  <div class="highlight-text-content">
-    {{ section.settings.paragraph }}
-    <img src="{{ section.settings.image | img_url: 'medium' }}" alt="{{ section.settings.image.alt }}">
+<div x-data="xHighlightAnimation()" class="x-container-content flex flex-col">
+  <p class="subheading--template--24167821082942__highlight_text_with_image_nUBnKX rte mb-4 md:mb-6 text-left text-[rgba(var(--colors-text))]">
+    {{ section.settings.subheading }}
+  </p>
+
+  <div class="x-container-heading md:flex rtl:flex-row-reverse justify-left">
+    <h2 x-init="load($el, false)" class="heading--template--24167821082942__highlight_text_with_image_nUBnKX w-full inline-block text-left max-w-4xl" x-intersect.once.margin.300px="startAnim($el, false)">
+      <div class="text-highlight relative inline-block text-transparent pb-0.5" style="background-position-x: -100%;">
+        {{ section.settings.heading }}
+      </div>
+    </h2>
+  </div>
+
+  <div class="mt-10 md:mt-12 w-full md:w-fit self-start">
+    <button class="w-full md:w-fit button button-outline pl-10 pr-10 pt-4 pb-4" @click="window.location.href='{{ section.settings.button_link }}'">
+      <span class="button-text is-focus-button:opacity-0">{{ section.settings.button_text }}</span>
+    </button>
   </div>
 </div>
 
 <style>
-  .highlight-text-section {
-    padding: 20px;
-    text-align: center;
+  .text-highlight {
+    background: linear-gradient(to right, yellow 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position-x: -100%;
+    transition: background-position-x 0.5s ease;
   }
 
-  .highlight-text-content {
-    position: relative;
+  .text-highlight span {
     display: inline-block;
   }
 
-  .highlight-text-content p {
-    display: inline;
-    font-size: 24px;
-    line-height: 1.6;
-  }
-
-  .highlight-text-content img {
+  .text-highlight img {
     vertical-align: middle;
     margin: 0 10px;
-  }
-
-  .highlight-text-content .highlight {
-    background-color: yellow;
   }
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const textElement = document.querySelector('.highlight-text-content p');
-    const text = textElement.innerText;
-    textElement.innerHTML = '';
-
-    for (let i = 0; i < text.length; i++) {
-      const span = document.createElement('span');
-      span.innerText = text[i];
-      textElement.appendChild(span);
-    }
-
-    const spans = document.querySelectorAll('.highlight-text-content p span');
-
-    window.addEventListener('scroll', function() {
-      const scrollPosition = window.scrollY;
-      const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
-
-      spans.forEach((span, index) => {
-        if (scrollPosition > elementPosition + (index * 10)) {
-          span.classList.add('highlight');
-        } else {
-          span.classList.remove('highlight');
-        }
-      });
-    });
-  });
+  function xHighlightAnimation() {
+    return {
+      load(el, init) {
+        if (init) return;
+        const spans = el.querySelectorAll('.text-highlight span');
+        spans.forEach((span, index) => {
+          span.style.transitionDelay = `${index * 0.1}s`;
+        });
+      },
+      startAnim(el, init) {
+        if (init) return;
+        el.style.backgroundPositionX = '0%';
+      }
+    };
+  }
 </script>
