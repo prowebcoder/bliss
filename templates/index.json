@@ -172,6 +172,7 @@
         "collapsible_row_n6XHfB",
         "collapsible_row_zBwUXL"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Frequently asked questions",
@@ -228,6 +229,7 @@
         "text_6RUm7k",
         "button_gGKAyi"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
         "image_2": "shopify://shop_images/1e4918_3e6f7a892f984c5085a5b901c6161736_mv2.jpg",
@@ -382,6 +384,51 @@
         "padding_top_mobile": 20,
         "padding_bottom_mobile": 20
       }
+    },
+    "collection_list_AVqhep": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_YFQ98k": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "retail-store",
+            "content_align": "center",
+            "title": "Retail",
+            "inline_text": "",
+            "text_color": "#000000"
+          }
+        },
+        "featured_collection_yUVpMn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wholesale-store",
+            "content_align": "center",
+            "title": "Wholesale",
+            "inline_text": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_YFQ98k",
+        "featured_collection_yUVpMn"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "col_style": "1",
+        "columns_desktop": 2,
+        "color_scheme": "scheme-1",
+        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 36
+      }
     }
   },
   "order": [
@@ -391,6 +438,7 @@
     "video",
     "collapsible_content_Ea3qKc",
     "img_with_text_coll_zWkeHc",
-    "custom_reviews_yyTri8"
+    "custom_reviews_yyTri8",
+    "collection_list_AVqhep"
   ]
 }
