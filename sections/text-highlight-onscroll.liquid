@@ -5,7 +5,7 @@
     {% for block in section.blocks %}
       {{ block.settings.text }}
       {% if block.settings.show_image and block.settings.text != blank %}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
+        <img src="{{ block.settings.image | img_url: 'master' }}" alt="Image" class="line-image">
       {% endif %}
     {% endfor %}
   </p>
