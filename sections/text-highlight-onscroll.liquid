@@ -19,7 +19,7 @@
     {% for block in section.blocks %}
       {% if block.settings.custom_image %}
         <div class="custom-image-container">
-          <img src="{{ block.settings.custom_image | img_url: 'medium' }}" alt="Custom Image" class="custom-image" />
+          <img src="{{ section.settings.custom_image | img_url: 'medium' }}" alt="Custom Image" class="custom-image" />
         </div>
       {% endif %}
     {% endfor %}
@@ -100,7 +100,7 @@
     ease: 'none',
     scrollTrigger: {
       trigger: textLine,
-      start: 'top 40%',  // Trigger when 40% of the line is in view
+      start: 'top 50%',  // Trigger when 40% of the line is in view
       end: 'top 30%',    // End when 30% of the element is out of view
       scrub: true,
     },
@@ -111,6 +111,12 @@
 {
   "name": "Scroll Animation",
   "settings": [
+    {
+          "type": "image_picker",
+          "label": "Custom Image (optional)",
+          "id": "custom_image",
+          "info": "Add a custom image for the right column"
+        },
     {
       "type": "radio",
       "label": "Align Section",
@@ -151,13 +157,8 @@
           "id": "show_image",
           "default": true,
           "info": "Check this box to display the image"
-        },
-        {
-          "type": "image_picker",
-          "label": "Custom Image (optional)",
-          "id": "custom_image",
-          "info": "Add a custom image for the right column"
         }
+        
       ]
     }
   ],
