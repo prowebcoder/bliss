@@ -2,31 +2,30 @@
 <script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
 <div class="heading-title">
-  <div class="line-block">
-    {% for block in section.blocks %}
-      <span>
-        {{ block.settings.text }}
+  {% for block in section.blocks %}
+    <div class="line-block">
+      <span>{{ block.settings.text }}
         {%- if block.settings.text != blank -%}
           {% if block.settings.show_image %}
             <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
           {% endif %}
         {% endif %}
       </span>
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
 </div>
 
 <style>
   .heading-title {
-    text-align: left; /* Align text to the left */
-    padding-left: 50%; /* Move the content to the left side of the screen */
-    width: 100%;
-    box-sizing: border-box;
+    text-align: center;
   }
 
   .line-block {
-    display: inline-block; /* Display all spans in a single line */
-    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .line-block span {
