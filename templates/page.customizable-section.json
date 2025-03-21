@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -75,7 +76,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
