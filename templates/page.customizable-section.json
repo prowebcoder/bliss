@@ -84,56 +84,11 @@
     },
     "text_highlight_onscroll_LKCdcr": {
       "type": "text-highlight-onscroll",
-      "blocks": {
-        "text_block_tUtzgN": {
-          "type": "text_block",
-          "settings": {
-            "text": "as medical claims",
-            "image": "shopify://shop_images/download.jpg",
-            "show_image": true
-          }
-        },
-        "text_block_EfBHEh": {
-          "type": "text_block",
-          "settings": {
-            "text": "Patient testimonials are not to be interpreted",
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "show_image": true
-          }
-        },
-        "text_block_WrNkXE": {
-          "type": "text_block",
-          "settings": {
-            "text": "BlissThera is a non-pharmacological",
-            "show_image": false
-          }
-        },
-        "text_block_4GdcVT": {
-          "type": "text_block",
-          "settings": {
-            "text": "Alternative Therapy",
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "show_image": true
-          }
-        },
-        "text_block_GD3U6N": {
-          "type": "text_block",
-          "settings": {
-            "text": "",
-            "show_image": true
-          }
-        }
-      },
-      "block_order": [
-        "text_block_tUtzgN",
-        "text_block_EfBHEh",
-        "text_block_WrNkXE",
-        "text_block_4GdcVT",
-        "text_block_GD3U6N"
-      ],
       "settings": {
-        "custom_image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.webp",
-        "align_left": "false"
+        "heading": "Highlighted Text",
+        "text": "<p>This is a sample text that will be highlighted word by word.</p>",
+        "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+        "highlight_color": "#FFD700"
       }
     }
   },
