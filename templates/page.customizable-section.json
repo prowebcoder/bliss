@@ -16,6 +16,45 @@
         "padding_bottom": 28
       }
     },
+    "text_highlight_onscroll_LKCdcr": {
+      "type": "text-highlight-onscroll",
+      "blocks": {
+        "text_block_tUtzgN": {
+          "type": "text_block",
+          "settings": {
+            "text": "as medical claims",
+            "image": "shopify://shop_images/download.jpg"
+          }
+        },
+        "text_block_EfBHEh": {
+          "type": "text_block",
+          "settings": {
+            "text": "Patient testimonials are not to be interpreted",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
+          }
+        },
+        "text_block_WrNkXE": {
+          "type": "text_block",
+          "settings": {
+            "text": "BlissThera is a non-pharmacological"
+          }
+        },
+        "text_block_4GdcVT": {
+          "type": "text_block",
+          "settings": {
+            "text": "Alternative Therapy",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_tUtzgN",
+        "text_block_EfBHEh",
+        "text_block_WrNkXE",
+        "text_block_4GdcVT"
+      ],
+      "settings": {}
+    },
     "three_column_collection_MmrVxq": {
       "type": "three-column-collection",
       "blocks": {
@@ -85,6 +124,7 @@
   },
   "order": [
     "main",
+    "text_highlight_onscroll_LKCdcr",
     "three_column_collection_MmrVxq"
   ]
 }
