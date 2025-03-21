@@ -1,5 +1,4 @@
-<script src="{{ 'gsap.min.js' | asset_url }}"></script>
-<script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
+
 
 <div class="heading-title">
   <p class="line-text">
@@ -37,6 +36,8 @@
     margin-left: 10px; /* Space between text and image */
   }
 </style>
+<script src="{{ 'gsap.min.js' | asset_url }}" defer></script>
+<script src="{{ 'ScrollTrigger.min.js' | asset_url }}" defer></script>
 
 <script>
   gsap.registerPlugin(ScrollTrigger);
