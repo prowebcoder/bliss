@@ -84,12 +84,29 @@
     },
     "text_highlight_onscroll_LKCdcr": {
       "type": "text-highlight-onscroll",
-      "settings": {
-        "heading": "Highlighted Text",
-        "text": "<p>This is a sample text that will be highlighted word by word.</p>",
-        "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-        "highlight_color": "#FFD700"
-      }
+      "blocks": {
+        "text_block_adqLPg": {
+          "type": "text_block",
+          "settings": {
+            "text": "Enter your text here",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "show_image": true
+          }
+        },
+        "text_block_xTa9nm": {
+          "type": "text_block",
+          "settings": {
+            "text": "Enter your text here",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "show_image": true
+          }
+        }
+      },
+      "block_order": [
+        "text_block_adqLPg",
+        "text_block_xTa9nm"
+      ],
+      "settings": {}
     }
   },
   "order": [
