@@ -22,3 +22,6 @@ h5.title.inline.h1 {
 .multicolumn-card__info {
     margin: 15px;
 }
+a.three-coll.button {
+    width: 30%;
+}
