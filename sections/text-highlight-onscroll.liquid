@@ -4,11 +4,10 @@
 <div class="heading-title">
   {% for block in section.blocks %}
     <div class="line-block">
-      <span>{{ block.settings.text }}
-        {%- if block.settings.text != blank -%}
-          {% if block.settings.show_image %}
-            <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-          {% endif %}
+      <span class="line-text">
+        {{ block.settings.text }}
+        {% if block.settings.show_image and block.settings.text != blank %}
+          <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
         {% endif %}
       </span>
     </div>
@@ -23,12 +22,12 @@
   .line-block {
     margin: 10px 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
-  .line-block span {
+  .line-text {
     font-size: 2rem;
     color: rgba(182, 182, 182, 0.2);
     background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
@@ -36,20 +35,21 @@
     background-clip: text;
     background-size: 0%;
     transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    margin-right: 10px; /* Space between text and image */
+    display: flex;
+    align-items: center;
   }
 
   .line-image {
     width: 30px; /* Set your preferred size for the image */
     height: auto;
-    margin-left: 10px; /* Space between image and next text */
+    margin-left: 10px; /* Space between text and image */
   }
 </style>
 
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  const textLines = gsap.utils.toArray('.heading-title .line-block span');
+  const textLines = gsap.utils.toArray('.heading-title .line-block .line-text');
 
   textLines.forEach((line) => {
     gsap.to(line, {
@@ -57,8 +57,8 @@
       ease: 'none',
       scrollTrigger: {
         trigger: line,
-        start: 'top 40%',  // Adjusted to trigger the animation when line is 80% in view
-        end: 'top 30%',    // End when the element is 30% away from the top
+        start: 'top 40%',  // Trigger when 40% of the line is in view
+        end: 'top 30%',    // End when 30% of the element is out of view
         scrub: true,
       },
     });
