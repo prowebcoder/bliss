@@ -105,7 +105,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can we offer BlissThera Therapies to our Clinic or MedSpa?",
-            "icon": "check_mark",
+            "icon": "question_mark",
             "row_content": "<p>Yes.<a href=\"https://www.blissthera.com/contact\" target=\"_blank\"><span style=\"text-decoration:underline\">Contact us</span></a> to start a conversation.</p>",
             "page": ""
           }
@@ -129,12 +129,12 @@
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "section",
-        "container_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
+        "container_color_scheme": "scheme-1",
         "color_scheme": "",
-        "open_first_collapsible_row": true,
+        "open_first_collapsible_row": false,
         "image": "shopify://shop_images/autumn-trees-hillside.jpg",
-        "image_ratio": "large",
-        "desktop_layout": "image_second",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36
       }
