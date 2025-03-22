@@ -154,6 +154,36 @@
           "settings": {
             "text": "<p>Add your text here.</p>"
           }
+        },
+        "image_bVExhK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "image_width": "50px",
+            "image_height": "50px",
+            "image_class": "rounded-[999px] rounded-[10px]"
+          }
+        },
+        "text_bWNVi7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add your text here.</p>"
+          }
+        },
+        "image_pUTmFW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+            "image_width": "50px",
+            "image_height": "50px",
+            "image_class": "rounded-[999px] rounded-[10px]"
+          }
+        },
+        "text_jxnmyq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add your text here.</p>"
+          }
         }
       },
       "block_order": [
@@ -164,7 +194,11 @@
         "text_dymdcL",
         "image_VehrWN",
         "text_JkhWj4",
-        "text_HLmCWm"
+        "text_HLmCWm",
+        "image_bVExhK",
+        "text_bWNVi7",
+        "image_pUTmFW",
+        "text_jxnmyq"
       ],
       "settings": {
         "color_scheme": "scheme-2",
