@@ -16,6 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Frequently asked questions",
+            "heading_color": "#0a8118",
             "heading_size": "hxxl"
           }
         },
