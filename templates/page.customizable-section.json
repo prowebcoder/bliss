@@ -87,7 +87,13 @@
       "type": "text-highlight-onscroll",
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
-        "heading": "We are dedicated <b>to</b><img src=\"https://0ca155-2.myshopify.com/\"> a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.",
+        "heading": "<p>We are dedicated <strong>to</strong> a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
+        "image_1": "shopify://shop_images/5mL_BlissThera_BioMedia_bottle2-w-logo_copy_1bfe2f77-32fc-4124-8396-5255258784b1.jpg",
+        "image_1_width": "50px",
+        "image_1_height": "50px",
+        "image_2": "shopify://shop_images/Terpene_Atmosphere-_Forest_1-w-key.jpg",
+        "image_2_width": "50px",
+        "image_2_height": "50px",
         "button_text": "Read our story",
         "button_link": ""
       }
