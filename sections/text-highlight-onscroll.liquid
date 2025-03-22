@@ -4,25 +4,7 @@
   <p class="subheading">{{ section.settings.subheading }}</p>
 
   <div class="heading-text">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'text' %}
-          <span class="text-block" {{ block.shopify_attributes }}>
-            {{ block.settings.text }}
-          </span>
-        {% when 'image' %}
-          <span class="image-block" {{ block.shopify_attributes }}>
-            {% if block.settings.image != blank %}
-              <img
-                src="{{ block.settings.image | img_url: '300x' }}"
-                alt="{{ block.settings.image.alt }}"
-                style="width: {{ block.settings.image_width }}; height: {{ block.settings.image_height }};"
-                loading="lazy"
-              >
-            {% endif %}
-          </span>
-      {% endcase %}
-    {% endfor %}
+    {{ section.settings.heading }}
   </div>
 
   <a href="{{ section.settings.button_link }}" class="button">
@@ -51,23 +33,8 @@
     color: #333;
   }
 
-  .heading-text span {
+  .heading-text p {
     display: inline;
-  }
-
-  .heading-text .text-block {
-    display: inline;
-  }
-
-  .heading-text .image-block {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px;
-  }
-
-  .heading-text img {
-    display: inline-block;
-    vertical-align: middle;
   }
 
   .heading-text span {
@@ -134,13 +101,19 @@
 
 {% schema %}
 {
-  "name": "Highlight Text",
+  "name": "Highlight Scroll",
   "settings": [
     {
       "type": "text",
       "id": "subheading",
       "label": "Subheading",
       "default": "ABOUT EURUS PUFF"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading Text",
+      "default": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>"
     },
     {
       "type": "text",
@@ -154,69 +127,10 @@
       "label": "Button Link"
     }
   ],
-  "blocks": [
-    {
-      "type": "text",
-      "name": "Text",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>Add your text here.</p>"
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "image_width",
-          "label": "Image Width (e.g., 50px)",
-          "default": "50px"
-        },
-        {
-          "type": "text",
-          "id": "image_height",
-          "label": "Image Height (e.g., 50px)",
-          "default": "50px"
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Highlight Text",
-      "category": "Custom",
-      "blocks": [
-        {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are dedicated to a holistic and green-focused approach to beauty.</p>"
-          }
-        },
-        {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "image_width": "50px",
-            "image_height": "50px"
-          }
-        },
-        {
-          "type": "text",
-          "settings": {
-            "text": "<p>We believe in the power of nature's ingredients to nourish and heal.</p>"
-          }
-        }
-      ]
+      "name": "Highlight Scroll",
+      "category": "Custom"
     }
   ]
 }
