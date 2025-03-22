@@ -7,18 +7,20 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'text' %}
-          <div class="text-block" {{ block.shopify_attributes }}>
+          <span class="text-block" {{ block.shopify_attributes }}>
             {{ block.settings.text }}
-          </div>
+          </span>
         {% when 'image' %}
-          <div class="image-block" {{ block.shopify_attributes }}>
-            <img
-              src="{{ block.settings.image | img_url: '300x' }}"
-              alt="{{ block.settings.image.alt }}"
-              style="width: {{ block.settings.image_width }}; height: {{ block.settings.image_height }};"
-              loading="lazy"
-            >
-          </div>
+          <span class="image-block" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | img_url: '300x' }}"
+                alt="{{ block.settings.image.alt }}"
+                style="width: {{ block.settings.image_width }}; height: {{ block.settings.image_height }};"
+                loading="lazy"
+              >
+            {% endif %}
+          </span>
       {% endcase %}
     {% endfor %}
   </div>
@@ -49,8 +51,23 @@
     color: #333;
   }
 
-  .heading-text p {
+  .heading-text span {
     display: inline;
+  }
+
+  .heading-text .text-block {
+    display: inline;
+  }
+
+  .heading-text .image-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+
+  .heading-text img {
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .heading-text span {
@@ -60,12 +77,6 @@
 
   .heading-text span.highlight {
     opacity: 1; /* Darker text color on scroll */
-  }
-
-  .image-block {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px;
   }
 
   .button {
