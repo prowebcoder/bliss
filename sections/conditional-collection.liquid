@@ -57,7 +57,9 @@
     assign show_desktop_slider = true
   endif
 -%}
-
+{% if customer %}
+yes
+{% endif %}
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
