@@ -25,50 +25,32 @@
         "show_text_below": true
       }
     },
-    "collection_list_AVqhep": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_YFQ98k": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "retail-store",
-            "content_align": "center",
-            "title": "Retail",
-            "inline_text": "View Products",
-            "text_color": "#000000"
-          }
-        },
-        "featured_collection_yUVpMn": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wholesale-store",
-            "content_align": "center",
-            "title": "Wholesale",
-            "inline_text": "For Wholesale Customers",
-            "text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_YFQ98k",
-        "featured_collection_yUVpMn"
-      ],
-      "disabled": true,
+    "conditional_collection_PBaQre": {
+      "type": "conditional-collection",
       "settings": {
-        "title": "",
+        "collection": "retail-store",
+        "products_to_show": 4,
+        "title": "Featured collection",
         "heading_size": "h1",
-        "image_ratio": "adapt",
-        "col_style": "3",
-        "columns_desktop": 2,
-        "color_scheme": "scheme-1",
-        "background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0) 11.11%, rgba(0, 0, 0, 0) 22.22%, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0) 44.44%, rgba(0, 0, 0, 0) 55.56%, rgba(0, 0, 0, 0) 66.67%, rgba(0, 0, 0, 0) 77.78%, rgba(0, 0, 0, 0) 88.89%, rgba(0, 0, 0, 0) 100%)",
-        "show_view_all": false,
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mobile": 36,
-        "padding_bottom_mobile": 36
+        "padding_bottom": 36
       }
     },
     "image_with_text_DfCirf": {
@@ -114,35 +96,6 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "all-products",
-        "products_to_show": 4,
-        "title": "Discover Our Best-Selling",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "uppercase",
-        "columns_desktop": 4,
-        "enable_desktop_slider": true,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -233,65 +186,6 @@
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "img_with_text_coll_zWkeHc": {
-      "type": "img-with-text-coll",
-      "blocks": {
-        "caption_R6W7RG": {
-          "type": "caption",
-          "settings": {
-            "caption": "Phytochemical Synergy",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_majwiM": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Essence of BlissThera®",
-            "heading_size": "h1"
-          }
-        },
-        "text_6RUm7k": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At the heart of BlissThera<strong>® </strong>is the concept of <strong>phytochemical synergy</strong>, where plant-derived compounds—terpenes, flavonoids, and other bioactive plant molecules—are delivered in carefully controlled combinations to enhance and support the body’s ability to regulate its homeostatic mechanisms. This therapeutic synergy occurs when multiple phytochemicals interact with various receptor systems in the body, amplifying their collective therapeutic effects.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_gGKAyi": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn More About us",
-            "button_link": "#",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "caption_R6W7RG",
-        "heading_majwiM",
-        "text_6RUm7k",
-        "button_gGKAyi"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.png",
-        "image_2": "shopify://shop_images/1e4918_3e6f7a892f984c5085a5b901c6161736_mv2.jpg",
-        "image_3": "shopify://shop_images/hand-on-tree-bark.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "padding_top": 36,
-        "padding_bottom": 20
       }
     },
     "custom_reviews_yyTri8": {
@@ -434,12 +328,10 @@
   },
   "order": [
     "image_banner_XJPmhF",
-    "collection_list_AVqhep",
+    "conditional_collection_PBaQre",
     "image_with_text_DfCirf",
-    "featured_collection",
     "video",
     "collapsible_content_Ea3qKc",
-    "img_with_text_coll_zWkeHc",
     "custom_reviews_yyTri8"
   ]
 }
