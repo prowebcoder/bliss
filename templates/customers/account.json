@@ -25,14 +25,14 @@
           "settings": {
             "show_notification_icon": true,
             "icon": "warning",
-            "show_deals": true,
+            "show_deals": false,
             "deals_link_1": "",
             "deals_link_2": "",
             "deals_link_3": "",
-            "show_collection": true,
+            "show_collection": false,
             "collection": "",
             "dashboard_orders": "<p>Check the status of your orders, returns and exchanges. </p>",
-            "dashboard_deals_title": "Hot Deals",
+            "dashboard_deals_title": "Store Notice",
             "dashboard_deals": "<p>Stay up to date on the latest news from Shop and let yourself be inspired by our collections.</p>",
             "need_help": "<p>Need help ? Contact Us</p>"
           }
