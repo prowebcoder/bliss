@@ -36,7 +36,7 @@
             "dashboard_orders": "<p>Check the status of your orders, returns and exchanges. </p>",
             "dashboard_deals_title": "Store Notice",
             "dashboard_deals": "<p>Stay up to date on the latest news from Shop and let yourself be inspired by our collections.</p>",
-            "need_help": "<p>Need help ? Contact Us</p>"
+            "need_help": "<p>Need help ? <a href=\"/pages/contact\" title=\"Contact\">Contact Us</a></p>"
           }
         }
       },
