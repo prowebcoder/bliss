@@ -60,9 +60,15 @@
 {% if customer %}
 
 {% for tag in customer.tags %}
-  {{ tag }}
+  {% if tag == 'Retail' %}
+ 
+    {% assign customertype = 'retail' %}
+    {% endif %}
+  {% if tag == 'Practitioner' %}
+   {% assign customertype = 'wholesale' %}
+  {% endif %}
 {% endfor %}
-
+{{ customertype }}
 {% else %}
   <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
