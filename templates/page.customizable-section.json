@@ -85,76 +85,9 @@
     },
     "text_highlight_onscroll_whz4XL": {
       "type": "text-highlight-onscroll",
-      "blocks": {
-        "text_dNaQA4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Add your text here. th dd sdsd gg</p>"
-          }
-        },
-        "image_XfYxLa": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "image_width": "50px",
-            "image_height": "50px"
-          }
-        },
-        "text_iLCQz6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Add your text </p>"
-          }
-        },
-        "image_Wp8UkK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "image_width": "50px",
-            "image_height": "50px"
-          }
-        },
-        "text_mAdXNq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Add your text here.</p>"
-          }
-        },
-        "image_egaVEj": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/download.jpg",
-            "image_width": "50px",
-            "image_height": "50px"
-          }
-        },
-        "text_wkYkCe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Add your text here.</p>"
-          }
-        },
-        "image_i3AtDJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/5mL_BlissThera_BioMedia_bottle2-w-logo_copy_1bfe2f77-32fc-4124-8396-5255258784b1.jpg",
-            "image_width": "50px",
-            "image_height": "50px"
-          }
-        }
-      },
-      "block_order": [
-        "text_dNaQA4",
-        "image_XfYxLa",
-        "text_iLCQz6",
-        "image_Wp8UkK",
-        "text_mAdXNq",
-        "image_egaVEj",
-        "text_wkYkCe",
-        "image_i3AtDJ"
-      ],
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
+        "heading": "<p>We are dedicated to a <img src=\"\"/>holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
         "button_text": "Read our story",
         "button_link": ""
       }
