@@ -39,7 +39,7 @@
 
   .heading-text span {
     opacity: 0.3; /* Initial light text color */
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
   }
 
   .heading-text span.highlight {
@@ -84,7 +84,8 @@
       const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
 
       spans.forEach((span, index) => {
-        if (scrollPosition > elementPosition + (index * 5)) {
+        // Adjust the scroll threshold for quicker effect
+        if (scrollPosition > elementPosition + (index * 5)) { // Reduced multiplier for quicker effect
           span.classList.add('highlight');
         } else {
           span.classList.remove('highlight');
@@ -96,7 +97,7 @@
 
 {% schema %}
 {
-  "name": "Highlight Scroll",
+  "name": "Highlight Text",
   "settings": [
     {
       "type": "text",
@@ -124,7 +125,7 @@
   ],
   "presets": [
     {
-      "name": "Highlight Scroll",
+      "name": "Highlight Text",
       "category": "Custom"
     }
   ]
