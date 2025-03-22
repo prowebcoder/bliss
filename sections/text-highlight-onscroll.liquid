@@ -85,7 +85,7 @@
 
       spans.forEach((span, index) => {
         // Adjust the scroll threshold for quicker effect
-        if (scrollPosition > elementPosition + (index * 5)) { // Reduced multiplier for quicker effect
+        if (scrollPosition > elementPosition + (index * 15)) { // Reduced multiplier for quicker effect
           span.classList.add('highlight');
         } else {
           span.classList.remove('highlight');
