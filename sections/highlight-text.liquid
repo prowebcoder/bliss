@@ -1,99 +1,16 @@
-{% schema %}
-{
-  "name": "Highlight T",
-  "settings": [
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "ABOUT EURUS PUFF"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "Read our story"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  ],
-  "blocks": [
-    {
-      "type": "text",
-      "name": "Text",
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>Add your text here.</p>"
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "text",
-          "id": "image_width",
-          "label": "Image Width (e.g., 50px)",
-          "default": "50px"
-        },
-        {
-          "type": "text",
-          "id": "image_height",
-          "label": "Image Height (e.g., 50px)",
-          "default": "50px"
-        },
-        {
-          "type": "text",
-          "id": "image_class",
-          "label": "Custom Image Class",
-          "default": "rounded-[999px] rounded-[10px]"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Highlight T",
-      "category": "Custom",
-      "blocks": [
-        {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are dedicated to a holistic and green-focused approach to beauty.</p>"
-          }
-        },
-        {
-          "type": "image",
-          "settings": {
-            "image": "",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
-        {
-          "type": "text",
-          "settings": {
-            "text": "<p>We believe in the power of nature's ingredients to nourish and heal.</p>"
-          }
-        }
-      ]
-    }
-  ]
-}
-{% endschema %}
+  }
+{%- endstyle -%}
 
 <div class="highlight-text-section">
   <p class="subheading">{{ section.settings.subheading }}</p>
@@ -233,3 +150,100 @@
     });
   });
 </script>
+
+{% schema %}
+{
+  "name": "Highlight T",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "ABOUT EURUS PUFF"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Read our story"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Add your text here.</p>"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_width",
+          "label": "Image Width (e.g., 50px)",
+          "default": "50px"
+        },
+        {
+          "type": "text",
+          "id": "image_height",
+          "label": "Image Height (e.g., 50px)",
+          "default": "50px"
+        },
+        {
+          "type": "text",
+          "id": "image_class",
+          "label": "Custom Image Class",
+          "default": "rounded-[999px] rounded-[10px]"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Highlight T",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are dedicated to a holistic and green-focused approach to beauty.</p>"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "image_width": "50px",
+            "image_height": "50px",
+            "image_class": "rounded-[999px] rounded-[10px]"
+          }
+        },
+        {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe in the power of nature's ingredients to nourish and heal.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
