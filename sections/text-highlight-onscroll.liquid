@@ -84,7 +84,7 @@
       const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
 
       spans.forEach((span, index) => {
-        if (scrollPosition > elementPosition + (index * 5)) {
+        if (scrollPosition > elementPosition + (index * 100)) {
           span.classList.add('highlight');
         } else {
           span.classList.remove('highlight');
