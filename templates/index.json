@@ -103,7 +103,7 @@
     "video": {
       "type": "video",
       "settings": {
-        "heading": "",
+        "heading": "BlissThera Patients Testimonials",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/RArI4omGka8",
@@ -234,7 +234,7 @@
         "column_HFMPzi"
       ],
       "settings": {
-        "title": "See what people are saying about Us",
+        "title": "See what people are saying about us",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "circle",
