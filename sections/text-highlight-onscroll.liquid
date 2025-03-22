@@ -1,3 +1,5 @@
+{{ 'highlight-text.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -29,56 +31,7 @@
     </div>
   </div>
 </div>
-
-<style>
-  .highlight-text-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .subheading {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #333;
-  }
-
-  .heading-text {
-    font-size: 1.8em;
-    line-height: 1.6;
-    position: relative;
-    color: #333;
-  }
-
-  .heading-text p {
-    display: inline;
-  }
-
-  .heading-text span {
-    opacity: 0.3; /* Initial light text color */
-    transition: opacity 0.8s ease;
-  }
-
-  .heading-text span.highlight {
-    opacity: 1; /* Darker text color on scroll */
-  }
-
-  .button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 24px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.8s ease;
-  }
-
-  .button:hover {
-    background-color: #444;
-  }
-</style>
+ 
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
