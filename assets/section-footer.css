@@ -8,12 +8,14 @@
 
 .site-footer__newsletter-wrapper--background {
     position: absolute;
-  display:block;
+    display: block !important;
     top: 0;
-    right: 0;
+    right: unset;
+    left: 0;
     width: 100vw;
     height: 100%;
-    background-color: var(--footer-newsletter-background);
+    background-color: var(--gradient-background);
+    z-index: 0;
 }
 .footer__content-top {
     display: flex;
@@ -241,6 +243,7 @@
 .footer-block__newsletter {
   /*text-align: center;*/
   flex-grow: 1;
+    z-index: 1;
 }
 
 .newsletter-form__field-wrapper {
