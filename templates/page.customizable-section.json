@@ -28,8 +28,8 @@
             "title_color": "#ffffff",
             "text": "<p>Tailored Sub-Lingual Treatments for Mind, Body, and Spirit.Discover the Potent Benefits of Our Forest-Inspired Elixirs.</p>",
             "text_color": "#ffffff",
-            "link_label": "Shop",
-            "link": "shopify://collections",
+            "link_label": "",
+            "link": "",
             "link_color": "#ffffff"
           }
         },
@@ -82,10 +82,20 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "text_highlight_onscroll_whz4XL": {
+      "type": "text-highlight-onscroll",
+      "settings": {
+        "subheading": "ABOUT EURUS PUFF",
+        "heading": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
+        "button_text": "Read our story",
+        "button_link": ""
+      }
     }
   },
   "order": [
     "main",
-    "three_column_collection_MmrVxq"
+    "three_column_collection_MmrVxq",
+    "text_highlight_onscroll_whz4XL"
   ]
 }
