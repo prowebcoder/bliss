@@ -11,28 +11,28 @@
     }
   }
 {%- endstyle -%}
+
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}"> 
- <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
-<div class="rich-text__blocks {{ section.settings.content_alignment }} highlight-text-section">
-  <p class="subheading">{{ section.settings.subheading }}</p>
+      <div class="rich-text__blocks {{ section.settings.content_alignment }} highlight-text-section" style="text-align: {{ section.settings.text_alignment }};">
+        <p class="subheading">{{ section.settings.subheading }}</p>
 
-  <div class="heading-text">
-    {{ section.settings.heading }}
-  </div>
+        <div class="heading-text">
+          {{ section.settings.heading }}
+        </div>
 
-  <a href="{{ section.settings.button_link }}" class="button">
-    {{ section.settings.button_text }}
-  </a>
-</div>
+        <a href="{{ section.settings.button_link }}" class="button">
+          {{ section.settings.button_text }}
+        </a>
+      </div>
     </div>
- </div>
+  </div>
 </div>
 
 <style>
   .highlight-text-section {
     padding: 40px 20px;
-    text-align: center;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -120,7 +120,7 @@
 {
   "name": "Highlight Scroll",
   "settings": [
-   {
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
@@ -170,17 +170,36 @@
         }
       ],
       "default": "center",
-      "label": "t:sections.rich-text.settings.content_alignment.label"
+      "label": "Content Alignment"
     },
-    
-  {
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center",
+      "label": "Text Alignment"
+    },
+    {
       "type": "text",
       "id": "subheading",
       "label": "Subheading",
       "default": "ABOUT EURUS PUFF"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "heading",
       "label": "Heading Text",
       "default": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>"
