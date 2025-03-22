@@ -1,94 +1,126 @@
-<script src="{{ 'gsap.min.js' | asset_url }}"></script>
-<script src="{{ 'ScrollTrigger.min.js' | asset_url }}"></script>
 
-<div class="heading-title">
-  <p class="line-text">
-    {% for block in section.blocks %}
-      {{ block.settings.text }}
-      {% if block.settings.show_image and block.settings.text != blank %}
-        <img src="{{ block.settings.image | img_url: 'small' }}" alt="Image" class="line-image" />
-      {% endif %}
-    {% endfor %}
-  </p>
+
+<div class="highlight-text-section">
+  <p class="subheading">{{ section.settings.subheading }}</p>
+
+  <div class="heading-text">
+    {{ section.settings.heading }}
+  </div>
+
+  <a href="{{ section.settings.button_link }}" class="button">
+    {{ section.settings.button_text }}
+  </a>
 </div>
 
 <style>
-  .heading-title {
+  .highlight-text-section {
+    padding: 40px 20px;
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
-  .line-text {
-    font-size: 2rem;
-    color: rgba(182, 182, 182, 0.2);
-    background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 0%;
-    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensure everything stays within the same line/paragraph */
+  .subheading {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
   }
 
-  .line-image {
-    width: 30px; /* Set your preferred size for the image */
-    height: auto;
-    margin-left: 10px; /* Space between text and image */
+  .heading-text {
+    font-size: 1.8em;
+    line-height: 1.6;
+    position: relative;
+    color: #333;
+  }
+
+  .heading-text p {
+    display: inline;
+  }
+
+  .heading-text .highlight {
+    background-color: yellow;
+    transition: background-color 0.3s ease;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #444;
   }
 </style>
 
 <script>
-  gsap.registerPlugin(ScrollTrigger);
+  document.addEventListener('DOMContentLoaded', function() {
+    const textElement = document.querySelector('.heading-text');
+    const text = textElement.innerText;
+    textElement.innerHTML = '';
 
-  const textLine = document.querySelector('.heading-title .line-text');
+    // Split text into individual characters and wrap them in spans
+    for (let i = 0; i < text.length; i++) {
+      const span = document.createElement('span');
+      span.innerText = text[i];
+      textElement.appendChild(span);
+    }
 
-  gsap.to(textLine, {
-    backgroundSize: '100%',
-    ease: 'none',
-    scrollTrigger: {
-      trigger: textLine,
-      start: 'top 40%',  // Trigger when 40% of the line is in view
-      end: 'top 30%',    // End when 30% of the element is out of view
-      scrub: true,
-    },
+    const spans = document.querySelectorAll('.heading-text span');
+
+    // Add scroll event listener
+    window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY;
+      const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
+
+      spans.forEach((span, index) => {
+        if (scrollPosition > elementPosition + (index * 10)) {
+          span.classList.add('highlight');
+        } else {
+          span.classList.remove('highlight');
+        }
+      });
+    });
   });
 </script>
 
 {% schema %}
 {
-  "name": "Scroll Animation Text",
-  "settings": [],
-  "blocks": [
+  "name": "Highlight Text Scroll",
+  "settings": [
     {
-      "type": "text_block",
-      "name": "Text Block",
-      "settings": [
-        {
-          "type": "text",
-          "label": "Text",
-          "id": "text",
-          "default": "Enter your text here"
-        },
-        {
-          "type": "image_picker",
-          "label": "Image (optional)",
-          "id": "image",
-          "info": "Add a small image between text"
-        },
-        {
-          "type": "checkbox",
-          "label": "Show Image",
-          "id": "show_image",
-          "default": true,
-          "info": "Check this box to display the image"
-        }
-      ]
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "ABOUT EURUS PUFF"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading Text",
+      "default": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Read our story"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
     }
   ],
   "presets": [
     {
-      "name": "Scroll Animation Text",
+      "name": "Highlight Text Scroll",
       "category": "Custom"
     }
   ]
