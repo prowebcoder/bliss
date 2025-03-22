@@ -85,6 +85,7 @@
     },
     "text_highlight_onscroll_whz4XL": {
       "type": "text-highlight-onscroll",
+      "disabled": true,
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
         "heading": "We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.",
@@ -178,7 +179,7 @@
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
         "button_text": "Read our story",
-        "button_link": ""
+        "button_link": "shopify://pages/joy-subscription"
       }
     }
   },
