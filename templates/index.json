@@ -102,7 +102,6 @@
     },
     "video": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -111,79 +110,6 @@
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_Ea3qKc": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_BRbaBp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How does BlissThera Therapy Work?",
-            "icon": "plant",
-            "row_content": "<p>BlissThera™ merges the heritage of Forest Medicine Therapy with the innovative realm of microprocessor controlled phytochemical synergy and VR technology. The BlissThera™ Virtual Nature experience helps the body re-establish a harmonious connection with nature, enabling the body and mind to better heal themselves.<br/><br/></p><p>For more detailed information go to the \"<a href=\"https://www.blissthera.com/why-it-works\" target=\"_blank\"><span style=\"text-decoration:underline\">Why it Works</span></a>\" tab. Or for scientific level clinical chemistry data read the <a href=\"https://1e49183e-3cad-49cb-8132-dd844fdf4d68.usrfiles.com/ugd/1e4918_9d3168e1fe75481a9cfd6e84f3ea4878.pdf\" target=\"_blank\"><span style=\"text-decoration:underline\">White Paper</span></a> and this <a href=\"https://www.blissthera.com/post/enhancing-health-via-phytochemical-synergy-via-virtual-nature-therapy-forest-medicine-blissthera\" target=\"_blank\"><span style=\"text-decoration:underline\">blog post</span></a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_KFgEXp": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is BlissThera Forest Medicine Therapy similar to Naturopathic, Integrative or Functional Medicine?",
-            "icon": "plant",
-            "row_content": "<p>Using Western Medicine comparisons, BlissThera™ Forest Medicine embodies the same principles as Naturopathic, Integrative and Functional Medicine, emphasizing disease prevention and the cultivation of well-being by encouraging the body to restore healthy function - while also partnering with conventional medicine to insure a whole health approach to care.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_PdbxLx": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Where can I receive BlissThera Treatments?",
-            "icon": "plant",
-            "row_content": "<p>BlissThera Forest Medicine and Virtual Nature Therapy Treatments can be received at several locations. Visit the <a href=\"https://www.blissthera.com/book-forest-medicine-treatment\" target=\"_blank\"><span style=\"text-decoration:underline\">Book Treatment</span></a> page for the latest list of locations.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_n6XHfB": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will BlissThera Treatments impair my driving ability?",
-            "icon": "plant",
-            "row_content": "<p>BlissThera Treatments will not impair mental focus or physical dexterity.  In fact, patients generally report feeling more focus after a treatment. </p><p>However, some patients specifically request treatments  designed to be sedating. If you request a treatment involving this outcome, you will need to arrange for post treatment transportation.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_zBwUXL": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I become addicted to BlissThera Treatments?",
-            "icon": "plant",
-            "row_content": "<p>Experiencing a BlissThera  Forest Medicine Therapy is analogous to taking a walk in nature (without getting tired from the walk). Though many people often find nature walks an important part of their routine,  by no means is this considered \"addicting\".</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_BRbaBp",
-        "collapsible_row_KFgEXp",
-        "collapsible_row_PdbxLx",
-        "collapsible_row_n6XHfB",
-        "collapsible_row_zBwUXL"
-      ],
-      "disabled": true,
-      "settings": {
-        "caption": "",
-        "heading": "Frequently asked questions",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "layout": "row",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "open_first_collapsible_row": true,
-        "image": "shopify://shop_images/11090.jpg",
-        "image_ratio": "large",
-        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -331,7 +257,6 @@
     "conditional_collection_PBaQre",
     "image_with_text_DfCirf",
     "video",
-    "collapsible_content_Ea3qKc",
     "custom_reviews_yyTri8"
   ]
 }
