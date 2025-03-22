@@ -9,6 +9,54 @@
  */
 {
   "sections": {
+    "image_banner_yriqKd": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_wgPDig": {
+          "type": "heading",
+          "settings": {
+            "heading": "Frequently asked questions",
+            "heading_size": "h1"
+          }
+        },
+        "text_eJm8YD": {
+          "type": "text",
+          "settings": {
+            "text": "Everything You Need to Know About Orders and Shipping A brief introduction to your store, mission, and what your brand stands for.",
+            "text_style": "body"
+          }
+        },
+        "buttons_mY7HTh": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Contact",
+            "button_link_1": "shopify://pages/contact",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wgPDig",
+        "text_eJm8YD",
+        "buttons_mY7HTh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/BlissThera-Forest-Medicine-Virtual-Nature-Therapy-Forest-Walk-w-Terpene-Key-branded.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "image_with_text_Xi3NcG": {
       "type": "image-with-text",
       "blocks": {
@@ -41,6 +89,7 @@
         "text_Lqpmta",
         "button_Qxm9Ut"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/11090.jpg",
         "height": "medium",
@@ -248,6 +297,7 @@
     }
   },
   "order": [
+    "image_banner_yriqKd",
     "image_with_text_Xi3NcG",
     "text_highlight_onscroll_kLieUN",
     "main",
