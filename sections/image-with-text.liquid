@@ -68,7 +68,7 @@
               {% case block.type %}
                 {%- when 'heading' -%}
                   <h2
-                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
+                    class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}" style="color: {{ block.settings.heading_color | default: '#000000' }};"
                     {{ block.shopify_attributes }}
                   >
                     {{ block.settings.heading }}
