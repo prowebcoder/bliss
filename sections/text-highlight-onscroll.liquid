@@ -75,14 +75,14 @@
   <div class="heading-text">
     {% assign heading_text = section.settings.heading %}
     {% if section.settings.image_1 != blank %}
-      {% assign image_1_html = '<span class="highlight"><img src="' | append: section.settings.image_1 | img_url: '300x' | append: '" alt="' | append: section.settings.image_1.alt | append: '" style="width: ' | append: section.settings.image_1_width | append: '; height: ' | append: section.settings.image_1_height | append: '; display: inline-block; vertical-align: middle; margin: 0 5px;" loading="lazy"></span>' %}
+      {% assign image_1_html = '<img src="' | append: section.settings.image_1 | img_url: '300x' | append: '" alt="' | append: section.settings.image_1.alt | append: '" style="width: ' | append: section.settings.image_1_width | append: '; height: ' | append: section.settings.image_1_height | append: '; display: inline-block; vertical-align: middle; margin: 0 10px;" loading="lazy">' %}
       {% assign heading_text = heading_text | replace: '[IMAGE_1]', image_1_html %}
     {% else %}
       {% assign heading_text = heading_text | replace: '[IMAGE_1]', '' %}
     {% endif %}
 
     {% if section.settings.image_2 != blank %}
-      {% assign image_2_html = '<span class="highlight"><img src="' | append: section.settings.image_2 | img_url: '300x' | append: '" alt="' | append: section.settings.image_2.alt | append: '" style="width: ' | append: section.settings.image_2_width | append: '; height: ' | append: section.settings.image_2_height | append: '; display: inline-block; vertical-align: middle; margin: 0 5px;" loading="lazy"></span>' %}
+      {% assign image_2_html = '<img src="' | append: section.settings.image_2 | img_url: '300x' | append: '" alt="' | append: section.settings.image_2.alt | append: '" style="width: ' | append: section.settings.image_2_width | append: '; height: ' | append: section.settings.image_2_height | append: '; display: inline-block; vertical-align: middle; margin: 0 10px;" loading="lazy">' %}
       {% assign heading_text = heading_text | replace: '[IMAGE_2]', image_2_html %}
     {% else %}
       {% assign heading_text = heading_text | replace: '[IMAGE_2]', '' %}
@@ -121,15 +121,10 @@
     display: inline;
   }
 
-  .heading-text .highlight {
+  .heading-text img {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 5px;
-  }
-
-  .heading-text .highlight img {
-    display: inline-block;
-    vertical-align: middle;
+    margin: 0 10px;
   }
 
   .heading-text span {
