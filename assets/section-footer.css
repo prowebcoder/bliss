@@ -253,9 +253,10 @@
     text-align: left;
     margin-right: auto;
   }
-.footer-block__newsletter {
-    width: 56rem;
-}
+    .footer-block__newsletter {
+        width: 56rem;
+        z-index: 1;
+    }
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
     justify-content: flex-start;
     margin: 0;
