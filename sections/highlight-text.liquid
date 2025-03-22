@@ -12,6 +12,8 @@
   }
 {%- endstyle -%}
 
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+
 <div class="highlight-text-section">
   <p class="subheading">{{ section.settings.subheading }}</p>
 
@@ -45,7 +47,7 @@
     {{ section.settings.button_text }}
   </a>
 </div>
-
+</div>
 <style>
   .highlight-text-section {
     padding: 40px 20px;
