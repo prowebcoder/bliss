@@ -58,7 +58,10 @@
   endif
 -%}
 {% if customer %}
-yes
+
+{% for tag in customer.tags %}
+  {{ tag }}
+{% endfor %}
 {% endif %}
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
