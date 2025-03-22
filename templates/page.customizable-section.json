@@ -177,9 +177,14 @@
         "text_HLmCWm"
       ],
       "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "desktop_content_position": "center",
         "subheading": "ABOUT EURUS PUFF",
         "button_text": "Read our story",
-        "button_link": "shopify://pages/joy-subscription"
+        "button_link": "shopify://pages/joy-subscription",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
