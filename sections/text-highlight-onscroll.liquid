@@ -1,10 +1,94 @@
-
+{% schema %}
+{
+  "name": "Highlight",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "ABOUT EURUS PUFF"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading Text",
+      "default": "<p>We are dedicated to a holistic and green-focused approach to beauty. [IMAGE_1] We believe in the power of nature's ingredients to nourish and heal, [IMAGE_2] without compromising on effectiveness.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "text",
+      "id": "image_1_width",
+      "label": "Image 1 Width (e.g., 50px)",
+      "default": "50px"
+    },
+    {
+      "type": "text",
+      "id": "image_1_height",
+      "label": "Image 1 Height (e.g., 50px)",
+      "default": "50px"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "text",
+      "id": "image_2_width",
+      "label": "Image 2 Width (e.g., 50px)",
+      "default": "50px"
+    },
+    {
+      "type": "text",
+      "id": "image_2_height",
+      "label": "Image 2 Height (e.g., 50px)",
+      "default": "50px"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Read our story"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Highlight",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
 
 <div class="highlight-text-section">
   <p class="subheading">{{ section.settings.subheading }}</p>
 
   <div class="heading-text">
-    {{ section.settings.heading }}
+    {% assign heading_text = section.settings.heading %}
+    {% if section.settings.image_1 != blank %}
+      {% assign image_1_html = '<img src="' | append: section.settings.image_1 | img_url: '300x' | append: '" alt="' | append: section.settings.image_1.alt | append: '" style="width: ' | append: section.settings.image_1_width | append: '; height: ' | append: section.settings.image_1_height | append: '; display: inline-block; vertical-align: middle; margin: 0 10px;" loading="lazy">' %}
+      {% assign heading_text = heading_text | replace: '[IMAGE_1]', image_1_html %}
+    {% else %}
+      {% assign heading_text = heading_text | replace: '[IMAGE_1]', '' %}
+    {% endif %}
+
+    {% if section.settings.image_2 != blank %}
+      {% assign image_2_html = '<img src="' | append: section.settings.image_2 | img_url: '300x' | append: '" alt="' | append: section.settings.image_2.alt | append: '" style="width: ' | append: section.settings.image_2_width | append: '; height: ' | append: section.settings.image_2_height | append: '; display: inline-block; vertical-align: middle; margin: 0 10px;" loading="lazy">' %}
+      {% assign heading_text = heading_text | replace: '[IMAGE_2]', image_2_html %}
+    {% else %}
+      {% assign heading_text = heading_text | replace: '[IMAGE_2]', '' %}
+    {% endif %}
+
+    {{ heading_text }}
   </div>
 
   <a href="{{ section.settings.button_link }}" class="button">
@@ -35,6 +119,12 @@
 
   .heading-text p {
     display: inline;
+  }
+
+  .heading-text img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
   }
 
   .heading-text span {
@@ -98,40 +188,3 @@
     });
   });
 </script>
-
-{% schema %}
-{
-  "name": "Highlight Scroll",
-  "settings": [
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "ABOUT EURUS PUFF"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading Text",
-      "default": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Button Text",
-      "default": "Read our story"
-    },
-    {
-      "type": "url",
-      "id": "button_link",
-      "label": "Button Link"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Highlight Scroll",
-      "category": "Custom"
-    }
-  ]
-}
-{% endschema %}
