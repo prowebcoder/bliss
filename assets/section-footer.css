@@ -14,6 +14,11 @@
 .footer-block-first {
     display: flex;
 }
+.footer__blocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
