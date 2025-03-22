@@ -178,8 +178,8 @@
       ],
       "settings": {
         "color_scheme": "scheme-2",
-        "full_width": true,
-        "desktop_content_position": "center",
+        "full_width": false,
+        "desktop_content_position": "left",
         "subheading": "ABOUT EURUS PUFF",
         "button_text": "Read our story",
         "button_link": "shopify://pages/joy-subscription",
