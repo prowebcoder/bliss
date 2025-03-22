@@ -87,7 +87,7 @@
       "type": "text-highlight-onscroll",
       "settings": {
         "color_scheme": "scheme-2",
-        "full_width": true,
+        "full_width": false,
         "desktop_content_position": "left",
         "content_alignment": "left",
         "subheading": "ABOUT EURUS PUFF",
