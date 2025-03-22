@@ -149,15 +149,6 @@
             "text": "<p>holistic and used approach</p>"
           }
         },
-        "image_GGdJcJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/5ml-BioMedia-bottle_f0b1d176-f8ec-4374-ab13-e2498e6071c4.jpg",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
         "text_HLmCWm": {
           "type": "text",
           "settings": {
@@ -173,7 +164,6 @@
         "text_dymdcL",
         "image_VehrWN",
         "text_JkhWj4",
-        "image_GGdJcJ",
         "text_HLmCWm"
       ],
       "settings": {
