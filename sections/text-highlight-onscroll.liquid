@@ -39,7 +39,7 @@
 
   .heading-text span {
     opacity: 0.3; /* Initial light text color */
-    transition: opacity 0.3s ease;
+    transition: opacity 0.8s ease;
   }
 
   .heading-text span.highlight {
@@ -85,7 +85,7 @@
       const windowHeight = window.innerHeight;
 
       // Adjust the scroll trigger position (e.g., start effect when section is 30% in view)
-      const triggerPosition = elementPosition - (windowHeight * 0.8);
+      const triggerPosition = elementPosition - (windowHeight * 0.5);
 
       spans.forEach((span, index) => {
         // Adjust the scroll threshold for quicker effect
