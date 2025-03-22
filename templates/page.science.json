@@ -20,9 +20,9 @@
     "image_banner_H4iJWD": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/1e4918_6b4c53a2227e4782a9d938d1d9b1cbbf_mv2.png",
+        "image": "shopify://shop_images/BlissThera-Forest-Medicine-Virtual-Nature-Therapy-Forest-Walk-branded.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
