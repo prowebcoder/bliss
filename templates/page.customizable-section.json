@@ -85,7 +85,6 @@
     },
     "text_highlight_onscroll_whz4XL": {
       "type": "text-highlight-onscroll",
-      "disabled": true,
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
         "heading": "We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.",
@@ -94,128 +93,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "highlight_text_mbRHQt": {
-      "type": "highlight-text",
-      "blocks": {
-        "text_Qtkqr8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are dedicated to a </p>"
-          }
-        },
-        "image_mjdcVn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/download.jpg",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
-        "text_htN36A": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We believe in nature's ingredie</p>"
-          }
-        },
-        "image_miQzqK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
-        "text_dymdcL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>holistic and used approach to beauty. </p>"
-          }
-        },
-        "image_VehrWN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/5mL_BlissThera_BioMedia_bottle2-w-logo_copy_1bfe2f77-32fc-4124-8396-5255258784b1.jpg",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
-        "text_JkhWj4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>holistic and used approach</p>"
-          }
-        },
-        "text_HLmCWm": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Patient testimonialsa</p>"
-          }
-        },
-        "image_bVExhK": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
-        "text_bWNVi7": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Patient testimonials are not to be interpreted as medical claims. BlissThera</p>"
-          }
-        },
-        "image_pUTmFW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
-            "image_width": "50px",
-            "image_height": "50px",
-            "image_class": "rounded-[999px] rounded-[10px]"
-          }
-        },
-        "text_jxnmyq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Patient testimonials are not to </p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_Qtkqr8",
-        "image_mjdcVn",
-        "text_htN36A",
-        "image_miQzqK",
-        "text_dymdcL",
-        "image_VehrWN",
-        "text_JkhWj4",
-        "text_HLmCWm",
-        "image_bVExhK",
-        "text_bWNVi7",
-        "image_pUTmFW",
-        "text_jxnmyq"
-      ],
-      "settings": {
-        "color_scheme": "scheme-2",
-        "full_width": false,
-        "desktop_content_position": "left",
-        "subheading": "ABOUT EURUS PUFF",
-        "button_text": "Read our story",
-        "button_link": "shopify://pages/joy-subscription",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "main",
     "three_column_collection_MmrVxq",
-    "text_highlight_onscroll_whz4XL",
-    "highlight_text_mbRHQt"
+    "text_highlight_onscroll_whz4XL"
   ]
 }
