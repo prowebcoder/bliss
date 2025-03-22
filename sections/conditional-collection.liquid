@@ -62,8 +62,9 @@
 {% for tag in customer.tags %}
   {{ tag }}
 {% endfor %}
-{% endif %}
-<div
+
+{% else %}
+  <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
   <div
@@ -209,6 +210,8 @@
     {%- endif -%}
   </div>
 </div>
+{% endif %}
+
 
 {% schema %}
 {
