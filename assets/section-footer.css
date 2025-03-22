@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
 }
+.footer-block-first {
+    display: flex;
+}
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
