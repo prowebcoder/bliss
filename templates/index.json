@@ -30,7 +30,7 @@
       "settings": {
         "collection": "retail-store",
         "products_to_show": 8,
-        "title": "Featured collection",
+        "title": "Our Products",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
