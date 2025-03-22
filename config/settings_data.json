@@ -260,7 +260,7 @@
       "scheme-5e81ae70-e05b-4086-8870-b8981952c724": {
         "settings": {
           "background": "#ffffff",
-          "background_gradient": "linear-gradient(40deg, rgba(12, 98, 52, 1) 14%, rgba(255, 250, 99, 1) 97%)",
+          "background_gradient": "linear-gradient(40deg, rgba(9, 109, 55, 1) 14%, rgba(255, 250, 99, 1) 97%)",
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#000000",
