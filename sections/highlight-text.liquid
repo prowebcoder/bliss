@@ -1,6 +1,6 @@
 {% schema %}
 {
-  "name": "Highlight TI",
+  "name": "Highlight T",
   "settings": [
     {
       "type": "text",
@@ -65,7 +65,7 @@
   ],
   "presets": [
     {
-      "name": "Highlight TI",
+      "name": "Highlight T",
       "category": "Custom",
       "blocks": [
         {
@@ -198,34 +198,38 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.querySelector('.heading-text');
-    const text = textElement.innerText;
-    textElement.innerHTML = '';
+    const textBlocks = textElement.querySelectorAll('.text-block');
 
-    // Split text into individual characters and wrap them in spans
-    for (let i = 0; i < text.length; i++) {
-      const span = document.createElement('span');
-      span.innerText = text[i];
-      textElement.appendChild(span);
-    }
+    textBlocks.forEach((block) => {
+      const text = block.innerText;
+      block.innerHTML = '';
 
-    const spans = document.querySelectorAll('.heading-text span');
+      // Split text into individual characters and wrap them in spans
+      for (let i = 0; i < text.length; i++) {
+        const span = document.createElement('span');
+        span.innerText = text[i];
+        block.appendChild(span);
+      }
 
-    // Add scroll event listener
-    window.addEventListener('scroll', function() {
-      const scrollPosition = window.scrollY;
-      const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
-      const windowHeight = window.innerHeight;
+      const spans = block.querySelectorAll('span');
 
-      // Adjust the scroll trigger position (e.g., start effect when section is 30% in view)
-      const triggerPosition = elementPosition - (windowHeight * 0.5);
+      // Add scroll event listener
+      window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const elementPosition = block.getBoundingClientRect().top + window.scrollY;
+        const windowHeight = window.innerHeight;
 
-      spans.forEach((span, index) => {
-        // Adjust the scroll threshold for quicker effect
-        if (scrollPosition > triggerPosition + (index * 1)) { // Reduced multiplier for quicker effect
-          span.classList.add('highlight');
-        } else {
-          span.classList.remove('highlight');
-        }
+        // Adjust the scroll trigger position (e.g., start effect when section is 30% in view)
+        const triggerPosition = elementPosition - (windowHeight * 0.5);
+
+        spans.forEach((span, index) => {
+          // Adjust the scroll threshold for quicker effect
+          if (scrollPosition > triggerPosition + (index * 1)) { // Reduced multiplier for quicker effect
+            span.classList.add('highlight');
+          } else {
+            span.classList.remove('highlight');
+          }
+        });
       });
     });
   });
