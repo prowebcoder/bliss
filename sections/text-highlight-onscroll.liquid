@@ -82,10 +82,14 @@
     window.addEventListener('scroll', function() {
       const scrollPosition = window.scrollY;
       const elementPosition = textElement.getBoundingClientRect().top + window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      // Adjust the scroll trigger position (e.g., start effect when section is 30% in view)
+      const triggerPosition = elementPosition - (windowHeight * 0.3);
 
       spans.forEach((span, index) => {
         // Adjust the scroll threshold for quicker effect
-        if (scrollPosition > elementPosition + (index * 15)) { // Reduced multiplier for quicker effect
+        if (scrollPosition > triggerPosition + (index * 5)) { // Reduced multiplier for quicker effect
           span.classList.add('highlight');
         } else {
           span.classList.remove('highlight');
@@ -97,7 +101,7 @@
 
 {% schema %}
 {
-  "name": "Highlight Text",
+  "name": "Highlight Scroll",
   "settings": [
     {
       "type": "text",
@@ -125,7 +129,7 @@
   ],
   "presets": [
     {
-      "name": "Highlight Text",
+      "name": "Highlight Scroll",
       "category": "Custom"
     }
   ]
