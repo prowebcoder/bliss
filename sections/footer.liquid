@@ -70,6 +70,7 @@
               data-cascade
             {% endif %}
           >
+            <div class="footer-block-first">
             {%- for block in section.blocks -%}
               <div
                 class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -162,6 +163,7 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%}
+          </div>
             <div
     class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
