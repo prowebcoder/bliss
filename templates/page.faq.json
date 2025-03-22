@@ -17,6 +17,22 @@
         "padding_bottom": 28
       }
     },
+    "text_highlight_onscroll_kLieUN": {
+      "type": "text-highlight-onscroll",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "subheading": "ABOUT BLISS THERA",
+        "heading": "<p>BlissThera's® non-invasive drug-free therapies help people feel better by leveraging nature’s power to encourage holistic wellness through support of the body's homeostasis system. </p>",
+        "button_text": "Read our story",
+        "button_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_Xi3NcG": {
       "type": "image-with-text",
       "blocks": {
@@ -227,29 +243,13 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "text_highlight_onscroll_kLieUN": {
-      "type": "text-highlight-onscroll",
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "text_alignment": "center",
-        "subheading": "ABOUT BLISS THERA",
-        "heading": "<p>BlissThera's® non-invasive drug-free therapies help people feel better by leveraging nature’s power to encourage holistic wellness through support of the body's homeostasis system. </p>",
-        "button_text": "Read our story",
-        "button_link": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
-    "main",
+    "text_highlight_onscroll_kLieUN",
     "image_with_text_Xi3NcG",
+    "main",
     "collapsible_content_DXmG38",
-    "rich_text_4N8i9j",
-    "text_highlight_onscroll_kLieUN"
+    "rich_text_4N8i9j"
   ]
 }
