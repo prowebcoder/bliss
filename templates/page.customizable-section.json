@@ -88,6 +88,12 @@
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
         "heading": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
+        "image_1": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+        "image_1_width": "50px",
+        "image_1_height": "50px",
+        "image_2": "shopify://shop_images/pngimg.com_-_forest_PNG4.png",
+        "image_2_width": "50px",
+        "image_2_height": "50px",
         "button_text": "Read our story",
         "button_link": ""
       }
