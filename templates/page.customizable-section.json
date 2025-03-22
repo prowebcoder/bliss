@@ -87,7 +87,7 @@
       "type": "text-highlight-onscroll",
       "settings": {
         "subheading": "ABOUT EURUS PUFF",
-        "heading": "<p>We are dedicated to a <img src=\"\"/>holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
+        "heading": "<p>We are dedicated to a <img src=\"{{ 'pngimg.com - forest_PNG4.png' | asset_url }}\" alt=\"Image description\" />holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
         "button_text": "Read our story",
         "button_link": ""
       }
