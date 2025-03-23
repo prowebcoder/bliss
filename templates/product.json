@@ -45,6 +45,10 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
+          "type": "shopify://apps/joy-subscription-app-cod-form/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -110,6 +114,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
         "buy_buttons",
         "description",
         "collapsible-row-0",
@@ -141,6 +146,7 @@
           "type": "heading",
           "settings": {
             "heading": "The Science of Homeostatic Phytochemical Synergy",
+            "heading_color": "#000000",
             "heading_size": "h1"
           }
         },
