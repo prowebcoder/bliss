@@ -3005,6 +3005,9 @@ details-disclosure > details {
   .content-container--full-width-mobile:after {
     display: none;
   }
+  h1, .h1 {
+    font-size: calc(var(--font-heading-scale)* 2rem);
+}
 }
 
 .global-media-settings {
