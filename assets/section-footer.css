@@ -309,9 +309,10 @@
     justify-content: center;
   }
 
-  .footer-block__newsletter {
-    flex-direction: column;
-  }
+     .footer-block__newsletter {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 750px) {
