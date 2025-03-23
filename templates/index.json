@@ -14,7 +14,7 @@
       "settings": {
         "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.webp",
         "image_overlay_opacity": 10,
-        "image_height": "adapt",
+        "image_height": "medium",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
@@ -69,6 +69,7 @@
           "type": "heading",
           "settings": {
             "heading": "The <strong>SCIENCE</strong> of Homeostatic Phytochemical Synergy",
+            "heading_color": "#000000",
             "heading_size": "h2"
           }
         },
