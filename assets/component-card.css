@@ -660,4 +660,7 @@ modal-opener .button:after {
    
     width: 90%;
 }
+  .product-card-wrapper modal-opener {
+    width: 90%;
+}
 }
