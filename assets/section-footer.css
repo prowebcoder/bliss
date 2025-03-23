@@ -468,6 +468,11 @@
   .footer-block-image.right {
     justify-content: center;
   }
+  .site-footer__newsletter-wrapper--background {
+  
+    display: none !important;
+   
+}
 }
 
 .footer-block__image-wrapper {
