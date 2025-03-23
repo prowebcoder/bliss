@@ -17,7 +17,10 @@
   flex-direction: column;
   height: 100%;
 }
-
+.view_product a {
+    text-decoration: none;
+    color: rgb(var(--color-button-text));
+}
 .card.card--horizontal {
   --text-alignment: left;
   --image-padding: 0rem;
