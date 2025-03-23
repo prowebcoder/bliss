@@ -437,6 +437,20 @@ modal-opener .button:after {
     opacity:.8
   }
 }
+.view_product {
+    align-items: center;
+    border: 0;
+    padding: .8rem 0rem;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(var(--color-button-text));
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
 .style_1 .card--card.card--media>.card__content {
     margin: 0 auto;
     position: absolute;
