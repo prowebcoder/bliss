@@ -653,4 +653,11 @@ modal-opener .button:after {
     gap: 10px;
     flex-direction: column;
 }
+  product-form {
+    width: 90%;
+}
+  .view_product {
+   
+    width: 90%;
+}
 }
