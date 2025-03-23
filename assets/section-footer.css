@@ -473,6 +473,10 @@
     display: none !important;
    
 }
+  .footer-block-first {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 .footer-block__image-wrapper {
