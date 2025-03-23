@@ -646,4 +646,11 @@ modal-opener .button:after {
     right: 0;
     transform: translate(-50%, -50%);
 }
+  .quick-add.quick-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
 }
