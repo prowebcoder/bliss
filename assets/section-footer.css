@@ -477,6 +477,9 @@
     display: flex;
     flex-direction: column;
 }
+      .footer__content-top {
+        flex-direction: column-reverse;
+    }
 }
 
 .footer-block__image-wrapper {
