@@ -653,14 +653,8 @@ modal-opener .button:after {
     gap: 10px;
     flex-direction: column;
 }
-  product-form {
-    width: 90%;
-}
-  .view_product {
-   
-    width: 90%;
-}
-  .product-card-wrapper modal-opener {
-    width: 90%;
+
+  .product-card-wrapper modal-opener,product-form ,.view_product{
+    width: 90% !important;
 }
 }
