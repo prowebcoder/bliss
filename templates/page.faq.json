@@ -326,7 +326,7 @@
           "type": "column",
           "settings": {
             "title": "General",
-            "tabid": "face",
+            "tabid": "general",
             "link": ""
           }
         }
