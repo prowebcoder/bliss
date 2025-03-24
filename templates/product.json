@@ -53,6 +53,15 @@
             "show_gift_card_recipient": true
           }
         },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "clipboard",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
@@ -68,16 +77,6 @@
             "heading": "Recommended Use",
             "icon": "bottle",
             "content": "<p>{{ product.metafields.custom.recommended_use.value }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
             "page": ""
           }
         },
@@ -107,9 +106,9 @@
         "quantity_selector",
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
         "buy_buttons",
+        "collapsible-row-2",
         "collapsible-row-0",
         "collapsible-row-1",
-        "collapsible-row-2",
         "collapsible-row-3",
         "share"
       ],
