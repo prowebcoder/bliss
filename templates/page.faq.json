@@ -578,13 +578,23 @@
             "row_content": "<p>Experiencing a BlissThera Forest Medicine Therapy is analogous to taking a walk in nature (without getting tired from the walk). Though many people often find nature walks an important part of their routine, by no means is this considered \"addicting\".</p>",
             "page": ""
           }
+        },
+        "collapsible_row_ctefUC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will a BlissThera Treatment cause a positive drug screen result?",
+            "icon": "check_mark",
+            "row_content": "<p>No.</p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_eEakHa",
         "collapsible_row_CTzW4K",
         "collapsible_row_bLcKxG",
-        "collapsible_row_T7iHxr"
+        "collapsible_row_T7iHxr",
+        "collapsible_row_ctefUC"
       ],
       "settings": {
         "caption": "",
