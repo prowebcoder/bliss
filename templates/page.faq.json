@@ -402,7 +402,7 @@
       ],
       "settings": {
         "caption": "",
-        "tabid": "",
+        "tabid": "ordering",
         "heading": "Collapsible content",
         "heading_size": "h1",
         "heading_alignment": "center",
