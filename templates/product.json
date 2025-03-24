@@ -174,7 +174,7 @@
         "image": "shopify://shop_images/674341cc15.jpg",
         "height": "large",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
