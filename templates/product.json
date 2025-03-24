@@ -55,11 +55,10 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Materials",
+            "heading": "Ingredients",
             "icon": "leather",
-            "content": "",
+            "content": "<p>{{ product.metafields.custom.ingredients.value }}</p>",
             "page": ""
           }
         },
