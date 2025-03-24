@@ -5,34 +5,34 @@
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-        background: transparent;
+    background: transparent;
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
-          background: transparent;
+      background: transparent;
     }
     .multicolumn-card__info h2 {
-    line-height: 0;
-}
+      line-height: 0;
+    }
     .collapsible-content__heading {
-    margin-bottom: 0rem;
-    margin-top: 2rem;
-    padding: 0.5rem 1rem;
-}
+      margin-bottom: 0rem;
+      margin-top: 2rem;
+      padding: 0.5rem 1rem;
+    }
   }
   .collapsible-content .accordion {
     border-color: white;
-}
+  }
   .banner__content {
     padding: 0rem 0;
-}
+  }
   .banner__box {
     padding: 2rem 1.5rem;
-   }
- .banner {
+  }
+  .banner {
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
@@ -40,25 +40,46 @@
     align-items: center;
     height: 20rem;
     flex-wrap: wrap;
-}
-  
+  }
+
+  /* Smooth transition for accordion */
+  details {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+
+  details[open] {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .accordion__content {
+    padding: 10px 0;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  details[open] .accordion__content {
+    opacity: 1;
+    max-height: 500px; /* Adjust based on content height */
+  }
 {%- endstyle -%}
 
 <div class="colrowfaq color-{{ section.settings.color_scheme }} gradient {{ section.settings.tabid }}">
-          <div class="collapsible-content__header" style="text-align: {{ section.settings.heading_alignment }};background:var(--gradient-base-accent-1);border-bottom: 2rem solid #fff;">
-          {%- if section.settings.caption != blank -%}
-            <p class="caption-with-letter-spacing"> {{ section.settings.caption | escape }}</p>
-          {% endif %}
-          {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading page-width {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
-          {%- else -%}
-            <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
-          {% endif %}
-        </div>
+  <div class="collapsible-content__header" style="text-align: {{ section.settings.heading_alignment }}; background: var(--gradient-base-accent-1); border-bottom: 2rem solid #fff;">
+    {%- if section.settings.caption != blank -%}
+      <p class="caption-with-letter-spacing"> {{ section.settings.caption | escape }}</p>
+    {% endif %}
+    {%- if section.settings.heading != blank -%}
+      <h2 class="collapsible-content__heading page-width {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
+    {% endif %}
+  </div>
+
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
     <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
       <div class="{% if section.settings.image == blank %}page-width{% else %}page-width{% endif %}">
-
         <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}">
           {%- if section.settings.image != blank -%}
             <div class="grid__item collapsible-content__grid-item">
