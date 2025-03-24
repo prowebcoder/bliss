@@ -120,7 +120,7 @@
             {%- for block in section.blocks -%}
               <div class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}"{% if section.settings.open_first_collapsible_row and forloop.first %} open{% endif %}>
-                  <summary id="Summary-{{ block.id }}-{{ section.id }}" class="accordion-{{ block.id }}">
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}" class="accordion-block">
                     {% render 'icon-accordion', icon: block.settings.icon %}
                     <h3 class="accordion__title h4">
                       {{ block.settings.heading | default: block.settings.page.title }}
@@ -141,7 +141,7 @@
   </div>
 </div>
 <script>
-var acc = document.getElementsByClassName("accordion-{{ block.id }}");
+var acc = document.getElementsByClassName("accordion-block");
 var i;
 
 for (i = 0; i < acc.length; i++) {
