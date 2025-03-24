@@ -131,6 +131,22 @@
         "padding_bottom": 12
       }
     },
+    "text_highlight_onscroll_VfY3yx": {
+      "type": "text-highlight-onscroll",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "subheading": "ABOUT EURUS PUFF",
+        "heading": "<p>We are dedicated to a holistic and green-focused approach to beauty. We believe in the power of nature's ingredients to nourish and heal, without compromising on effectiveness.</p>",
+        "button_text": "",
+        "button_link": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multirow_MCX4Tk": {
       "type": "multirow",
       "blocks": {
@@ -186,6 +202,7 @@
   },
   "order": [
     "main",
+    "text_highlight_onscroll_VfY3yx",
     "multirow_MCX4Tk",
     "related-products"
   ]
