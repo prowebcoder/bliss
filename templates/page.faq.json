@@ -25,23 +25,11 @@
             "text": "Everything You Need to Know About Orders and Shipping A brief introduction to your store, mission, and what your brand stands for.",
             "text_style": "body"
           }
-        },
-        "buttons_mY7HTh": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Contact",
-            "button_link_1": "shopify://pages/contact",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
         "heading_wgPDig",
-        "text_eJm8YD",
-        "buttons_mY7HTh"
+        "text_eJm8YD"
       ],
       "settings": {
         "image": "shopify://shop_images/BlissThera-Forest-Medicine-Virtual-Nature-Therapy-Forest-Walk-w-Terpene-Key-branded.png",
