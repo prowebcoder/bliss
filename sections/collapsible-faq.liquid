@@ -61,19 +61,13 @@
   transition: 0.4s;
   }
   .accordion__content {
-    padding: 10px 0;
-  
+  padding: 0 18px;
   background-color: white;
-
-
-  }
-
-  details[open] .accordion__content {
-    opacity: 1;
-    max-height: 500px; /* Adjust based on content height */
-    overflow: hidden;
+  max-height: 0;
+  overflow: hidden;
   transition: max-height 0.2s ease-out;
   }
+
 {%- endstyle -%}
 
 <div class="colrowfaq color-{{ section.settings.color_scheme }} gradient {{ section.settings.tabid }}">
