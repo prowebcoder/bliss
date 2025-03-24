@@ -64,6 +64,22 @@
 }
 
 {%- endstyle -%}
+<script>
+var acc = document.getElementsByClassName("accordion-block");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var accordion__content = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      accordion__content.style.maxHeight = null;
+    } else {
+      accordion__content.style.maxHeight = accordion__content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 <div class="colrowfaq color-{{ section.settings.color_scheme }} gradient {{ section.settings.tabid }}">
   <div class="collapsible-content__header" style="text-align: {{ section.settings.heading_alignment }}; background: var(--gradient-base-accent-1); border-bottom: 2rem solid #fff;">
@@ -129,22 +145,7 @@
     </div>
   </div>
 </div>
-<script>
-var acc = document.getElementsByClassName("accordion-block");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var accordion__content = this.nextElementSibling;
-    if (accordion__content.style.maxHeight) {
-      accordion__content.style.maxHeight = null;
-    } else {
-    accordion__content.style.maxHeight = accordion__content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 {% schema %}
 {
   "name": "Collapsible content FAQ",
