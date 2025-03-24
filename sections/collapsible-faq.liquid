@@ -41,7 +41,33 @@
     height: 20rem;
     flex-wrap: wrap;
 }
-  
+   .accordion-toggle {
+    display: none; /* Hide the checkbox */
+  }
+
+  .accordion__content {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Smooth transition */
+  }
+
+  .accordion-toggle:checked + label + .accordion__content {
+    max-height: 5000px; /* Large enough value to ensure the content expands fully */
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .accordion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .accordion__content {
+    padding: 10px 20px; /* Adjust padding for the content */
+  }
 {%- endstyle -%}
 
 <div class="colrowfaq color-{{ section.settings.color_scheme }} gradient {{ section.settings.tabid }}">
