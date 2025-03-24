@@ -34,6 +34,10 @@
             "swatch_shape": "circle"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -48,10 +52,6 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -105,10 +105,10 @@
         "caption",
         "price",
         "variant_picker",
+        "description",
         "quantity_selector",
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
