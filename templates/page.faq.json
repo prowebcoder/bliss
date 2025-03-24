@@ -464,7 +464,7 @@
       ],
       "settings": {
         "caption": "",
-        "tabid": "ordering",
+        "tabid": "general",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
@@ -526,7 +526,7 @@
       ],
       "settings": {
         "caption": "",
-        "tabid": "ordering",
+        "tabid": "shipping",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
