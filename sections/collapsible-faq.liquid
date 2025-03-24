@@ -41,6 +41,15 @@
     height: 20rem;
     flex-wrap: wrap;
 }
+  .accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Smooth transition */
+}
+
+.accordion[open] .accordion__content {
+  max-height: 1000px; /* Adjust this value based on the content size */
+}
   
 {%- endstyle -%}
 
