@@ -57,18 +57,17 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Ingredients",
-            "icon": "leather",
+            "icon": "plant",
             "content": "<p>{{ product.metafields.custom.ingredients.value }}</p>",
             "page": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
+            "heading": "Recommended Use",
+            "icon": "bottle",
+            "content": "<p>{{ product.metafields.custom.recommended_use.value }}</p>",
             "page": ""
           }
         },
