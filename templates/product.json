@@ -36,6 +36,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "quantity_selector": {
