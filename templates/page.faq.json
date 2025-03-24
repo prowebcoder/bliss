@@ -564,9 +564,9 @@
         "collapsible_row_bLcKxG": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Will BlissThera Treatments impair my driving ability?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>BlissThera Treatments will not impair mental focus or physical dexterity. In fact, patients generally report feeling more focus after a treatment.</p><p>However, some patients specifically request treatments designed to be sedating. If you request a treatment involving this outcome, you will need to arrange for post treatment transportation.</p>",
             "page": ""
           }
         },
