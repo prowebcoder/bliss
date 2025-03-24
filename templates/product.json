@@ -150,8 +150,8 @@
         "row_GA9rkQ"
       ],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "small",
+        "image_height": "small",
+        "desktop_image_width": "medium",
         "image_layout": "alternate-right",
         "heading_size": "h1",
         "text_style": "body",
