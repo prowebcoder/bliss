@@ -41,38 +41,9 @@
     height: 20rem;
     flex-wrap: wrap;
 }
-  .accordion__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out; /* Smooth transition */
-}
-
-.accordion[open] .accordion__content {
-  max-height: 1000px; /* Adjust this value based on the content size */
-}
   
 {%- endstyle -%}
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get all details elements
-    const accordions = document.querySelectorAll("details");
 
-    // Loop through each accordion and add event listener
-    accordions.forEach(accordion => {
-      accordion.addEventListener("toggle", function () {
-        const content = accordion.querySelector(".accordion__content");
-
-        if (accordion.open) {
-          // When the accordion is open, set max-height to allow the transition
-          content.style.maxHeight = content.scrollHeight + "px";
-        } else {
-          // When the accordion is closed, reset max-height to 0
-          content.style.maxHeight = "0";
-        }
-      });
-    });
-  });
-</script>
 <div class="colrowfaq color-{{ section.settings.color_scheme }} gradient {{ section.settings.tabid }}">
           <div class="collapsible-content__header" style="text-align: {{ section.settings.heading_alignment }};background:var(--gradient-base-accent-1);border-bottom: 2rem solid #fff;">
           {%- if section.settings.caption != blank -%}
