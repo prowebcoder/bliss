@@ -62,9 +62,11 @@
   }
   .accordion__content {
     padding: 10px 0;
-    opacity: 0;
-    max-height: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+  
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
   }
 
   details[open] .accordion__content {
