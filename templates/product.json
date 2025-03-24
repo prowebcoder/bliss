@@ -131,6 +131,40 @@
         "padding_bottom": 12
       }
     },
+    "multirow_MCX4Tk": {
+      "type": "multirow",
+      "blocks": {
+        "row_GA9rkQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/11090.jpg",
+            "caption": "",
+            "heading": "<strong>BlissThera®Elixirs</strong>",
+            "text": "<p>Crafted by physicians and rooted in clinical expertise, BlissThera® Elixirs go beyond conventional hemp-based supplements. Our whole-plant formulations integrate a precise blend of minorcannabinoids, terpenes, and synergistic botanicals—each selected to enhancetherapeutic impact and optimize wellness. Developed and refined throughreal-world clinical use, these elixirs deliver targeted, effective support formind and body*.<br/><br/><br/>Administered sublingually, these elixirs areheld under the tongue for at least 60 seconds, allowing for efficientabsorption directly into the bloodstream—delivering fast, effective supportwhere it’s needed most.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_GA9rkQ"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-right",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -152,6 +186,7 @@
   },
   "order": [
     "main",
+    "multirow_MCX4Tk",
     "related-products"
   ]
 }
