@@ -360,9 +360,9 @@
         "collapsible_row_H4iYpB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Where can I receive BlissThera Treatments?",
             "icon": "check_mark",
-            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "row_content": "<p>BlissThera Forest Medicine and Virtual Nature Therapy Treatments can be received at several locations. Visit the<a href=\"https://www.blissthera.com/book-forest-medicine-treatment\" target=\"_blank\"><span style=\"text-decoration:underline\">Book Treatment</span></a>page for the latest list of locations.</p>",
             "page": ""
           }
         },
