@@ -119,7 +119,7 @@
         "enable_sticky_info": true,
         "color_scheme": "",
         "media_size": "medium",
-        "constrain_to_viewport": false,
+        "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "columns",
         "mobile_thumbnails": "hide",
