@@ -118,9 +118,9 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "cover",
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
         "gallery_layout": "columns",
         "mobile_thumbnails": "hide",
         "media_position": "left",
