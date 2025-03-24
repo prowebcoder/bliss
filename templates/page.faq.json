@@ -301,47 +301,31 @@
         "column_WUY9ep": {
           "type": "column",
           "settings": {
-            "title": "Column-1",
-            "tabid": "face",
+            "title": "Ordering",
+            "tabid": "ordering",
             "link": ""
           }
         },
         "column_B4wgUw": {
           "type": "column",
           "settings": {
-            "title": "Column-2",
-            "tabid": "face",
+            "title": "Shipping",
+            "tabid": "shipping",
             "link": ""
           }
         },
         "column_YmtLiK": {
           "type": "column",
           "settings": {
-            "title": "Column-3",
-            "tabid": "face",
+            "title": "Product",
+            "tabid": "product",
             "link": ""
           }
         },
         "column_B3LfXY": {
           "type": "column",
           "settings": {
-            "title": "Column-4",
-            "tabid": "face",
-            "link": ""
-          }
-        },
-        "column_z36hhk": {
-          "type": "column",
-          "settings": {
-            "title": "Column-5",
-            "tabid": "face",
-            "link": ""
-          }
-        },
-        "column_6bj7CE": {
-          "type": "column",
-          "settings": {
-            "title": "Column-6",
+            "title": "General",
             "tabid": "face",
             "link": ""
           }
@@ -351,25 +335,23 @@
         "column_WUY9ep",
         "column_B4wgUw",
         "column_YmtLiK",
-        "column_B3LfXY",
-        "column_z36hhk",
-        "column_6bj7CE"
+        "column_B3LfXY"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "FAQ",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 6,
-        "column_alignment": "left",
+        "columns_desktop": 4,
+        "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     },
     "collapsible_faq_yLKWnX": {
