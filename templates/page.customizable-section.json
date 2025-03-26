@@ -155,6 +155,15 @@
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
           }
+        },
+        "scrolling_text_with_image_4wkqeL": {
+          "type": "ScrollingTextWithImage",
+          "settings": {
+            "text": "Therapies Better",
+            "color": "#2d6700",
+            "text_size": "medium",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
+          }
         }
       },
       "block_order": [
@@ -163,7 +172,8 @@
         "scrolling_text_with_image_7mLAH8",
         "scrolling_text_with_image_yar3wz",
         "scrolling_text_with_image_JQVQFX",
-        "scrolling_text_with_image_wMPMTU"
+        "scrolling_text_with_image_wMPMTU",
+        "scrolling_text_with_image_4wkqeL"
       ],
       "settings": {
         "color_scheme": "",
