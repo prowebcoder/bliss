@@ -42,6 +42,17 @@
     {% endcase %}
   }
 
+  /* Vertical Alignment */
+  .marquee-content {
+    display: flex;
+    justify-content: center;
+    align-items: {% case section.settings.content_vertical_alignment %}
+      {% when 'top' %} flex-start;
+      {% when 'middle' %} center;
+      {% when 'bottom' %} flex-end;
+    {% endcase %}
+  }
+
   {{id}} .track {
     position: absolute;
     white-space: nowrap;
@@ -128,6 +139,26 @@
           }
         ],
         "default": "medium"
+      },
+      {
+        "type": "select",
+        "id": "content_vertical_alignment",
+        "label": "Vertical Alignment of Content",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "middle",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "middle"
       },
       {
         "type": "range",
