@@ -39,10 +39,9 @@
 }
 {%- endstyle -%}
 
-<div class="marquee multicolumn color-{{ section.settings.color_scheme }}" >
+<div class="marquee multicolumn color-{{ section.settings.color_scheme }}">
   <div class="track">
     <div class="marquee-content">
-      
       {% for block in section.blocks %}
         <span class="marquee-gap" style="color:{{ block.settings.color }}">
           
@@ -54,13 +53,27 @@
           <div class="custom-text {{ block.settings.text_size }}">
             {{ block.settings.text }}
           </div>
-          
         </span>
       {% endfor %}
       
+      <!-- Duplicate content for seamless scrolling -->
+      {% for block in section.blocks %}
+        <span class="marquee-gap" style="color:{{ block.settings.color }}">
+
+          {% if block.settings.image %}
+            <img src="{{ block.settings.image | img_url: '100x' }}" alt="Marquee Image" style="vertical-align: middle; margin-right: 10px;" />
+          {% endif %}
+
+          <!-- Apply text size class dynamically -->
+          <div class="custom-text {{ block.settings.text_size }}">
+            {{ block.settings.text }}
+          </div>
+        </span>
+      {% endfor %}
     </div>
   </div>
 </div>
+
 
 {% schema %}
   {
