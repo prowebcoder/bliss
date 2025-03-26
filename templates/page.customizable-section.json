@@ -128,12 +128,22 @@
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
           }
+        },
+        "scrolling_text_with_image_yar3wz": {
+          "type": "ScrollingTextWithImage",
+          "settings": {
+            "text": "Homeostasis + System",
+            "color": "#004e87",
+            "text_size": "medium",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
+          }
         }
       },
       "block_order": [
         "scrolling_text_with_image_m9tVke",
         "scrolling_text_with_image_dEVmyL",
-        "scrolling_text_with_image_7mLAH8"
+        "scrolling_text_with_image_7mLAH8",
+        "scrolling_text_with_image_yar3wz"
       ],
       "settings": {
         "color_scheme": "",
