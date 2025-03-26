@@ -180,7 +180,7 @@
         "marquee_direction": "left-to-right",
         "height_option": "small",
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 12,
         "padding_top_mobile": 36,
         "padding_bottom_mobile": 36
       }
