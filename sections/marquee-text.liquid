@@ -19,6 +19,23 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  {{id}} .track {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 6rem;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
+}
+
+@keyframes marquee {
+  {% if direction == "left-to-right" %}
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  {% else %}
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  {% endif %}
+}
 {%- endstyle -%}
 
 <div class="marquee multicolumn color-{{ section.settings.color_scheme }}" >
