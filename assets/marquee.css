@@ -18,7 +18,7 @@
   white-space: nowrap;
   font-size: 6rem;
   will-change: transform;
-  animation: marquee 35s linear infinite;
+  animation: marquee 60s linear infinite;
 }
 
 @keyframes marquee {
