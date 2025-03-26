@@ -179,6 +179,8 @@
         "color_scheme": "scheme-1",
         "marquee_direction": "left-to-right",
         "background_image": "shopify://shop_images/banner.webp",
+        "height_option": "medium",
+        "content_vertical_alignment": "bottom",
         "padding_top": 36,
         "padding_bottom": 36,
         "padding_top_mobile": 36,
