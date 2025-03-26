@@ -142,6 +142,15 @@
           "type": "ScrollingTextWithImage",
           "settings": {
             "text": "Holistick + System",
+            "color": "#2d6700",
+            "text_size": "medium",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
+          }
+        },
+        "scrolling_text_with_image_wMPMTU": {
+          "type": "ScrollingTextWithImage",
+          "settings": {
+            "text": "BlissThera's®",
             "color": "#004e87",
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
@@ -153,7 +162,8 @@
         "scrolling_text_with_image_dEVmyL",
         "scrolling_text_with_image_7mLAH8",
         "scrolling_text_with_image_yar3wz",
-        "scrolling_text_with_image_JQVQFX"
+        "scrolling_text_with_image_JQVQFX",
+        "scrolling_text_with_image_wMPMTU"
       ],
       "settings": {
         "color_scheme": "",
