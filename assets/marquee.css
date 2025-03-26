@@ -1,23 +1,5 @@
 {%- assign id = '#shopify-section-' | append: section.id -%}
 
-
-  {{id}} .track {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 6rem;
-  will-change: transform;
-  animation: marquee 60s linear infinite;
-}
-
-@keyframes marquee {
-  {% if direction == "left-to-right" %}
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
-  {% else %}
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-  {% endif %}
-}
  {{id}} .marquee {
   position: relative;
   width: 100vw;
