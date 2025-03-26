@@ -106,7 +106,7 @@
           "type": "ScrollingTextWithImage",
           "settings": {
             "text": "wellness + Health",
-            "color": "#000000",
+            "color": "#2d6700",
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
           }
@@ -115,7 +115,7 @@
           "type": "ScrollingTextWithImage",
           "settings": {
             "text": "Therapies",
-            "color": "#000000",
+            "color": "#004e87",
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
           }
