@@ -1,4 +1,5 @@
 {%- assign id = '#shopify-section-' | append: section.id -%}
+{%- assign direction = section.settings.marquee_direction -%}
  {{id}} .marquee {
   position: relative;
   width: 100vw;
