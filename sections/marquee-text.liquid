@@ -20,47 +20,29 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  {%- assign direction = section.settings.marquee_direction -%}
-
-{{id}} .marquee {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 100px;
-  overflow-x: hidden;
-}
-
-{{id}} .marquee-content {
-  display: flex;
-  gap: 8rem;
-  animation: marquee 60s linear infinite; /* Slow scrolling with 60s duration */
-}
-
-{{id}} .track {
-  display: flex;
-  width: auto; /* Ensure the track width is based on content */
+  {{id}} .track {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 6rem;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
 }
 
 @keyframes marquee {
   {% if direction == "left-to-right" %}
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); } /* Scroll content to the left completely */
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
   {% else %}
-    from { transform: translateX(0); }
-    to { transform: translateX(100%); } /* Scroll content to the right completely */
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
   {% endif %}
-}
-
-{{id}} .marquee .track:hover {
-  animation-play-state: paused;
-}
-
 }
 {%- endstyle -%}
 
-<div class="marquee multicolumn color-{{ section.settings.color_scheme }}">
+<div class="marquee multicolumn color-{{ section.settings.color_scheme }}" >
   <div class="track">
     <div class="marquee-content">
+      
       {% for block in section.blocks %}
         <span class="marquee-gap" style="color:{{ block.settings.color }}">
           
@@ -72,27 +54,13 @@
           <div class="custom-text {{ block.settings.text_size }}">
             {{ block.settings.text }}
           </div>
+          
         </span>
       {% endfor %}
       
-      <!-- Duplicate content for seamless scrolling -->
-      {% for block in section.blocks %}
-        <span class="marquee-gap" style="color:{{ block.settings.color }}">
-
-          {% if block.settings.image %}
-            <img src="{{ block.settings.image | img_url: '100x' }}" alt="Marquee Image" style="vertical-align: middle; margin-right: 10px;" />
-          {% endif %}
-
-          <!-- Apply text size class dynamically -->
-          <div class="custom-text {{ block.settings.text_size }}">
-            {{ block.settings.text }}
-          </div>
-        </span>
-      {% endfor %}
     </div>
   </div>
 </div>
-
 
 {% schema %}
   {
