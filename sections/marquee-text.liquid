@@ -42,16 +42,16 @@
     {% endcase %}
   }
 
-  /* Vertical Alignment for Marquee Content */
+  /* Flexbox for vertical alignment of marquee-content */
   .marquee-content {
     display: flex;
-    justify-content: center;
-    height: 100%; /* Ensuring the height of the container */
-    width: 100%; /* Ensuring the width of the container */
+    justify-content: center; /* Align horizontally */
+    width: 100%; /* Ensure full width */
+    height: 100%; /* Ensure full height of the parent container */
     align-items: {% case section.settings.content_vertical_alignment %}
-      {% when 'top' %} flex-start;
-      {% when 'middle' %} center;
-      {% when 'bottom' %} flex-end;
+      {% when 'top' %} flex-start; /* Align content to the top */
+      {% when 'middle' %} center; /* Align content to the middle */
+      {% when 'bottom' %} flex-end; /* Align content to the bottom */
     {% endcase %}
   }
 
