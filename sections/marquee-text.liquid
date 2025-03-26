@@ -40,18 +40,21 @@
       {% when 'large' %}
         height: 600px;
     {% endcase %}
+
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
   }
 
-  /* Flexbox for vertical alignment of marquee-content */
   .marquee-content {
     display: flex;
     justify-content: center; /* Align horizontally */
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Ensure full height of the parent container */
-    align-items: center; /* Align items to the center vertically */
+    width: 100%;
+    align-items: center; /* Align items vertically in the middle */
+    height: 100%; /* Ensure full height of parent container */
   }
 
-  {{id}} .track {
+  .track {
     position: absolute;
     white-space: nowrap;
     font-size: 6rem;
