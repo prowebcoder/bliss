@@ -2,6 +2,7 @@
 {{ 'marquee.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+  /* Padding */
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -20,44 +21,49 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  {{id}} .track {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 6rem;
-  will-change: transform;
-  animation: marquee 60s linear infinite;
-}
 
-@keyframes marquee {
-  {% if direction == "left-to-right" %}
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
-  {% else %}
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-  {% endif %}
-}
+  /* Apply background image to the section */
+  .section-{{ section.id }} {
+    {% if section.settings.background_image %}
+      background-image: url('{{ section.settings.background_image | img_url: 'original' }}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    {% endif %}
+  }
+
+  {{id}} .track {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 6rem;
+    will-change: transform;
+    animation: marquee 60s linear infinite;
+  }
+
+  @keyframes marquee {
+    {% if direction == "left-to-right" %}
+      from { transform: translateX(-100%); }
+      to { transform: translateX(100%); }
+    {% else %}
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    {% endif %}
+  }
 {%- endstyle -%}
 
-<div class="marquee multicolumn color-{{ section.settings.color_scheme }}" >
+<div class="marquee multicolumn color-{{ section.settings.color_scheme }} section-{{ section.id }}">
   <div class="track">
     <div class="marquee-content">
-      
       {% for block in section.blocks %}
         <span class="marquee-gap" style="color:{{ block.settings.color }}">
-          
           {% if block.settings.image %}
             <img src="{{ block.settings.image | img_url: '100x' }}" alt="Marquee Image" style="vertical-align: middle; margin-right: 10px;" />
           {% endif %}
-          
-          <!-- Apply text size class dynamically -->
           <div class="custom-text {{ block.settings.text_size }}">
             {{ block.settings.text }}
           </div>
-          
         </span>
       {% endfor %}
-      
     </div>
   </div>
 </div>
@@ -73,21 +79,26 @@
         "default": "scheme-1"
       },
       {
-  "type": "select",
-  "id": "marquee_direction",
-  "label": "Marquee Direction",
-  "options": [
-    {
-      "value": "left-to-right",
-      "label": "Left to Right"
-    },
-    {
-      "value": "right-to-left",
-      "label": "Right to Left"
-    }
-  ],
-  "default": "left-to-right"
-},
+        "type": "select",
+        "id": "marquee_direction",
+        "label": "Marquee Direction",
+        "options": [
+          {
+            "value": "left-to-right",
+            "label": "Left to Right"
+          },
+          {
+            "value": "right-to-left",
+            "label": "Right to Left"
+          }
+        ],
+        "default": "left-to-right"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
       {
         "type": "range",
         "id": "padding_top",
