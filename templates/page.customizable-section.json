@@ -159,7 +159,7 @@
         "scrolling_text_with_image_4wkqeL": {
           "type": "ScrollingTextWithImage",
           "settings": {
-            "text": "Therapies Better",
+            "text": "Therapies + Better",
             "color": "#2d6700",
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
@@ -178,7 +178,6 @@
       "settings": {
         "color_scheme": "scheme-1",
         "marquee_direction": "left-to-right",
-        "background_image": "shopify://shop_images/banner.webp",
         "height_option": "small",
         "padding_top": 36,
         "padding_bottom": 36,
