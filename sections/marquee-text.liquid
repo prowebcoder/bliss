@@ -48,11 +48,7 @@
     justify-content: center; /* Align horizontally */
     width: 100%; /* Ensure full width */
     height: 100%; /* Ensure full height of the parent container */
-    align-items: {% case section.settings.content_vertical_alignment %}
-      {% when 'top' %} flex-start; /* Align content to the top */
-      {% when 'middle' %} center; /* Align content to the middle */
-      {% when 'bottom' %} flex-end; /* Align content to the bottom */
-    {% endcase %}
+    align-items: center; /* Align items to the center vertically */
   }
 
   {{id}} .track {
@@ -141,26 +137,6 @@
           }
         ],
         "default": "medium"
-      },
-      {
-        "type": "select",
-        "id": "content_vertical_alignment",
-        "label": "Vertical Alignment of Content",
-        "options": [
-          {
-            "value": "top",
-            "label": "Top"
-          },
-          {
-            "value": "middle",
-            "label": "Middle"
-          },
-          {
-            "value": "bottom",
-            "label": "Bottom"
-          }
-        ],
-        "default": "middle"
       },
       {
         "type": "range",
