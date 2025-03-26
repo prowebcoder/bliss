@@ -42,10 +42,12 @@
     {% endcase %}
   }
 
-  /* Vertical Alignment */
+  /* Vertical Alignment for Marquee Content */
   .marquee-content {
     display: flex;
     justify-content: center;
+    height: 100%; /* Ensuring the height of the container */
+    width: 100%; /* Ensuring the width of the container */
     align-items: {% case section.settings.content_vertical_alignment %}
       {% when 'top' %} flex-start;
       {% when 'middle' %} center;
