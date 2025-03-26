@@ -110,10 +110,20 @@
             "text_size": "medium",
             "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
           }
+        },
+        "scrolling_text_with_image_dEVmyL": {
+          "type": "ScrollingTextWithImage",
+          "settings": {
+            "text": "Therapies",
+            "color": "#000000",
+            "text_size": "medium",
+            "image": "shopify://shop_images/pngimg.com_-_forest_PNG4.png"
+          }
         }
       },
       "block_order": [
-        "scrolling_text_with_image_m9tVke"
+        "scrolling_text_with_image_m9tVke",
+        "scrolling_text_with_image_dEVmyL"
       ],
       "settings": {
         "color_scheme": "",
