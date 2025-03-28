@@ -627,6 +627,33 @@
             "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms.</p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
             "page": ""
           }
+        },
+        "collapsible_row_wwFDLk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will a BlissThera Treatment cause a positive drug screen result?",
+            "icon": "check_mark",
+            "row_content": "<p>No.</p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8VgJgD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I have withdrawal systems if I stop using BlissThera?",
+            "icon": "check_mark",
+            "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms.</p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9JjnFt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I have withdrawal systems if I stop using BlissThera?",
+            "icon": "check_mark",
+            "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms.</p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -635,7 +662,10 @@
         "collapsible_row_CTzW4K",
         "collapsible_row_bLcKxG",
         "collapsible_row_T7iHxr",
-        "collapsible_row_ctefUC"
+        "collapsible_row_ctefUC",
+        "collapsible_row_wwFDLk",
+        "collapsible_row_8VgJgD",
+        "collapsible_row_9JjnFt"
       ],
       "settings": {
         "caption": "",
