@@ -351,16 +351,16 @@
           "settings": {
             "heading": "What are BlissThera® Elixirs?",
             "icon": "check_mark",
-            "row_content": "<p>BlissThera Elixirs are advanced botanical formulations designed to harmonize with the body's natural<br/>processes. Developed by physicians, these elixirs combine whole-plant extracts<br/>with a curated blend of minor botanical compounds to support balance, relaxation,<br/>and overall well-being.</p>",
+            "row_content": "<p>BlissThera Elixirs are advanced botanical formulations designed to harmonize with the body's natural processes. Developed by physicians, these elixirs combine whole-plant extracts with a curated blend of minor botanical compounds to support balance, relaxation, and overall well-being.</p>",
             "page": ""
           }
         },
         "collapsible_row_x6baER": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can we offer BlissThera Therapies to our Clinic or MedSpa?",
+            "heading": "How do BlissThera® Elixirs work?",
             "icon": "check_mark",
-            "row_content": "<p>Yes.<a href=\"https://www.blissthera.com/contact\" target=\"_blank\"><span style=\"text-decoration:underline\">Contact us</span></a>to start a conversation.</p>",
+            "row_content": "<p>BlissThera® Elixirs leverage the wisdom of Forest Medicine by incorporating bioactive plant elements known to support the body's innate ability to adapt and restore. These elixirs contain naturally occurring phytochemicals that interact with key physiological pathways, encouraging a state of homeostasis and resilience.</p>",
             "page": ""
           }
         },
