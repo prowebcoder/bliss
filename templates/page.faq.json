@@ -290,8 +290,8 @@
         "column_WUY9ep": {
           "type": "column",
           "settings": {
-            "title": "Ordering",
-            "tabid": "ordering",
+            "title": "BlissThera® Elixirs",
+            "tabid": "elixirs",
             "link": ""
           }
         },
@@ -326,7 +326,6 @@
         "column_YmtLiK",
         "column_B3LfXY"
       ],
-      "disabled": true,
       "settings": {
         "title": "FAQ",
         "heading_size": "h1",
@@ -350,9 +349,9 @@
         "collapsible_row_H4iYpB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Where can I receive BlissThera Treatments?",
+            "heading": "What are BlissThera® Elixirs?",
             "icon": "check_mark",
-            "row_content": "<p>BlissThera Forest Medicine and Virtual Nature Therapy Treatments can be received at several locations. Visit the<a href=\"https://www.blissthera.com/book-forest-medicine-treatment\" target=\"_blank\"><span style=\"text-decoration:underline\">Book Treatment</span></a>page for the latest list of locations.</p>",
+            "row_content": "<p>BlissThera Elixirs are advanced botanical formulations designed to harmonize with the body's natural<br/>processes. Developed by physicians, these elixirs combine whole-plant extracts<br/>with a curated blend of minor botanical compounds to support balance, relaxation,<br/>and overall well-being.</p>",
             "page": ""
           }
         },
@@ -390,10 +389,9 @@
         "collapsible_row_mPc68z",
         "collapsible_row_yVyLGF"
       ],
-      "disabled": true,
       "settings": {
         "caption": "",
-        "tabid": "ordering",
+        "tabid": "elixirs",
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
