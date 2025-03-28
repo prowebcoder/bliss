@@ -403,9 +403,9 @@
         "collapsible_row_KWHcDN": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Are BlissThera® Elixirs safe?",
             "icon": "check_mark",
-            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "row_content": "<p>BlissThera® Elixirs are crafted with purity and safety in mind. Each batch undergoes rigorous quality control testing to ensure potency and consistency. As with any botanical supplement, it is recommended to consult a healthcare professional before use, especially if you are pregnant, nursing, or taking medications.</p>",
             "page": ""
           }
         },
