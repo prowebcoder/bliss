@@ -332,6 +332,7 @@ slider-component.slider-component-full-width {
     border: none;
     position: absolute;
     top: 50%;
+  z-index:999;
     left: 50%;
     transform: translate(-50%, -50%);
 }
