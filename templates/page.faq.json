@@ -225,6 +225,7 @@
         "collapsible_row_G4wXcF",
         "collapsible_row_FqkXY9"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "",
@@ -241,76 +242,9 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_4N8i9j": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Eh8XAP": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_Hzcc4w": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_zVQKXe": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Eh8XAP",
-        "text_Hzcc4w",
-        "button_zVQKXe"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "tab_faq_section_zhffnm": {
       "type": "tab-faq-section",
       "blocks": {
-        "column_WUY9ep": {
-          "type": "column",
-          "settings": {
-            "title": "BlissThera® Elixirs",
-            "tabid": "elixirs",
-            "link": ""
-          }
-        },
-        "column_B4wgUw": {
-          "type": "column",
-          "settings": {
-            "title": "Shipping",
-            "tabid": "shipping",
-            "link": ""
-          }
-        },
-        "column_YmtLiK": {
-          "type": "column",
-          "settings": {
-            "title": "Product",
-            "tabid": "product",
-            "link": ""
-          }
-        },
         "column_B3LfXY": {
           "type": "column",
           "settings": {
@@ -318,13 +252,19 @@
             "tabid": "general",
             "link": ""
           }
+        },
+        "column_WUY9ep": {
+          "type": "column",
+          "settings": {
+            "title": "BlissThera® Elixirs",
+            "tabid": "elixirs",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "column_WUY9ep",
-        "column_B4wgUw",
-        "column_YmtLiK",
-        "column_B3LfXY"
+        "column_B3LfXY",
+        "column_WUY9ep"
       ],
       "settings": {
         "title": "FAQ",
@@ -339,8 +279,130 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 16,
-        "padding_bottom": 16
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_faq_YHnqdY": {
+      "type": "collapsible-faq",
+      "blocks": {
+        "collapsible_row_eEakHa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does BlissThera Therapy Work?",
+            "icon": "check_mark",
+            "row_content": "<p>BlissThera™ merges the heritage of Forest Medicine Therapy with the innovative realm of microprocessor controlled phytochemical synergy and VR technology. The BlissThera™ Virtual Nature experience helps the body re-establish a harmonious connection with nature, enabling the body and mind to better heal themselves.<br/><br/>For more detailed information go to the \"<a href=\"https://www.blissthera.com/why-it-works\" target=\"_blank\"><span style=\"text-decoration:underline\">Why it Works</span></a>\" tab. Or for scientific level clinical chemistry data read the<a href=\"https://1e49183e-3cad-49cb-8132-dd844fdf4d68.usrfiles.com/ugd/1e4918_9d3168e1fe75481a9cfd6e84f3ea4878.pdf\" target=\"_blank\"><span style=\"text-decoration:underline\">White Paper</span></a>and this<a href=\"https://www.blissthera.com/post/enhancing-health-via-phytochemical-synergy-via-virtual-nature-therapy-forest-medicine-blissthera\" target=\"_blank\"><span style=\"text-decoration:underline\">blog post</span></a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tzqLf9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is BlissThera Forest Medicine Therapy similar to Naturopathic, Integrative or Functional Medicine?",
+            "icon": "check_mark",
+            "row_content": "<p>Using Western Medicine comparisons, BlissThera™ Forest Medicine embodies the same principles as Naturopathic, Integrative and Functional Medicine, emphasizing disease prevention and the cultivation of well-being by encouraging the body to restore healthy function - while also partnering with conventional medicine to insure a whole health approach to care.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CTzW4K": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I receive BlissThera Treatments?",
+            "icon": "check_mark",
+            "row_content": "<p>BlissThera Forest Medicine and Virtual Nature Therapy Treatments can be received at several locations. Visit the<a href=\"https://www.blissthera.com/book-forest-medicine-treatment\" target=\"_blank\"><span style=\"text-decoration:underline\">Book Treatment</span></a>page for the latest list of locations.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bLcKxG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will BlissThera Treatments impair my driving ability?",
+            "icon": "check_mark",
+            "row_content": "<p>BlissThera Treatments will not impair mental focus or physical dexterity. In fact, patients generally report feeling more focus after a treatment.</p><p>However, some patients specifically request treatments designed to be sedating. If you request a treatment involving this outcome, you will need to arrange for post treatment transportation.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_T7iHxr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I become addicted to BlissThera Treatments?",
+            "icon": "check_mark",
+            "row_content": "<p>Experiencing a BlissThera Forest Medicine Therapy is analogous to taking a walk in nature (without getting tired from the walk). Though many people often find nature walks an important part of their routine, by no means is this considered \"addicting\".</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ctefUC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I have withdrawal systems if I stop using BlissThera?",
+            "icon": "check_mark",
+            "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms.</p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wwFDLk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will a BlissThera Treatment cause a positive drug screen result?",
+            "icon": "check_mark",
+            "row_content": "<p>No.</p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8VgJgD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my insurance , or medicare pay for a BlissThera treatment?",
+            "icon": "check_mark",
+            "row_content": "<p>Some Health Savings Accounts (HSA) may allow payment of BlissThera Therapies. But otherwise, at this point in time insurance and federal programs do not cover BlissThera Forest Medicine Therapies.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9JjnFt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does a physician have to prescribe a BlissThera treatment?",
+            "icon": "check_mark",
+            "row_content": "<p>No.</p><p>Although physicians use the BlissThera system, a prescription is not required.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HTJ7fn": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can we offer BlissThera Therapies to our Clinic or MedSpa?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes.<a href=\"https://www.blissthera.com/contact\" target=\"_blank\"><span style=\"text-decoration:underline\">Contact us</span></a>to start a conversation.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_eEakHa",
+        "collapsible_row_tzqLf9",
+        "collapsible_row_CTzW4K",
+        "collapsible_row_bLcKxG",
+        "collapsible_row_T7iHxr",
+        "collapsible_row_ctefUC",
+        "collapsible_row_wwFDLk",
+        "collapsible_row_8VgJgD",
+        "collapsible_row_9JjnFt",
+        "collapsible_row_HTJ7fn"
+      ],
+      "settings": {
+        "caption": "",
+        "tabid": "general",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 20
       }
     },
     "collapsible_faq_yLKWnX": {
@@ -441,8 +503,8 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 20
       }
     },
     "collapsible_faq_JFE8xV": {
@@ -570,128 +632,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "collapsible_faq_YHnqdY": {
-      "type": "collapsible-faq",
-      "blocks": {
-        "collapsible_row_eEakHa": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How does BlissThera Therapy Work?",
-            "icon": "check_mark",
-            "row_content": "<p>BlissThera™ merges the heritage of Forest Medicine Therapy with the innovative realm of microprocessor controlled phytochemical synergy and VR technology. The BlissThera™ Virtual Nature experience helps the body re-establish a harmonious connection with nature, enabling the body and mind to better heal themselves.<br/><br/>For more detailed information go to the \"<a href=\"https://www.blissthera.com/why-it-works\" target=\"_blank\"><span style=\"text-decoration:underline\">Why it Works</span></a>\" tab. Or for scientific level clinical chemistry data read the<a href=\"https://1e49183e-3cad-49cb-8132-dd844fdf4d68.usrfiles.com/ugd/1e4918_9d3168e1fe75481a9cfd6e84f3ea4878.pdf\" target=\"_blank\"><span style=\"text-decoration:underline\">White Paper</span></a>and this<a href=\"https://www.blissthera.com/post/enhancing-health-via-phytochemical-synergy-via-virtual-nature-therapy-forest-medicine-blissthera\" target=\"_blank\"><span style=\"text-decoration:underline\">blog post</span></a>.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_tzqLf9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Is BlissThera Forest Medicine Therapy similar to Naturopathic, Integrative or Functional Medicine?",
-            "icon": "check_mark",
-            "row_content": "<p>Using Western Medicine comparisons, BlissThera™ Forest Medicine embodies the same principles as Naturopathic, Integrative and Functional Medicine, emphasizing disease prevention and the cultivation of well-being by encouraging the body to restore healthy function - while also partnering with conventional medicine to insure a whole health approach to care.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_CTzW4K": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Where can I receive BlissThera Treatments?",
-            "icon": "check_mark",
-            "row_content": "<p>BlissThera Forest Medicine and Virtual Nature Therapy Treatments can be received at several locations. Visit the<a href=\"https://www.blissthera.com/book-forest-medicine-treatment\" target=\"_blank\"><span style=\"text-decoration:underline\">Book Treatment</span></a>page for the latest list of locations.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_bLcKxG": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will BlissThera Treatments impair my driving ability?",
-            "icon": "check_mark",
-            "row_content": "<p>BlissThera Treatments will not impair mental focus or physical dexterity. In fact, patients generally report feeling more focus after a treatment.</p><p>However, some patients specifically request treatments designed to be sedating. If you request a treatment involving this outcome, you will need to arrange for post treatment transportation.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_T7iHxr": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can I become addicted to BlissThera Treatments?",
-            "icon": "check_mark",
-            "row_content": "<p>Experiencing a BlissThera Forest Medicine Therapy is analogous to taking a walk in nature (without getting tired from the walk). Though many people often find nature walks an important part of their routine, by no means is this considered \"addicting\".</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_ctefUC": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will I have withdrawal systems if I stop using BlissThera?",
-            "icon": "check_mark",
-            "row_content": "<p>No. BlissThera Treatments produce no withdrawal symptoms.</p><p>However, patients that become accustom to their therapy results, often find return visits optimize long term positive results.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_wwFDLk": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will a BlissThera Treatment cause a positive drug screen result?",
-            "icon": "check_mark",
-            "row_content": "<p>No.</p><p>Although the patient testimonial videos are filled with amazing success stories that appear to have \"drug like results\", the BlissThera CTI technology emits only natural plant materials and will not cause a positive drug screen result.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_8VgJgD": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Will my insurance , or medicare pay for a BlissThera treatment?",
-            "icon": "check_mark",
-            "row_content": "<p>Some Health Savings Accounts (HSA) may allow payment of BlissThera Therapies. But otherwise, at this point in time insurance and federal programs do not cover BlissThera Forest Medicine Therapies.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_9JjnFt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Does a physician have to prescribe a BlissThera treatment?",
-            "icon": "check_mark",
-            "row_content": "<p>No.</p><p>Although physicians use the BlissThera system, a prescription is not required.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_HTJ7fn": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can we offer BlissThera Therapies to our Clinic or MedSpa?",
-            "icon": "check_mark",
-            "row_content": "<p>Yes.<a href=\"https://www.blissthera.com/contact\" target=\"_blank\"><span style=\"text-decoration:underline\">Contact us</span></a>to start a conversation.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_eEakHa",
-        "collapsible_row_tzqLf9",
-        "collapsible_row_CTzW4K",
-        "collapsible_row_bLcKxG",
-        "collapsible_row_T7iHxr",
-        "collapsible_row_ctefUC",
-        "collapsible_row_wwFDLk",
-        "collapsible_row_8VgJgD",
-        "collapsible_row_9JjnFt",
-        "collapsible_row_HTJ7fn"
-      ],
-      "settings": {
-        "caption": "",
-        "tabid": "product",
-        "heading": "",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "background-1",
-        "container_color_scheme": "background-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -700,11 +640,10 @@
     "text_highlight_onscroll_kLieUN",
     "main",
     "collapsible_content_DXmG38",
-    "rich_text_4N8i9j",
     "tab_faq_section_zhffnm",
+    "collapsible_faq_YHnqdY",
     "collapsible_faq_yLKWnX",
     "collapsible_faq_JFE8xV",
-    "collapsible_faq_JVmrba",
-    "collapsible_faq_YHnqdY"
+    "collapsible_faq_JVmrba"
   ]
 }
