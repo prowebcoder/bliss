@@ -583,6 +583,15 @@
             "page": ""
           }
         },
+        "collapsible_row_tzqLf9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is BlissThera Forest Medicine Therapy similar to Naturopathic, Integrative or Functional Medicine?",
+            "icon": "check_mark",
+            "row_content": "<p>Using Western Medicine comparisons, BlissThera™ Forest Medicine embodies the same principles as Naturopathic, Integrative and Functional Medicine, emphasizing disease prevention and the cultivation of well-being by encouraging the body to restore healthy function - while also partnering with conventional medicine to insure a whole health approach to care.</p>",
+            "page": ""
+          }
+        },
         "collapsible_row_CTzW4K": {
           "type": "collapsible_row",
           "settings": {
@@ -622,6 +631,7 @@
       },
       "block_order": [
         "collapsible_row_eEakHa",
+        "collapsible_row_tzqLf9",
         "collapsible_row_CTzW4K",
         "collapsible_row_bLcKxG",
         "collapsible_row_T7iHxr",
