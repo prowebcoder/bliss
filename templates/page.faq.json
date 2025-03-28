@@ -412,18 +412,9 @@
         "collapsible_row_jbGxfW": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Can I use BlissThera® Elixirs alongside other wellness practices?",
             "icon": "check_mark",
-            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_jTKHCd": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "row_content": "<p>Absolutely. BlissThera® Elixirs are designed to complement a holistic wellness lifestyle. They work synergistically with mindfulness practices, meditation, massage therapy, and other natural therapies to support overall well-being.</p>",
             "page": ""
           }
         }
@@ -436,8 +427,7 @@
         "collapsible_row_yHnCMy",
         "collapsible_row_cf6fKN",
         "collapsible_row_KWHcDN",
-        "collapsible_row_jbGxfW",
-        "collapsible_row_jTKHCd"
+        "collapsible_row_jbGxfW"
       ],
       "settings": {
         "caption": "",
