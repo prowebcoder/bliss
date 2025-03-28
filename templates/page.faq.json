@@ -32,7 +32,7 @@
         "text_eJm8YD"
       ],
       "settings": {
-        "image": "shopify://shop_images/BlissThera-Forest-Medicine-Virtual-Nature-Therapy-Forest-Walk-w-Terpene-Key-branded.png",
+        "image": "shopify://shop_images/BlissThera-Forest-Medicine-Virtual-Nature-Therapy-Forest-Walk-branded.png",
         "image_overlay_opacity": 30,
         "image_height": "small",
         "image_behavior": "none",
@@ -96,6 +96,7 @@
     },
     "text_highlight_onscroll_kLieUN": {
       "type": "text-highlight-onscroll",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "full_width": true,
@@ -325,6 +326,7 @@
         "column_YmtLiK",
         "column_B3LfXY"
       ],
+      "disabled": true,
       "settings": {
         "title": "FAQ",
         "heading_size": "h1",
@@ -388,6 +390,7 @@
         "collapsible_row_mPc68z",
         "collapsible_row_yVyLGF"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "tabid": "ordering",
@@ -450,6 +453,7 @@
         "collapsible_row_YRekVb",
         "collapsible_row_B9GbH3"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "tabid": "general",
@@ -512,6 +516,7 @@
         "collapsible_row_3zCtRR",
         "collapsible_row_9dV38q"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "tabid": "shipping",
@@ -584,6 +589,7 @@
         "collapsible_row_T7iHxr",
         "collapsible_row_ctefUC"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "tabid": "product",
