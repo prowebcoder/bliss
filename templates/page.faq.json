@@ -376,6 +376,51 @@
         "collapsible_row_yVyLGF": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "What makes BlissThera® Elixirs different?",
+            "icon": "check_mark",
+            "row_content": "<p>BlissThera® Elixirs stand apart not only because of their advanced extraction process, which preserves the integrity of naturally occurring plant compounds, but also because they are physician-designed formulations backed by decades of clinical testing on patients. Unlike typical botanical supplements, these elixirs are developed with phytochemical synergy in mind—meaning each ingredient is carefully selected and combined to enhance therapeutic effects through natural plant interactions. This results in a potent, full-spectrum formula that retains the essence of the source plants, delivering a multi-faceted experience that supports relaxation, mental clarity, and overall vitality with clinically refined precision.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yHnCMy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cf6fKN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KWHcDN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jbGxfW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jTKHCd": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
             "row_content": "<p><strong>Lorem Ipsum</strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</p>",
@@ -387,7 +432,12 @@
         "collapsible_row_H4iYpB",
         "collapsible_row_x6baER",
         "collapsible_row_mPc68z",
-        "collapsible_row_yVyLGF"
+        "collapsible_row_yVyLGF",
+        "collapsible_row_yHnCMy",
+        "collapsible_row_cf6fKN",
+        "collapsible_row_KWHcDN",
+        "collapsible_row_jbGxfW",
+        "collapsible_row_jTKHCd"
       ],
       "settings": {
         "caption": "",
