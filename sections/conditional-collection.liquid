@@ -202,17 +202,7 @@
         {%- endif -%}
       </div>
     </div>
-    {%- if section.settings.show_view_all and more_in_collection -%}
-      <div class="collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <a
-          href="{{ section.settings.wholesalecollection.url }}"
-          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
-          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.wholesalecollection.title | escape }}"
-        >
-          {{ 'sections.featured_collection.view_all' | t }}
-        </a>
-      </div>
-    {%- endif -%}
+
   {% elsif customertype == 'retail' %}
     <div
       class="color-{{ section.settings.color_scheme }} isolate gradient"
