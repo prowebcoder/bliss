@@ -336,35 +336,37 @@
 </footer>
 
 <script>
-window.addEventListener('DOMContentLoaded', () => {
-if (window.matchMedia('(min-width: 750px)').matches) {
-return
-}
+document.addEventListener('DOMContentLoaded', function () {
+  const headings = document.querySelectorAll('.footer-block__heading');
 
-const handleCollapse = (heading) => {
-if (heading.classList.contains('block-collapsed')) {
-heading.classList.remove('block-collapsed')
-heading.setAttribute('aria-expanded', 'true')
-} else {
-heading.classList.add('block-collapsed')
-heading.setAttribute('aria-expanded', 'false')
-}
-}
+  headings.forEach(function (heading) {
+    heading.addEventListener('click', function () {
+      const detailsContent = heading.nextElementSibling;
+      
+      if (detailsContent && detailsContent.classList.contains('footer-block__details-content')) {
+        if (detailsContent.style.maxHeight) {
+         
+          detailsContent.style.maxHeight = null;
+          heading.classList.remove('active');
+        } else {
+          
+          document.querySelectorAll('.footer-block__details-content').forEach(function (detail) {
+            detail.style.maxHeight = null;
+          });
 
-document.querySelectorAll('.grid .footer-block__heading').forEach((heading, index) => {
-heading.classList.add('block-collapsed')
-heading.setAttribute('role', 'button')
-heading.setAttribute('aria-expanded', 'false')
-heading.setAttribute('tabindex', '0')
+          document.querySelectorAll('.footer-block__heading').forEach(function (h) {
+            h.classList.remove('active');
+          });
 
-heading.nextElementSibling.setAttribute('id', `footer-block-index-${index}`)
-heading.setAttribute('aria-controls', `footer-block-index-${index}`)
+          detailsContent.style.maxHeight = detailsContent.scrollHeight + 'px';
+          heading.classList.add('active');
+        }
+      }
+    });
+  });
+});
 
-heading.addEventListener('click', () => { handleCollapse(heading) })
-heading.addEventListener('keypress', () => { handleCollapse(heading) })
-})
 
-})
 </script>
 
 {% schema %}
