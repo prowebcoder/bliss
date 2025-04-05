@@ -4,10 +4,29 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-
+{% if customer %}
+  {% for tag in customer.tags %}
+    {% if tag == 'Retail' %}
+      {% assign customertype = 'retail' %}
+    {% endif %}
+    {% if tag == 'Practitioner' %}
+      {% assign customertype = 'wholesale' %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+     {% if customertype == 'wholesale' %}
+
+       {% assign menu_links = linklists['footer'].links %}
+
+       {% else %}
+
+       {% assign menu_links = section.settings.menu.links %}
+
+
+       {% endif %}
+    {%- for link in menu_links -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
