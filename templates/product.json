@@ -44,7 +44,7 @@
           "settings": {}
         },
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
-          "type": "shopify://apps/joy-subscription-app-cod-form/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
+          "type": "shopify://apps/joy-subscription-app/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
           "settings": {}
         },
         "buy_buttons": {
@@ -159,7 +159,7 @@
         "text_aJrHLK": {
           "type": "text",
           "settings": {
-            "text": "<p>Crafted by physicians and rooted in clinical expertise, BlissThera® Elixirs go beyond conventional hemp-based supplements. Our whole-plant formulations integrate a precise blend of minorcannabinoids, terpenes, and synergistic botanicals—each selected to enhancetherapeutic impact and optimize wellness. Developed and refined throughreal-world clinical use, these elixirs deliver targeted, effective support formind and body*.<br/><br/><br/>Administered sublingually, these elixirs areheld under the tongue for at least 60 seconds, allowing for efficientabsorption directly into the bloodstream—delivering fast, effective supportwhere it’s needed most.</p>",
+            "text": "<p><strong>Crafted by physicians and grounded in clinical expertise, BlissThera® Elixirs transcend conventional botanical supplements.</strong><br/><br/>Our whole-plant formulations feature a meticulously calibrated blend of bioactive terpenes and synergistic botanicals—each selected to maximize therapeutic benefit and support the body’s natural balance. Developed through real-world clinical application, these elixirs provide targeted, effective support for both mind and body.*</p><p>Administered sublingually, BlissThera® Elixirs are held under the tongue for at least 60 seconds, ensuring rapid absorption and fast-acting support where it’s needed most.</p>",
             "text_style": "body"
           }
         }
