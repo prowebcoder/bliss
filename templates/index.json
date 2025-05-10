@@ -30,7 +30,7 @@
       "settings": {
         "collection": "retail-store",
         "wholesalecollection": "wholesale-store",
-        "products_to_show": 6,
+        "products_to_show": 8,
         "title": "Our Products",
         "heading_size": "h1",
         "description": "",
