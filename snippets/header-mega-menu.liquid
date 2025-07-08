@@ -26,11 +26,17 @@
 
 
        {% endif %}
+    {%- comment %}<locksmith:184b>{% endcomment -%}
+      {%- assign locksmith_90d9_forloop__size = 0 %}{%- for link in menu_links -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_90d9_forloop__size = locksmith_90d9_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_90d9_forloop__index = nil -%}
+    {%- comment %}</locksmith:184b>{% endcomment -%}
     {%- for link in menu_links -%}
+      {%- comment %}<locksmith:6a3c>{% endcomment -%}
+        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_90d9_forloop__index == nil %}{% assign locksmith_90d9_forloop__index = 1 %}{% assign locksmith_90d9_forloop__index0 = 0 %}{% else %}{% assign locksmith_90d9_forloop__index = locksmith_90d9_forloop__index | plus: 1 %}{% assign locksmith_90d9_forloop__index0 = locksmith_90d9_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_90d9_forloop__index == 1 %}{% assign locksmith_90d9_forloop__first = true %}{% else %}{% assign locksmith_90d9_forloop__first = false %}{% endif %}{% if locksmith_90d9_forloop__index == locksmith_90d9_forloop__size %}{% assign locksmith_90d9_forloop__last = true %}{% else %}{% assign locksmith_90d9_forloop__last = false %}{% endif %}{% assign locksmith_90d9_forloop__rindex = locksmith_90d9_forloop__size | minus: locksmith_90d9_forloop__index | minus: 1 %}{% assign locksmith_90d9_forloop__rindex0 = locksmith_90d9_forloop__size | minus: locksmith_90d9_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+      {%- comment %}</locksmith:6a3c>{% endcomment -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <details id="Details-HeaderMenu-{{ locksmith_90d9_forloop__index }}" class="mega-menu">
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
@@ -45,7 +51,7 @@
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
               <div
-                id="MegaMenu-Content-{{ forloop.index }}"
+                id="MegaMenu-Content-{{ locksmith_90d9_forloop__index }}"
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
@@ -54,6 +60,9 @@
                   role="list"
                 >
                   {%- for childlink in link.links -%}
+                    {%- comment %}<locksmith:f6b4>{% endcomment -%}
+                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: childlink, subject_parent: link, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                    {%- comment %}</locksmith:f6b4>{% endcomment -%}
                     <li>
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
@@ -68,6 +77,9 @@
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
+                            {%- comment %}<locksmith:dd83>{% endcomment -%}
+                              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: grandchildlink, subject_parent: childlink, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                            {%- comment %}</locksmith:dd83>{% endcomment -%}
                             <li>
                               <a
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"

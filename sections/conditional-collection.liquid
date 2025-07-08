@@ -244,13 +244,19 @@
 
             {%- if section.settings.collection.products.size > 0 -%}
               {% paginate section.settings.collection.products by section.settings.products_to_show %}
+                {%- comment %}<locksmith:72ac>{% endcomment -%}
+                  {%- assign locksmith_b283_forloop__size = 0 %}{%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_b283_forloop__size = locksmith_b283_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_b283_forloop__index = nil -%}
+                {%- comment %}</locksmith:72ac>{% endcomment -%}
                 {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+                  {%- comment %}<locksmith:a66e>{% endcomment -%}
+                    {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_b283_forloop__index == nil %}{% assign locksmith_b283_forloop__index = 1 %}{% assign locksmith_b283_forloop__index0 = 0 %}{% else %}{% assign locksmith_b283_forloop__index = locksmith_b283_forloop__index | plus: 1 %}{% assign locksmith_b283_forloop__index0 = locksmith_b283_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_b283_forloop__index == 1 %}{% assign locksmith_b283_forloop__first = true %}{% else %}{% assign locksmith_b283_forloop__first = false %}{% endif %}{% if locksmith_b283_forloop__index == locksmith_b283_forloop__size %}{% assign locksmith_b283_forloop__last = true %}{% else %}{% assign locksmith_b283_forloop__last = false %}{% endif %}{% assign locksmith_b283_forloop__rindex = locksmith_b283_forloop__size | minus: locksmith_b283_forloop__index | minus: 1 %}{% assign locksmith_b283_forloop__rindex0 = locksmith_b283_forloop__size | minus: locksmith_b283_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                  {%- comment %}</locksmith:a66e>{% endcomment -%}
                   <li
-                    id="Slide-{{ section.id }}-{{ forloop.index }}"
+                    id="Slide-{{ section.id }}-{{ locksmith_b283_forloop__index }}"
                     class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
                       data-cascade
-                      style="--animation-order: {{ forloop.index }};"
+                      style="--animation-order: {{ locksmith_b283_forloop__index }};"
                     {% endif %}
                   >
                     {% render 'card-product',
@@ -391,13 +397,19 @@
 
           {%- if section.settings.collection.products.size > 0 -%}
             {% paginate section.settings.collection.products by section.settings.products_to_show %}
+              {%- comment %}<locksmith:3d84>{% endcomment -%}
+                {%- assign locksmith_97d3_forloop__size = 0 %}{%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_97d3_forloop__size = locksmith_97d3_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_97d3_forloop__index = nil -%}
+              {%- comment %}</locksmith:3d84>{% endcomment -%}
               {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+                {%- comment %}<locksmith:e43f>{% endcomment -%}
+                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: section.settings.collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_97d3_forloop__index == nil %}{% assign locksmith_97d3_forloop__index = 1 %}{% assign locksmith_97d3_forloop__index0 = 0 %}{% else %}{% assign locksmith_97d3_forloop__index = locksmith_97d3_forloop__index | plus: 1 %}{% assign locksmith_97d3_forloop__index0 = locksmith_97d3_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_97d3_forloop__index == 1 %}{% assign locksmith_97d3_forloop__first = true %}{% else %}{% assign locksmith_97d3_forloop__first = false %}{% endif %}{% if locksmith_97d3_forloop__index == locksmith_97d3_forloop__size %}{% assign locksmith_97d3_forloop__last = true %}{% else %}{% assign locksmith_97d3_forloop__last = false %}{% endif %}{% assign locksmith_97d3_forloop__rindex = locksmith_97d3_forloop__size | minus: locksmith_97d3_forloop__index | minus: 1 %}{% assign locksmith_97d3_forloop__rindex0 = locksmith_97d3_forloop__size | minus: locksmith_97d3_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                {%- comment %}</locksmith:e43f>{% endcomment -%}
                 <li
-                  id="Slide-{{ section.id }}-{{ forloop.index }}"
+                  id="Slide-{{ section.id }}-{{ locksmith_97d3_forloop__index }}"
                   class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
-                    style="--animation-order: {{ forloop.index }};"
+                    style="--animation-order: {{ locksmith_97d3_forloop__index }};"
                   {% endif %}
                 >
                   {% render 'card-product',
