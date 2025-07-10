@@ -383,43 +383,44 @@
     {%- endif -%}
 
 <script>
-  // Get customer tags from Shopify Liquid
+  // Step 0: Detect logged-in customer tags from Shopify
   window.customerTags = {{ customer.tags | json }};
 
-  // Define tag names
-  const wholesaleTag = "Practitioner";
-  const retailTag = "Retail";
+  // Step 1: Define logic for wholesale and retail customers
+  const isWholesale = window.customerTags.includes("Practitioner");
+  const isRetail = window.customerTags.includes("Retail");
 
-  // Check if user is wholesale
-  const isWholesaleUser = window.customerTags.includes(wholesaleTag);
-
-  if (isWholesaleUser) {
-    // Fetch cart
+  // Step 2: Only run if user is logged in
+  if (isWholesale || isRetail) {
     fetch('/cart.js')
-      .then(res => res.json())
+      .then(response => response.json())
       .then(cart => {
         const updates = {};
 
         cart.items.forEach(item => {
-          // TEMP: Check if product title includes 'Retail'
-          if (item.product_title.toLowerCase().includes('retail')) {
-            updates[item.key] = 0; // remove item
+          const title = item.product_title.toLowerCase();
+
+          // Retail customer → remove wholesale items (e.g., product title includes 'wholesale')
+          if (isRetail && title.includes('wholesale')) {
+            updates[item.key] = 0;
+          }
+
+          // Wholesale customer → remove retail items (e.g., product title includes 'retail')
+          if (isWholesale && title.includes('retail')) {
+            updates[item.key] = 0;
           }
         });
 
         if (Object.keys(updates).length > 0) {
-          // Remove retail items from cart
           fetch('/cart/update.js', {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ updates })
           })
           .then(res => res.json())
-          .then(data => {
-            console.log("Retail items removed for wholesale user.");
-            location.reload();
+          .then(() => {
+            console.log('Filtered cart based on customer tag.');
+            location.reload(); // Refresh to reflect changes
           });
         }
       });
