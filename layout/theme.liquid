@@ -382,6 +382,45 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+<script>
+  // Step 0: Expose customer tag
+  window.is_wholesale_customer = {{ customer.tags contains 'Practitioner' | json }};
+
+  // Step 1: Check if wholesale customer
+  if (window.is_wholesale_customer) {
+    fetch('/cart.js')
+      .then(res => res.json())
+      .then(cart => {
+        const itemsToRemove = [];
+
+        cart.items.forEach(item => {
+          if (item.product.tags.includes('Retail')) {
+            itemsToRemove.push({
+              line: item.line, // line number in cart
+              quantity: 0
+            });
+          }
+        });
+
+        // Remove retail products
+        if (itemsToRemove.length > 0) {
+          const updates = {};
+          itemsToRemove.forEach(i => updates[i.line] = 0);
+
+          fetch('/cart/update.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ updates: updates })
+          })
+          .then(res => res.json())
+          .then(updatedCart => {
+            console.log('Retail items removed from cart for wholesale customer.');
+            location.reload(); // refresh cart
+          });
+        }
+      });
+  }
+</script>
 
     
   </body>
