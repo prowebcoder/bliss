@@ -383,48 +383,30 @@
     {%- endif -%}
 
 <script>
-  // Step 0: Detect logged-in customer tags from Shopify
   window.customerTags = {{ customer.tags | json }};
+  window.isPractitioner = {{ customer.tags contains 'Practitioner' | json }};
+</script>
 
-  // Step 1: Define logic for wholesale and retail customers
-  const isWholesale = window.customerTags.includes("Practitioner");
-  const isRetail = window.customerTags.includes("Retail");
-
-  // Step 2: Only run if user is logged in
-  if (isWholesale || isRetail) {
-    fetch('/cart.js')
-      .then(response => response.json())
-      .then(cart => {
-        const updates = {};
-
-        cart.items.forEach(item => {
-          const title = item.product_title.toLowerCase();
-
-          // Retail customer → remove wholesale items (e.g., product title includes 'wholesale')
-          if (isRetail && title.includes('wholesale')) {
-            updates[item.key] = 0;
-          }
-
-          // Wholesale customer → remove retail items (e.g., product title includes 'retail')
-          if (isWholesale && title.includes('retail')) {
-            updates[item.key] = 0;
-          }
-        });
-
-        if (Object.keys(updates).length > 0) {
-          fetch('/cart/update.js', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ updates })
-          })
-          .then(res => res.json())
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Check if customer is a Practitioner
+    if (window.isPractitioner) {
+      // Check if this is the first page load after login
+      if (sessionStorage.getItem('practitioner_cart_cleared') !== 'true') {
+        // Clear the cart
+        fetch('/cart/clear.js', { method: 'POST' })
           .then(() => {
-            console.log('Filtered cart based on customer tag.');
-            location.reload(); // Refresh to reflect changes
+            console.log('Cart cleared for Practitioner login.');
+            sessionStorage.setItem('practitioner_cart_cleared', 'true');
+            location.reload(); // Reload to reflect empty cart
           });
-        }
-      });
-  }
+      }
+    } else {
+      // Reset flag for non-Practitioner or guest
+      sessionStorage.removeItem('practitioner_cart_cleared');
+    }
+  });
 </script>
 
     
