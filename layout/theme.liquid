@@ -382,42 +382,6 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-{% assign customertype = '' %}
-{% if customer %}
-  {% for tag in customer.tags %}
-    {% if tag == 'Practitioner' %}
-      {% assign customertype = 'wholesale' %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
-{% if customertype == 'wholesale' %}
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      fetch('/cart.js')
-        .then(res => res.json())
-        .then(cart => {
-          const retailTag = 'retail';
-          const itemsToRemove = cart.items.filter(item =>
-            item.product.tags.some(tag => tag.toLowerCase() === retailTag)
-          );
-
-          itemsToRemove.forEach(item => {
-            fetch('/cart/change.js', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ id: item.key, quantity: 0 })
-            });
-          });
-
-          if (itemsToRemove.length > 0) {
-            setTimeout(() => location.reload(), 1000);
-          }
-        })
-        .catch(e => console.error('Cart fetch error:', e));
-    });
-  </script>
-{% endif %}
 
     
   </body>
