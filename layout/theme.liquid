@@ -388,7 +388,7 @@
       fetch('/cart.js')
         .then(res => res.json())
         .then(cart => {
-          const retailTags = ['retail'];
+          const retailTags = ['Retail'];
           const itemsToRemove = cart.items.filter(item =>
             item.product.tags.some(tag => retailTags.includes(tag))
           );
