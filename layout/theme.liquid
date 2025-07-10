@@ -381,5 +381,34 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+{% if customer.tags contains 'practitioner' %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('/cart.js')
+        .then(res => res.json())
+        .then(cart => {
+          const retailTags = ['retail-only'];
+          const itemsToRemove = cart.items.filter(item =>
+            item.product.tags.some(tag => retailTags.includes(tag))
+          );
+          
+          itemsToRemove.forEach(item => {
+            fetch('/cart/change.js', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ id: item.key, quantity: 0 })
+            });
+          });
+
+          if (itemsToRemove.length > 0) {
+            setTimeout(() => location.reload(), 1000); // Reload after removal
+          }
+        });
+    });
+  </script>
+{% endif %}
+
+    
   </body>
 </html>
