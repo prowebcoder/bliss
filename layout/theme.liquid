@@ -388,11 +388,11 @@
       fetch('/cart.js')
         .then(res => res.json())
         .then(cart => {
-          const retailTags = ['BlissThera® Elixirs'];
+          const retailTags = ['Retail'];
           const itemsToRemove = cart.items.filter(item =>
             item.product.tags.some(tag => retailTags.includes(tag))
           );
-          
+
           itemsToRemove.forEach(item => {
             fetch('/cart/change.js', {
               method: 'POST',
@@ -402,12 +402,13 @@
           });
 
           if (itemsToRemove.length > 0) {
-            setTimeout(() => location.reload(), 1000); // Reload after removal
+            setTimeout(() => location.reload(), 1000);
           }
         });
     });
   </script>
 {% endif %}
+
     
   </body>
 </html>
