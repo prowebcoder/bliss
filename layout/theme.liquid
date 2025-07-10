@@ -382,6 +382,49 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+<script>
+  // Get customer tags from Shopify Liquid
+  window.customerTags = {{ customer.tags | json }};
+
+  // Define tag names
+  const wholesaleTag = "Practitioner";
+  const retailTag = "Retail";
+
+  // Check if user is wholesale
+  const isWholesaleUser = window.customerTags.includes(wholesaleTag);
+
+  if (isWholesaleUser) {
+    // Fetch cart
+    fetch('/cart.js')
+      .then(res => res.json())
+      .then(cart => {
+        const updates = {};
+
+        cart.items.forEach(item => {
+          // TEMP: Check if product title includes 'Retail'
+          if (item.product_title.toLowerCase().includes('retail')) {
+            updates[item.key] = 0; // remove item
+          }
+        });
+
+        if (Object.keys(updates).length > 0) {
+          // Remove retail items from cart
+          fetch('/cart/update.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ updates })
+          })
+          .then(res => res.json())
+          .then(data => {
+            console.log("Retail items removed for wholesale user.");
+            location.reload();
+          });
+        }
+      });
+  }
+</script>
 
     
   </body>
