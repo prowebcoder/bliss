@@ -382,11 +382,11 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+{%- comment -%}
 <script>
   window.customerTags = {{ customer.tags | json }};
   window.isPractitioner = {{ customer.tags contains 'Practitioner' | json }};
 </script>
-
   
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -408,7 +408,7 @@
     }
   });
 </script>
-
+{%- endcomment -%}
     
   </body>
 </html>
