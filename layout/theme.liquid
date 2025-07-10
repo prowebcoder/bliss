@@ -383,7 +383,7 @@
     {%- endif -%}
 
 <!-- empty cart when using wholesale acc. -->    
-{%- comment -%}
+
 <script>
   window.customerTags = {{ customer.tags | json }};
   window.isPractitioner = {{ customer.tags contains 'Practitioner' | json }};
@@ -409,7 +409,7 @@
     }
   });
 </script>
-{%- endcomment -%}
+
     
   </body>
 </html>
