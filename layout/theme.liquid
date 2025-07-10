@@ -388,7 +388,7 @@
       fetch('/cart.js')
         .then(res => res.json())
         .then(cart => {
-          const retailTags = ['Retail'];
+          const retailTags = ['retail-only'];
           const itemsToRemove = cart.items.filter(item =>
             item.product.tags.some(tag => retailTags.includes(tag))
           );
@@ -408,7 +408,6 @@
     });
   </script>
 {% endif %}
-
     
   </body>
 </html>
