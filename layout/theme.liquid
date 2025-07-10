@@ -382,6 +382,7 @@
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
+<!-- empty cart when using wholesale acc. -->    
 {%- comment -%}
 <script>
   window.customerTags = {{ customer.tags | json }};
