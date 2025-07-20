@@ -61,7 +61,7 @@
         "collection": "retail-store",
         "wholesalecollection": "wholesale-store",
         "products_to_show": 25,
-        "title": "Our Products",
+        "title": "All Products",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
