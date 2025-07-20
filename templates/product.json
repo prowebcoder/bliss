@@ -44,7 +44,7 @@
           "settings": {}
         },
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
-          "type": "shopify://apps/joy-subscription-app/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
+          "type": "shopify://apps/joy-subscription/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
           "settings": {}
         },
         "buy_buttons": {
@@ -139,7 +139,7 @@
         "text_alignment": "center",
         "subheading": "",
         "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
-        "button_text": "Checkout Science Behind This?",
+        "button_text": "Check Out Science",
         "button_link": "shopify://pages/science",
         "padding_top": 40,
         "padding_bottom": 52
