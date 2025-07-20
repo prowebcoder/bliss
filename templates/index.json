@@ -34,7 +34,7 @@
         "products_to_show": 8,
         "title": "Featured Collection & Best Sellers",
         "heading_size": "h1",
-        "description": "<p></p><p>BlissThera's® non-invasive drug-free therapies help people feel better by leveraging nature’s power to encourage holistic wellness through support of the body's homeostasis system.</p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 5,
