@@ -13,8 +13,8 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify://shop_images/Blissthera_physician_in_forest_banner.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "large",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
