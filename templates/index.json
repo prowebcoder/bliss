@@ -90,9 +90,9 @@
         "caption_NJ66b8": {
           "type": "caption",
           "settings": {
-            "caption": "Bliss THera",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "caption": "BlissThera",
+            "text_style": "subtitle",
+            "text_size": "large"
           }
         },
         "heading_GtXFG7": {
