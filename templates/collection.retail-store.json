@@ -24,7 +24,7 @@
       "name": "Conditional Collection",
       "settings": {
         "collection": "best-sellers",
-        "wholesalecollection": "wholesale-store",
+        "wholesalecollection": "best-sellers",
         "products_to_show": 8,
         "title": "Featured Collection & Best Sellers",
         "heading_size": "h1",
