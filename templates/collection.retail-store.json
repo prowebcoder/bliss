@@ -51,6 +51,7 @@
     },
     "featured_collection_xP7WPB": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "retail-store",
@@ -74,6 +75,35 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "conditional_collection_aWRCwd": {
+      "type": "conditional-collection",
+      "settings": {
+        "collection": "retail-store",
+        "wholesalecollection": "wholesale-store",
+        "products_to_show": 25,
+        "title": "All Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -104,6 +134,7 @@
     "banner",
     "conditional_collection_FtfUfM",
     "featured_collection_xP7WPB",
+    "conditional_collection_aWRCwd",
     "product-grid"
   ]
 }
