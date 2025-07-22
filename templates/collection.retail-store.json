@@ -53,7 +53,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "retail-store",
+        "collection": "wholesale-store",
         "products_to_show": 25,
         "title": "All Products",
         "heading_size": "h1",
