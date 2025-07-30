@@ -1,12 +1,54 @@
+{% assign customertype = '' %}
+
+{% if customer %}
+  {% for tag in customer.tags %}
+    {% if tag == 'Retail' %}
+      {% assign customertype = 'retail' %}
+    {% endif %}
+    {% if tag == 'Practitioner' %}
+      {% assign customertype = 'wholesale' %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if customertype == 'wholesale' %}
+  <div class="page-width section">
+    {% if section.settings.section_heading != blank %}
+      <h2 class="section-title">{{ section.settings.section_heading }}</h2>
+    {% endif %}
+
+    {% assign collections_array = 
+      section.settings.collection_1 | append: ',' |
+      append: section.settings.collection_2 | append: ',' |
+      append: section.settings.collection_3 | append: ',' |
+      append: section.settings.collection_4 | split: ',' %}
+
+    {% for collection_handle in collections_array %}
+      {% assign collection = collections[collection_handle] %}
+      {% if collection %}
+        <div class="collection-block" style="margin-bottom: 40px;">
+          <h3><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
+
+          <div class="grid grid--uniform">
+            {% for product in collection.products limit: section.settings.products_per_collection %}
+              {% render 'product-card', product: product %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
+
 {% schema %}
 {
-  "name": "Four Collections Display",
+  "name": "Wholesale Collections",
   "settings": [
     {
       "type": "text",
-      "id": "main_heading",
-      "label": "Main Heading",
-      "default": "Explore Our Collections"
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "Wholesale Collections"
     },
     {
       "type": "collection",
@@ -31,7 +73,7 @@
     {
       "type": "range",
       "id": "products_per_collection",
-      "label": "Products per Collection",
+      "label": "Number of Products per Collection",
       "min": 1,
       "max": 12,
       "step": 1,
@@ -40,46 +82,9 @@
   ],
   "presets": [
     {
-      "name": "Four Collections Display",
+      "name": "Wholesale Collections",
       "category": "Custom"
     }
   ]
 }
 {% endschema %}
-
-<div class="section-wrapper">
-  {% if section.settings.main_heading != blank %}
-    <h2>{{ section.settings.main_heading }}</h2>
-  {% endif %}
-
-  {% assign collections = 
-    section.settings.collection_1 | append: ',' | append: section.settings.collection_2 
-    | append: ',' | append: section.settings.collection_3 | append: ',' | append: section.settings.collection_4 
-    | split: ',' %}
-
-  {%- comment %}<locksmith:5c83>{% endcomment -%}
-    {%- assign locksmith_399b_forloop__size = 0 %}{% for collection_handle in collections %}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_399b_forloop__size = locksmith_399b_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_399b_forloop__index = nil -%}
-  {%- comment %}</locksmith:5c83>{% endcomment -%}
-  {% for collection_handle in collections %}
-    {%- comment %}<locksmith:43d5>{% endcomment -%}
-      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_399b_forloop__index == nil %}{% assign locksmith_399b_forloop__index = 1 %}{% assign locksmith_399b_forloop__index0 = 0 %}{% else %}{% assign locksmith_399b_forloop__index = locksmith_399b_forloop__index | plus: 1 %}{% assign locksmith_399b_forloop__index0 = locksmith_399b_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_399b_forloop__index == 1 %}{% assign locksmith_399b_forloop__first = true %}{% else %}{% assign locksmith_399b_forloop__first = false %}{% endif %}{% if locksmith_399b_forloop__index == locksmith_399b_forloop__size %}{% assign locksmith_399b_forloop__last = true %}{% else %}{% assign locksmith_399b_forloop__last = false %}{% endif %}{% assign locksmith_399b_forloop__rindex = locksmith_399b_forloop__size | minus: locksmith_399b_forloop__index | minus: 1 %}{% assign locksmith_399b_forloop__rindex0 = locksmith_399b_forloop__size | minus: locksmith_399b_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
-    {%- comment %}</locksmith:43d5>{% endcomment -%}
-    {% assign collection_obj = collections[locksmith_399b_forloop__index0] | strip %}
-    {% assign current_collection = collection_obj | handleize | collections %}
-
-    {% if current_collection != blank %}
-      <div class="collection-block">
-        <h3>{{ current_collection.title }}</h3>
-
-        <div class="grid grid--uniform">
-          {% for product in current_collection.products limit: section.settings.products_per_collection %}
-            {%- comment %}<locksmith:b675>{% endcomment -%}
-              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: current_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-            {%- comment %}</locksmith:b675>{% endcomment -%}
-            {% render 'product-card', product: product %}
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
-</div>
