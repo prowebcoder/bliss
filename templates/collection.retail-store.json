@@ -128,6 +128,18 @@
         "padding_top": 12,
         "padding_bottom": 12
       }
+    },
+    "condition_collections_2_wF3jyj": {
+      "type": "condition-collections-2",
+      "name": "Wholesale Collections",
+      "settings": {
+        "section_heading": "Wholesale Collections",
+        "collection_1": "biomedia®-solutions",
+        "collection_2": "elixirs",
+        "collection_3": "wholesale-store",
+        "collection_4": "elixirs",
+        "products_per_collection": 4
+      }
     }
   },
   "order": [
@@ -135,6 +147,7 @@
     "conditional_collection_FtfUfM",
     "featured_collection_xP7WPB",
     "conditional_collection_aWRCwd",
-    "product-grid"
+    "product-grid",
+    "condition_collections_2_wF3jyj"
   ]
 }
