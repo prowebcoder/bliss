@@ -1,0 +1,76 @@
+{% schema %}
+{
+  "name": "Four Collections Display",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "Explore Our Collections"
+    },
+    {
+      "type": "collection",
+      "id": "collection_1",
+      "label": "Collection 1"
+    },
+    {
+      "type": "collection",
+      "id": "collection_2",
+      "label": "Collection 2"
+    },
+    {
+      "type": "collection",
+      "id": "collection_3",
+      "label": "Collection 3"
+    },
+    {
+      "type": "collection",
+      "id": "collection_4",
+      "label": "Collection 4"
+    },
+    {
+      "type": "range",
+      "id": "products_per_collection",
+      "label": "Products per Collection",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Four Collections Display",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="section-wrapper">
+  {% if section.settings.main_heading != blank %}
+    <h2>{{ section.settings.main_heading }}</h2>
+  {% endif %}
+
+  {% assign collections = 
+    section.settings.collection_1 | append: ',' | append: section.settings.collection_2 
+    | append: ',' | append: section.settings.collection_3 | append: ',' | append: section.settings.collection_4 
+    | split: ',' %}
+
+  {% for collection_handle in collections %}
+    {% assign collection_obj = collections[forloop.index0] | strip %}
+    {% assign current_collection = collection_obj | handleize | collections %}
+
+    {% if current_collection != blank %}
+      <div class="collection-block">
+        <h3>{{ current_collection.title }}</h3>
+
+        <div class="grid grid--uniform">
+          {% for product in current_collection.products limit: section.settings.products_per_collection %}
+            {% render 'product-card', product: product %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
