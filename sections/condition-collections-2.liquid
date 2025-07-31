@@ -1,17 +1,4 @@
-{% assign customertype = '' %}
-
-{% if customer %}
-  {% for tag in customer.tags %}
-    {% if tag == 'Retail' %}
-      {% assign customertype = 'retail' %}
-    {% endif %}
-    {% if tag == 'Practitioner' %}
-      {% assign customertype = 'wholesale' %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
-
-{% if customertype == 'wholesale' %}
+{% if customer and customer.tags contains 'Practitioner' %}
   <div class="page-width section">
     {% if section.settings.section_heading != blank %}
       <h2 class="section-title">{{ section.settings.section_heading }}</h2>
@@ -24,9 +11,11 @@
       append: section.settings.collection_4 | split: ',' %}
 
     {% for collection_handle in collections_array %}
-      {%- comment %}<locksmith:a373>{% endcomment -%}
-        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-      {%- comment %}</locksmith:a373>{% endcomment -%}
+      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}
+      {% unless var == "true" %}
+        {% continue %}
+      {% endunless %}
+
       {% assign collection = collections[collection_handle] %}
       {% if collection %}
         <div class="collection-block" style="margin-bottom: 40px;">
@@ -34,9 +23,11 @@
 
           <div class="grid grid--uniform">
             {% for product in collection.products limit: section.settings.products_per_collection %}
-              {%- comment %}<locksmith:10f4>{% endcomment -%}
-                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-              {%- comment %}</locksmith:10f4>{% endcomment -%}
+              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}
+              {% unless var == "true" %}
+                {% continue %}
+              {% endunless %}
+
               {% render 'product-card', product: product %}
             {% endfor %}
           </div>
