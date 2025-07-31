@@ -133,7 +133,6 @@
       "type": "condition-collections-2",
       "name": "Wholesale Collections",
       "settings": {
-        "collection": "",
         "wholesalecollection": "wholesale-store",
         "products_to_show": 5,
         "title": "Featured collection",
@@ -141,7 +140,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
