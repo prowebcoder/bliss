@@ -24,6 +24,9 @@
       append: section.settings.collection_4 | split: ',' %}
 
     {% for collection_handle in collections_array %}
+      {%- comment %}<locksmith:a373>{% endcomment -%}
+        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+      {%- comment %}</locksmith:a373>{% endcomment -%}
       {% assign collection = collections[collection_handle] %}
       {% if collection %}
         <div class="collection-block" style="margin-bottom: 40px;">
@@ -31,6 +34,9 @@
 
           <div class="grid grid--uniform">
             {% for product in collection.products limit: section.settings.products_per_collection %}
+              {%- comment %}<locksmith:10f4>{% endcomment -%}
+                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+              {%- comment %}</locksmith:10f4>{% endcomment -%}
               {% render 'product-card', product: product %}
             {% endfor %}
           </div>
