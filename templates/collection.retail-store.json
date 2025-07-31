@@ -131,7 +131,6 @@
     },
     "condition_collections_2_wF3jyj": {
       "type": "condition-collections-2",
-      "disabled": true,
       "name": "Wholesale Collections",
       "settings": {
         "section_heading": "Wholesale Collections",
