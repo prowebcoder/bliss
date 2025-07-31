@@ -4,18 +4,9 @@
       <h2 class="section-title">{{ section.settings.section_heading }}</h2>
     {% endif %}
 
-    {% assign collections_array = 
-      section.settings.collection_1 | append: ',' |
-      append: section.settings.collection_2 | append: ',' |
-      append: section.settings.collection_3 | append: ',' |
-      append: section.settings.collection_4 | split: ',' %}
-
-    {% for collection_handle in collections_array %}
-      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}
-      {% unless var == "true" %}
-        {% continue %}
-      {% endunless %}
-
+    {% assign collection_handle = section.settings.collection_1 %}
+    {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection_handle, variable: 'transparent' %}{% endcapture %}
+    {% if var == "true" %}
       {% assign collection = collections[collection_handle] %}
       {% if collection %}
         <div class="collection-block" style="margin-bottom: 40px;">
@@ -24,53 +15,36 @@
           <div class="grid grid--uniform">
             {% for product in collection.products limit: section.settings.products_per_collection %}
               {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, subject_parent: collection, variable: 'transparent' %}{% endcapture %}
-              {% unless var == "true" %}
-                {% continue %}
-              {% endunless %}
-
-              {% render 'product-card', product: product %}
+              {% if var == "true" %}
+                {% render 'product-card', product: product %}
+              {% endif %}
             {% endfor %}
           </div>
         </div>
       {% endif %}
-    {% endfor %}
+    {% endif %}
   </div>
 {% endif %}
 
 {% schema %}
 {
-  "name": "Wholesale Collections",
+  "name": "Wholesale Collection",
   "settings": [
     {
       "type": "text",
       "id": "section_heading",
       "label": "Section Heading",
-      "default": "Wholesale Collections"
+      "default": "Wholesale Collection"
     },
     {
       "type": "collection",
       "id": "collection_1",
-      "label": "Collection 1"
-    },
-    {
-      "type": "collection",
-      "id": "collection_2",
-      "label": "Collection 2"
-    },
-    {
-      "type": "collection",
-      "id": "collection_3",
-      "label": "Collection 3"
-    },
-    {
-      "type": "collection",
-      "id": "collection_4",
-      "label": "Collection 4"
+      "label": "Collection"
     },
     {
       "type": "range",
       "id": "products_per_collection",
-      "label": "Number of Products per Collection",
+      "label": "Number of Products to Show",
       "min": 1,
       "max": 12,
       "step": 1,
@@ -79,7 +53,7 @@
   ],
   "presets": [
     {
-      "name": "Wholesale Collections",
+      "name": "Wholesale Collection",
       "category": "Custom"
     }
   ]
