@@ -15,67 +15,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "collection_list_hAYnR7": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_aVHewz": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "content_align": "center",
-            "title": "Collection title",
-            "inline_text": "Inline Text",
-            "text_color": "#000000"
-          }
-        },
-        "featured_collection_tEa3rE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "content_align": "center",
-            "title": "Collection title",
-            "inline_text": "Inline Text",
-            "text_color": "#000000"
-          }
-        },
-        "featured_collection_Lj9Lcp": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "content_align": "center",
-            "title": "Collection title",
-            "inline_text": "Inline Text",
-            "text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_aVHewz",
-        "featured_collection_tEa3rE",
-        "featured_collection_Lj9Lcp"
-      ],
-      "name": "t:sections.collection-list.presets.name",
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "col_style": "1",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "background": "linear-gradient(#ffffff, #000000)",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mobile": 36,
-        "padding_bottom_mobile": 36
-      }
     }
   },
   "order": [
-    "main",
-    "collection_list_hAYnR7"
+    "main"
   ]
 }
