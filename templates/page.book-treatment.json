@@ -83,6 +83,7 @@
           "type": "heading",
           "settings": {
             "heading": "Phytochemical Synergy",
+            "heading_color": "#000000",
             "heading_size": "h1"
           }
         },
@@ -121,6 +122,7 @@
           "type": "heading",
           "settings": {
             "heading": "Book a Treatment",
+            "heading_color": "#000000",
             "heading_size": "h1"
           }
         },
@@ -201,6 +203,7 @@
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
+        "section_color_scheme": "",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
