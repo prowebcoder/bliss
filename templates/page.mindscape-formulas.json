@@ -158,10 +158,10 @@
         "padding_bottom": 52
       }
     },
-    "image_with_text_gEaAbX": {
+    "image_with_text_kiC4Jt": {
       "type": "image-with-text",
       "blocks": {
-        "heading_9zXwtp": {
+        "heading_tgtLNB": {
           "type": "heading",
           "settings": {
             "heading": "<strong>Our Philosophy</strong>",
@@ -169,14 +169,14 @@
             "heading_size": "h1"
           }
         },
-        "text_UwLDFt": {
+        "text_zRhp6X": {
           "type": "text",
           "settings": {
             "text": "<h3><strong>Executive Performance</strong> – sharpen focus, improve productivity, and sustain high performance under pressure.</h3><h3><br/><strong>Athletic Headspace</strong> – enhance concentration, flow states, and mental recovery for peak training and competition.<br/></h3><h3><br/><strong>Nootropic Synergy</strong> – plant-based formulas designed to support neurochemistry without harsh stimulants.<br/></h3><h3><br/><strong>Sustainable Clarity</strong> – natural, balanced support for energy and cognition without burnout.</h3>",
             "text_style": "body"
           }
         },
-        "button_NGDRwj": {
+        "button_emGJ9p": {
           "type": "button",
           "disabled": true,
           "settings": {
@@ -187,9 +187,9 @@
         }
       },
       "block_order": [
-        "heading_9zXwtp",
-        "text_UwLDFt",
-        "button_NGDRwj"
+        "heading_tgtLNB",
+        "text_zRhp6X",
+        "button_emGJ9p"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
@@ -324,7 +324,7 @@
     "image_banner_jDxpNg",
     "rich_text_Hr9qAt",
     "rich_text_epY9iC",
-    "image_with_text_gEaAbX",
+    "image_with_text_kiC4Jt",
     "multicolumn_ciyyfQ",
     "image_banner_t3KRGp"
   ]
