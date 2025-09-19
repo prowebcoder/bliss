@@ -184,6 +184,45 @@
         "padding_bottom": 40
       }
     },
+    "image_with_text_TzPQ7q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_khcYCL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mindscape Formulas",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "text_cKrN3F": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>ClarityFlow™</strong></h3><p>Supports mental sharpness, sustained concentration, and decision-making clarity. Ideal for executives, creators, and anyone navigating high-stakes performance.</p><h3><strong>NeuroFlex™</strong></h3><p>Designed to ease cognitive fatigue and promote flexibility of thought. Helps reduce mental strain from long hours, screen time, or multitasking.</p><h3><strong>FocusEdge™</strong></h3><p>A formula tailored for athletes and professionals pushing their limits—combining botanicals that support reaction time, motivation, and flow states.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_khcYCL",
+        "text_cKrN3F"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/mindscape_img.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -208,6 +247,7 @@
     "main",
     "text_highlight_onscroll_VfY3yx",
     "image_with_text_79GEMK",
+    "image_with_text_TzPQ7q",
     "related-products"
   ]
 }
