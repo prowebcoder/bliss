@@ -112,11 +112,62 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_RiVQDd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ap9hgU": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Our Philosophy</strong>",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "text_UkVbBM": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>Balance First</strong> – </h3><p>restore harmony to body and mind through natural formulations.</p><h3><br/><strong>Plant-Powered Healing –</strong> </h3><p>each elixir is built on forest botanicals and time-honored remedies.<br/></p><h3><br/><strong>Everyday Vitality</strong> – </h3><p>designed for consistent use, supporting energy, calm, and resilience.<br/></p><h3><br/><strong>Holistic Wellness</strong> – </h3><p>addressing not just symptoms, but the whole person.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DC9nPW": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ap9hgU",
+        "text_UkVbBM",
+        "button_DC9nPW"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/674341cc15.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_VFyGmM",
-    "rich_text_Q9Kwqp"
+    "rich_text_Q9Kwqp",
+    "image_with_text_RiVQDd"
   ]
 }
