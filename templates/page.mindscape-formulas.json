@@ -193,7 +193,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/5mL_BlissThera_BioMedia_bottle.webp",
+        "image": "shopify://shop_images/mindscape_img.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
