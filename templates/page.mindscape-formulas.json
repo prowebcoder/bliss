@@ -79,12 +79,6 @@
             "heading_size": "h1"
           }
         },
-        "text_hRCHCm": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The Mindscape® line is designed for those who demand more from their minds and bodies—executives, creators, and athletes seeking clarity, focus, and resilience. Rooted in advanced nootropics and natural botanicals, each formula blends modern science with nature’s intelligence to elevate cognitive function, sharpen decision-making, and enhance recovery from mental and physical exertion.</p><p>Mindscape® is more than supplementation—it’s a <strong>performance philosophy</strong>. By supporting mental clarity, stress resilience, and neural recovery, these formulas help unlock peak states for both the boardroom and the training ground.</p>"
-          }
-        },
         "button_UWrq3t": {
           "type": "button",
           "disabled": true,
@@ -96,12 +90,18 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "text_hRCHCm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Mindscape® line is designed for those who demand more from their minds and bodies—executives, creators, and athletes seeking clarity, focus, and resilience. Rooted in advanced nootropics and natural botanicals, each formula blends modern science with nature’s intelligence to elevate cognitive function, sharpen decision-making, and enhance recovery from mental and physical exertion.</p><p>Mindscape® is more than supplementation—it’s a <strong>performance philosophy</strong>. By supporting mental clarity, stress resilience, and neural recovery, these formulas help unlock peak states for both the boardroom and the training ground.</p>"
+          }
         }
       },
       "block_order": [
         "heading_gqEXjq",
-        "text_hRCHCm",
-        "button_UWrq3t"
+        "button_UWrq3t",
+        "text_hRCHCm"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
