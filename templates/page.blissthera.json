@@ -162,12 +162,71 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_nwbWBk": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_zE7JmT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/MindScape_New_York_City_Boardroom.avif",
+            "title": "Space Deployment Treatment",
+            "text": "<p>MindScape EE Systems placed within high-value spaces are an efficient way to heighten think-tank objectives.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_R4jnjX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5076_-_Edited.avif",
+            "title": "Personal Treatments",
+            "text": "<p>Using the MindsScape Flower attachment, personally administered treatments can be deployed within wellness spaces in as little as 5 minutes.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CXnmc7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5109_-_Edited.avif",
+            "title": "Personal VR Treatments",
+            "text": "<p>MindScape Systems enable both iPad and VR interface experiences, such as Virtual Travel and other VR based journeys.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zE7JmT",
+        "column_R4jnjX",
+        "column_CXnmc7"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_VFyGmM",
     "rich_text_Q9Kwqp",
-    "image_with_text_RiVQDd"
+    "image_with_text_RiVQDd",
+    "multicolumn_nwbWBk"
   ]
 }
