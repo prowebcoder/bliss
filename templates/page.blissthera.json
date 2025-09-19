@@ -195,12 +195,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_jcgqeF": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_zE7JmT",
         "column_R4jnjX",
-        "column_CXnmc7"
+        "column_CXnmc7",
+        "column_jcgqeF"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -220,6 +230,58 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_MfPmP3": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bnLy9c": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_T7Y97p": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_jdiBTh": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bnLy9c",
+        "text_T7Y97p",
+        "buttons_jdiBTh"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/11090.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -227,6 +289,7 @@
     "image_banner_VFyGmM",
     "rich_text_Q9Kwqp",
     "image_with_text_RiVQDd",
-    "multicolumn_nwbWBk"
+    "multicolumn_nwbWBk",
+    "image_banner_MfPmP3"
   ]
 }
