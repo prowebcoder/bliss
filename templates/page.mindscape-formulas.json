@@ -113,6 +113,50 @@
         "padding_bottom": 52
       }
     },
+    "rich_text_epY9iC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E6qmHX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Executive Enhancement & Corporate Wellness",
+            "heading_size": "h1"
+          }
+        },
+        "button_7VJnjx": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "text_MEk6G8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>High-performance individuals are drawn to high-performance organizations.</p><p>These executives push themselves to their limits for the benefit of their organization, leveraging their performance with R&R, proper diet, exercise, and usually plenty of caffeine. Unfortunately, in their pursuit of performance, pharmaceutical abuse has become commonplace at the highest levels of society and industry, negatively affecting the health of the world's best and brightest. <strong>Enter Mindscape Executive Enhancement Therapies.</strong></p><p>MindScape bio-based therapies were developed from thousands of patient experiences and decades of global research. MindScape Medical Director Dr. Brian Nichol, an anesthesiologist by training, saw the damages of substance abuse with his patients and endeavored to find plant-based, natural solutions to pain and stress management. Fast-forward to the present, the MindScape system is a 100% natural, drug-free alternative to stress management and executive performance, helping hundreds of individuals attain their goals while maintaining a healthy lifestyle.</p><p>Today, corporations and government entities help protect their most treasured assets through the implementation of corporate wellness initiatives. The MindScape Wellness System is the only wellness initiative based on the health modality of Forest Medicine, providing holistic, drug-free productivity enhancement.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_E6qmHX",
+        "button_7VJnjx",
+        "text_MEk6G8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_gEaAbX": {
       "type": "image-with-text",
       "blocks": {
@@ -278,6 +322,7 @@
     "main",
     "image_banner_jDxpNg",
     "rich_text_Hr9qAt",
+    "rich_text_epY9iC",
     "image_with_text_gEaAbX",
     "multicolumn_ciyyfQ",
     "image_banner_t3KRGp"
