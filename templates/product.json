@@ -44,7 +44,7 @@
           "settings": {}
         },
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
-          "type": "shopify://apps/joy-subscription/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
+          "type": "shopify://apps/joy-subscription-app/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
           "settings": {}
         },
         "buy_buttons": {
@@ -119,7 +119,7 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "cover",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
