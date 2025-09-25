@@ -410,6 +410,17 @@
   });
 </script>
 
-    
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Sab <details> elements le lo
+    const accordions = document.querySelectorAll('details.product-ac');
+
+    // Pehle wale ko open karo
+    if (accordions.length > 0) {
+      accordions[0].setAttribute('open', true);
+    }
+  });
+</script>
+ 
   </body>
 </html>
