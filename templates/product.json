@@ -129,22 +129,6 @@
         "padding_bottom": 40
       }
     },
-    "text_highlight_onscroll_VfY3yx": {
-      "type": "text-highlight-onscroll",
-      "settings": {
-        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "full_width": true,
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "text_alignment": "center",
-        "subheading": "",
-        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
-        "button_text": "Check Out Science",
-        "button_link": "shopify://pages/science",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "image_with_text_79GEMK": {
       "type": "image-with-text",
       "blocks": {
@@ -182,6 +166,22 @@
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 40
+      }
+    },
+    "text_highlight_onscroll_VfY3yx": {
+      "type": "text-highlight-onscroll",
+      "settings": {
+        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "subheading": "",
+        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
+        "button_text": "Check Out Science",
+        "button_link": "shopify://pages/science",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_with_text_TzPQ7q": {
@@ -246,8 +246,8 @@
   "order": [
     "main",
     "text_highlight_onscroll_VfY3yx",
-    "image_with_text_79GEMK",
     "image_with_text_TzPQ7q",
+    "image_with_text_79GEMK",
     "related-products"
   ]
 }
