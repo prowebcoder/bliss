@@ -164,7 +164,7 @@
       "settings": {
         "collection": "mindscape-retail",
         "products_to_show": 3,
-        "title": "New Collection Mindscape",
+        "title": "Mindscape™ Collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -193,7 +193,7 @@
         "heading_tgtLNB": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Philosophy</strong>",
+            "heading": "<strong>Mindscape</strong>™ <strong> Philosophy</strong>",
             "heading_color": "#000000",
             "heading_size": "h1"
           }
@@ -201,7 +201,7 @@
         "text_zRhp6X": {
           "type": "text",
           "settings": {
-            "text": "<h3><strong>Executive Performance</strong> – sharpen focus, improve productivity, and sustain high performance under pressure.</h3><h3><br/><strong>Athletic Headspace</strong> – enhance concentration, flow states, and mental recovery for peak training and competition.<br/></h3><h3><br/><strong>Nootropic Synergy</strong> – plant-based formulas designed to support neurochemistry without harsh stimulants.<br/></h3><h3><br/><strong>Sustainable Clarity</strong> – natural, balanced support for energy and cognition without burnout.</h3>",
+            "text": "<p><strong>Peak Performance, Naturally Engineered</strong></p><p><em>Mindscape™</em> is performance-enhancement reimagined—rooted in Forest Medicine, not pharmaceuticals. Designed for those who demand more from their minds, it offers a side-effect-free approach to sharpening focus, sustaining energy, and unlocking mental clarity through targeted, cold vapor-phase phytochemical synergy.</p><ul><li><strong>Executive Performance - </strong>Elevate focus, productivity, and cognitive stamina—whether you’re leading teams or navigating high-stakes decisions.<br/></li><li><strong>Athletic Headspace - </strong>Support flow states, mental endurance, and faster cognitive recovery during intense training and competition.<br/></li><li><strong>Nootropic Synergy -</strong>Harness the power of plant-based neurochemistry without the crash—formulas that energize without overstimulation.<br/></li><li><strong>Sustainable Clarity - </strong>Stay sharp without burning out. <em>Mindscape™</em> supports clean, consistent mental performance without dependency or depletion.</li></ul>",
             "text_style": "body"
           }
         },
@@ -253,9 +253,9 @@
         "column_FwEkBT": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/IMG_5076_-_Edited.avif",
-            "title": "Personal Treatments",
-            "text": "<p>Using the MindsScape Flower attachment, personally administered treatments can be deployed within wellness spaces in as little as 5 minutes.</p>",
+            "image": "shopify://shop_images/Forest-Flute-businessman-on-airplane-inhaling-flute-on-airplane-no-smoke-no-vape.jpg",
+            "title": "<a href=\"/products/blissthera®-forest-myst-flute\" target=\"_blank\" title=\"BlissThera® Forest Myst Flute\">Hand held Flute Treatments</a>",
+            "text": "<p><a href=\"/products/blissthera®-forest-myst-flute\" target=\"_blank\" title=\"BlissThera® Forest Myst Flute\">Taking Mindscape treatments with you anywhere. The unique Forest Myst Flutes with its breath patented powered technology enable on the go / use anywhere</a></p>",
             "link_label": "",
             "link": ""
           }
@@ -265,7 +265,7 @@
           "settings": {
             "image": "shopify://shop_images/IMG_5109_-_Edited.avif",
             "title": "Personal VR Treatments",
-            "text": "<p>MindScape Systems enable both iPad and VR interface experiences, such as Virtual Travel and other VR based journeys.</p>",
+            "text": "<p>MindScape Systems enable both iPad and VR interface experiences, such as Virtual Travel and other VR based journeys. <br/></p><p>Treatments can be deployed within wellness spaces in as little as 5 minutes.</p>",
             "link_label": "",
             "link": ""
           }
