@@ -1,7 +1,9 @@
 product-info {
   display: block;
 }
-
+div#ProductAccordion-collapsible-row-2-template--24519326794037__main strong {
+    font-weight: bold;
+}
 .product {
   margin: 0;
 }
