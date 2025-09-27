@@ -264,7 +264,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/IMG_5109_-_Edited.avif",
-            "title": "Personal VR <a href=\"https://www.blissthera.com/therapy-sessions\" target=\"_blank\" title=\"Mindscape & BlissThera Treatments\">Treatments</a>",
+            "title": "<a href=\"https://www.blissthera.com/therapy-sessions\" target=\"_blank\" title=\"Mindscape & BlissThera Treatments\">Personal VR Treatments</a>",
             "text": "<p>MindScape Systems enable both iPad and VR interface experiences, such as Virtual Travel and other VR based journeys. <br/></p><p>Treatments can be deployed within wellness spaces in as little as 5 minutes.</p>",
             "link_label": "",
             "link": ""
