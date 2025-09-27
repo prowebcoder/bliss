@@ -244,7 +244,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/MindScape_New_York_City_Boardroom.avif",
-            "title": "Space Deployment Treatment",
+            "title": "<a href=\"https://www.blissthera.com/therapy-sessions\" target=\"_blank\" title=\"Mindscape & Blissthera Treatments\">Space Deployment Treatment</a>",
             "text": "<p>MindScape EE Systems placed within high-value spaces are an efficient way to heighten think-tank objectives.</p>",
             "link_label": "",
             "link": ""
@@ -264,7 +264,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/IMG_5109_-_Edited.avif",
-            "title": "Personal VR Treatments",
+            "title": "Personal VR <a href=\"https://www.blissthera.com/therapy-sessions\" target=\"_blank\" title=\"Mindscape & BlissThera Treatments\">Treatments</a>",
             "text": "<p>MindScape Systems enable both iPad and VR interface experiences, such as Virtual Travel and other VR based journeys. <br/></p><p>Treatments can be deployed within wellness spaces in as little as 5 minutes.</p>",
             "link_label": "",
             "link": ""
