@@ -57,6 +57,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/minscape_lrg.jpg",
+        "image_2": "shopify://shop_images/Forest-Flute-young-woman-holding-flute-in-hand-inhaling-flute-no-smoke-no-vape.jpg",
         "image_overlay_opacity": 10,
         "image_height": "small",
         "image_behavior": "none",
