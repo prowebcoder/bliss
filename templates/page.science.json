@@ -84,9 +84,10 @@
         "row_zetKbQ": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Forest-Flute-young-woman-on-airplane-holding-in-hand-inhaling-flute-on-airplane-no-smoke-no-vape.jpg",
+            "caption": "Portable Homeostatic therapy Technology",
+            "heading": "Personal Forest Atmosphere Technology",
+            "text": "<h3><strong>On-the-Go Forest Atomosphere Delivery</strong></h3><p>Mindscape formulas are delivered via the <strong>Mindscape-BlissThera® Forest Flute</strong>—a patented, breath-powered device that emits a forest-derived botanical myst without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk, in traffic, or even mid-flight.</p><p>Unlike traditional vape or combustion methods, <em>Mindscaping</em> offers clean, subtle effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants. It's wellness you can feel—anytime, anywhere.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -96,8 +97,8 @@
           "settings": {
             "image": "shopify://shop_images/patient-practitioner-BlissThera-clinic-in-chair_d017fc4e-78e5-4d7d-af52-1a69d9ca69be.png",
             "caption": "",
-            "heading": "Virtual Nature Personal Forest Atmosphere Technology",
-            "text": "<p>Administered by certified BlissThera<strong>® / </strong>Mindscape<strong>® </strong>practitioners, the system enables the administration of tailored Homeostasis Therapies (via Microprocessor Controlled Phytochemical Synergy) through physician-designed therapy software applications that are programmed into the microprocessor. </p>",
+            "heading": "In-Clinic Virtual Nature Personal Forest Atmosphere Therapy",
+            "text": "<p>The physiological advantages of forest exposure are well documented across diverse scientific disciplines. Research indicates that the forest atmosphere contains volatile aerosols emitted by plants, which function as therapeutic agents. BlissThera® is a clinically engineered therapeutic platform that integrates the principles of Forest Medicine with the precision delivery of phytochemicals working in synergy to support multisystemic homeostasis. Utilizing microprocessor-controlled cold diffusion, BlissThera’s Bio-Immersive Neuro-Atmosphere Therapy (BINA) administers vapor-phase botanical formulations tailored to specific symptom profiles—optionally paired with immersive virtual nature environments, including electromagnetic geophilic frequencies. This paper examines twelve key physiological systems, ranging from the endocannabinoid and GABAergic networks to the HPA axis and cytokine signaling, and outlines how targeted phytochemical atmospheres can modulate these pathways to restore homeostatic balance. It also presents a cumulative response framework, clinical safety data, and practical models for integration into modern clinical care. BlissThera represents a scalable, non-pharmacologic complementary modality designed to engage the body’s innate regulatory architecture through nature-based, technology-assisted therapy.</p>",
             "button_label": "",
             "button_link": ""
           }
