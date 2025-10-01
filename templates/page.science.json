@@ -21,6 +21,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify://shop_images/BlissThera-Forest-Medicine-Virtual-Nature-Therapy-Forest-Walk-branded.png",
+        "image_2": "shopify://shop_images/BlissThera_SCS-patient-Female-with-prac-on-couch.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
