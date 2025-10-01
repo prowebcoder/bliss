@@ -54,6 +54,7 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
       "settings": {
         "logo_position": "left-center",
         "mobile_logo_position": "center",
