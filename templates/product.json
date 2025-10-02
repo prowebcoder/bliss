@@ -129,45 +129,6 @@
         "padding_bottom": 40
       }
     },
-    "image_with_text_79GEMK": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_dW436E": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>BlissThera® Elixirs</strong>",
-            "heading_color": "#000000",
-            "heading_size": "h1"
-          }
-        },
-        "text_aJrHLK": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Crafted by physicians and grounded in clinical expertise, BlissThera® Elixirs transcend conventional botanical supplements.</strong><br/><br/>Our whole-plant formulations feature a meticulously calibrated blend of bioactive terpenes and synergistic botanicals—each selected to maximize therapeutic benefit and support the body’s natural balance. Developed through real-world clinical application, these elixirs provide targeted, effective support for both mind and body.</p><p>Administered sublingually, BlissThera® Elixirs are held under the tongue for at least 60 seconds, ensuring rapid absorption and fast-acting support where it’s needed most.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dW436E",
-        "text_aJrHLK"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/674341cc15.jpg",
-        "height": "large",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "text_highlight_onscroll_VfY3yx": {
       "type": "text-highlight-onscroll",
       "settings": {
@@ -179,7 +140,7 @@
         "subheading": "",
         "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
         "button_text": "Check Out Science",
-        "button_link": "shopify://pages/science",
+        "button_link": "shopify://pages/science-2",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -212,6 +173,45 @@
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_79GEMK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dW436E": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>BlissThera® Elixirs</strong>",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "text_aJrHLK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Crafted by physicians and grounded in clinical expertise, BlissThera® Elixirs transcend conventional botanical supplements.</strong><br/><br/>Our whole-plant formulations feature a meticulously calibrated blend of bioactive terpenes and synergistic botanicals—each selected to maximize therapeutic benefit and support the body’s natural balance. Developed through real-world clinical application, these elixirs provide targeted, effective support for both mind and body.</p><p>Administered sublingually, BlissThera® Elixirs are held under the tongue for at least 60 seconds, ensuring rapid absorption and fast-acting support where it’s needed most.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dW436E",
+        "text_aJrHLK"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/BlissThera-Elixir-Foundational-Forumla-full-spectrum-label-forest-back.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "middle",
