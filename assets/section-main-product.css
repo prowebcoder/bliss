@@ -7,7 +7,9 @@ div#ProductAccordion-collapsible-row-2-template--24519326794037__main strong {
 .product {
   margin: 0;
 }
-
+.related-products h2.related-products__heading {
+    text-align: center;
+}
 .product.grid {
   gap: 0;
 }
