@@ -6,6 +6,9 @@
             "title" : {{ linklist.title | strip_html | json  }},
             "links" : [
                 {% for link in linklist.links %}
+                  {%- comment %}<locksmith:40a6>{% endcomment -%}
+                    {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: linklist, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                  {%- comment %}</locksmith:40a6>{% endcomment -%}
                   {"url" : "{{ link.url }}",
                  "title" : {{ link.title | strip_html | json }}}{% unless link == linklist.links.last %},{% endunless %}
                 {% endfor %}
