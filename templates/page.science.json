@@ -71,6 +71,17 @@
             "button_link": ""
           }
         },
+        "row_PWLYFM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Draft-02_Img01.jpg",
+            "caption": "",
+            "heading": "Phytochemical Homeostasis Modulation",
+            "text": "<p>Research indicates that the forest atmosphere contains volatile aerosols emitted by plants, which function as therapeutic agents. BlissThera® is a clinically engineered therapeutic platform that integrates the principles of Forest Medicine with the precision delivery of phytochemicals working in synergy to support multi-systemic homeostasis. BlissThera’s personal use formulations are tailored to specific symptom profiles and target twelve key physiological systems, ranging from the endocannabinoid and GABAergic networks to the HPA axis and cytokine signaling. Targeted phytochemical formulations can modulate these pathways to restore homeostatic balance. BlissThera represents a scalable, non-pharmacologic complementary modality designed to engage the body’s innate regulatory architecture through nature-based, phytochemical synergy science developed from hundreds of clinical case studies.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
         "row_Af4PxA": {
           "type": "row",
           "settings": {
@@ -107,6 +118,7 @@
       },
       "block_order": [
         "row_C4Qeec",
+        "row_PWLYFM",
         "row_Af4PxA",
         "row_zetKbQ",
         "row_XhaFGC"
