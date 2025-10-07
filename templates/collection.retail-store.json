@@ -79,6 +79,35 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection_cGDD8p": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "blissthera®-elixirs",
+        "products_to_show": 5,
+        "title": "BlissThera Collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_bejt4W": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -193,6 +222,7 @@
     "banner",
     "conditional_collection_FtfUfM",
     "featured_collection_xP7WPB",
+    "featured_collection_cGDD8p",
     "featured_collection_bejt4W",
     "conditional_collection_aWRCwd",
     "product-grid",
