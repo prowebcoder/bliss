@@ -150,7 +150,7 @@
         "image": "shopify://shop_images/Draft-02_Img01.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
