@@ -105,7 +105,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 12,
-        "padding_bottom": 20
+        "padding_bottom": 8
       }
     },
     "featured_collection_bejt4W": {
@@ -134,7 +134,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 12,
-        "padding_bottom": 20
+        "padding_bottom": 8
       }
     },
     "conditional_collection_aWRCwd": {
