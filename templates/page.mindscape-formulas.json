@@ -156,7 +156,7 @@
         "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 20,
-        "padding_bottom": 16
+        "padding_bottom": 0
       }
     },
     "featured_collection_KUHjjP": {
@@ -170,7 +170,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
