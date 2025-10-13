@@ -71,6 +71,17 @@
             "button_link": ""
           }
         },
+        "row_PWLYFM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Draft-02_Img01.jpg",
+            "caption": "",
+            "heading": "Phytochemical Homeostasis Modulation",
+            "text": "<p>Just as it is with BlissThera's clinic therapies, BlissThera’s personal use formulations are tailored to specific symptom profiles and target twelve key physiological systems, ranging from the endocannabinoid and GABAergic networks to the HPA axis and cytokine signaling. BlissThera's <strong>physician designed</strong> phytochemical formulations can modulate these pathways to restore homeostatic balance. BlissThera represents a scalable, non-pharmacologic complementary modality designed to engage the body’s innate regulatory architecture through nature-based, phytochemical synergy science developed from hundreds of clinical case studies - available to you now for at home and on-the-go use.</p>",
+            "button_label": "Practitioner White Paper",
+            "button_link": "https://www.blissthera.com/_files/ugd/1e4918_9310229676fa4a3daa40dca9ff556005.pdf"
+          }
+        },
         "row_Af4PxA": {
           "type": "row",
           "settings": {
@@ -107,6 +118,7 @@
       },
       "block_order": [
         "row_C4Qeec",
+        "row_PWLYFM",
         "row_Af4PxA",
         "row_zetKbQ",
         "row_XhaFGC"
