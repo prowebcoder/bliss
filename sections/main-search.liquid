@@ -49,6 +49,23 @@
   assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
 -%}
 
+
+{% if customer and customer.tags contains 'Affiliate' 
+  or customer.tags contains 'Affiliate Group: Natural Nursing' 
+  or customer.tags contains 'Login with Shop' 
+  or customer.tags contains 'Practitioner' 
+  or customer.tags contains 'Shop' 
+%}
+  <!-- Wholesale user — allow search -->
+{% else %}
+  <div style="text-align:center; padding:50px;">
+    <h2>Access Restricted</h2>
+    <p>This search page is available to wholesale members only.</p>
+  </div>
+  {% endif %}
+
+
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
