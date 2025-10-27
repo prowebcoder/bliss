@@ -25,7 +25,7 @@
       "settings": {
         "collection": "best-sellers",
         "wholesalecollection": "wholesale-store",
-        "products_to_show": 5,
+        "products_to_show": 8,
         "title": "Featured Collection & Best Sellers",
         "heading_size": "h1",
         "description": "",
