@@ -58,7 +58,6 @@
     },
     "conditional_collection_LyXKxP": {
       "type": "conditional-collection",
-      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "mindscape-retail",
@@ -119,10 +118,11 @@
     },
     "conditional_collection_PBaQre": {
       "type": "conditional-collection",
+      "disabled": true,
       "settings": {
         "collection": "mindscape-retail",
         "wholesalecollection": "mindscape-wholesale",
-        "products_to_show": 3,
+        "products_to_show": 17,
         "title": "MindScape collection",
         "heading_size": "h1",
         "description": "",
