@@ -191,7 +191,7 @@
       {%- endif -%}
     </slider-component>
 
-    {% comment %} {%- if section.settings.show_view_all and more_in_collection -%}
+    {%- if section.settings.show_view_all and more_in_collection -%}
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <a
           href="{{ section.settings.collection.url }}"
@@ -204,23 +204,7 @@
     {%- endif -%}
     {% if section.settings.image_shape == 'arch' %}
       {{ 'mask-arch.svg' | inline_asset_content }}
-    {%- endif -%} {% endcomment %}
-
-    {%- if section.settings.show_view_all and more_in_collection -%}
-  <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <a
-      href="{{ section.settings.collection.url }}"
-      class="button button--primary"
-      style="display: flex; align-items: center; gap: 6px;"
-    >
-      View More Products
-      <svg width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5 3l6 5-6 5V3z"/>
-      </svg>
-    </a>
-  </div>
-{%- endif -%}
-
+    {%- endif -%}
   </div>
 </div>
 
