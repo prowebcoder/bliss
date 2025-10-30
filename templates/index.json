@@ -62,7 +62,7 @@
       "settings": {
         "collection": "mindscape-retail",
         "wholesalecollection": "mindscape-wholesale",
-        "products_to_show": 6,
+        "products_to_show": 5,
         "title": "MindScape collection",
         "heading_size": "h1",
         "description": "",
