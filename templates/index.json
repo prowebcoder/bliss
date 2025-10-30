@@ -58,11 +58,12 @@
     },
     "conditional_collection_LyXKxP": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "mindscape-retail",
         "wholesalecollection": "mindscape-wholesale",
-        "products_to_show": 4,
+        "products_to_show": 6,
         "title": "MindScape collection",
         "heading_size": "h1",
         "description": "",
@@ -117,6 +118,35 @@
       }
     },
     "conditional_collection_PBaQre": {
+      "type": "conditional-collection",
+      "settings": {
+        "collection": "mindscape-retail",
+        "wholesalecollection": "mindscape-wholesale",
+        "products_to_show": 11,
+        "title": "MindScape collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 56
+      }
+    },
+    "conditional_collection_84eypb": {
       "type": "conditional-collection",
       "settings": {
         "collection": "retail-store",
@@ -352,6 +382,7 @@
     "conditional_collection_LyXKxP",
     "featured_collection_BG3qHb",
     "conditional_collection_PBaQre",
+    "conditional_collection_84eypb",
     "image_with_text_DfCirf",
     "custom_reviews_yyTri8",
     "video"
