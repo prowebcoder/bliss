@@ -195,7 +195,19 @@
               </button>
             </div>
           {%- endif -%}
-          ssdfsfsdfsdfdf
+
+{%- if section.settings.show_view_all and section.settings.wholesalecollection != blank -%}
+  <div class="collection__view-all center">
+    <a
+      href="{{ collections[section.settings.wholesalecollection].url }}"
+      class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+    >
+      View All
+    </a>
+  </div>
+{%- endif -%}
+
+         
         </slider-component>
 
         {% if section.settings.image_shape == 'arch' %}
