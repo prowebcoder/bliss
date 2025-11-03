@@ -292,6 +292,9 @@
                           lazy_load: lazy_load,
                           skip_styles: skip_card_product_styles
                         %}
+                        {% for variant in item.variants %}
+  <span style="display:none">{{ variant.title }}</span>
+{% endfor %}
                         {%- assign skip_card_product_styles = true -%}
                       {%- when 'article' -%}
                         {% render 'article-card',
