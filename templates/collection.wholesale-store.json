@@ -224,7 +224,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "best-sellers",
+        "collection": "wholesale-store",
         "products_to_show": 4,
         "title": "Featured Collection & Best Sellers",
         "heading_size": "h1",
