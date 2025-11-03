@@ -100,6 +100,10 @@
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h2>{{ product.title | escape }}</h2>
                 </div>
+                {% for variant in product.variants %}
+  <span style="display:none">{{ variant.title }}</span>
+{% endfor %}
+
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
