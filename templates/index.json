@@ -60,8 +60,8 @@
       "type": "conditional-collection",
       "name": "Conditional Collection",
       "settings": {
-        "collection": "blissthera-elixirs",
-        "wholesalecollection": "",
+        "collection": "",
+        "wholesalecollection": "blissthera-elixirs",
         "products_to_show": 5,
         "title": "Blissthera Elixirs",
         "heading_size": "h1",
