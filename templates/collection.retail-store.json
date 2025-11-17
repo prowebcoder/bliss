@@ -83,9 +83,9 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "mindscape-retail",
+        "collection": "blissthera-elixirs-retail",
         "products_to_show": 5,
-        "title": "Mindscape Collection",
+        "title": "Blissthera Elixirs",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
