@@ -29,7 +29,7 @@
     "video": {
       "type": "video",
       "settings": {
-        "heading": "BlissThera Patients Testimonials",
+        "heading": "BlissThera  Testimonials",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/RArI4omGka8",
@@ -39,6 +39,54 @@
         "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "image_with_text_DfCirf": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_NJ66b8": {
+          "type": "caption",
+          "settings": {
+            "caption": "BlissThera",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_GtXFG7": {
+          "type": "heading",
+          "settings": {
+            "heading": "The <strong>SCIENCE</strong> of Homeostatic Phytochemical Synergy",
+            "heading_color": "#000000",
+            "heading_size": "h2"
+          }
+        },
+        "text_WhLmfj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The body’s homeostasis system is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences. It is constantly working to help keep us pain-free and ready to thrive. When homeostasis is not working its best, or if negative symptoms persist due to illness, injury, or disease, homeostasis support may help.<br/>Forest atmospheres contain aerosols emitted by plants, which function as therapeutic agents. BlissThera® clinically integrates the principles of Forest Medicine with the precision delivery of phytochemicals working in synergy to support multisystemic homeostasis - helping you feel better.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_NJ66b8",
+        "heading_GtXFG7",
+        "text_WhLmfj"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Draft-02_Img01.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "conditional_collection_RX7ex4": {
@@ -218,54 +266,6 @@
         "swipe_on_mobile": true,
         "padding_top": 12,
         "padding_bottom": 56
-      }
-    },
-    "image_with_text_DfCirf": {
-      "type": "image-with-text",
-      "blocks": {
-        "caption_NJ66b8": {
-          "type": "caption",
-          "settings": {
-            "caption": "BlissThera",
-            "text_style": "subtitle",
-            "text_size": "large"
-          }
-        },
-        "heading_GtXFG7": {
-          "type": "heading",
-          "settings": {
-            "heading": "The <strong>SCIENCE</strong> of Homeostatic Phytochemical Synergy",
-            "heading_color": "#000000",
-            "heading_size": "h2"
-          }
-        },
-        "text_WhLmfj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The body’s homeostasis system is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences. It is constantly working to help keep us pain-free and ready to thrive. When homeostasis is not working its best, or if negative symptoms persist due to illness, injury, or disease, homeostasis support may help.<br/>Forest atmospheres contain aerosols emitted by plants, which function as therapeutic agents. BlissThera® clinically integrates the principles of Forest Medicine with the precision delivery of phytochemicals working in synergy to support multisystemic homeostasis - helping you feel better.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "caption_NJ66b8",
-        "heading_GtXFG7",
-        "text_WhLmfj"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Draft-02_Img01.jpg",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "custom_reviews_yyTri8": {
