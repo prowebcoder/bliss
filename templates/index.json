@@ -34,11 +34,11 @@
         "enable_video_looping": false,
         "video_url": "https://youtu.be/RArI4omGka8",
         "cover_image": "shopify://shop_images/BlissThera-Forest-Medicine-Logo-1.87mb_1.jpg",
-        "description": "",
+        "description": "BlissThera Forest Medicine -Homeostatic Therapies",
         "full_width": false,
         "color_scheme": "scheme-1",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 12
       }
     },
     "image_with_text_DfCirf": {
