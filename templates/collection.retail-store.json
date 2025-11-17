@@ -83,7 +83,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "blissthera-elixir",
+        "collection": "blissthera-elixirs-retail",
         "products_to_show": 5,
         "title": "Blissthera Elixirs",
         "heading_size": "h1",
