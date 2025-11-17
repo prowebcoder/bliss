@@ -84,7 +84,7 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "blissthera-elixirs-retail",
-        "products_to_show": 5,
+        "products_to_show": 25,
         "title": "BlissThera® Elixirs",
         "heading_size": "h1",
         "description": "",
