@@ -98,7 +98,7 @@
         "products_to_show": 8,
         "title": "Featured Collection & Best Sellers",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>BlissThera®</p>",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 6,
