@@ -166,6 +166,11 @@
         "type": "shopify://apps/simple-affiliate/blocks/sa-tracker/da6b7ee2-2e27-43e4-9184-0df8dc5be07a",
         "disabled": false,
         "settings": {}
+      },
+      "3138269044488530766": {
+        "type": "shopify://apps/uppromote-affiliate/blocks/core-script/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
