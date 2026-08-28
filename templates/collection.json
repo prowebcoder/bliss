@@ -48,7 +48,7 @@
         "description": "<p>Refill Formulas for the Forest Myst Flute </p>",
         "show_description": true,
         "description_style": "body",
-        "columns_desktop": 6,
+        "columns_desktop": 4,
         "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": true,
