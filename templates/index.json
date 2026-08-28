@@ -89,36 +89,6 @@
         "padding_bottom": 20
       }
     },
-    "conditional_collection_RX7ex4": {
-      "type": "conditional-collection",
-      "name": "Conditional Collection",
-      "settings": {
-        "collection": "best-sellers",
-        "wholesalecollection": "wholesale-store",
-        "products_to_show": 8,
-        "title": "Featured Collection & Best Sellers",
-        "heading_size": "h2",
-        "description": "<p>BlissThera®</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 28
-      }
-    },
     "conditional_collection_LyXKxP": {
       "type": "conditional-collection",
       "name": "Conditional Collection",
@@ -147,6 +117,36 @@
         "swipe_on_mobile": false,
         "padding_top": 32,
         "padding_bottom": 44
+      }
+    },
+    "conditional_collection_RX7ex4": {
+      "type": "conditional-collection",
+      "name": "Conditional Collection",
+      "settings": {
+        "collection": "best-sellers",
+        "wholesalecollection": "wholesale-store",
+        "products_to_show": 8,
+        "title": "Featured Collection & Best Sellers",
+        "heading_size": "h2",
+        "description": "<p>BlissThera®</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 28
       }
     },
     "conditional_collection_LK9eHG": {
@@ -410,8 +410,8 @@
     "image_banner_XJPmhF",
     "video",
     "image_with_text_DfCirf",
-    "conditional_collection_RX7ex4",
     "conditional_collection_LyXKxP",
+    "conditional_collection_RX7ex4",
     "conditional_collection_LK9eHG",
     "featured_collection_BG3qHb",
     "conditional_collection_PBaQre",
