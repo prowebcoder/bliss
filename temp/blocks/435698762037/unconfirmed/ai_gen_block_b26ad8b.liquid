@@ -1,6 +1,269 @@
+{% doc %}
+  @prompt
+    Create a video section with a centered heading. The heading should be horizontally centered above the video, with customizable heading text. Match the style of the existing theme.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-video-section-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ai-video-section-container-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.heading_spacing }}px;
+    padding: {{ block.settings.section_padding }}px;
+  }
+
+  .ai-video-heading-{{ ai_gen_id }} {
+    text-align: center;
+    margin: 0;
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-video-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.video_border_radius }}px;
+  }
+
+  .ai-video-wrapper-{{ ai_gen_id }} video,
+  .ai-video-wrapper-{{ ai_gen_id }} iframe {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: {{ block.settings.video_border_radius }}px;
+  }
+
+  .ai-video-placeholder-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.video_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-video-placeholder-{{ ai_gen_id }} svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  .ai-video-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-video-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+    }
+
+    .ai-video-section-container-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding | times: 0.6 }}px;
+    }
+  }
+{% endstyle %}
+
+<video-section-{{ ai_gen_id }}
+  class="ai-video-section-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-section-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-video-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-video-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.video_url != blank %}
+        {% if block.settings.video_url contains 'youtube.com' or block.settings.video_url contains 'youtu.be' %}
+          {% assign video_id = block.settings.video_url | split: 'v=' | last | split: '/' | last | split: '&' | first %}
+          <iframe
+            src="https://www.youtube.com/embed/{{ video_id }}?rel=0&showinfo=0&modestbranding=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        {% elsif block.settings.video_url contains 'vimeo.com' %}
+          {% assign video_id = block.settings.video_url | split: 'vimeo.com/' | last | split: '/' | first %}
+          <iframe
+            src="https://player.vimeo.com/video/{{ video_id }}?title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        {% else %}
+          <video
+            controls
+            {% if block.settings.autoplay %}autoplay muted loop{% endif %}
+            playsinline
+          >
+            <source src="{{ block.settings.video_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% endif %}
+      {% else %}
+        <div class="ai-video-placeholder-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <div class="ai-video-empty-state-{{ ai_gen_id }}">
+            Next, add a video URL
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</video-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        const iframe = this.querySelector('iframe');
+        if (iframe) {
+          this.setAspectRatio(iframe);
+        }
+      }
+
+      setAspectRatio(iframe) {
+        const wrapper = iframe.parentElement;
+        if (wrapper) {
+          wrapper.style.paddingBottom = '56.25%';
+          wrapper.style.position = 'relative';
+          wrapper.style.height = '0';
+          iframe.style.position = 'absolute';
+          iframe.style.top = '0';
+          iframe.style.left = '0';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+        }
+      }
+    }
+
+    customElements.define('video-section-{{ ai_gen_id }}', VideoSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Video with heading",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading text",
+      "default": "Watch our story"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Space below heading",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay video",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "video_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video with heading"
+    }
+  ]
+}
 {% endschema %}
