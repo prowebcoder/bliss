@@ -169,6 +169,7 @@
     },
     "conditional_collection_aWRCwd": {
       "type": "conditional-collection",
+      "disabled": true,
       "settings": {
         "collection": "retail-store",
         "wholesalecollection": "wholesale-store",
