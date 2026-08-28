@@ -63,24 +63,6 @@
             "page": ""
           }
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Ingredients",
-            "icon": "plant",
-            "content": "<p>{{ product.metafields.custom.ingredients.value }}</p>",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Recommended Use",
-            "icon": "bottle",
-            "content": "<p>{{ product.metafields.custom.recommended_use.value }}</p>",
-            "page": ""
-          }
-        },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -108,8 +90,6 @@
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
         "buy_buttons",
         "collapsible-row-2",
-        "collapsible-row-0",
-        "collapsible-row-1",
         "collapsible-row-3",
         "share"
       ],
