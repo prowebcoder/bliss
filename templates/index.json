@@ -214,7 +214,7 @@
       "settings": {
         "collection": "retail-store",
         "wholesalecollection": "wholesale-store",
-        "products_to_show": 12,
+        "products_to_show": 25,
         "title": "All Categories",
         "heading_size": "h2",
         "description": "",
