@@ -1,0 +1,252 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
+          "type": "shopify://apps/joy-subscription-app/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "clipboard",
+            "content": "{{ product.description }}",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "plant",
+            "content": "<p>{{ product.metafields.custom.ingredients.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Recommended Use",
+            "icon": "bottle",
+            "content": "<p>{{ product.metafields.custom.recommended_use.value }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "caption",
+        "price",
+        "variant_picker",
+        "description",
+        "quantity_selector",
+        "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
+        "buy_buttons",
+        "collapsible-row-2",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-3",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "<strong>Related Products</strong>",
+        "heading_size": "h1",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "text_highlight_onscroll_VfY3yx": {
+      "type": "text-highlight-onscroll",
+      "settings": {
+        "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "subheading": "",
+        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
+        "button_text": "Check Out Science",
+        "button_link": "shopify://pages/science-2",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_TzPQ7q": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_khcYCL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mindscape Formulas",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "text_cKrN3F": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><strong>On-the-Go Forest Atmosphere Delivery</strong></h3><p>Mindscape® and BlissThera® formulas can be experienced via the<strong> Forest Myst Flute</strong>—a patented, breath-powered device that emits a forest-derived botanical myst without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk, in traffic, or even mid-flight.</p><p>Unlike traditional vape or combustion methods, <em>Mindscaping</em>®  offers clean, subtle effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants. It's true natural wellness you can feel—anytime, anywhere.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_khcYCL",
+        "text_cKrN3F"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Forest-Flute-businessman-on-airplane-inhaling-flute-on-airplane-no-smoke-no-vape.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_79GEMK": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dW436E": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>BlissThera Elixirs</strong>",
+            "heading_color": "#000000",
+            "heading_size": "h1"
+          }
+        },
+        "text_aJrHLK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Crafted by physicians and grounded in clinical expertise, BlissThera® Elixirs transcend conventional botanical supplements.</strong><br/><br/>Our whole-plant formulations feature a meticulously calibrated blend of bioactive terpenes and synergistic botanicals—each selected to maximize therapeutic benefit and support the body’s natural balance. Developed through real-world clinical application, these elixirs provide targeted, effective support for both mind and body.</p><p>Administered sublingually, BlissThera® Elixirs are held under the tongue for at least 60 seconds, ensuring rapid absorption and fast-acting support where it’s needed most.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dW436E",
+        "text_aJrHLK"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/BlissThera-Elixir-Foundational-Forumla-full-spectrum-label-forest-back.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "text_highlight_onscroll_VfY3yx",
+    "image_with_text_TzPQ7q",
+    "image_with_text_79GEMK"
+  ]
+}
