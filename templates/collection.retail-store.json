@@ -21,6 +21,7 @@
     },
     "conditional_collection_FtfUfM": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "best-sellers",
