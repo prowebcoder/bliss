@@ -49,7 +49,7 @@
         "show_description": true,
         "description_style": "body",
         "columns_desktop": 4,
-        "enable_desktop_slider": true,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
