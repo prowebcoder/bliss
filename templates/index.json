@@ -407,26 +407,6 @@
     },
     "1787927702e578867b": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_b26ad8b_9qH4Lt": {
-          "type": "ai_gen_block_b26ad8b",
-          "settings": {
-            "heading": "Watch our story",
-            "heading_size": 32,
-            "heading_color": "#121212",
-            "heading_spacing": 30,
-            "video_url": "",
-            "autoplay": false,
-            "video_border_radius": 4,
-            "desktop_width_percent": 100,
-            "section_padding": 40
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_b26ad8b_9qH4Lt"
-      ],
       "settings": {}
     }
   },
