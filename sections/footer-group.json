@@ -49,7 +49,7 @@
         "newsletter_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "newsletter_left": false,
         "enable_follow_on_shop": false,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
