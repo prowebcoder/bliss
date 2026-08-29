@@ -31,6 +31,7 @@
       "settings": {
         "heading": "Welcome to<strong> BioDigital Therapeutics</strong> - BlissThera & Mindscape Forest Medicine Technologies & Alternative Medicine Therapy Products",
         "heading_size": "h2",
+        "heading_alignment": "center",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/RArI4omGka8",
         "cover_image": "shopify://shop_images/BlissThera-Forest-Medicine-Logo-1.87mb_1.jpg",
