@@ -1,0 +1,155 @@
+.multi-product-atc {
+  margin-top: 2rem;
+}
+
+.multi-product-atc__heading {
+  margin: 0 0 1.5rem;
+}
+
+.multi-product-atc__products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.multi-product-atc__product {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(var(--color-foreground), 0.15);
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.multi-product-atc__product.is-selected {
+  border-color: rgb(var(--color-foreground));
+}
+
+.multi-product-atc__checkbox {
+  padding-top: 0.25rem;
+}
+
+.multi-product-atc__check {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.multi-product-atc__image {
+  width: 80px;
+  flex: 0 0 80px;
+}
+
+.multi-product-atc__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.multi-product-atc__content {
+  flex: 1;
+}
+
+.multi-product-atc__title {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.multi-product-atc__price {
+  margin-bottom: 0.8rem;
+}
+
+.multi-product-atc__price-value {
+  font-weight: 500;
+}
+
+.multi-product-atc__price s {
+  margin-left: 0.5rem;
+  opacity: 0.6;
+}
+
+.multi-product-atc__variants {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.multi-product-atc__option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.multi-product-atc__option label {
+  font-size: 1.2rem;
+}
+
+.multi-product-atc__option select {
+  min-width: 120px;
+  padding: 0.7rem;
+}
+
+.multi-product-atc__quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.multi-product-atc__qty-button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  background: transparent;
+  cursor: pointer;
+}
+
+.multi-product-atc__qty-input {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid rgba(var(--color-foreground), 0.2);
+  border-left: 0;
+  border-right: 0;
+}
+
+.multi-product-atc__summary {
+  margin-top: 1.5rem;
+}
+
+.multi-product-atc__total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.multi-product-atc__button {
+  width: 100%;
+}
+
+.multi-product-atc__error {
+  margin-top: 1rem;
+  color: #b3261e;
+}
+
+.multi-product-atc__error.hidden,
+.loading__spinner.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 749px) {
+  .multi-product-atc__product {
+    gap: 0.75rem;
+  }
+
+  .multi-product-atc__image {
+    width: 65px;
+    flex-basis: 65px;
+  }
+
+  .multi-product-atc__variants {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
