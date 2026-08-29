@@ -92,6 +92,7 @@
     },
     "conditional_collection_ehUxEf": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-flute-for-consumers-and-patients",
@@ -118,6 +119,69 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 0
+      }
+    },
+    "featured_product_UKVhjQ": {
+      "type": "featured-product",
+      "blocks": {
+        "text_4k6i4H": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_nTDMKL": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_CtKyUy": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_AHN4R9": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_tqqrCn": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_XHWgUM": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "text_4k6i4H",
+        "title_nTDMKL",
+        "price_CtKyUy",
+        "variant_picker_AHN4R9",
+        "quantity_selector_tqqrCn",
+        "buy_buttons_XHWgUM"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "conditional_collection_LK9eHG": {
@@ -417,6 +481,7 @@
     "video",
     "image_with_text_DfCirf",
     "conditional_collection_ehUxEf",
+    "featured_product_UKVhjQ",
     "conditional_collection_LK9eHG",
     "conditional_collection_RX7ex4",
     "featured_collection_BG3qHb",
