@@ -280,6 +280,7 @@
         "heading_dW436E",
         "text_aJrHLK"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BlissThera-Elixir-Foundational-Forumla-full-spectrum-label-forest-back.jpg",
         "height": "large",
@@ -302,8 +303,8 @@
     "featured_collection_qiCNqc",
     "featured_collection_ya4xBe",
     "related-products",
-    "text_highlight_onscroll_VfY3yx",
     "image_with_text_TzPQ7q",
+    "text_highlight_onscroll_VfY3yx",
     "image_with_text_79GEMK"
   ]
 }
