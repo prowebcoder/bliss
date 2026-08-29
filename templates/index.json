@@ -101,7 +101,7 @@
         "description": "<p>Personal Forests in Your Pocket</p>",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
+        "columns_desktop": 1,
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": false,
