@@ -34,17 +34,18 @@
             "swatch_shape": "circle"
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "disabled": true,
           "settings": {}
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
           "type": "shopify://apps/joy-subscription-app/blocks/subscription-widget/6aa30d9c-ff0b-4f29-a82d-a633d8e04b9a",
+          "disabled": true,
           "settings": {}
         },
         "buy_buttons": {
@@ -52,6 +53,19 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
+          }
+        },
+        "multi_product_add_to_cart_qJXDfW": {
+          "type": "multi_product_add_to_cart",
+          "settings": {
+            "heading": "Forest Myst Flute Refill Nectars",
+            "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
+            "products_limit": 8,
+            "show_image": true,
+            "show_price": true,
+            "show_quantity": true,
+            "total_label": "Total",
+            "button_text": "Add Selected to Cart"
           }
         },
         "collapsible-row-2": {
@@ -85,10 +99,11 @@
         "caption",
         "price",
         "variant_picker",
-        "description",
         "quantity_selector",
+        "description",
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
         "buy_buttons",
+        "multi_product_add_to_cart_qJXDfW",
         "collapsible-row-2",
         "collapsible-row-3",
         "share"
@@ -111,6 +126,7 @@
     },
     "featured_collection_ya4xBe": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
