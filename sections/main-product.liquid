@@ -469,6 +469,13 @@
                   section_id: section.id,
                   show_pickup_availability: false
                 -%}
+                {%- when 'multi_product_add_to_cart' -%}
+
+  {% render 'multi-product-add-to-cart',
+    product: product,
+    block: block,
+    section: section
+  %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
