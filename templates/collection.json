@@ -52,8 +52,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/BlissThera-Elixir-dropper-in-mouth.jpg",
-        "height": "large",
-        "desktop_image_width": "medium",
+        "height": "adapt",
+        "desktop_image_width": "small",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -62,7 +62,7 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "color_scheme": "",
-        "padding_top": 36,
+        "padding_top": 44,
         "padding_bottom": 36
       }
     },
@@ -88,6 +88,7 @@
     },
     "featured_collection_gjm3Kg": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
