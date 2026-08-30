@@ -17,52 +17,62 @@
         "color_scheme": "scheme-1"
       }
     },
-    "image_with_text_VVrU8E": {
-      "type": "image-with-text",
+    "multirow_3X6VJh": {
+      "type": "multirow",
       "blocks": {
-        "heading_m4bwJ8": {
-          "type": "heading",
+        "row_nta3pL": {
+          "type": "row",
           "settings": {
-            "heading": "",
-            "heading_color": "#000000",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/BlissThera-Elixir-dropper-in-mouth.jpg",
+            "caption": "Blissthera Therapies",
+            "heading": "Sublingual Elixirs",
+            "text": "<p>BlissThera® Elixirs are <strong>physician-designed formulations</strong> backed by <strong>decades of clinical experience</strong>. Developed using <strong>advanced extraction processes</strong> and a <strong>proprietary phytochemical synergy approach</strong> refined through <strong>thousands of BlissThera clinical treatments</strong>, this meticulous development process enables <strong>superior, targeted effects</strong> and a <strong>stronger clinical response</strong>, delivering a level of efficacy and precision unmatched in the market. Elixirs are administered by placing the dose under the tongue (<strong>sublingual administration</strong>) and held there for at least 60 seconds to allow absorption into the circulatory system.</p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "text_Qi4J98": {
-          "type": "text",
+        "row_mfHTWt": {
+          "type": "row",
+          "disabled": true,
           "settings": {
-            "text": "<p>BlissThera® Elixirs are <strong>physician-designed formulations</strong> backed by <strong>decades of clinical experience</strong>. Developed using <strong>advanced extraction processes</strong> and a <strong>proprietary phytochemical synergy approach</strong> refined through <strong>thousands of BlissThera clinical treatments</strong>, this meticulous development process enables <strong>superior, targeted effects</strong> and a <strong>stronger clinical response</strong>, delivering a level of efficacy and precision unmatched in the market.</p><p>Elixirs are administered by placing the dose under the tongue (<strong>sublingual administration</strong>) and held there for at least 60 seconds to allow absorption into the circulatory system. Sublingual administration is effective and reliable compared with gastrointestinal absorption, which can be unpredictable. The included graduated dropper is marked in 0.25ml increments to indicate dose.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_HEnwcM": {
-          "type": "button",
-          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_link": ""
+          }
+        },
+        "row_gKCpxC": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_m4bwJ8",
-        "text_Qi4J98",
-        "button_HEnwcM"
+        "row_nta3pL",
+        "row_mfHTWt",
+        "row_gKCpxC"
       ],
-      "name": "t:sections.image-with-text.presets.name",
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "image": "shopify://shop_images/BlissThera-Elixir-dropper-in-mouth.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 44,
+        "row_color_scheme": "",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -118,47 +128,13 @@
     },
     "1788098796e0cd8460": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_c7b9158_r6tRkb": {
-          "type": "ai_gen_block_c7b9158",
-          "settings": {
-            "featured_article": "",
-            "article_1": "",
-            "article_2": "",
-            "article_3": "",
-            "show_category": true,
-            "show_excerpt": true,
-            "show_author": true,
-            "show_date": true,
-            "desktop_width_percent": 100,
-            "grid_gap": 24,
-            "vertical_spacing": 40,
-            "content_padding": 40,
-            "overlay_opacity": 0.8,
-            "overlay_text_color": "#ffffff",
-            "featured_title_size": 40,
-            "excerpt_font_size": 16,
-            "text_color": "#121212",
-            "category_color": "#0a8118",
-            "meta_color": "#666666",
-            "article_title_size": 20,
-            "article_excerpt_size": 14,
-            "category_font_size": 11,
-            "meta_font_size": 12
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_c7b9158_r6tRkb"
-      ],
       "disabled": true,
       "settings": {}
     }
   },
   "order": [
     "banner",
-    "image_with_text_VVrU8E",
+    "multirow_3X6VJh",
     "product-grid",
     "featured_collection_gjm3Kg",
     "1788098796e0cd8460"
