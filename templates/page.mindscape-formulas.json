@@ -140,7 +140,7 @@
         "text_MEk6G8": {
           "type": "text",
           "settings": {
-            "text": "<h3><strong><br/>Productivity Enhancement & Body-Hacking Therapies</strong></h3><p>The <em>Mindscape™</em> Wellness System is the only Physician-Designed performance-enhancement platform grounded in Forest Medicine—offering precision phytochemical atmospheres that support clarity, focus, and stress resilience, all without synthetic stimulation. It's a new standard for sustainable performance—helping leaders meet their goals without sacrificing their health.</p><h4><em><strong>Mindscape™</strong></em><strong> Wellness Performance formulas are experienced via the Forest Myst Flute personal delivery device.</strong></h4><h4></h4>"
+            "text": "<h3><strong><br/>Productivity Enhancement & Body-Hacking Therapies</strong></h3><p>The <em>Mindscape™</em> Wellness System is the only Physician-Designed performance-enhancement platform grounded in Forest Medicine—offering precision phytochemical atmospheres that support clarity, focus, and stress resilience, all without synthetic stimulation. It's a new standard for sustainable performance—helping leaders meet their goals without sacrificing their health.</p><h3><em><strong>Mindscape™</strong></em><strong> Wellness Performance formulas are experienced via the Forest Myst Flute personal delivery device.</strong></h3><h4></h4>"
           }
         }
       },
@@ -215,7 +215,7 @@
       "settings": {
         "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
         "products_to_show": 4,
-        "title": "Mindscape™ Collection",
+        "title": "Mindscape™ Flute Formula Collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
