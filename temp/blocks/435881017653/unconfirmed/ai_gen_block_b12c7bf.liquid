@@ -1,6 +1,641 @@
+{% doc %}
+  @prompt
+    A magazine-style editorial layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-editorial-layout-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-editorial-layout__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+    width: 100%;
+  }
+
+  .ai-editorial-layout__feature-{{ ai_gen_id }} {
+    grid-column: span 12;
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-editorial-layout__feature-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.feature_height }}px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-editorial-layout__feature-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.feature_height }}px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-editorial-layout__feature-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-editorial-layout__feature-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: {{ block.settings.overlay_padding }}px;
+    background: linear-gradient(to top, rgba(0, 0, 0, {{ block.settings.overlay_opacity }}), transparent);
+    color: {{ block.settings.overlay_text_color }};
+  }
+
+  .ai-editorial-layout__feature-category-{{ ai_gen_id }} {
+    font-size: {{ block.settings.category_size }}px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .ai-editorial-layout__feature-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.feature_title_size }}px;
+    margin: 0 0 12px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
+  .ai-editorial-layout__feature-excerpt-{{ ai_gen_id }} {
+    font-size: {{ block.settings.excerpt_size }}px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .ai-editorial-layout__sidebar-{{ ai_gen_id }} {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-editorial-layout__article-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+    background-color: {{ block.settings.card_background }};
+  }
+
+  .ai-editorial-layout__article-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.article_height }}px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-editorial-layout__article-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.article_height }}px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-editorial-layout__article-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-editorial-layout__article-content-{{ ai_gen_id }} {
+    padding: {{ block.settings.card_padding }}px;
+  }
+
+  .ai-editorial-layout__article-category-{{ ai_gen_id }} {
+    font-size: {{ block.settings.small_category_size }}px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: {{ block.settings.category_color }};
+  }
+
+  .ai-editorial-layout__article-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.article_title_size }}px;
+    margin: 0 0 8px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-editorial-layout__article-meta-{{ ai_gen_id }} {
+    font-size: {{ block.settings.meta_size }}px;
+    color: {{ block.settings.meta_color }};
+  }
+
+  .ai-editorial-layout__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-editorial-layout__sidebar-{{ ai_gen_id }} {
+      grid-column: span 12;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-editorial-layout__feature-{{ ai_gen_id }} {
+      grid-column: span 8;
+    }
+
+    .ai-editorial-layout__sidebar-{{ ai_gen_id }} {
+      grid-column: span 4;
+      grid-template-columns: 1fr;
+    }
+  }
+{% endstyle %}
+
+<editorial-layout-{{ ai_gen_id }}
+  class="ai-editorial-layout-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-editorial-layout__container-{{ ai_gen_id }}">
+    <article class="ai-editorial-layout__feature-{{ ai_gen_id }}">
+      {% if block.settings.feature_image %}
+        <img
+          src="{{ block.settings.feature_image | image_url: width: 1200 }}"
+          alt="{{ block.settings.feature_image.alt | escape }}"
+          class="ai-editorial-layout__feature-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.feature_image.width }}"
+          height="{{ block.settings.feature_image.height }}"
+        >
+      {% else %}
+        <div class="ai-editorial-layout__feature-placeholder-{{ ai_gen_id }}">
+          {{ 'hero-apparel-1' | placeholder_svg_tag }}
+          <div class="ai-editorial-layout__empty-state-{{ ai_gen_id }}">
+            Next, add a feature image
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.settings.feature_category != blank or block.settings.feature_title != blank or block.settings.feature_excerpt != blank %}
+        <div class="ai-editorial-layout__feature-overlay-{{ ai_gen_id }}">
+          {% if block.settings.feature_category != blank %}
+            <div class="ai-editorial-layout__feature-category-{{ ai_gen_id }}">
+              {{ block.settings.feature_category }}
+            </div>
+          {% endif %}
+          {% if block.settings.feature_title != blank %}
+            <h2 class="ai-editorial-layout__feature-title-{{ ai_gen_id }}">
+              {{ block.settings.feature_title }}
+            </h2>
+          {% endif %}
+          {% if block.settings.feature_excerpt != blank %}
+            <p class="ai-editorial-layout__feature-excerpt-{{ ai_gen_id }}">
+              {{ block.settings.feature_excerpt }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </article>
+
+    <div class="ai-editorial-layout__sidebar-{{ ai_gen_id }}">
+      {% for i in (1..3) %}
+        {% liquid
+          assign article_image_key = 'article_' | append: i | append: '_image'
+          assign article_category_key = 'article_' | append: i | append: '_category'
+          assign article_title_key = 'article_' | append: i | append: '_title'
+          assign article_author_key = 'article_' | append: i | append: '_author'
+          assign article_date_key = 'article_' | append: i | append: '_date'
+
+          assign article_image = block.settings[article_image_key]
+          assign article_category = block.settings[article_category_key]
+          assign article_title = block.settings[article_title_key]
+          assign article_author = block.settings[article_author_key]
+          assign article_date = block.settings[article_date_key]
+        %}
+
+        <article class="ai-editorial-layout__article-{{ ai_gen_id }}">
+          {% if article_image %}
+            <img
+              src="{{ article_image | image_url: width: 600 }}"
+              alt="{{ article_image.alt | escape }}"
+              class="ai-editorial-layout__article-image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ article_image.width }}"
+              height="{{ article_image.height }}"
+            >
+          {% else %}
+            <div class="ai-editorial-layout__article-placeholder-{{ ai_gen_id }}">
+              {{ 'product-apparel-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+
+          <div class="ai-editorial-layout__article-content-{{ ai_gen_id }}">
+            {% if article_category != blank %}
+              <div class="ai-editorial-layout__article-category-{{ ai_gen_id }}">
+                {{ article_category }}
+              </div>
+            {% endif %}
+            {% if article_title != blank %}
+              <h3 class="ai-editorial-layout__article-title-{{ ai_gen_id }}">
+                {{ article_title }}
+              </h3>
+            {% endif %}
+            {% if article_author != blank or article_date != blank %}
+              <div class="ai-editorial-layout__article-meta-{{ ai_gen_id }}">
+                {% if article_author != blank %}
+                  {{ article_author }}
+                {% endif %}
+                {% if article_author != blank and article_date != blank %}
+                  •
+                {% endif %}
+                {% if article_date != blank %}
+                  {{ article_date }}
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</editorial-layout-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class EditorialLayout{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.adjustLayout();
+        window.addEventListener('resize', this.adjustLayout.bind(this));
+      }
+
+      disconnectedCallback() {
+        window.removeEventListener('resize', this.adjustLayout.bind(this));
+      }
+
+      adjustLayout() {
+        const container = this.querySelector('.ai-editorial-layout__container-{{ ai_gen_id }}');
+        if (!container) return;
+
+        const width = window.innerWidth;
+        if (width < 990) {
+          container.style.gridTemplateColumns = 'repeat(12, 1fr)';
+        }
+      }
+    }
+
+    customElements.define('editorial-layout-{{ ai_gen_id }}', EditorialLayout{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Magazine editorial layout",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid gap",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Feature article"
+    },
+    {
+      "type": "image_picker",
+      "id": "feature_image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "feature_height",
+      "label": "Image height",
+      "min": 300,
+      "max": 700,
+      "step": 50,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "text",
+      "id": "feature_category",
+      "label": "Category",
+      "default": "Featured"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_title",
+      "label": "Title",
+      "default": "The Latest Trends in Digital Therapeutics"
+    },
+    {
+      "type": "textarea",
+      "id": "feature_excerpt",
+      "label": "Excerpt",
+      "default": "Discover how innovative technologies are transforming healthcare and wellness."
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.7
+    },
+    {
+      "type": "range",
+      "id": "overlay_padding",
+      "label": "Overlay padding",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "overlay_text_color",
+      "label": "Overlay text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "feature_title_size",
+      "label": "Title size",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "category_size",
+      "label": "Category size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "excerpt_size",
+      "label": "Excerpt size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Article 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "article_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "article_1_category",
+      "label": "Category",
+      "default": "Health Tech"
+    },
+    {
+      "type": "textarea",
+      "id": "article_1_title",
+      "label": "Title",
+      "default": "Revolutionary Approach to Chronic Pain"
+    },
+    {
+      "type": "text",
+      "id": "article_1_author",
+      "label": "Author",
+      "default": "Dr. Sarah Johnson"
+    },
+    {
+      "type": "text",
+      "id": "article_1_date",
+      "label": "Date",
+      "default": "March 15, 2026"
+    },
+    {
+      "type": "header",
+      "content": "Article 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "article_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "article_2_category",
+      "label": "Category",
+      "default": "Wellness"
+    },
+    {
+      "type": "textarea",
+      "id": "article_2_title",
+      "label": "Title",
+      "default": "Mindfulness in Modern Medicine"
+    },
+    {
+      "type": "text",
+      "id": "article_2_author",
+      "label": "Author",
+      "default": "Dr. Michael Chen"
+    },
+    {
+      "type": "text",
+      "id": "article_2_date",
+      "label": "Date",
+      "default": "March 12, 2026"
+    },
+    {
+      "type": "header",
+      "content": "Article 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "article_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "article_3_category",
+      "label": "Category",
+      "default": "Research"
+    },
+    {
+      "type": "textarea",
+      "id": "article_3_title",
+      "label": "Title",
+      "default": "Clinical Trials Show Promise"
+    },
+    {
+      "type": "text",
+      "id": "article_3_author",
+      "label": "Author",
+      "default": "Dr. Emily Rodriguez"
+    },
+    {
+      "type": "text",
+      "id": "article_3_date",
+      "label": "Date",
+      "default": "March 10, 2026"
+    },
+    {
+      "type": "header",
+      "content": "Article cards style"
+    },
+    {
+      "type": "range",
+      "id": "article_height",
+      "label": "Image height",
+      "min": 150,
+      "max": 350,
+      "step": 25,
+      "unit": "px",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Card padding",
+      "min": 12,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "category_color",
+      "label": "Category color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "meta_color",
+      "label": "Meta color",
+      "default": "#999999"
+    },
+    {
+      "type": "range",
+      "id": "article_title_size",
+      "label": "Title size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "small_category_size",
+      "label": "Category size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "meta_size",
+      "label": "Meta size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    }
+  ],
+  "presets": [
+    {
+      "name": "Magazine editorial layout"
+    }
+  ]
+}
 {% endschema %}
