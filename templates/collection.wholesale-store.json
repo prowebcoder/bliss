@@ -221,41 +221,12 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_Ej3Abk": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "collection": "wholesale-store",
-        "products_to_show": 4,
-        "title": "Featured Collection & Best Sellers",
-        "heading_size": "h1",
-        "description": "<p>BlissThera®</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 8
-      }
-    },
     "featured_collection_jajz8R": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "blissthera-elixirs",
-        "products_to_show": 4,
+        "products_to_show": 25,
         "title": "BlissThera Elixirs",
         "heading_size": "h1",
         "description": "<p>BlissThera® Elixirs</p>",
@@ -272,7 +243,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
+        "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 32,
@@ -307,6 +278,35 @@
         "padding_top": 32,
         "padding_bottom": 8
       }
+    },
+    "featured_collection_Ej3Abk": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "wholesale-store",
+        "products_to_show": 4,
+        "title": "Featured Collection & Best Sellers",
+        "heading_size": "h1",
+        "description": "<p>BlissThera®</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 8
+      }
     }
   },
   "order": [
@@ -318,8 +318,8 @@
     "conditional_collection_aWRCwd",
     "product-grid",
     "condition_collections_2_wF3jyj",
-    "featured_collection_Ej3Abk",
     "featured_collection_jajz8R",
-    "featured_collection_kdPQKy"
+    "featured_collection_kdPQKy",
+    "featured_collection_Ej3Abk"
   ]
 }
