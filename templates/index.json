@@ -95,8 +95,8 @@
       "disabled": true,
       "name": "Conditional Collection",
       "settings": {
-        "collection": "forest-myst-flute-for-consumers-and-patients",
-        "wholesalecollection": "",
+        "collection": "forest-myst-flute",
+        "wholesalecollection": "forest-myst-flute-device-wholesale",
         "products_to_show": 4,
         "title": "The Forest Myst Flute",
         "heading_size": "h1",
