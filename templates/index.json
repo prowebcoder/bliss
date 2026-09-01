@@ -188,8 +188,8 @@
       "type": "conditional-collection",
       "name": "Conditional Collection",
       "settings": {
-        "collection": "forest-myst-flute-refills-wholesale",
-        "wholesalecollection": "mindscape-wholesale",
+        "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
+        "wholesalecollection": "forest-myst-flute-refills-wholesale",
         "products_to_show": 8,
         "title": "Forest Myst Flute Refill Nectars",
         "heading_size": "h2",
