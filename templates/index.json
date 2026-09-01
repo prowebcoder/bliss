@@ -306,12 +306,11 @@
     },
     "conditional_collection_84eypb": {
       "type": "conditional-collection",
-      "disabled": true,
       "settings": {
-        "collection": "retail-store",
+        "collection": "best-sellers",
         "wholesalecollection": "wholesale-store",
         "products_to_show": 25,
-        "title": "All Categories",
+        "title": "Featured",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -329,7 +328,7 @@
         "show_rating": false,
         "quick_add": "standard",
         "columns_mobile": "2",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 56
       }
