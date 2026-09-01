@@ -168,6 +168,7 @@
         "quantity_selector_tqqrCn",
         "buy_buttons_XHWgUM"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "forest-myst-flute-wholesale",
@@ -185,6 +186,36 @@
       }
     },
     "conditional_collection_LK9eHG": {
+      "type": "conditional-collection",
+      "name": "Conditional Collection",
+      "settings": {
+        "collection": "forest-myst-flute",
+        "wholesalecollection": "forest-myst-flute-device-wholesale",
+        "products_to_show": 25,
+        "title": "Forest Myst Flute Refill Nectars",
+        "heading_size": "h2",
+        "description": "<p>Personal Forest Atmosphere Refills for the Forest Myst Flute</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 44
+      }
+    },
+    "conditional_collection_8QwajL": {
       "type": "conditional-collection",
       "name": "Conditional Collection",
       "settings": {
@@ -452,6 +483,7 @@
     "conditional_collection_ehUxEf",
     "featured_product_UKVhjQ",
     "conditional_collection_LK9eHG",
+    "conditional_collection_8QwajL",
     "featured_collection_BG3qHb",
     "conditional_collection_PBaQre",
     "conditional_collection_84eypb",
