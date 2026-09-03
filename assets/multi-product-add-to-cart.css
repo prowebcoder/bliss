@@ -100,16 +100,16 @@
 }
 
 .multi-product-atc__qty-button {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   border: 1px solid rgba(var(--color-foreground), 0.2);
   background: transparent;
   cursor: pointer;
 }
 
 .multi-product-atc__qty-input {
-  width: 50px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   text-align: center;
   border: 1px solid rgba(var(--color-foreground), 0.2);
   border-left: 0;
