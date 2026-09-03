@@ -11,7 +11,10 @@
   flex-direction: column;
   gap: 1rem;
 }
-
+.multi-product-atc__content {
+   
+    font-size: 1.1rem;
+}
 .multi-product-atc__product {
   display: flex;
   align-items: flex-start;
