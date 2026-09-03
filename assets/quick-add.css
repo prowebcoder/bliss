@@ -43,6 +43,10 @@
   width: 90%;
 }
 
+.quick-add__submit{
+   
+    padding: 0;
+}
 .quick-add-modal__content {
   --modal-height-offset: 3.2rem;
   position: absolute;
