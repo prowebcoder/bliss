@@ -140,7 +140,10 @@
 .loading__spinner.hidden {
   display: none;
 }
-
+ .multi-product-atc__image {
+    width: 100;
+    flex-basis: 100px;
+  }
 @media screen and (max-width: 749px) {
   .multi-product-atc__product {
     gap: 0.75rem;
