@@ -386,7 +386,7 @@
 
 <script>
   window.customerTags = {{ customer.tags | json }};
-  window.isPractitioner = {{ customer.tags contains 'Practitioner' | json }};
+  window.isPractitioner = {{ customer.tags | json }};
 </script>
   
 <script>
@@ -425,3 +425,13 @@
 {{ 'multi-product-add-to-cart.js' | asset_url | script_tag }}
   </body>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ customer.tags contains 'Practitioner' | json }}"
+  to: "{{ customer.tags | json }}"
+  position: 22111..22137
+{% endcomment %}
