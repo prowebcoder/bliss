@@ -153,6 +153,22 @@
         "padding_bottom": 36
       }
     },
+    "video_dDe4C7": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "BlissThera Forest Myst Flute",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/3TtOMiq2dX4?si=TQkRxt6fyRpAkMkH",
+        "description": "BlissThera Forest Myst Flute -Portable Forest Medicine System - in your pocket",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_ya4xBe": {
       "type": "featured-collection",
       "disabled": true,
@@ -301,6 +317,7 @@
   "order": [
     "main",
     "featured_collection_qiCNqc",
+    "video_dDe4C7",
     "featured_collection_ya4xBe",
     "related-products",
     "image_with_text_TzPQ7q",
