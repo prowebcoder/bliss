@@ -2,9 +2,15 @@
   Multi Product Add To Cart
   Displays products from a selected collection with variant selectors.
   Selected products + current product are added to cart together.
+  Refills are grouped into categories by tag.
+  Each refill has a "View details" quick-view popup.
 {% endcomment %}
 
 {%- assign addon_collection = block.settings.collection -%}
+
+{%- comment -%} Category groups: tag -> display label. Order here sets order on the page. {%- endcomment -%}
+{%- assign cat_tags = 'cat-symptom-support,cat-executive-enhancement,cat-mood-meditation' | split: ',' -%}
+{%- assign cat_labels = 'BlissThera Symptom Support,Mindscape Executive Enhancement,Mindscape Mood and Meditation' | split: ',' -%}
 
 <div
   class="multi-product-atc"
@@ -21,161 +27,196 @@
     </h2>
   {% endif %}
 
+  <p class="multi-product-atc__note" style="margin: 0 0 12px; font-size: 13px; color: #666; line-height: 1.5;">
+    The <strong>Add to cart</strong> button above adds the flute on its own. To buy a flute with a refill as a kit, pick your refills below and use <strong>Add Flute + Selected Refills</strong>.
+  </p>
+
+  <div class="multi-product-atc__alert" role="note" style="margin: 0 0 16px; padding: 12px 16px; background: #FFF8E1; border-left: 4px solid #E6A817; border-radius: 6px; font-size: 14px; line-height: 1.5; color: #5F4B00;">
+    <strong>Do you need a Nectar Refill?</strong> Flutes do not include refills.
+  </div>
+
   {% if addon_collection != blank and addon_collection.products_count > 0 %}
 
     <div class="multi-product-atc__products">
 
-      {% for addon_product in addon_collection.products limit: block.settings.products_limit %}
+      {% for cat_tag in cat_tags %}
 
-        {%- comment %}<locksmith:ca77>{% endcomment -%}
-          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: addon_product, subject_parent: addon_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-        {%- comment %}</locksmith:ca77>{% endcomment -%}
+        {%- assign cat_label = cat_labels[forloop.index0] -%}
 
-        {%- assign addon_variant = addon_product.selected_or_first_available_variant -%}
+        {%- capture cat_products -%}
 
-        {% if addon_product.available %}
+          {% for addon_product in addon_collection.products %}
 
-          <div
-            class="multi-product-atc__product"
-            data-product-id="{{ addon_product.id }}"
-            data-product-handle="{{ addon_product.handle }}"
-          >
+            {% unless addon_product.tags contains cat_tag %}{% continue %}{% endunless %}
 
-            <div class="multi-product-atc__checkbox">
-              <input
-                type="checkbox"
-                id="MultiProductATC-{{ block.id }}-{{ addon_product.id }}"
-                class="multi-product-atc__check"
+            {%- comment %}<locksmith:ca77>{% endcomment -%}
+              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: addon_product, subject_parent: addon_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+            {%- comment %}</locksmith:ca77>{% endcomment -%}
+
+            {%- assign addon_variant = addon_product.selected_or_first_available_variant -%}
+
+            {% if addon_product.available %}
+
+              <div
+                class="multi-product-atc__product"
                 data-product-id="{{ addon_product.id }}"
+                data-product-handle="{{ addon_product.handle }}"
               >
 
-              <label
-                for="MultiProductATC-{{ block.id }}-{{ addon_product.id }}"
-                class="multi-product-atc__label"
-              ></label>
-            </div>
+                <div class="multi-product-atc__checkbox">
+                  <input
+                    type="checkbox"
+                    id="MultiProductATC-{{ block.id }}-{{ addon_product.id }}"
+                    class="multi-product-atc__check"
+                    data-product-id="{{ addon_product.id }}"
+                  >
 
-            {% if block.settings.show_image %}
-              <div class="multi-product-atc__image">
-                {% if addon_product.featured_image %}
-                  {{
-                    addon_product.featured_image
-                    | image_url: width: 160
-                    | image_tag:
-                      loading: 'lazy',
-                      widths: '80, 120, 160',
-                      sizes: '80px',
-                      alt: addon_product.featured_image.alt | escape
-                  }}
-                {% endif %}
-              </div>
-            {% endif %}
-
-            <div class="multi-product-atc__content">
-
-              <div class="multi-product-atc__title">
-                {{ addon_product.title | escape }}
-              </div>
-
-              {% if block.settings.show_price %}
-                <div class="multi-product-atc__price">
-                  <span class="multi-product-atc__price-value">
-                    {{ addon_variant.price | money }}
-                  </span>
-
-                  {% if addon_variant.compare_at_price > addon_variant.price %}
-                    <s>
-                      {{ addon_variant.compare_at_price | money }}
-                    </s>
-                  {% endif %}
+                  <label
+                    for="MultiProductATC-{{ block.id }}-{{ addon_product.id }}"
+                    class="multi-product-atc__label"
+                  ></label>
                 </div>
-              {% endif %}
 
-              {% if addon_product.has_only_default_variant == false %}
+                {% if block.settings.show_image %}
+                  <div class="multi-product-atc__image">
+                    {% if addon_product.featured_image %}
+                      {{
+                        addon_product.featured_image
+                        | image_url: width: 160
+                        | image_tag:
+                          loading: 'lazy',
+                          widths: '80, 120, 160',
+                          sizes: '80px',
+                          alt: addon_product.featured_image.alt | escape
+                      }}
+                    {% endif %}
+                  </div>
+                {% endif %}
 
-                <div class="multi-product-atc__variants">
+                <div class="multi-product-atc__content">
 
-                  {% for option in addon_product.options_with_values %}
+                  <div class="multi-product-atc__title">
+                    {{ addon_product.title | escape }}
+                  </div>
 
-                    <div class="multi-product-atc__option">
+                  {% if block.settings.show_price %}
+                    <div class="multi-product-atc__price">
+                      <span class="multi-product-atc__price-value">
+                        {{ addon_variant.price | money }}
+                      </span>
 
-                      <label
-                        for="MultiProductATC-{{ block.id }}-{{ addon_product.id }}-{{ option.position }}"
-                      >
-                        {{ option.name }}
-                      </label>
+                      {% if addon_variant.compare_at_price > addon_variant.price %}
+                        <s>
+                          {{ addon_variant.compare_at_price | money }}
+                        </s>
+                      {% endif %}
+                    </div>
+                  {% endif %}
 
-                      <select
-                        id="MultiProductATC-{{ block.id }}-{{ addon_product.id }}-{{ option.position }}"
-                        class="multi-product-atc__variant-option"
-                        data-option-position="{{ option.position }}"
-                      >
+                  <button
+                    type="button"
+                    class="multi-product-atc__view"
+                    data-multi-product-view="{{ addon_product.id }}"
+                  >
+                    View details
+                  </button>
 
-                        {% for value in option.values %}
+                  {% if addon_product.has_only_default_variant == false %}
 
-                          <option
-                            value="{{ value | escape }}"
-                            {% if option.selected_value == value %}
-                              selected
-                            {% endif %}
+                    <div class="multi-product-atc__variants">
+
+                      {% for option in addon_product.options_with_values %}
+
+                        <div class="multi-product-atc__option">
+
+                          <label
+                            for="MultiProductATC-{{ block.id }}-{{ addon_product.id }}-{{ option.position }}"
                           >
-                            {{ value }}
-                          </option>
+                            {{ option.name }}
+                          </label>
 
-                        {% endfor %}
+                          <select
+                            id="MultiProductATC-{{ block.id }}-{{ addon_product.id }}-{{ option.position }}"
+                            class="multi-product-atc__variant-option"
+                            data-option-position="{{ option.position }}"
+                          >
 
-                      </select>
+                            {% for value in option.values %}
+
+                              <option
+                                value="{{ value | escape }}"
+                                {% if option.selected_value == value %}
+                                  selected
+                                {% endif %}
+                              >
+                                {{ value }}
+                              </option>
+
+                            {% endfor %}
+
+                          </select>
+
+                        </div>
+
+                      {% endfor %}
 
                     </div>
 
-                  {% endfor %}
-
-                </div>
-
-              {% endif %}
-
-              <input
-                type="hidden"
-                class="multi-product-atc__variant-id"
-                value="{{ addon_variant.id }}"
-              >
-
-              {% if block.settings.show_quantity %}
-                <div class="multi-product-atc__quantity">
-
-                  <button
-                    type="button"
-                    class="multi-product-atc__qty-button"
-                    data-quantity-action="decrease"
-                    aria-label="Decrease quantity"
-                  >
-                    −
-                  </button>
+                  {% endif %}
 
                   <input
-                    type="number"
-                    class="multi-product-atc__qty-input"
-                    value="1"
-                    min="1"
+                    type="hidden"
+                    class="multi-product-atc__variant-id"
+                    value="{{ addon_variant.id }}"
                   >
 
-                  <button
-                    type="button"
-                    class="multi-product-atc__qty-button"
-                    data-quantity-action="increase"
-                    aria-label="Increase quantity"
-                  >
-                    +
-                  </button>
+                  {% if block.settings.show_quantity %}
+                    <div class="multi-product-atc__quantity">
+
+                      <button
+                        type="button"
+                        class="multi-product-atc__qty-button"
+                        data-quantity-action="decrease"
+                        aria-label="Decrease quantity"
+                      >
+                        −
+                      </button>
+
+                      <input
+                        type="number"
+                        class="multi-product-atc__qty-input"
+                        value="1"
+                        min="1"
+                      >
+
+                      <button
+                        type="button"
+                        class="multi-product-atc__qty-button"
+                        data-quantity-action="increase"
+                        aria-label="Increase quantity"
+                      >
+                        +
+                      </button>
+
+                    </div>
+                  {% endif %}
 
                 </div>
-              {% endif %}
 
-            </div>
+              </div>
 
-          </div>
+            {% endif %}
 
-        {% endif %}
+          {% endfor %}
+
+        {%- endcapture -%}
+
+        {%- assign cat_products_trimmed = cat_products | strip -%}
+
+        {%- if cat_products_trimmed != blank -%}
+          <h3 class="multi-product-atc__category">{{ cat_label }}</h3>
+          {{ cat_products }}
+        {%- endif -%}
 
       {% endfor %}
 
@@ -213,6 +254,34 @@
         role="alert"
       ></div>
 
+    </div>
+
+    {%- comment -%} Quick-view popup data: one hidden block per refill {%- endcomment -%}
+    <div class="multi-product-atc__modals" aria-hidden="true">
+      {% for addon_product in addon_collection.products %}
+        {% if addon_product.available %}
+          <template data-multi-product-modal="{{ addon_product.id }}">
+            <div class="mpatc-modal__media">
+              {% if addon_product.featured_image %}
+                {{ addon_product.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 300, 400', sizes: '300px', alt: addon_product.title | escape }}
+              {% endif %}
+            </div>
+            <div class="mpatc-modal__body">
+              <h4 class="mpatc-modal__title">{{ addon_product.title | escape }}</h4>
+              <div class="mpatc-modal__price">{{ addon_product.selected_or_first_available_variant.price | money }}</div>
+              <div class="mpatc-modal__desc">{{ addon_product.description }}</div>
+            </div>
+          </template>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="mpatc-modal hidden" data-multi-product-modal-root role="dialog" aria-modal="true">
+      <div class="mpatc-modal__overlay" data-multi-product-modal-close></div>
+      <div class="mpatc-modal__panel">
+        <button type="button" class="mpatc-modal__x" data-multi-product-modal-close aria-label="Close">&times;</button>
+        <div class="mpatc-modal__content" data-multi-product-modal-content></div>
+      </div>
     </div>
 
   {% elsif addon_collection == blank %}
