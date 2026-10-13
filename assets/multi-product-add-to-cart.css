@@ -144,6 +144,112 @@
     width: 100;
     flex-basis: 100px;
   }
+
+/* Category headings */
+.multi-product-atc__category {
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.15);
+}
+.multi-product-atc__category:first-child {
+  margin-top: 0;
+}
+
+/* View details link */
+.multi-product-atc__view {
+  display: inline-block;
+  margin: 0 0 0.8rem;
+  padding: 0;
+  background: none;
+  border: none;
+  color: rgb(var(--color-foreground));
+  font-size: 1.2rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.multi-product-atc__view:hover {
+  opacity: 0.7;
+}
+
+/* Quick-view popup */
+.multi-product-atc__modals {
+  display: none;
+}
+
+.mpatc-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.mpatc-modal.hidden {
+  display: none;
+}
+
+.mpatc-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.mpatc-modal__panel {
+  position: relative;
+  z-index: 1;
+  background: rgb(var(--color-background));
+  border-radius: 8px;
+  max-width: 460px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.mpatc-modal__x {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2.6rem;
+  line-height: 1;
+  cursor: pointer;
+  color: rgb(var(--color-foreground));
+}
+
+.mpatc-modal__media img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.mpatc-modal__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.mpatc-modal__price {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.mpatc-modal__desc {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.mpatc-modal__desc p {
+  margin: 0 0 1rem;
+}
+
 @media screen and (max-width: 749px) {
   .multi-product-atc__product {
     gap: 0.75rem;
