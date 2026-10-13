@@ -40,7 +40,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb": {
@@ -65,7 +64,7 @@
             "show_price": true,
             "show_quantity": true,
             "total_label": "Total",
-            "button_text": "Add Selected to Cart"
+            "button_text": "Add Flute + Selected Refills"
           }
         },
         "collapsible-row-2": {
@@ -97,14 +96,13 @@
       "block_order": [
         "title",
         "caption",
+        "description",
         "price",
         "variant_picker",
         "quantity_selector",
-        "description",
         "joy_subscription_app_cod_form_subscription_widget_3r63Nb",
         "buy_buttons",
         "multi_product_add_to_cart_qJXDfW",
-        "collapsible-row-2",
         "collapsible-row-3",
         "share"
       ],
@@ -267,7 +265,7 @@
         "content_alignment": "center",
         "text_alignment": "center",
         "subheading": "",
-        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
+        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
         "button_text": "Check Out Science",
         "button_link": "shopify://pages/science-2",
         "padding_top": 40,
