@@ -593,6 +593,76 @@ class MultiProductAddToCart {
 }
 
 
+class MultiProductQuickView {
+  constructor(container) {
+    this.container = container;
+
+    this.root = container.querySelector(
+      '[data-multi-product-modal-root]'
+    );
+
+    this.content = container.querySelector(
+      '[data-multi-product-modal-content]'
+    );
+
+    this.viewButtons = container.querySelectorAll(
+      '[data-multi-product-view]'
+    );
+
+    if (!this.root || !this.content) return;
+
+    this.bindEvents();
+  }
+
+  bindEvents() {
+    this.viewButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        this.open(button.dataset.multiProductView);
+      });
+    });
+
+    this.container
+      .querySelectorAll('[data-multi-product-modal-close]')
+      .forEach((element) => {
+        element.addEventListener(
+          'click',
+          () => this.close()
+        );
+      });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') this.close();
+    });
+  }
+
+  open(productId) {
+    const template = this.container.querySelector(
+      `[data-multi-product-modal="${productId}"]`
+    );
+
+    if (!template) return;
+
+    this.content.innerHTML = '';
+
+    this.content.appendChild(
+      template.content.cloneNode(true)
+    );
+
+    this.root.classList.remove('hidden');
+
+    document.body.style.overflow = 'hidden';
+  }
+
+  close() {
+    this.root.classList.add('hidden');
+
+    this.content.innerHTML = '';
+
+    document.body.style.overflow = '';
+  }
+}
+
+
 function initMultiProductATC() {
 
   document
@@ -608,6 +678,7 @@ function initMultiProductATC() {
       container.dataset.initialized = 'true';
 
       new MultiProductAddToCart(container);
+      new MultiProductQuickView(container);
 
     });
 }
