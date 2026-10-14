@@ -47,11 +47,11 @@
 
           {% for addon_product in addon_collection.products %}
 
-            {% unless addon_product.tags contains cat_tag %}{% continue %}{% endunless %}
-
-            {%- comment %}<locksmith:ca77>{% endcomment -%}
+            {%- comment %}<locksmith:d4a8>{% endcomment -%}
               {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: addon_product, subject_parent: addon_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-            {%- comment %}</locksmith:ca77>{% endcomment -%}
+            {%- comment %}</locksmith:d4a8>{% endcomment -%}
+
+            {% unless addon_product.tags contains cat_tag %}{% continue %}{% endunless %}
 
             {%- assign addon_variant = addon_product.selected_or_first_available_variant -%}
 
@@ -259,6 +259,9 @@
     {%- comment -%} Quick-view popup data: one hidden block per refill {%- endcomment -%}
     <div class="multi-product-atc__modals" aria-hidden="true">
       {% for addon_product in addon_collection.products %}
+        {%- comment %}<locksmith:5190>{% endcomment -%}
+          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: addon_product, subject_parent: addon_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+        {%- comment %}</locksmith:5190>{% endcomment -%}
         {% if addon_product.available %}
           <template data-multi-product-modal="{{ addon_product.id }}">
             <div class="mpatc-modal__media">
