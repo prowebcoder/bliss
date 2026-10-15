@@ -144,13 +144,14 @@
     },
     "video_dDe4C7": {
       "type": "video",
-      "name": "t:sections.video.presets.name",
+      "name": "Forest Myst Flute Video Intro",
       "settings": {
         "heading": "BlissThera Forest Myst Flute",
         "heading_size": "h1",
         "heading_alignment": "left",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/8KyRM7TKkW0?si=HQNEInGspbwiWBcR",
+        "cover_image": "shopify://shop_images/Forest_Myst_Flute-16-wideshot-man-holding-flute.png",
         "description": "BlissThera Forest Myst Flute -Portable Forest Medicine System - in your pocket",
         "full_width": false,
         "color_scheme": "",
@@ -167,6 +168,7 @@
         "heading_alignment": "left",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/KE7h3NCw_qc?si=D72YIF5i_IPn0ABF",
+        "cover_image": "shopify://shop_images/Asian-woman-in-forest-enjoying-Forest-Myst-Flute.png",
         "description": "BlissThera Forest Myst Flute -Portable Forest Medicine System - in your pocket",
         "full_width": false,
         "color_scheme": "",
