@@ -239,7 +239,7 @@
         "text_cKrN3F": {
           "type": "text",
           "settings": {
-            "text": "<h3><strong>On-the-Go Forest Atmosphere Delivery</strong></h3><p>\"Taste the Forest.\" Mindscape® and BlissThera®  Forest Medicine based formulas can be experienced via the<strong> Forest Myst Flute</strong>—a patented, breath-powered device that emits a forest-derived botanical myst you taste - without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk in the office, at the table in a restaurant, at the airport, or even in your seat mid-flight. </p><p>Unlike traditional vape or combustion methods, <em>Mindscaping</em>® using the <strong>Forest Myst Flute</strong> offers a clean aromatic tasting experience that offers subtle therapeutic effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants. It's tasted, not inhaled. It's a completely unique technology and true natural wellness activity you can feel—anytime, anywhere.</p>",
+            "text": "<h3><strong>On-the-Go Forest Atmosphere Delivery</strong></h3><p>\"Taste the Forest.\" Mindscape® and BlissThera® &nbsp;Forest Medicine based formulas can be experienced via the<strong> Forest Myst Flute</strong>—a patented, breath-powered device that emits a forest-derived botanical myst you taste - without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk in the office, at the table in a restaurant, at the airport, or even in your seat mid-flight.&nbsp;</p><p>Unlike traditional vape or combustion methods, <em>Mindscaping</em>® using the <strong>Forest Myst Flute</strong> offers a clean aromatic tasting experience that offers subtle therapeutic effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants. It's tasted, not inhaled. It's a completely unique technology and true natural wellness activity you can feel—anytime, anywhere.</p>",
             "text_style": "body"
           }
         }
@@ -264,6 +264,23 @@
         "padding_bottom": 40
       }
     },
+    "text_highlight_onscroll_ckq3wM": {
+      "type": "text-highlight-onscroll",
+      "name": "Highlight Scroll",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "subheading": "What is Forest Myst Flute™",
+        "heading": "<h3>BlissThera® Forest Medicine based formulas can be experienced via the Forest Myst Flute™—a patented, breath-powered device that releases a forest-derived botanical myst you taste - without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk in the office, at the table in a restaurant, at the airport, or even in your seat mid-flight.<br/></h3><h3>BlissThera's Forest Myst Flute™ is a new and innovative technology that is unlike anything else. To understand it, it's best to understand what it is not. It is not a vape pen device, nor is it a traditional inhaler. Unlike traditional vape or combustion inhalers, the Forest Myst Flute provides a clean aromatic tasting experience. It's tasted, not inhaled into the lungs.</h3><h3>Instead of inhaling directly into the lungs, it's sipped, much like using a straw. Enjoy the flavor and let the clean Forest Myst leave through your nose, where you can not only enjoy the flavor, but also allow the Forest Medicine Nectar to touch your olfactory sense as you would smelling a flower, but in reverse. It's called retronasal olfaction. We do this automatically every time we eat without knowing it. It's how we taste food. The nerve cells on the human tongue can only identify five basic taste sensations: sweet, bitter, sour, salty, and umami. The actual flavor of the food is experienced as retronasal olfaction, and it is perceived in our noses. Olfactory receptors located inside the nose capture aroma molecules. And just as breathing forest air and smelling flowers makes us feel certain ways through the same mechanism of retronasal olfaction, this is what is experienced with the Forest Myst Flute™.</h3><h3>The Forest Myst Flute™ provides a clean aromatic tasting experience that offers subtle therapeutic effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants. It's tasted, not inhaled. It's a completely unique technology and a true natural wellness activity you can feel, anytime, anywhere.</h3>",
+        "button_text": "Learn the Science",
+        "button_link": "shopify://pages/science",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "text_highlight_onscroll_VfY3yx": {
       "type": "text-highlight-onscroll",
       "settings": {
@@ -273,7 +290,7 @@
         "content_alignment": "center",
         "text_alignment": "center",
         "subheading": "",
-        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
+        "heading": "<p>BlissThera's® non-invasive &nbsp;🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's &nbsp;homeostasis ♻️ system.&nbsp;</p>",
         "button_text": "Check Out Science",
         "button_link": "shopify://pages/science-2",
         "padding_top": 40,
@@ -329,6 +346,7 @@
     "featured_collection_ya4xBe",
     "related-products",
     "image_with_text_TzPQ7q",
+    "text_highlight_onscroll_ckq3wM",
     "text_highlight_onscroll_VfY3yx",
     "image_with_text_79GEMK"
   ]
