@@ -13,8 +13,14 @@
 {%- assign rfr_refill_collection = collections['forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail'] -%}
 
 {%- capture rfr_refill_ids -%}
+  {%- comment %}<locksmith:4d9c>{% endcomment -%}
+    {%- assign locksmith_8b75_forloop__size = 0 %}{%- for rfr_product in rfr_refill_collection.products -%}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: rfr_product, subject_parent: rfr_refill_collection, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_8b75_forloop__size = locksmith_8b75_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_8b75_forloop__index = nil -%}
+  {%- comment %}</locksmith:4d9c>{% endcomment -%}
   {%- for rfr_product in rfr_refill_collection.products -%}
-    {{- rfr_product.id -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- comment %}<locksmith:e852>{% endcomment -%}
+      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: rfr_product, subject_parent: rfr_refill_collection, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_8b75_forloop__index == nil %}{% assign locksmith_8b75_forloop__index = 1 %}{% assign locksmith_8b75_forloop__index0 = 0 %}{% else %}{% assign locksmith_8b75_forloop__index = locksmith_8b75_forloop__index | plus: 1 %}{% assign locksmith_8b75_forloop__index0 = locksmith_8b75_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_8b75_forloop__index == 1 %}{% assign locksmith_8b75_forloop__first = true %}{% else %}{% assign locksmith_8b75_forloop__first = false %}{% endif %}{% if locksmith_8b75_forloop__index == locksmith_8b75_forloop__size %}{% assign locksmith_8b75_forloop__last = true %}{% else %}{% assign locksmith_8b75_forloop__last = false %}{% endif %}{% assign locksmith_8b75_forloop__rindex = locksmith_8b75_forloop__size | minus: locksmith_8b75_forloop__index | minus: 1 %}{% assign locksmith_8b75_forloop__rindex0 = locksmith_8b75_forloop__size | minus: locksmith_8b75_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+    {%- comment %}</locksmith:e852>{% endcomment -%}
+    {{- rfr_product.id -}}{%- unless locksmith_8b75_forloop__last -%},{%- endunless -%}
   {%- endfor -%}
 {%- endcapture -%}
 
