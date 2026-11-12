@@ -149,6 +149,7 @@
     },
     "text_highlight_onscroll_VfY3yx": {
       "type": "text-highlight-onscroll",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "full_width": true,
@@ -156,7 +157,7 @@
         "content_alignment": "center",
         "text_alignment": "center",
         "subheading": "",
-        "heading": "<p>BlissThera's® non-invasive  🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's  homeostasis ♻️ system. </p>",
+        "heading": "<p>BlissThera's®&nbsp;non-invasive &nbsp;🌿 drug-free therapies help people 🌳 feel better by leveraging nature’s 🏕️ power to encourage holistic☘️ wellness through support of the body's &nbsp;homeostasis ♻️ system.&nbsp;</p>",
         "button_text": "Check Out Science",
         "button_link": "shopify://pages/science-2",
         "padding_top": 40,
@@ -177,7 +178,7 @@
         "text_cKrN3F": {
           "type": "text",
           "settings": {
-            "text": "<h3><strong>On-the-Go Forest Atmosphere Delivery</strong></h3><p>\"Taste the Forest.\" Mindscape® and BlissThera® Forest Medicine based formulas can be experienced via the<strong> Forest Myst Flute</strong>—a patented, breath-powered device that emits a forest-derived botanical myst you taste - without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk in the office, at the table in a restaurant, at the airport, or even in your seat mid-flight.</p><p>Unlike traditional vape or combustion methods, <em>Mindscaping</em>® using the <strong>Forest Myst Flute</strong> offers a clean aromatic tasting experience that offers subtle therapeutic effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants.&nbsp;</p><p><strong>It's tasted, not inhaled.</strong> It's a completely unique technology and true natural wellness activity you can feel—anytime, anywhere.</p>",
+            "text": "<h3><strong>On-the-Go Forest Atmosphere Delivery</strong></h3><p><br/><strong>\"Taste The Forest\", On the Go.</strong><br/>Mindscape® and BlissThera® Forest Medicine formulas are experienced through the Forest Myst™ Flute, a patented, breath-powered device that releases a forest-derived botanical myst you taste, without heat, smoke, smell, or vapor clouds. Non-electronic and discreet, it goes anywhere: your desk, a restaurant table, the airport, or your seat mid-flight.</p><p>Mindscaping® with the Forest Myst™ Flute is a clean aromatic tasting experience, a ritual rather than a hit. It’s tasted, not inhaled. A completely new kind of technology, and a natural wellness ritual you can carry with you, anytime, anywhere.</p>",
             "text_style": "body"
           }
         }
@@ -225,6 +226,7 @@
         "heading_dW436E",
         "text_aJrHLK"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/BlissThera-Elixir-Foundational-Forumla-full-spectrum-label-forest-back.jpg",
         "height": "large",
