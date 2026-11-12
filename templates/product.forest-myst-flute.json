@@ -266,7 +266,7 @@
         "text_cKrN3F"
       ],
       "settings": {
-        "image": "shopify://shop_images/Forest-Myst-Flute-BlissThera-Bald-Black-Man-using-on-airplane.png",
+        "image": "shopify://shop_images/Forest-Myst-Flute-BlissThera-Forest-Medicine-man-on-airplane.png",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -283,6 +283,7 @@
     },
     "text_highlight_onscroll_ckq3wM": {
       "type": "text-highlight-onscroll",
+      "disabled": true,
       "name": "Highlight Scroll",
       "settings": {
         "color_scheme": "",
@@ -300,6 +301,7 @@
     },
     "text_highlight_onscroll_VfY3yx": {
       "type": "text-highlight-onscroll",
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "full_width": true,
