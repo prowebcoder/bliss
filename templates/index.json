@@ -71,6 +71,7 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -99,7 +100,7 @@
         "heading_GtXFG7": {
           "type": "heading",
           "settings": {
-            "heading": "The <strong>SCIENCE</strong> of Nervous System Homeostasis Support via Phytochemical Synergy",
+            "heading": "<strong>What Forest Medicine is</strong>",
             "heading_color": "#000000",
             "heading_size": "h2"
           }
@@ -107,7 +108,7 @@
         "text_WhLmfj": {
           "type": "text",
           "settings": {
-            "text": "<p>The body’s nervous system is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences. It is constantly working to help keep us pain-free and ready to thrive (homeostasis). When homeostasis is not working its best, or if negative symptoms persist due to illness, injury, or disease, homeostasis support may help.<br/>Forest atmospheres contain aerosols emitted by plants, which function as therapeutic agents. BlissThera® clinically integrates the principles of Forest Medicine with the precision delivery of phytochemicals working in synergy to support multisystemic homeostasis - helping you feel better.</p>",
+            "text": "<p>In Japan it is called Shinrin-Yoku, forest bathing: time spent in the atmosphere of the forest, breathing what the trees release. Decades of published research have followed people into the woods and measured what happens there. BlissThera® is built on that body of work.</p>",
             "text_style": "body"
           }
         }
@@ -118,7 +119,7 @@
         "text_WhLmfj"
       ],
       "settings": {
-        "image": "shopify://shop_images/Draft-02_Img01.jpg",
+        "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.webp",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
