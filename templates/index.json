@@ -90,6 +90,37 @@
         "padding_bottom": 20
       }
     },
+    "rich_text_gA6Hrf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Lz7cmz": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_zcxy3L": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>These statements have not been evaluated by the Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. For adults 21 and over. Flute refills are not for ingestion.</h6>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lz7cmz",
+        "text_zcxy3L"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "conditional_collection_ehUxEf": {
       "type": "conditional-collection",
       "disabled": true,
@@ -187,6 +218,7 @@
     },
     "conditional_collection_LK9eHG": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-flute",
@@ -217,6 +249,7 @@
     },
     "conditional_collection_8QwajL": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
@@ -277,6 +310,7 @@
     },
     "conditional_collection_PBaQre": {
       "type": "conditional-collection",
+      "disabled": true,
       "settings": {
         "collection": "blissthera-elixirs-retail",
         "wholesalecollection": "blissthera-elixirs",
@@ -306,6 +340,7 @@
     },
     "conditional_collection_84eypb": {
       "type": "conditional-collection",
+      "disabled": true,
       "settings": {
         "collection": "best-sellers",
         "wholesalecollection": "wholesale-store",
@@ -480,6 +515,7 @@
     "image_banner_XJPmhF",
     "video",
     "image_with_text_DfCirf",
+    "rich_text_gA6Hrf",
     "conditional_collection_ehUxEf",
     "featured_product_UKVhjQ",
     "conditional_collection_LK9eHG",
