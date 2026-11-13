@@ -44,6 +44,7 @@
         },
         "button_Qjhpny": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Visit the Clinic",
             "button_link": "http://www.blissthera.com",
