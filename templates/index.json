@@ -121,7 +121,7 @@
       "settings": {
         "image": "shopify://shop_images/BlissThera-Virtual-Nature-Therapy-large-forest-portal-w-BlissThera-logo-center-11mb.webp",
         "height": "medium",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "large",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -130,8 +130,8 @@
         "mobile_content_alignment": "center",
         "section_color_scheme": "scheme-1",
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "rich_text_gA6Hrf": {
