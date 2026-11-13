@@ -43,10 +43,9 @@
         },
         "button_Qjhpny": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Visit the Clinic",
-            "button_link": "http://www.blissthera.com",
+            "button_label": "",
+            "button_link": "",
             "button_style_secondary": true,
             "button_label_2": "Taste the Forest",
             "button_link_2": "shopify://products/forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas",
@@ -111,12 +110,21 @@
             "text": "<p>In Japan it is called Shinrin-Yoku, forest bathing: time spent in the atmosphere of the forest, breathing what the trees release. Decades of published research have followed people into the woods and measured what happens there. BlissThera® is built on that body of work.</p>",
             "text_style": "body"
           }
+        },
+        "button_EaXwQ9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore the Science",
+            "button_link": "",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
         "caption_NJ66b8",
         "heading_GtXFG7",
-        "text_WhLmfj"
+        "text_WhLmfj",
+        "button_EaXwQ9"
       ],
       "settings": {
         "image": "shopify://shop_images/Forest_Myst_Flute-16-wideshot-man-holding-flute_48281851-be6f-41bf-93e2-8b226254e475.png",
@@ -262,6 +270,7 @@
     },
     "conditional_collection_LK9eHG": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-flute",
@@ -292,6 +301,7 @@
     },
     "conditional_collection_8QwajL": {
       "type": "conditional-collection",
+      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
