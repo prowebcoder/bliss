@@ -40,8 +40,8 @@
         "heading_kRYQyD": {
           "type": "heading",
           "settings": {
-            "heading": "The Science of Nervous System Homeostasis",
-            "heading_size": "h1"
+            "heading": "The Science of Forest Medicine",
+            "heading_size": "h2"
           }
         }
       },
@@ -65,14 +65,15 @@
           "settings": {
             "image": "shopify://shop_images/BlissThera-homeostasis-therapy-phytochemcial-synergy-forest-terpenes.jpg",
             "caption": "",
-            "heading": "Nervous System and Wellbeing",
-            "text": "<p>The body’s nervous system (homeostasis system) is a remarkable network of natural healing mechanisms that work together to support health and recovery in response to internal and external influences. - Homeostasis is the body’s \"internal machinery\" that is constantly working to help keep us pain-free and ready to thrive. When homeostasis is not working its best, or if negative symptoms persist due to illness, injury, or disease, homeostasis support may help.<br/><br/>The physiological advantages of forest exposure are well documented across diverse scientific disciplines. Research indicates that the forest atmosphere contains volatile aerosols emitted by plants, which function as therapeutic agents. BlissThera® is a clinically engineered therapeutic platform that integrates the principles of Forest Medicine with the precision delivery of phytochemicals working in synergy to support multisystemic homeostasis. Theses therapies are administered either chair-side in clinic, or through personal use of the BlissThera® & Mindscape® personal use supplements sold on this website.</p>",
+            "heading": "",
+            "text": "<p>In Japan it is called Shinrin-Yoku, forest bathing. The term was coined by the Japanese Forestry Agency in 1982, and since then researchers in Japan, Korea, Europe, and the United States have followed people into forests and measured what happens.</p><p><strong>What the research has measured.</strong> In 2010, Park and colleagues published results from field experiments across 24 forests in Japan, with 280 participants, comparing time in forest and urban settings. Forest settings were associated with lower salivary cortisol, lower pulse rate, lower blood pressure, and higher parasympathetic nerve activity compared with city settings (Park et al., Environmental Health and Preventive Medicine, 2010). Li and colleagues reported that natural killer cell activity in participants was higher after forest trips, and attributed part of that to phytoncides, the volatile compounds trees release (Li, Environmental Health and Preventive Medicine, 2010). Systematic reviews since then (Hansen, Jones, and Tocchini, 2017; Wen et al., 2019) have found consistent short-term physiological findings across studies, and have also noted that most studies are small, that long-term effects are less studied, and that separating the contribution of forest air from the contribution of walking, quiet, and time away is difficult.</p><p><strong>What the forest releases.</strong> Trees and understory plants emit terpenes and other volatile organic compounds: alpha-pinene and beta-pinene from conifers, limonene from citrus and many evergreens, linalool from lavender and many flowers, beta-caryophyllene from black pepper and clove. These are the compounds that give a forest its smell, and they are the subject of most phytoncide research.</p><p><strong>What BlissThera® does with it.</strong> BlissThera® practices Forest Medicine in its clinics in &nbsp;Arkansas and its affilates, using its own patented technology, and makes its own forest botanical formulas. You can read about the clinic at <a href=\"https://www.blissthera.com/\" target=\"_blank\" title=\"https://www.blissthera.com/\">blissthera.com</a>.</p><p><strong>Sources</strong><br/><br/>Park BJ, Tsunetsugu Y, Kasetani T, Kagawa T, Miyazaki Y. The physiological effects of Shinrin-yoku (taking in the forest atmosphere or forest bathing): evidence from field experiments in 24 forests across Japan. Environ Health Prev Med. 2010;15(1):18-26.<br/><br/>Li Q. Effect of forest bathing trips on human immune function. Environ Health Prev Med. 2010;15(1):9-17.<br/><br/>Hansen MM, Jones R, Tocchini K. Shinrin-Yoku (Forest Bathing) and Nature Therapy: A State-of-the-Art Review. Int J Environ Res Public Health. 2017;14(8):851.<br/><br/>Wen Y, Yan Q, Pan Y, Gu X, Liu Y. Medical empirical research on forest bathing (Shinrin-yoku): a systematic review. Environ Health Prev Med. 2019;24:70.</p><p>These statements have not been evaluated by the Food and Drug Administration. BlissThera® products are not intended to diagnose, treat, cure, or prevent any disease.</p>",
             "button_label": "",
             "button_link": ""
           }
         },
         "row_PWLYFM": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Draft-02_Img01.jpg",
             "caption": "",
@@ -84,6 +85,7 @@
         },
         "row_Af4PxA": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/BlissThera-Elixir-dropper-in-mouth-male.jpg",
             "caption": "",
@@ -93,19 +95,9 @@
             "button_link": ""
           }
         },
-        "row_zetKbQ": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Forest-Myst-Flute-BlissThera-Forest-Medicine-woman-holding-in-city2.png",
-            "caption": "Portable Homeostatic therapy Technology",
-            "heading": "Personal Forest Atmosphere Technology",
-            "text": "<h3><strong>On-the-Go Forest Atomosphere Delivery</strong></h3><p>\"Taste the Forest.\" BlissThera® and Mindscape® Forest Medicine based formulas can be experienced via the<strong> Forest Myst Flute</strong>—a patented, breath-powered device that emits a forest-derived botanical myst you taste - without heat, smoke, smell, or vapor clouds. This innovative, non-electronic technology enables discreet therapeutic use anywhere—at your desk in the office, at the table in a restaurant, at the airport, or even in your seat mid-flight.</p><p>Unlike traditional vape or combustion methods, <em>Mindscaping</em>® using the <strong>Forest Myst Flute</strong> offers a clean aromatic tasting experience that offers subtle therapeutic effects that elevate headspace and mood without the harshness or health risks of smoke or synthetic stimulants. It's tasted, not inhaled. It's a completely unique technology and true natural wellness activity you can feel—anytime, anywhere.</p>",
-            "button_label": "",
-            "button_link": "shopify://products/forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas"
-          }
-        },
         "row_XhaFGC": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/patient-practitioner-BlissThera-clinic-in-chair_d017fc4e-78e5-4d7d-af52-1a69d9ca69be.png",
             "caption": "",
@@ -120,7 +112,6 @@
         "row_C4Qeec",
         "row_PWLYFM",
         "row_Af4PxA",
-        "row_zetKbQ",
         "row_XhaFGC"
       ],
       "settings": {
