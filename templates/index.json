@@ -263,7 +263,6 @@
     },
     "conditional_collection_LK9eHG": {
       "type": "conditional-collection",
-      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-flute",
@@ -294,7 +293,6 @@
     },
     "conditional_collection_8QwajL": {
       "type": "conditional-collection",
-      "disabled": true,
       "name": "Conditional Collection",
       "settings": {
         "collection": "forest-myst-refill-nectars-mindscape™-blissthera™-formulas-retail",
