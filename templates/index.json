@@ -45,11 +45,11 @@
         "button_Qjhpny": {
           "type": "button",
           "settings": {
-            "button_label": "Taste the Forest",
+            "button_label": "Visit the Clinic",
             "button_link": "shopify://products/forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Taste the Forest",
+            "button_link_2": "shopify://products/forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas",
             "button_style_secondary_2": false
           }
         }
