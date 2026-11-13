@@ -26,11 +26,54 @@
         "show_text_below": true
       }
     },
+    "rich_text_dL6Mzz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xAFcRF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to BioDigital Therapeutics - BlissThera® & Mindscape® Forest Medicine",
+            "heading_size": "h1"
+          }
+        },
+        "text_G8NTHw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our own technologies, our own devices, our own formulas, all built on one idea: the forest is good for people. Developed in BlissThera® clinics. Carried in the Forest Myst™ Flute.</p>"
+          }
+        },
+        "button_Qjhpny": {
+          "type": "button",
+          "settings": {
+            "button_label": "Taste the Forest",
+            "button_link": "shopify://products/forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xAFcRF",
+        "text_G8NTHw",
+        "button_Qjhpny"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "video": {
       "type": "video",
       "settings": {
-        "heading": "Welcome to<strong> BioDigital Therapeutics</strong> - BlissThera & Mindscape Forest Medicine",
-        "heading_size": "h2",
+        "heading": "",
+        "heading_size": "h1",
         "heading_alignment": "center",
         "enable_video_looping": false,
         "video_url": "https://youtu.be/RArI4omGka8",
@@ -513,6 +556,7 @@
   },
   "order": [
     "image_banner_XJPmhF",
+    "rich_text_dL6Mzz",
     "video",
     "image_with_text_DfCirf",
     "rich_text_gA6Hrf",
