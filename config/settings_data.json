@@ -110,7 +110,7 @@
     "sale_badge_color_scheme": "scheme-3",
     "sold_out_badge_color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
     "social_facebook_link": "#blissthera.bliss",
-    "social_instagram_link": "#",
+    "social_instagram_link": "",
     "social_youtube_link": "@blissthera",
     "social_tiktok_link": "",
     "social_twitter_link": "blissthera",
@@ -161,11 +161,6 @@
           "custom_icon": "",
           "custom_script": ""
         }
-      },
-      "7990132695519299173": {
-        "type": "shopify://apps/simple-affiliate/blocks/sa-tracker/da6b7ee2-2e27-43e4-9184-0df8dc5be07a",
-        "disabled": false,
-        "settings": {}
       },
       "17368511000352060744": {
         "type": "shopify://apps/goaffpro-affiliate-marketing/blocks/goaffpro-embedded-pixel/2f4d802b-86c2-47e4-8096-ae1aa3efbab2",
