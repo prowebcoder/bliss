@@ -49,7 +49,7 @@
             "button_style_secondary": false,
             "button_label_2": "Taste the Forest",
             "button_link_2": "shopify://products/forest-myst-flute-for-blissthera®-and-mindscape®-nectar-formulas",
-            "button_style_secondary_2": true
+            "button_style_secondary_2": false
           }
         }
       },
@@ -64,7 +64,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-d77ad449-6290-443d-b7e5-fd1c04196360",
         "full_width": true,
-        "padding_top": 36,
+        "padding_top": 20,
         "padding_bottom": 40
       }
     },
